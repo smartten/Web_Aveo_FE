@@ -356,9 +356,16 @@
                 padding         : 20px 60px;
                 font-size       : 20px;
 
+                &:hover {
+                    background-color: white;
+                    color           : blue;
+                    border          : 5px solid blue;
+                }
+
                 svg {
                     margin-bottom: 7px;
                 }
+
             }
         }
 

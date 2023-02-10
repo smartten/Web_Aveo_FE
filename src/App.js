@@ -1,12 +1,14 @@
 import ServiceWeb from "./Page/Service-Web/ServiceWeb";
 import ServiceMobile from "./Page/Service-Mobile/ServiceMobile";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import ServiceEngineering from "./Page/Service-Engineering/ServiceEngineering";
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<ServiceWeb />} />
         <Route path="/mobile" element={<ServiceMobile />} />
+        <Route path="/engineering" element={<ServiceEngineering />} />
       </Routes>
     </div>
   );

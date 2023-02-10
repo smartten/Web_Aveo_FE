@@ -100,12 +100,6 @@
 
                 }
 
-                .desc {
-                    font-size: 18px;
-                    color    : #60697B;
-                    float    : left;
-                }
-
                 .c4-item {
                     margin-top: 50px;
 
@@ -344,6 +338,11 @@
 
             .collapse-questions {
                 align-items: center;
+
+                p {
+                    width : 100%;
+                    height: 120px;
+                }
             }
         }
 
@@ -359,6 +358,45 @@
 
                 svg {
                     margin-bottom: 7px;
+                }
+            }
+        }
+
+        .creative-portfolio {
+            padding-top     : 40px;
+            padding-bottom  : 40px;
+            background-color: #d8d8d8;
+
+            .container {
+                position: relative;
+
+                .text-title {
+                    .text-title-1 {
+                        font-size: 27px;
+                        color    : #606060;
+                    }
+
+                    .text-title-2 {
+                        font-size              : 36px;
+                        font-weight            : 800;
+                        color                  : #0060ad;
+                        display                : inline-block;
+                        background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+
+                }
+
+                .list-img {
+                    img {
+                        &:hover {
+                            box-shadow: 0px 0px 23px 0px rgb(50 50 50 / 50%);
+                            transform : scale(1.02);
+
+                        }
+                    }
                 }
             }
         }

@@ -40,7 +40,10 @@ function ServiceWeb() {
             <div className="row c4-item w-100">
               <div className="col-md-6 col-lg-3 item">
                 <div className="text-center">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtz1IBmihsI5r44aBGpm1k5kJYEw3MCXNfg&usqp=CAU" />
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtz1IBmihsI5r44aBGpm1k5kJYEw3MCXNfg&usqp=CAU"
+                    style={{ width: "100%" }}
+                  />
                 </div>
                 <div className="title">Front-end Development</div>
                 <div className="desc">
@@ -52,7 +55,10 @@ function ServiceWeb() {
               </div>
               <div className="col-md-6 col-lg-3 item">
                 <div className="text-center">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtz1IBmihsI5r44aBGpm1k5kJYEw3MCXNfg&usqp=CAU" />
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtz1IBmihsI5r44aBGpm1k5kJYEw3MCXNfg&usqp=CAU"
+                    style={{ width: "100%" }}
+                  />
                 </div>
                 <div className="title">Back-end Development</div>
                 <div className="desc">
@@ -64,7 +70,10 @@ function ServiceWeb() {
               </div>
               <div className="col-md-6 col-lg-3 item">
                 <div className="text-center">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtz1IBmihsI5r44aBGpm1k5kJYEw3MCXNfg&usqp=CAU" />
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtz1IBmihsI5r44aBGpm1k5kJYEw3MCXNfg&usqp=CAU"
+                    style={{ width: "100%" }}
+                  />
                 </div>
                 <div className="title">Web Applications</div>
                 <div className="desc">
@@ -76,7 +85,10 @@ function ServiceWeb() {
               </div>
               <div className="col-md-6 col-lg-3 item">
                 <div className="text-center">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtz1IBmihsI5r44aBGpm1k5kJYEw3MCXNfg&usqp=CAU" />
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtz1IBmihsI5r44aBGpm1k5kJYEw3MCXNfg&usqp=CAU"
+                    style={{ width: "100%" }}
+                  />
                 </div>
                 <div className="title">Dedicated Web Developer</div>
                 <div className="desc">
@@ -142,7 +154,7 @@ function ServiceWeb() {
                 <div className="list">
                   <ul>
                     <li>Solution design</li>
-                    <li>nterface design</li>
+                    <li>Interface design</li>
                     <li>Information architecture</li>
                     <li>Website development</li>
                   </ul>

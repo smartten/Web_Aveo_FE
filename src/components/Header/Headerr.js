@@ -1,5 +1,5 @@
+import "./HeadStyle.scss";
 import logo from "./2023-02-09_114503.png";
-import "./HeadStyle.css";
 import React, { useEffect, useState } from "react";
 import {
   CaretRightOutlined,
@@ -9,35 +9,72 @@ import {
   PhoneFilled,
 } from "@ant-design/icons";
 
+window.onload = function() {
+  setTimeout(function() {
+    document.getElementById("logo").classList.add("logo");
+  }, 1000);
+
+  setTimeout(function() {
+    var testarray = document.getElementsByClassName("link");
+    for (var i = 0; i < testarray.length; i++) {
+      testarray[i].classList.add("fadeInBottom", "cssanimation");
+    }
+    document
+      .getElementById("header-but")
+      .classList.add("fadeInBottom", "cssanimation");
+  }, 1500);
+
+  setTimeout(function() {
+    document
+      .getElementById("head-top")
+      .classList.add("fadeInBottom", "cssanimation", "dislay");
+  }, 2500);
+};
 function Headerr() {
   const [nav, setNav] = useState("");
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
       if (window.scrollY >= 65) {
+        document
+          .getElementById("head-top")
+          .classList.remove(
+            "fadeInBottom",
+            "cssanimation",
+            "dislay",
+            "fadeInTop"
+          );
         setNav("nav");
       } else {
+        setTimeout(function() {
+          document
+            .getElementById("head-top")
+            .classList.add("fadeInTop", "cssanimation", "dislay");
+        }, 500);
+
         setNav("");
       }
     });
   }, []);
   return (
     <>
-      <div className="head-top">
-        <h4>
-          <a className="top-link" href="">
-            TOP
-          </a>
-        </h4>
-        <div style={{ width: "66%" }}></div>
-        <div className="head-menu-icon">
-          <FacebookFilled className="icon" />
-          <YoutubeFilled className="icon" />
-          <MailFilled className="icon" />
-          <PhoneFilled className="icon" />
-          <h4 style={{ marginTop: 0 }} className="top-link">
-            (+84)-24-3200-4183
+      <div id="infor" className="overlay transition"></div>
+      <div style={{ height: 50, width: "100%" }}>
+        <div id="head-top" className="head-top">
+          <h4>
+            <a className="top-link" href="">
+              TOP
+            </a>
           </h4>
+          <div style={{ width: "66%" }}></div>
+          <div className="head-menu-icon">
+            <FacebookFilled className="icon" />
+            <YoutubeFilled className="icon" />
+            <MailFilled className="icon" />
+            <PhoneFilled className="icon" />
+            <h4 style={{ marginTop: 0 }} className="top-link">
+              (+84)-24-3200-4183
+            </h4>
+          </div>
         </div>
       </div>
       <div
@@ -47,7 +84,7 @@ function Headerr() {
         }}
       >
         <div id="navbar" className={nav ? "head-totall sticky" : "head-totall"}>
-          <img className="logo" src={logo} />
+          <img id="logo" src={logo} />
           <div className="head-menu">
             <div>
               <a href="" class="link">
@@ -137,7 +174,9 @@ function Headerr() {
                 </div>
               </div>
             </div>
-            <button className="header-but">Contact</button>
+            <button id="header-but" className="header-but">
+              Contact
+            </button>
           </div>
           <div className="triangle-bottomright"></div>
         </div>

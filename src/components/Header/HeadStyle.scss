@@ -12,9 +12,12 @@
     justify-content: space-around;
     margin-left: 10;
     align-items: center;
+    height: 50px; 
+    display: none;
+
 }
 .head-totall{
-    /* height: 100px;  */
+    height: 100px; 
     width: 98%; 
     /* border: 1px solid black; */
     display: flex;
@@ -34,8 +37,17 @@
     transition-duration: 0.5s;	
 }
 .logo{
+    display: block;
     margin:20px 0 10px 10px;
+    animation: fadeIn 2s;
 }
+#id{
+    display: none;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 .head-menu-icon{
     padding: 15px 0px 0 0;
     display: flex;
@@ -64,6 +76,7 @@
     font-size: 20px;
     margin-right: 25px;
     font-weight: 600;
+    display: none;
 }
 .link-drop{
     text-decoration: none;
@@ -89,6 +102,7 @@
     font-weight: 500;
     margin-top: -10px;
     transition-duration: 0.1s;	
+    display: none;
 }
 .header-but:hover{
     background-color: white;
@@ -111,7 +125,23 @@
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
   }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation:fadeInRight .5s ease;
+     -webkit-animation:fadeInRight .5s ease;
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+
 .div-for-a{
     background-color: white;
     height: 30px; 
@@ -137,7 +167,9 @@
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
   }
 
-.dropdown-submenu:hover .dropdown-content-submenu {display: block;}
+.dropdown-submenu:hover .dropdown-content-submenu {display: block;
+    animation:fadeInRight .5s ease;
+    -webkit-animation:fadeInRight .5s ease;}
 
 .triangle-bottomright {
     width: 0;
@@ -150,6 +182,57 @@
     /* position: fixed; */
   }
 
+  .overlay{
+    background: #0060AD;
+    z-index: 2;
+    position: fixed;
+    top: 0%;
+    left: -25%;
+    width: 1000%;
+    height: 1000%;
+    transform: scaleY(0);
+    transform-origin: both
+  }
+  .transition {
+    -webkit-animation: scaletoright 3000ms both cubic-bezier(0.770, 0.000, 0.175, 1.000);
+            animation: scaletoright 3000ms both cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  }
+  
+  @keyframes scaletoright {
+    0%   { transform: scaleY(1) skewY(0deg); transform-origin: top; }
+    50%  { transform: scaleY(0) skewY(0deg); transform-origin: top; }
+    51%  { transform: scaleY(0) skewY(0deg); transform-origin: bottom; }
+    100% { transform: scaleY(0) skewY(0deg); transform-origin: bottom;}
+  }
+.cssanimation {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInBottom { animation-name:fadeInBottom; display: block}
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+    to { opacity: 1 }
+}
+.dislay{
+    display: flex;
+}
+
+.fadeInTop { animation-name:fadeInTop; display: block}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+    to { opacity: 1 }
+}
+.dislay{
+    display: flex;
+}
 
 
 

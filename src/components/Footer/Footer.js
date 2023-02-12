@@ -16,7 +16,8 @@ function Footer() {
         </h1>
         <button className="footer-button">Let’s Say Hi</button>
       </div>
-      <hr width="84%" color="#388BE2" size="0.5px" align="center" />
+      {/* <hr width="84%" color="#388BE2" size="5px" align="center" /> */}
+      <hr className="hr-1"></hr>
       <div className="footer-headquarter">
         <div className="footer-headquarter-col1">
           <img className="footer-logo" src={logo} />
@@ -83,7 +84,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <hr width="84%" color="#388BE2" size="0.5px" align="center" />
+      <hr className="hr-2" />
       <p style={{ textAlign: "center", color: "white", opacity: 0.7 }}>
         Copyright © 2021 DEHA VIET NAM
       </p>

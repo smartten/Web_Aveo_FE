@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 .footer-enough{
-    padding: 0px 110px 35px 110px;
+    padding: 50px 110px 35px 110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,6 +27,7 @@
     color: #0060AD;
     font-size: 20px;
     font-weight: 800px;
+    border: none;
     transition-duration: 0.1s;	
 
 }
@@ -69,5 +70,15 @@
     opacity: 1;
     color: white;
 
+}
+hr{
+    color: white;
+    width: 85%;
+}
+.hr-1{
+    margin: 70px 0 20px 110px;
+}
+.hr-2{
+    margin: -20px 0 25px 100px;
 }
 

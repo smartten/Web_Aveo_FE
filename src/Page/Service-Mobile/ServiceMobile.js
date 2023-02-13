@@ -1,10 +1,84 @@
 import "./style.scss";
 import { Collapse } from "antd";
-import { ArrowRightOutlined } from "@ant-design/icons";
+import {
+  ArrowRightOutlined,
+  CaretDownOutlined,
+  CaretUpOutlined,
+} from "@ant-design/icons";
+import React, { useState } from "react";
 const { Panel } = Collapse;
 function ServiceMobile() {
   const onChange = (key) => {
     console.log(key);
+  };
+  const question = [
+    {
+      question:
+        "How can I start Mobile development services with DEHA for my business?",
+      answer:
+        "You can simply call or email DEHA to begin your Mobile development services. DEHA's developers can make your Mobile development easy and fruitfu",
+    },
+    {
+      question:
+        "Do you offer post- App development support and maintenance for iPhone apps?",
+      answer:
+        "We have a team of project managers, developers and designers who will be working on your project. They will continuously update you during each development stage and pass on your changes and approvals to the respective teams.",
+    },
+    {
+      question:
+        "Will you partner with us as an android app development company for our clients?",
+      answer:
+        "DEHA can partner with you to provide an android app development for your clients. DEHA's android developers can note the client requirements and then recommend the right solution to them",
+    },
+    {
+      question:
+        "Is DEHA provides custom android app development services for my business?",
+      answer:
+        "DEHA doesn't aim to offer a standard solution to all enterprises. Instead, they can create a tailored android app to suffice the needs of your business. The app development company can custom-build a robust solution based on your industry and brand position.",
+    },
+    {
+      question:
+        "Which technologies and tools do you use to develop Android applications?",
+      answer:
+        "We use various tools and technologies such as XML, SQLite, Android NDK, Realm, and Android SDK to design and develop an Android application for your business.",
+    },
+    {
+      question:
+        "Which programming languages are the best for developing Android apps?",
+      answer:
+        "The programming language most used to develop Android applications is Java. In fact, a major part of the Android operating system is written in Java. But we also use C, Android NDK, and C++ to build Android applications.",
+    },
+    {
+      question: "How much time will you take to complete the project?",
+      answer:
+        "We usually take around one or two months for Mobile application development. But the exact time taken to complete your project can be determined only after we discuss the idea and other project details.",
+    },
+    {
+      question: "Is there a chance that Apple will reject my application?",
+      answer:
+        "We can reduce the possibility of your mobile app getting rejected. Our team of iOS app developers strictly follows the standard guidelines and functionality set by Apple. We offer quality assurance and testing services to ensure there's no room for rejection",
+    },
+    {
+      question:
+        "Which programming languages do you use to build iPhone applications?",
+      answer:
+        "The programming languages we use to develop your iPhone applications are Objective-C and C. We also use the XCode platform, as Apple offers support for C++ on XCode’s latest version.",
+    },
+    {
+      question:
+        "Do you offer post- App development support and maintenance for iPhone apps?",
+      answer:
+        "We are a leading iOS app development agency, and we help and maintenance even after your mobile application is deployed. We offer services like app upgrading, troubleshooting, system improvement, and others. By maintaining your mobile app regularly, we ensure it offers 100% performance and boosts your revenue.",
+    },
+  ];
+
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    if (selected == i) {
+      return setSelected(null);
+    }
+    setSelected(i);
   };
   return (
     <div className="body">
@@ -351,192 +425,45 @@ function ServiceMobile() {
 
         <section className="asked-questions container">
           <h2 className="text-title-2">Frequently Asked Questions</h2>
-          <div className="collapse-questions row">
-            <div className="collapse-questions-1 col-6 mt-5">
-              <Collapse
-                // defaultActiveKey={["1"]}
-                onChange={onChange}
-                style={{ border: "none" }}
-              >
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      How can I start Mobile development services with DEHA for
-                      my business?
-                    </b>
-                  }
-                  key="1"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    You can simply call or email DEHA to begin your Mobile
-                    development services. DEHA's developers can make your Mobile
-                    development easy and fruitful.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Will you partner with us as an android app development
-                      company for our clients?
-                    </b>
-                  }
-                  key="2"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    DEHA can partner with you to provide an android app
-                    development for your clients. DEHA's android developers can
-                    note the client requirements and then recommend the right
-                    solution to them.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Which technologies and tools do you use to develop Android
-                      applications?
-                    </b>
-                  }
-                  key="3"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We use various tools and technologies such as XML, SQLite,
-                    Android NDK, Realm, and Android SDK to design and develop an
-                    Android application for your business.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      How much time will you take to complete the project?
-                    </b>
-                  }
-                  key="4"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We usually take around one or two months for Mobile
-                    application development. But the exact time taken to
-                    complete your project can be determined only after we
-                    discuss the idea and other project details.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Which programming languages do you use to build iPhone
-                      applications?
-                    </b>
-                  }
-                  key="5"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    The programming languages we use to develop your iPhone
-                    applications are Objective-C and C. We also use the XCode
-                    platform, as Apple offers support for C++ on XCode's latest
-                    version.
-                  </p>
-                </Panel>
-              </Collapse>
-            </div>
-            <div className="collapse-questions-2 col-6 mt-5">
-              <Collapse
-                // defaultActiveKey={["1"]}
-                onChange={onChange}
-                style={{ border: "none" }}
-              >
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Do you offer post- App development support and maintenance
-                      for iPhone apps?
-                    </b>
-                  }
-                  key="1"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We have a team of project managers, developers and designers
-                    who will be working on your project. They will continuously
-                    update you during each development stage and pass on your
-                    changes and approvals to the respective teams.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Is DEHA provides custom android app development services
-                      for my business?
-                    </b>
-                  }
-                  key="2"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    DEHA doesn’t aim to offer a standard solution to all
-                    enterprises. Instead, they can create a tailored android app
-                    to suffice the needs of your business. The app development
-                    company can custom-build a robust solution based on your
-                    industry and brand position.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Which programming languages are the best for developing
-                      Android apps?
-                    </b>
-                  }
-                  key="3"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    The programming language most used to develop Android
-                    applications is Java. In fact, a major part of the Android
-                    operating system is written in Java. But we also use C,
-                    Android NDK, and C++ to build Android applications.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Is there a chance that Apple will reject my application?
-                    </b>
-                  }
-                  key="4"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We can reduce the possibility of your mobile app getting
-                    rejected. Our team of iOS app developers strictly follows
-                    the standard guidelines and functionality set by Apple. We
-                    offer quality assurance and testing services to ensure
-                    there's no room for rejection.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Do you offer post- App development support and maintenance
-                      for iPhone apps?
-                    </b>
-                  }
-                  key="5"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We are a leading iOS app development agency, and we help and
-                    maintenance even after your mobile application is deployed.
-                    We offer services like app upgrading, troubleshooting,
-                    system improvement, and others. By maintaining your mobile
-                    app regularly, we ensure it offers 100% performance and
-                    boosts your revenue.
-                  </p>
-                </Panel>
-              </Collapse>
+          <div className="collapse-questions row mt-5">
+            <div className="col-md-6 faq-container">
+              {question.map((item, i) => (
+                <div className="row-item">
+                  <div className="faq-question">
+                    <div
+                      className="question-content"
+                      style={{ borderBottom: "1px solid" }}
+                    >
+                      <a className="desc btn" onClick={() => toggle(i)}>
+                        <b className={selected === i ? "text-color" : ""}>
+                          {item.question}
+                        </b>
+                        <span>
+                          {selected === i ? (
+                            <CaretUpOutlined className="text-color" />
+                          ) : (
+                            <CaretDownOutlined />
+                          )}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      selected === i
+                        ? "col faq-answer show"
+                        : "col faq-answer collapse"
+                    }
+                  >
+                    <div
+                      className="card card-body"
+                      style={{ backgroundColor: "#efefef", margin: "10px 0px" }}
+                    >
+                      {item.answer}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

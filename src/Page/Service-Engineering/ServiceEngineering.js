@@ -1,11 +1,74 @@
 import "./style.scss";
 import { Collapse } from "antd";
-import { ArrowRightOutlined } from "@ant-design/icons";
+import {
+  ArrowRightOutlined,
+  CaretDownOutlined,
+  CaretUpOutlined,
+} from "@ant-design/icons";
+import React, { useState } from "react";
+
 const { Panel } = Collapse;
 function ServiceEngineering() {
   const onChange = (key) => {
     console.log(key);
   };
+
+  const question = [
+    {
+      question: `What Are "Engineering" Services?`,
+      answer:
+        "In context of what we do at DEHA, Engineering Services are tasks, or consulting, or analysis on technical topics; usually to support businesses with product design, product development, failure analysis (forensics), or manufacturing. The list also includes supply chain support, material choices, and process optimization.",
+    },
+    {
+      question: "Why Hire an Engineering Consultant?",
+      answer:
+        "The Short Answer: It maximizes your capabilities with short-term, significant expertise.",
+    },
+    {
+      question: "How do I contact DEHA to outsource my engineering projects?",
+      answer:
+        "You can either call us or fill up the contact form along with your requirements. We will get back to you with a quote.",
+    },
+    {
+      question:
+        "How much experience does DEHA have in providing engineering services?",
+      answer:
+        "We have an experience of more than a decade (12 years) and have been serving customers around the globe through our multiple delivery centers",
+    },
+    {
+      question:
+        "Is DEHA equipped with the latest technology and infrastructure to provide engineering services?",
+      answer:
+        "We are equipped with state-of-the-art infrastructure and technologies which leave our competitors far behind. Our team of engineers at DEHA can address any kind of engineering requirement.",
+    },
+    {
+      question:
+        "How do you ensure that my engineering data is kept confidential?",
+      answer:
+        "We follow a careful procedure to take care that none of your confidential data is published, disclosed, distributed, or sold. Additionally, we make our employees sign a non-disclosure agreement during the hiring process, assuring further peace of mind.",
+    },
+    {
+      question:
+        "What processes are undertaken to ensure the quality of engineering services?",
+      answer:
+        "We follow strict quality assurance processes to make sure that we deliver high quality engineering services to our customers. We are ISO 9001:2015, 27001:2015 certified.",
+    },
+    {
+      question: "What is the project turnaround time?",
+      answer:
+        "We guarantee a turnaround time of 24 hours in most cases. However, the project turnaround time will also depend on project complexity, technology used, and the skills required to achieve quality results.",
+    },
+  ];
+
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    if (selected == i) {
+      return setSelected(null);
+    }
+    setSelected(i);
+  };
+
   return (
     <div className="body">
       <section className="slider">
@@ -303,153 +366,45 @@ function ServiceEngineering() {
 
         <section className="asked-questions container">
           <h2 className="text-title-2">Frequently Asked Questions</h2>
-          <div className="collapse-questions row">
-            <div className="collapse-questions-1 col-6 mt-5">
-              <Collapse
-                // defaultActiveKey={["1"]}
-                onChange={onChange}
-                style={{ border: "none" }}
-              >
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      What Are "Engineering" Services?
-                    </b>
-                  }
-                  key="1"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    In context of what we do at DEHA, Engineering Services are
-                    tasks, or consulting, or analysis on technical topics;
-                    usually to support businesses with product design, product
-                    development, failure analysis (forensics), or manufacturing.
-                    The list also includes supply chain support, material
-                    choices, and process optimization.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      How do I contact DEHA to outsource my engineering
-                      projects?
-                    </b>
-                  }
-                  key="2"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    You can either call us or fill up the contact form along
-                    with your requirements. We will get back to you with a
-                    quote.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Is DEHA equipped with the latest technology and
-                      infrastructure to provide engineering services?
-                    </b>
-                  }
-                  key="3"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We are equipped with state-of-the-art infrastructure and
-                    technologies which leave our competitors far behind. Our
-                    team of engineers at DEHA can address any kind of
-                    engineering requirement.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      What processes are undertaken to ensure the quality of
-                      engineering services?
-                    </b>
-                  }
-                  key="4"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We follow strict quality assurance processes to make sure
-                    that we deliver high quality engineering services to our
-                    customers. We are ISO 9001:2015, 27001:2015 certified.
-                  </p>
-                </Panel>
-              </Collapse>
-            </div>
-            <div className="collapse-questions-2 col-6 mt-5">
-              <Collapse
-                // defaultActiveKey={["1"]}
-                onChange={onChange}
-                style={{ border: "none" }}
-              >
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Why Hire an Engineering Consultant?
-                    </b>
-                  }
-                  key="1"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    The Short Answer: It maximizes your capabilities with
-                    short-term, significant expertise.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      How much experience does DEHA have in providing
-                      engineering services?
-                    </b>
-                  }
-                  key="2"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We have an experience of more than a decade (12 years) and
-                    have been serving customers around the globe through our
-                    multiple delivery centers.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      How do you ensure that my engineering data is kept
-                      confidential?
-                    </b>
-                  }
-                  key="3"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We follow a careful procedure to take care that none of your
-                    confidential data is published, disclosed, distributed, or
-                    sold. Additionally, we make our employees sign a
-                    non-disclosure agreement during the hiring process, assuring
-                    further peace of mind.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      What is the project turnaround time?
-                    </b>
-                  }
-                  key="4"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We guarantee a turnaround time of 24 hours in most cases.
-                    However, the project turnaround time will also depend on
-                    project complexity, technology used, and the skills required
-                    to achieve quality results.
-                  </p>
-                </Panel>
-              </Collapse>
+          <div className="collapse-questions row mt-5">
+            <div className="col-md-6 faq-container">
+              {question.map((item, i) => (
+                <div className="row-item">
+                  <div className="faq-question">
+                    <div
+                      className="question-content"
+                      style={{ borderBottom: "1px solid" }}
+                    >
+                      <a className="desc btn" onClick={() => toggle(i)}>
+                        <b className={selected === i ? "text-color" : ""}>
+                          {item.question}
+                        </b>
+                        <span>
+                          {selected === i ? (
+                            <CaretUpOutlined className="text-color" />
+                          ) : (
+                            <CaretDownOutlined />
+                          )}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      selected === i
+                        ? "col faq-answer show"
+                        : "col faq-answer collapse"
+                    }
+                  >
+                    <div
+                      className="card card-body"
+                      style={{ backgroundColor: "#efefef", margin: "10px 0px" }}
+                    >
+                      {item.answer}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

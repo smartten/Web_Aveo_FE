@@ -1,10 +1,67 @@
 import "./style.scss";
 import { Collapse } from "antd";
-import { ArrowRightOutlined } from "@ant-design/icons";
+import {
+  ArrowRightOutlined,
+  CaretDownOutlined,
+  CaretUpOutlined,
+} from "@ant-design/icons";
+import React, { useState } from "react";
 const { Panel } = Collapse;
 function ServiceWeb() {
   const onChange = (key) => {
     console.log(key);
+  };
+
+  const question = [
+    {
+      question: "What is the average cost of developing a website?",
+      answer:
+        "We are a leading PHP development company and we have a strong policy of accountability, so we quote approximate costs based on project requirements. We list all necessary project specifics and then determine the average time needed to accomplish each project. In addition, we present a plan that details the expense and amount of time the project would require.",
+    },
+    {
+      question: "Can I modify my website design in the future?",
+      answer:
+        "Yes, you can have the designs updated later on. We are a leading PHP development company and our professional developers will make all the required improvements to the site's interface, functionality and layout based on your needs. We suggest identifying and reviewing the scope and essential elements of any project before beginning.",
+    },
+    {
+      question: "Do you develop mobile-friendly websites?",
+      answer:
+        "Yes, we develop websites that are mobile-friendly. Our professional developers are well versed in advanced technologies based on CSS3 and HTML5. Being top php web development company we develop web applications that are engaging, consumer-centric, and graphically compelling, ideal for mobile devices.",
+    },
+    {
+      question: "Do you provide maintenance and support after development?",
+      answer:
+        "DEHA provides a full maintenance and support cycle after completion of your PHP project. Being top php web development company we ensure that, during this time period, we focus on performance enhancement, fixing any bugs, SEO-related improvements, and other activities.",
+    },
+    {
+      question: "How do you ensure the quality of the project?",
+      answer:
+        "We take a strict target-based approach to every project. Once you agree to our services, your project will move through our various departments for development, design, and quality testing. This will ensure you get the best results",
+    },
+    {
+      question: "How much time do you require to complete a project?",
+      answer:
+        "At DEHA, we believe in accountability and are reasonable with our consumers and clients. We never give them false promises or commitments. This is why we also address all the relevant specifics of the project and then determine the time needed to complete the work. Our experts will calculate the length of time needed based on the work they are assigned.",
+    },
+    {
+      question: "How much does it cost for web application development?",
+      answer:
+        "At the start of the project, DEHA seeks the approval of the client on all project details and then quotes an estimate cost for the same. This PHP web development company also shares the project duration and all minute developments included in the project. In case of any last-minute additions, DEHA informs the client of additional costs and time to complete the project.",
+    },
+    {
+      question: "What are the benefits of Web development services?",
+      answer:
+        "We have a long history of providing top-notch Web solutions. Using a comprehensive knowledge base to meet your core needs, we leverage high-end strategies to create engaging websites. We're here to create interactive UI/UX, and a standard coding framework lets us use our skill set and technologies to create exactly what you need.",
+    },
+  ];
+
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    if (selected == i) {
+      return setSelected(null);
+    }
+    setSelected(i);
   };
   return (
     <div className="body">
@@ -290,164 +347,45 @@ function ServiceWeb() {
 
         <section className="asked-questions container">
           <h2 className="text-title-2">Frequently Asked Questions</h2>
-          <div className="collapse-questions row">
-            <div className="collapse-questions-1 col-6 mt-5">
-              <Collapse
-                defaultActiveKey={["1"]}
-                onChange={onChange}
-                style={{ border: "none" }}
-              >
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      What is the average cost of developing a website?
-                    </b>
-                  }
-                  key="1"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We are a leading PHP development company and we have a
-                    strong policy of accountability, so we quote approximate
-                    costs based on project requirements. We list all necessary
-                    project specifics and then determine the average time needed
-                    to accomplish each project. In addition, we present a plan
-                    that details the expense and amount of time the project
-                    would require.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Do you develop mobile-friendly websites?
-                    </b>
-                  }
-                  key="2"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "18px" }}>
-                    Yes, we develop websites that are mobile-friendly. Our
-                    professional developers are well versed in advanced
-                    technologies based on CSS3 and HTML5. Being top php web
-                    development company we develop web applications that are
-                    engaging, consumer-centric, and graphically compelling,
-                    ideal for mobile devices.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      How do you ensure the quality of the project?
-                    </b>
-                  }
-                  key="3"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "18px" }}>
-                    We take a strict target-based approach to every project.
-                    Once you agree to our services, your project will move
-                    through our various departments for development, design, and
-                    quality testing. This will ensure you get the best results.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      What are the benefits of Web development services?
-                    </b>
-                  }
-                  key="4"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "18px" }}>
-                    We have a long history of providing top-notch Web solutions.
-                    Using a comprehensive knowledge base to meet your core
-                    needs, we leverage high-end strategies to create engaging
-                    websites. We're here to create interactive UI/UX, and a
-                    standard coding framework lets us use our skill set and
-                    technologies to create exactly what you need.
-                  </p>
-                </Panel>
-              </Collapse>
-            </div>
-            <div className="collapse-questions-2 col-6 mt-5">
-              <Collapse
-                defaultActiveKey={["1"]}
-                onChange={onChange}
-                style={{ border: "none" }}
-              >
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      What is the average cost of developing a website?
-                    </b>
-                  }
-                  key="1"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "15px" }}>
-                    We are a leading PHP development company and we have a
-                    strong policy of accountability, so we quote approximate
-                    costs based on project requirements. We list all necessary
-                    project specifics and then determine the average time needed
-                    to accomplish each project. In addition, we present a plan
-                    that details the expense and amount of time the project
-                    would require.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      Do you develop mobile-friendly websites?
-                    </b>
-                  }
-                  key="2"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "18px" }}>
-                    Yes, we develop websites that are mobile-friendly. Our
-                    professional developers are well versed in advanced
-                    technologies based on CSS3 and HTML5. Being top php web
-                    development company we develop web applications that are
-                    engaging, consumer-centric, and graphically compelling,
-                    ideal for mobile devices.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      How do you ensure the quality of the project?
-                    </b>
-                  }
-                  key="3"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "18px" }}>
-                    We take a strict target-based approach to every project.
-                    Once you agree to our services, your project will move
-                    through our various departments for development, design, and
-                    quality testing. This will ensure you get the best results.
-                  </p>
-                </Panel>
-                <Panel
-                  header={
-                    <b style={{ fontSize: "18px" }}>
-                      What are the benefits of Web development services?
-                    </b>
-                  }
-                  key="4"
-                  style={{ marginBottom: "10px", backgroundColor: "white" }}
-                >
-                  <p style={{ fontSize: "18px" }}>
-                    We have a long history of providing top-notch Web solutions.
-                    Using a comprehensive knowledge base to meet your core
-                    needs, we leverage high-end strategies to create engaging
-                    websites. We're here to create interactive UI/UX, and a
-                    standard coding framework lets us use our skill set and
-                    technologies to create exactly what you need.
-                  </p>
-                </Panel>
-              </Collapse>
+          <div className="collapse-questions row mt-5">
+            <div className="col-md-6 faq-container">
+              {question.map((item, i) => (
+                <div className="row-item">
+                  <div className="faq-question">
+                    <div
+                      className="question-content"
+                      style={{ borderBottom: "1px solid" }}
+                    >
+                      <a className="desc btn" onClick={() => toggle(i)}>
+                        <b className={selected === i ? "text-color" : ""}>
+                          {item.question}
+                        </b>
+                        <span>
+                          {selected === i ? (
+                            <CaretUpOutlined className="text-color" />
+                          ) : (
+                            <CaretDownOutlined />
+                          )}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      selected === i
+                        ? "col faq-answer show"
+                        : "col faq-answer collapse"
+                    }
+                  >
+                    <div
+                      className="card card-body"
+                      style={{ backgroundColor: "#efefef", margin: "10px 0px" }}
+                    >
+                      {item.answer}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

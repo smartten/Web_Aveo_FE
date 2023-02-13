@@ -287,6 +287,16 @@
                 font-size: 25px;
             }
 
+            .text-title {
+                font-size              : 36px;
+                font-weight            : 800;
+                color                  : #0060ad;
+                display                : inline-block;
+                background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
             .sub-title {
                 text-transform: uppercase;
                 font-size     : 25px;
@@ -344,7 +354,50 @@
 
             .collapse-questions {
                 align-items: center;
+
+                .faq-container {
+                    display  : flex;
+                    width    : 100%;
+                    flex-wrap: wrap;
+
+                    .row-item {
+                        flex         : 50%;
+                        padding-right: 30px;
+
+                        .faq-question {
+                            display    : flex;
+                            align-items: center;
+
+                            .question-content {
+                                flex: 95%;
+
+                                .desc {
+                                    font-size: 18px;
+                                    color    : #60697B;
+                                }
+
+                                a {
+                                    text-align     : left;
+                                    display        : flex;
+                                    justify-content: space-between;
+                                }
+
+                                .card-body {
+                                    background-color: #F1F1F1;
+                                    color           : #202020;
+                                    font-size       : 15px;
+                                    // margin-bottom: 20px
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
             }
+
+
         }
 
         .schedule {

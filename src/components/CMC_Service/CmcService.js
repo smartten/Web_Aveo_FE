@@ -17,11 +17,11 @@ function CmcService() {
   //   document.querySelector(".noidung_dropdown").classList.toggle("hienThi");
   // }
   return (
-    <div className="container-fluid">
-      <div class="row">
-        <div class="col-12 cms">
+    <div className="">
+      <div class="row cms p-0 m-0 pt-5">
+        <div class="col-12 m-0 p-5 mt-5 pt-5">
           <div>
-            <p className="cms-p">CMS services</p>
+            <p className="cms-p m-0 p-0 mt-5 pt-5">CMS services</p>
             <p className="cms-p-unlock">
               Unlock the Potential of Your Business with standard CMS solution!
             </p>
@@ -145,16 +145,17 @@ function CmcService() {
       </div>
       <div className="row">
         <div className="col-12 hmHr p-5">
-          <div className="col-6 offset-3">
+          <div className="col-6 offset-3 ">
             <h2>Let’s Make it Happen Together!</h2>
             <p>
               There are still not enough friends to realize our goal of “a world
               where everyone can be absorbed in value creation.” If you like,
               why don’t you take a look at DEHA VIET NAM?
             </p>
+            <button style={{ margin: "auto" }} className="hmHr-but">
+              Contact us
+            </button>
           </div>
-
-          <button className="hmHr-but col-5 offset-5">Contact</button>
         </div>
       </div>
       <div className="row">
@@ -182,26 +183,26 @@ function CmcService() {
         </div>
         <div className="col-12 col-md-6 col-lg-3">
           <div className="circle">02</div>
-          <p className="p-for-title mt-3">Planning & Analysis</p>
+          <p className="p-for-title mt-3">Design</p>
           <ul className="ul-for-content pt-0 p-4">
-            <li>Discuss idea</li>
-            <li>Project analysis</li>
+            <li>Layout/Design concepts</li>
+            <li>Client approval</li>
           </ul>
         </div>
         <div className="col-12 col-md-6 col-lg-3">
           <div className="circle">03</div>
-          <p className="p-for-title mt-3">Planning & Analysis</p>
+          <p className="p-for-title mt-3">Evaluation & Development</p>
           <ul className="ul-for-content pt-0 p-4">
-            <li>Discuss idea</li>
-            <li>Project analysis</li>
+            <li>Site improvements</li>
+            <li>Concept Development/Coding</li>
           </ul>
         </div>
         <div className="col-12 col-md-6 col-lg-3">
           <div className="circle">04</div>
-          <p className="p-for-title mt-3">Planning & Analysis</p>
+          <p className="p-for-title mt-3">Client Feedback & Deployment</p>
           <ul className="ul-for-content pt-0 p-4">
-            <li>Discuss idea</li>
-            <li>Project analysis</li>
+            <li>Implementation of the feedback</li>
+            <li>Go live!</li>
           </ul>
         </div>
       </div>
@@ -223,11 +224,11 @@ function CmcService() {
           </div>
         </div>
       </div>
-      <div className="row m-0 pt-0 p-5">
+      <div className="row m-0 pt-0 p-5 pb-0">
         <div className="col-12 col-sm-5 pt-0 p-3">
           <img className="image-row3" src={image1} />
         </div>
-        <div className="col-12 col-sm-7 pt-0 p-5">
+        <div className="col-12 col-sm-7 pt-0 p-3 pb-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             Security
           </p>
@@ -239,16 +240,17 @@ function CmcService() {
           </p>
         </div>
       </div>
-      <div className="row pt-0 p-5">
-        <div className="col-12 col-sm-7 pt-0  p-5">
+      <div className="row pt-2 p-5 pb-0">
+        <div className="col-12 col-sm-7 pt-0  p-4 pb-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
-            Security
+            Scalability
           </p>
           <p style={{ fontSize: 20 }} className="section-service">
-            There are numerous security threats like malware, ransomware, and
-            other security vulnerabilities that are lurking around to break your
-            site. We have helped our clients in successfully countering any
-            malicious attacks and keep them at bay.
+            We spend enough time understanding your requirements and seeing
+            which CMS and features will accomplish what you need with effortless
+            ease. We focus on some elements such as SEO, payment gateways, to
+            name a few. We offer extensive scalability of your website and this
+            is handled with great care to avoid frustrations down the road.
           </p>
         </div>
         <div className="col-12 col-sm-5 pt-0 p-3">
@@ -579,8 +581,8 @@ function CmcService() {
         </div>
       </div>
       <div className="row">
-        <div className="col-5 offset-4 p-5">
-          <button className="but-sche">
+        <div className="col-6 offset-3 mt-5 mb-5">
+          <button style={{ margin: "auto" }} className="but-sche">
             Schedule time to talk
             <LoginOutlined
               style={{ position: "absolute", margin: 6, fontSize: 20 }}
@@ -590,7 +592,7 @@ function CmcService() {
       </div>
 
       <div className="row client p-5">
-        <div className="col-12 col-md-5 section-title-3">
+        <div className="col-12 col-md-5 section-title-3 pb-5">
           <p className="title">Our Clients</p>
           <p className="desc grad">Trusted by over 300+ clients</p>
           <p className="section-service">

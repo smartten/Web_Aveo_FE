@@ -1,0 +1,96 @@
+.footer-container{
+    width: 100%;
+    height: auto;
+    background-color: #0060AD;
+}
+
+.h1{
+    color: white;
+    font-size: 36px;
+    opacity: 0.95;
+
+}
+.footer-button{
+    margin-top: 30px;
+    height: 60px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0060AD;
+    font-size: 20px;
+    font-weight: 800px;
+    border: none;
+    transition-duration: 0.1s;	
+    float: right;
+
+}
+.footer-button:hover{
+    border: 6px solid #0060AD ;
+    background-color: #D9E7F3;
+}
+.footer-hr{
+    width:84%;
+     color:#388BE2;
+      height:0.5px;
+       align-items:center; 
+       margin-bottom: 2%;
+}
+.footer-headquarter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7px 110px 35px 100px;
+
+}
+.footer-headquarter-col1{
+    color: white;
+    p{
+        opacity: 0.95;
+    }
+}
+.footer-logo{
+    width: 130px;
+    height: 80px;
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2;
+}
+.footer-link:hover{
+    opacity: 1;
+    color: white;
+
+}
+hr{
+    color: white;
+}
+.hr-1{
+    margin: 70px 0 20px 110px;
+}
+.hr-2{
+    margin: -20px 0 25px 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+    /*-- Code cho màn hình vừa (Table) viết ở đây --*/
+}
+
+@media only screen and (max-width: 640px) {
+    /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
+    .footer-button{
+        float: none;
+        /* margin-left: 20%; */
+    }
+    .item{
+        text-align: center;
+    }
+    .h1{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+

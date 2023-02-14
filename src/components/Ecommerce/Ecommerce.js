@@ -17,11 +17,13 @@ function Ecommerce() {
   //   document.querySelector(".noidung_dropdown").classList.toggle("hienThi");
   // }
   return (
-    <div className="">
-      <div class="row cms p-0 m-0 pt-5">
-        <div class="col-12 m-0 p-5 mt-5 pt-5">
+    <div className="container-fluid px-0 overflow-hidden ">
+      <div class="row cms pt-5 px-2 pt-sm-5 m-sm-0">
+        <div class="col-12 mt-5 p-sm-5 mt-sm-5 pt-sm-5">
           <div>
-            <p className="cms-p m-0 p-0 mt-5 pt-5">Ecommerce Solutions</p>
+            <p className="cms-p mt-5 pt-5 pb-0 mt-sm-5 pt-sm-5">
+              Ecommerce Solutions
+            </p>
             <p className="cms-p-unlock">
               Fastest growing with your trusted e-commerce partner - from ideas
               to market success
@@ -45,9 +47,9 @@ function Ecommerce() {
         </div>
       </div>
 
-      <div className="row mt-0  m-5 pt-0 p-5 pb-0">
-        <div className="col-12 col-sm-6 pt-0 p-3"></div>
-        <div className="col-12 col-sm-6 pt-0 p-3 pb-0">
+      <div className="row mx-3 mt-sm-0  m-sm-5 p-sm-5 py-sm-0">
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3"></div>
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3 pb-sm-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             I have a business and want to launch an e-commerce site
           </p>
@@ -67,8 +69,8 @@ function Ecommerce() {
           </ul>
         </div>
       </div>
-      <div className="row mt-0 m-5 m-4 pt-0 p-5 pb-0">
-        <div className="col-12 col-sm-6 pt-0 p-3 pb-0">
+      <div className="row mx-3 mt-4 mt-sm-0  m-sm-5 p-sm-5 py-sm-0">
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3 pb-sm-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             I want to start my business with an e-commerce approach
           </p>
@@ -88,12 +90,12 @@ function Ecommerce() {
             <li>SEO and content strategy.</li>
           </ul>
         </div>
-        <div className="col-12 col-sm-6 pt-0 p-3"></div>
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3"></div>
       </div>
 
-      <div className="row mt-0  m-5 pt-0 p-5 pb-0">
-        <div className="col-12 col-sm-6 pt-0 p-3"></div>
-        <div className="col-12 col-sm-6 pt-0 p-3 pb-0">
+      <div className="row mx-3 mt-4 mt-sm-0  m-sm-5 p-sm-5 py-sm-0">
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3"></div>
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3 pb-sm-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             I want to optimize my e-commerce system
           </p>
@@ -113,8 +115,8 @@ function Ecommerce() {
           </ul>
         </div>
       </div>
-      <div className="row mt-0 m-5 m-4 pt-0 p-5 pb-0">
-        <div className="col-12 col-sm-6 pt-0 p-3 pb-0">
+      <div className="row mx-3 mt-4 mt-sm-0  m-sm-5 p-sm-5 py-sm-0">
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3 pb-sm-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             I want to migrate my e-commerce system to updated software and
             technology
@@ -135,12 +137,12 @@ function Ecommerce() {
             <li>SEO optimization.</li>
           </ul>
         </div>
-        <div className="col-12 col-sm-6 pt-0 p-3"></div>
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3"></div>
       </div>
 
-      <div className="row mt-0  m-5 pt-0 p-5 pb-0">
-        <div className="col-12 col-sm-6 pt-0 p-3"></div>
-        <div className="col-12 col-sm-6 pt-0 p-3 pb-0">
+      <div className="row mx-3 mt-4 mt-sm-0  m-sm-5 p-sm-5 py-sm-0">
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3"></div>
+        <div className="col-12 col-sm-6 p-0 pt-sm-0 p-sm-3 pb-sm-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             I want to apply omnichannel retail to my business
           </p>
@@ -160,10 +162,10 @@ function Ecommerce() {
         </div>
       </div>
 
-      <div className="row m-5 mb-0">
-        <div style={{ backgroundColor: "white" }} class="col-12 p-5">
+      <div className="row mt-5 mx-2 mb-0 m-sm-5 mb-sm-0">
+        <div style={{ backgroundColor: "white" }} class="col-12 p-sm-5">
           <div>
-            <p className="title-start pt-3">Our Ecommerce Services</p>
+            <p className="title-start pt-sm-3">Our Ecommerce Services</p>
             <p className="section-service">
               You’ll get to select from an entire range of ecommerce packages,
               software, and shopping cart systems that provide you with the best
@@ -176,10 +178,10 @@ function Ecommerce() {
         </div>
       </div>
 
-      <div className="row pt-0 p-5 mt-0 mb-0 m-4">
+      <div className="row my-3 mx-2 pt-sm-0 p-sm-5 my-sm-0 m-sm-4">
         <div className="col-12 col-md-6 col-lg-3">
           <img className="image-row2" src={image1} />
-          <p className="p-for-title text-align mt-3">Consultancy</p>
+          <p className="p-for-title text-align mt-3 mt-sm-3">Consultancy</p>
           <p className="p-for-content text-align">
             With many years of experience in developing e-commerce solutions, we
             have built a team of highly qualified experts who are always ready
@@ -189,7 +191,7 @@ function Ecommerce() {
         </div>
         <div className="col-12 col-md-6 col-lg-3">
           <img className="image-row2" src={image1} />
-          <p className="p-for-title text-align mt-3">Technology</p>
+          <p className="p-for-title text-align mt-3 mt-sm-3">Technology</p>
           <p className="p-for-content text-align">
             With more than 200 experienced engineers, we always improve
             technology to bring you the latest achievements. We can handle
@@ -199,7 +201,7 @@ function Ecommerce() {
         </div>
         <div className="col-12 col-md-6 col-lg-3">
           <img className="image-row2" src={image1} />
-          <p className="p-for-title text-align mt-3">Creative</p>
+          <p className="p-for-title text-align mt-3 mt-sm-3">Creative</p>
           <p className="p-for-content text-align">
             User experience is particularly important, we keep your e-commerce
             system up to date with the latest design trends, are user-friendly,
@@ -208,7 +210,9 @@ function Ecommerce() {
         </div>
         <div className="col-12 col-md-6 col-lg-3">
           <img className="image-row2" src={image1} />
-          <p className="p-for-title text-align mt-3">Managed services</p>
+          <p className="p-for-title text-align mt-3 mt-sm-3">
+            Managed services
+          </p>
           <p className="p-for-content text-align">
             Running an e-commerce system is tough, we help you operate and
             maintain it so you can focus on growing your business
@@ -234,11 +238,11 @@ function Ecommerce() {
           </div>
         </div>
       </div>
-      <div className="row m-5 p-3 pt-0 pb-0 mb-2 mt-2">
-        <div className="col-12 col-sm-6 p-5 pb-0 pt-0 ">
+      <div className="row m-sm-5 p-sm-3 py-sm-0 my-sm-2">
+        <div className="col-12 col-sm-6 p-sm-5 py-sm-0 ">
           <img className="image-row3" src={image1} />
         </div>
-        <div className="col-12 col-sm-6 p-5 pb-0 pt-0">
+        <div className="col-12 px-4 py-4 col-sm-6 p-sm-5 py-sm-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             Quality first approach
           </p>
@@ -251,8 +255,8 @@ function Ecommerce() {
         </div>
       </div>
 
-      <div className="row m-5 p-3 pt-0 pb-0 ">
-        <div className="col-12 col-sm-6 p-5 pb-0 pt-0">
+      <div className="row m-sm-5 p-sm-3 py-sm-0 mt-sm-4">
+        <div className="col-12 px-4 py-4 col-sm-6 p-sm-5 py-sm-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             Technical expertise
           </p>
@@ -265,16 +269,16 @@ function Ecommerce() {
             and multi-channel integration.
           </p>
         </div>
-        <div className="col-12 col-sm-6 p-5 pb-0 pt-0 ">
+        <div className="col-12 col-sm-6 p-sm-5 py-sm-0 ">
           <img className="image-row3" src={image1} />
         </div>
       </div>
 
-      <div className="row m-5 p-3 pt-0 pb-0 ">
-        <div className="col-12 col-sm-6 p-5 pb-0 pt-0 ">
+      <div className="row mt-5 m-sm-5 p-sm-3 py-sm-0 mt-sm-4">
+        <div className="col-12 col-sm-6 p-sm-5 py-sm-0 ">
           <img className="image-row3" src={image1} />
         </div>
-        <div className="col-12 col-sm-6 p-5 pb-0 pt-0">
+        <div className="col-12 px-4 py-4 col-sm-6 p-sm-5 py-sm-0">
           <p style={{ fontSize: 28 }} className="p-for-title">
             Up to date technology
           </p>
@@ -298,15 +302,16 @@ function Ecommerce() {
           </div>
         </div>
       </div>
-      <div className="row mt-5 pt-5">
+      <div className="row px-3 my-3 mt-sm-5 pt-sm-5">
         <div class="col-12 ">
           <div className="section-title-2 pt-5">
             <p className="desc grad">Frequently Asked Questions</p>
           </div>
         </div>
       </div>
-      <div className="row g-0 mt-5 m-5 mb-0">
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
+
+      <div className="row g-sm-0 my-sm-0 m-sm-5">
+        <div className="col-12 col-sm-6 m-0 py-0 p-5">
           <div
             onClick={() => {
               document
@@ -381,7 +386,7 @@ function Ecommerce() {
           </div>
         </div>
       </div>
-      <div className="row g-0 mt-0 m-5 mb-0">
+      <div className="row g-sm-0 my-sm-0 m-sm-5">
         <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
           <div
             onClick={() => {
@@ -457,7 +462,7 @@ function Ecommerce() {
           </div>
         </div>
       </div>
-      <div className="row g-0 mt-0 m-5 mb-0">
+      <div className="row g-sm-0 my-sm-0 m-sm-5">
         <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
           <div
             onClick={() => {
@@ -538,7 +543,7 @@ function Ecommerce() {
           </div>
         </div>
       </div>
-      <div className="row g-0 mt-0 m-5 mb-0">
+      <div className="row g-sm-0 my-sm-0 m-sm-5">
         <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
           <div
             onClick={() => {
@@ -616,7 +621,7 @@ function Ecommerce() {
         </div>
       </div>
       <div className="row">
-        <div className="col-6 offset-3 mt-5 mb-5">
+        <div className="col-sm-6 offset-sm-3 my-5 my-sm-5">
           <button style={{ margin: "auto" }} className="but-sche">
             Schedule time to talk
             <LoginOutlined

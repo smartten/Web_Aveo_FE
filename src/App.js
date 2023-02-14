@@ -9,9 +9,9 @@ import React, { useEffect } from "react";
 function App() {
   return (
     <>
-      <Headerr />
+      {/* <Headerr /> */}
       <Ecommerce />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

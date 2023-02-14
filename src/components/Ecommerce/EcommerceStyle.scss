@@ -1,6 +1,7 @@
 .cms {
     background-color: #F6F6F6;
     height: 700px;
+    // width: auto;
   }
 
 .cms-p{
@@ -303,4 +304,14 @@ p{
         display: inline-block;
         margin: 0;
     }
+}
+//mobie
+@media only screen and (max-width: 640px) {
+
+   
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /*-- Code cho màn hình vừa (Table) viết ở đây --*/
 }

@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Headerr />
-      <CmcService />
+      {/* <CmcService /> */}
       <Footer />
     </>
   );

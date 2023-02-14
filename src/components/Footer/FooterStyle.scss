@@ -1,26 +1,17 @@
 .footer-container{
     width: 100%;
-    height: 600px;
+    height: auto;
     background-color: #0060AD;
-    display: flex;
-    flex-direction: column;
 }
-.footer-enough{
-    padding: 50px 110px 35px 110px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* border: 1px solid black; */
-    height: 100px;
-}
+
 .h1{
     color: white;
     font-size: 36px;
+    opacity: 0.95;
 
 }
 .footer-button{
     margin-top: 30px;
-    align-items: center;
     height: 60px;
     width: 200px;
     font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +20,7 @@
     font-weight: 800px;
     border: none;
     transition-duration: 0.1s;	
+    float: right;
 
 }
 .footer-button:hover{
@@ -51,9 +43,9 @@
 }
 .footer-headquarter-col1{
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    p{
+        opacity: 0.95;
+    }
 }
 .footer-logo{
     width: 130px;
@@ -64,7 +56,9 @@
     color: white;
     opacity: 0.7;
     font-family: inherit;
-    margin-top: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2;
 }
 .footer-link:hover{
     opacity: 1;
@@ -73,12 +67,30 @@
 }
 hr{
     color: white;
-    width: 85%;
 }
 .hr-1{
     margin: 70px 0 20px 110px;
 }
 .hr-2{
     margin: -20px 0 25px 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+    /*-- Code cho màn hình vừa (Table) viết ở đây --*/
+}
+
+@media only screen and (max-width: 640px) {
+    /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
+    .footer-button{
+        float: none;
+        /* margin-left: 20%; */
+    }
+    .item{
+        text-align: center;
+    }
+    .h1{
+        text-align: center;
+        font-size: 25px;
+    }
 }
 

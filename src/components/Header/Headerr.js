@@ -7,6 +7,7 @@ import {
   YoutubeFilled,
   MailFilled,
   PhoneFilled,
+  AlignRightOutlined,
 } from "@ant-design/icons";
 
 window.onload = function () {
@@ -35,8 +36,6 @@ function Headerr() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 50) {
-        console.log("check scroll:", window.scrollY);
-
         document
           .getElementById("head-top")
           .classList.remove(
@@ -56,7 +55,13 @@ function Headerr() {
       }
     });
   }, []);
-  console.log("check nav:", nav);
+  const handleColMenu = () => {
+    var arrayMenu = document.getElementsByClassName("head-menu");
+    for (var i = 0; i < arrayMenu.length; i++) {
+      arrayMenu[i].style.display = "block";
+      // arrayMenu[i].style.flexDirection = "column";
+    }
+  };
   return (
     <>
       <div
@@ -75,12 +80,12 @@ function Headerr() {
                 TOP
               </a>
             </h4>
-            <div style={{ width: "66%" }}></div>
+            <div className="topcenter"></div>
             <div className="head-menu-icon">
               <FacebookFilled className="icon" />
               <YoutubeFilled className="icon" />
               <MailFilled className="icon" />
-              <PhoneFilled className="icon" />
+              <PhoneFilled id="phoneFilled" className="icon mx-2 mx-sm-0" />
               <h4 style={{ marginTop: 0 }} className="top-link">
                 (+84)-24-3200-4183
               </h4>
@@ -97,7 +102,16 @@ function Headerr() {
             id="navbar"
             className={nav ? "head-totall sticky" : "head-totall"}
           >
-            <img id="logo" src={logo} />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "flex-start",
+                flexDirection: "column",
+              }}
+            >
+              <img id="logo" src={logo} />
+              <div></div>
+            </div>
             <div className="head-menu">
               <div>
                 <a href="" class="link">
@@ -196,6 +210,13 @@ function Headerr() {
                 Contact
               </button>
             </div>
+            <div id="alignRightOutlined">
+              <AlignRightOutlined
+                onClick={handleColMenu}
+                className="alignRightOutlined m-4"
+              />
+            </div>
+
             <div className="triangle-bottomright"></div>
           </div>
         </div>

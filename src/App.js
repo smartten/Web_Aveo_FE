@@ -8,7 +8,20 @@ function App() {
   return (
     <>
       <Headerr />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       {/* <CmcService /> */}
+      <Footer />
+      <Footer />
       <Footer />
     </>
   );

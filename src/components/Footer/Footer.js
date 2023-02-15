@@ -78,27 +78,27 @@ function Footer() {
           <div className="footer-headquarter-col1 px-sm-5">
             <b style={{ fontFamily: "revert-layer", fontSize: 18 }}>Services</b>
             <br />
-            <a className="footer-link" href="">
+            <a className="footer-link" href="/web-design-and-development">
               Web design & development
             </a>
             <br />
-            <a className="footer-link" href="">
+            <a className="footer-link" href="/mobile-development">
               Mobile development
             </a>
             <br />
-            <a className="footer-link" href="">
+            <a className="footer-link" href="/engineering-and-maintenance">
               Engineering & Maintenance
             </a>
             <br />
-            <a className="footer-link" href="">
+            <a className="footer-link" href="/testing-service">
               Testing services
             </a>
             <br />
-            <a className="footer-link" href="">
+            <a className="footer-link" href="/integration-services">
               Integration services
             </a>
             <br />
-            <a className="footer-link" href="">
+            <a className="footer-link" href="/ecommerce-solutions">
               Ecommerce services
             </a>
           </div>

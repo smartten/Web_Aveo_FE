@@ -1,6 +1,7 @@
 .cms {
     background-color: #F6F6F6;
     height          : 700px;
+    // width: auto;
 }
 
 .cms-p {
@@ -31,6 +32,31 @@
 .section-service {
     font-size: 18px;
     color    : #60697B;
+}
+
+.section-service-ul {
+    padding            : 0;
+    margin             : 0;
+    list-style         : none;
+    list-style-position: initial;
+    list-style-image   : initial;
+    list-style-type    : none;
+
+    li {
+        background           : url(https://web.archive.org/web/20210804210032im_/https://deha-soft.com/wp-content/themes/deha-viet-nam/images/deha-arrow.png) no-repeat 0 12px !important;
+        background-image     : url(https://web.archive.org/web/20210804210032im_/https://deha-soft.com/wp-content/themes/deha-viet-nam/images/deha-arrow.png) !important;
+        background-position-x: 0px !important;
+        background-position-y: 12px !important;
+        background-size      : initial !important;
+        background-attachment: initial !important;
+        background-origin    : initial !important;
+        background-clip      : initial !important;
+        background-color     : initial !important;
+        padding-left         : 10px;
+        font-size            : 19px;
+        color                : #60697B;
+        opacity              : 0.95;
+    }
 }
 
 p {
@@ -162,13 +188,13 @@ p {
     overflow             : hidden;
 
     h2 {
-        font-size  : 25px;
+        font-size  : 23px;
         font-style : italic;
         color      : white;
         font-weight: 400;
         position   : relative;
         z-index    : 2;
-        opacity    : 0.9;
+        opacity    : 0.95;
     }
 }
 
@@ -213,11 +239,10 @@ p {
     text-align: center;
 
     .title {
-        font-size  : 27px;
-        color      : #606060;
-        font-weight: 300;
-        margin     : 0;
-
+        font-size     : 27px;
+        color         : #606060;
+        // font-weight: 300;
+        margin        : 0;
     }
 
     .desc {
@@ -225,6 +250,7 @@ p {
         font-weight: 800;
         color      : #0060ad;
         display    : inline-block;
+        line-height: 1.2;
     }
 }
 

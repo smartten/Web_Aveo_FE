@@ -24,6 +24,7 @@ function Enterprise() {
         "ESM-Tools are a software developed with the aim to unify model infrastructure, giving a common framework for downloading, compiling, running and organizing coupled or standalone models.",
     },
     {
+      //   key: 1,
       question: "ESM vs. ITSM",
       answer:
         "Enterprise service management is a term used to describe the use of service-oriented processes and tools across and organization (hence the use of “enterprise” as a qualifier in the name). ESM is meant to be a broad term (like ERP, EAM and CRM). This is a contrast to IT Service Management (ITSM) which is only concerned with the management of IT services. While the intended scope of ESM and ITSM are different, they share common roots (usually ITIL) and are often implemented using a common set of concepts, processes and tools within the organization. Many companies leverage ITIL domains and process areas as the foundation for their Enterprise Service Management operations and ITSM platforms to provide technology and information support for ESM processes",

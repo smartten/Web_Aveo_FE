@@ -429,3 +429,171 @@
 
     }
 }
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+            transform: translate3d(0, 0, 0);
+
+            .slider-item {
+                background-size    : cover;
+                background-repeat  : no-repeat;
+                background-position: right top;
+                display            : flex;
+                align-items        : center;
+                background-image   : url('https://web.archive.org/web/20210920042216im_/https://deha-soft.com/wp-content/uploads/2021/07/banner.jpg');
+                height             : 100vh;
+                min-height         : 1px;
+                float              : left;
+                width              : 1000px !important;
+                background-color   : #f1f1f1;
+
+                .container {
+                    position: relative;
+
+                    .text {
+                        overflow      : hidden;
+                        // transform  : translateY(80px);
+
+                        .text-title {
+                            color            : #696969;
+                            font-size        : 35px;
+                            line-height      : 38px;
+                            font-weight      : 800;
+                            text-transform   : uppercase;
+                            // margin        : 0px;
+                        }
+
+                        .sub-text {
+                            color      : #696969;
+                            font-size  : 20px;
+                            line-height: 38px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* PC: with >= 1024px  */
+
+
+
+// Mobile
+@media only screen and (max-width: 46.1875em) {
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+            transform: translate3d(0, 0, 0);
+
+            .slider-item {
+                background-size    : cover;
+                background-repeat  : no-repeat;
+                background-position: right top;
+                display            : flex;
+                align-items        : center;
+                background-image   : url('https://web.archive.org/web/20210920042216im_/https://deha-soft.com/wp-content/uploads/2021/07/banner.jpg');
+                height             : 100vh;
+                min-height         : 1px;
+                float              : left;
+                width              : 390px !important;
+                background-color   : #f1f1f1;
+
+                .container {
+                    position: relative;
+
+                    .text {
+                        overflow      : hidden;
+                        // transform  : translateY(80px);
+
+                        .text-title {
+                            color            : #696969;
+                            font-size        : 35px;
+                            line-height      : 38px;
+                            font-weight      : 800;
+                            text-transform   : uppercase;
+                            // margin        : 0px;
+                        }
+
+                        .sub-text {
+                            color      : #696969;
+                            font-size  : 20px;
+                            line-height: 38px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-feature-1 {
+        width        : 100%;
+        display      : flex;
+        // flex-wrap: wrap;
+        border-bottom: 1px solid #e3dcdc;
+
+        .col-6 {
+            width: 100% !important;
+
+            img {
+                display: none !important;
+            }
+        }
+
+        .title {
+            font-size  : 30px;
+            margin-left: 20px;
+            font-weight: 700;
+        }
+
+        .text-content {
+            margin-left: 20px;
+            font-size  : 18px;
+
+        }
+    }
+
+    .collapse-questions {
+        align-items: center;
+
+        .faq-container {
+            display  : flex;
+            width    : 100%;
+            flex-wrap: wrap;
+
+            .row-item {
+                flex         : 100% 1 !important;
+                padding-right: 30px;
+
+                .faq-question {
+                    display    : flex;
+                    align-items: center;
+
+                    .question-content {
+                        flex: 95%;
+
+                        .text-color {
+                            color: blue;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+}

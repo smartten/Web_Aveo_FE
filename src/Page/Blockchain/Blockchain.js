@@ -300,7 +300,7 @@ function Blockchain() {
             <div className="feature-img col-6">
               <img
                 src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%" }}
+                style={{ width: "100%", height: "100%" }}
               />
             </div>
             <div className="feature-content col-6">
@@ -322,7 +322,7 @@ function Blockchain() {
             <div className="feature-img col-6">
               <img
                 src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%" }}
+                style={{ width: "100%", height: "100%" }}
               />
             </div>
           </section>
@@ -330,7 +330,7 @@ function Blockchain() {
             <div className="feature-img col-6">
               <img
                 src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%" }}
+                style={{ width: "100%", height: "100%" }}
               />
             </div>
             <div className="feature-content col-6">

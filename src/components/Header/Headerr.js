@@ -56,11 +56,14 @@ function Headerr() {
     });
   }, []);
   const handleColMenu = () => {
-    var arrayMenu = document.getElementsByClassName("head-menu");
-    for (var i = 0; i < arrayMenu.length; i++) {
-      arrayMenu[i].style.display = "block";
-      // arrayMenu[i].style.flexDirection = "column";
-    }
+    var arrayMenu = document
+      .getElementsByClassName("head-menu")
+      .classList.toggle("dislayBlock");
+    // console.log("check:", arrayMenu);
+    // for (var i = 0; i < arrayMenu.length; i++) {
+    //   arrayMenu[i].style.display = "block";
+    //   // arrayMenu[i].style.flexDirection = "column";
+    // }
   };
   return (
     <>

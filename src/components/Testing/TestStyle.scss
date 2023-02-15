@@ -318,3 +318,38 @@ p {
         margin     : 0;
     }
 }
+
+.our-clients {
+    background-color: #d8d8d8;
+    padding-top     : 40px;
+    padding-bottom  : 40px;
+
+    .container {
+        position: relative;
+
+        .row {
+            height: 100% !important;
+        }
+
+        .title {
+
+            .text-v1 {
+                font-size: 35px !important;
+            }
+
+            .text-v2 {
+                font-size              : 30px !important;
+                font-weight            : 600;
+                color                  : #0060ad;
+                display                : inline-block;
+                background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .text-v3 {
+                font-size: 25px !important;
+            }
+        }
+    }
+}

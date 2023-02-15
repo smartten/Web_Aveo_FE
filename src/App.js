@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer.js";
 import CmcService from "./components/CMC_Service/CmcService.js";
 import Testing from "./components/Testing/Testing";
 import ServiceWeb from "./Page/Service-Web/ServiceWeb";
+import Ecommerce from "./components/Ecommerce/Ecommerce";
 import ServiceMobile from "./Page/Service-Mobile/ServiceMobile";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import ServiceEngineering from "./Page/Service-Engineering/ServiceEngineering";
@@ -24,10 +25,11 @@ function App() {
           element={<ServiceEngineering />}
         />
         <Route path="/integration-services" element={<Integration />} />
-        <Route path="/blockchain" element={<Blockchain />} />
-        <Route path="/enterprise" element={<Enterprise />} />
+        <Route path="/blockchain-service" element={<Blockchain />} />
+        <Route path="/enterprise-service" element={<Enterprise />} />
         <Route path="/testing-service" element={<Testing />} />
         <Route path="/cms-service" element={<CmcService />} />
+        <Route path="/ecommerce-solutions" element={<Ecommerce />} />
       </Routes>
       {/* <CmcService /> */}
       <Footer />

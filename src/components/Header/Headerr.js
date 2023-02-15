@@ -187,7 +187,7 @@ function Headerr() {
                     </a>
                   </div>
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="/blockchain-service" class="link-drop">
                       Blockchain services
                     </a>
                   </div>
@@ -204,7 +204,7 @@ function Headerr() {
                     </a>
                   </div>
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="/enterprise-service" class="link-drop">
                       Enterprise Services
                     </a>
                   </div>

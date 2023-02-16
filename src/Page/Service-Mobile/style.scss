@@ -608,6 +608,34 @@
         }
     }
 
+    .our-approach {
+        .container {
+            .c4-item {
+                .item {
+                    .text-center {
+                        .number {
+                            // float: left !important;
+                        }
+                    }
+
+                    .title {
+                        float: left;
+                    }
+
+                    .list {
+                        ul {
+                            float: left !important;
+
+                            li {
+                                float: left !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .our-clients {
         background-color: #d8d8d8;
         padding-top     : 40px;

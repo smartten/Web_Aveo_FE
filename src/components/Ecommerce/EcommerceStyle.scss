@@ -353,18 +353,14 @@ p {
     .container {
         position: relative;
 
-        .row {
-            height: 100% !important;
-        }
-
         .title {
 
             .text-v1 {
-                font-size: 25px !important;
+                font-size: 32px;
             }
 
             .text-v2 {
-                font-size              : 20px !important;
+                font-size              : 30px;
                 font-weight            : 600;
                 color                  : #0060ad;
                 display                : inline-block;
@@ -374,7 +370,7 @@ p {
             }
 
             .text-v3 {
-                font-size: 15px !important;
+                font-size: 20px;
             }
         }
     }

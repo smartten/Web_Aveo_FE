@@ -20,7 +20,7 @@ function Testing() {
     <div className="">
       <div class="row cms p-0 m-0 pt-5">
         <div class="col-12 m-0 p-5 mt-5 pt-5">
-          <div>
+          <div style={{ marginTop: "15%" }}>
             <p className="cms-p m-0 p-0 mt-5 pt-5">Testing Services</p>
             <p className="cms-p-unlock">
               Improve test coverage and decrease costs by assessing processes,
@@ -86,7 +86,7 @@ function Testing() {
       </div>
       <div className="row">
         <div className="col-12 hmHr p-5">
-          <div className="col-6 offset-3 ">
+          <div className="container">
             <h2>Let’s Make it Happen Together!</h2>
             <p>
               There are still not enough friends to realize our goal of “a world
@@ -527,17 +527,6 @@ function Testing() {
             />
           </button>
         </div>
-      </div>
-
-      <div className="row client p-5">
-        <div className="col-12 col-md-5 section-title-3 pb-5">
-          <p className="title">Our Clients</p>
-          <p className="desc grad">Trusted by over 300+ clients</p>
-          <p className="section-service">
-            We bring solutions to make life easier for our customers
-          </p>
-        </div>
-        <div className="col-12 col-md-7"></div>
       </div>
       <section className="our-clients">
         <div className="container">

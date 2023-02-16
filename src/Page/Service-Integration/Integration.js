@@ -1,9 +1,15 @@
-import "./style.scss";
+import "./IntergStyle.scss";
 import { Collapse } from "antd";
 import {
   ArrowRightOutlined,
   CaretDownOutlined,
   CaretUpOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
 } from "@ant-design/icons";
 import React, { useState } from "react";
 const { Panel } = Collapse;
@@ -105,10 +111,11 @@ function Integration() {
               <div className="slide-content">
                 <div className="text">
                   <p className="text-title">
-                    <span>Reliable system integration</span>
+                    <span>Reliable system</span>
                   </p>
+                  <p className="text-title">integration</p>
                   <p className="sub-text">
-                    Leads you to combine software products and technical
+                    Leads you to combine software products and technical <br />
                     resources and make it a seamlessly integrated solution.
                   </p>
                 </div>
@@ -129,12 +136,7 @@ function Integration() {
             </p>
             <div className="row c4-item w-100">
               <div className="col-md-6 col-lg-3 item">
-                <div className="text-center">
-                  <img
-                    src="https://www.propatel.com/wp-content/uploads/2019/09/coding-and-testing-programming-of-software.jpg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
+                <div className="text-center"></div>
                 <div className="title">System integration consulting</div>
                 <div className="desc">
                   We are a system integration company with strong expertise in
@@ -145,12 +147,7 @@ function Integration() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-3 item">
-                <div className="text-center">
-                  <img
-                    src="https://www.propatel.com/wp-content/uploads/2019/09/coding-and-testing-programming-of-software.jpg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
+                <div className="text-center"></div>
                 <div className="title">Service-oriented architecture</div>
                 <div className="desc">
                   Align your business objectives with your company’s IT
@@ -162,12 +159,7 @@ function Integration() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-3 item">
-                <div className="text-center">
-                  <img
-                    src="https://www.propatel.com/wp-content/uploads/2019/09/coding-and-testing-programming-of-software.jpg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
+                <div className="text-center"></div>
                 <div className="title">Data integration</div>
                 <div className="desc">
                   We help businesses organize their data across disparate data
@@ -178,12 +170,7 @@ function Integration() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-3 item">
-                <div className="text-center">
-                  <img
-                    src="https://www.propatel.com/wp-content/uploads/2019/09/coding-and-testing-programming-of-software.jpg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
+                <div className="text-center"></div>
                 <div className="title">API integration</div>
                 <div className="desc">
                   Align multiple systems using API integration services. We
@@ -307,108 +294,90 @@ function Integration() {
           <p className="title">The benefit of</p>
           <p className="sub-title">PARTNERING WITH DEHA</p>
         </section>
-        <div className="container">
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+        <section className="container benefit ">
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <BulbOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Expert Advice</b>
+                <p>
+                  We are a leading digital strategy consultant. We can offer an
+                  unique and consultative perspective to your digital
+                  transformation strategy in general and software engineering in
+                  particular.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">Efficient Integration</p>
-              <p className="text-content">
-                Your integration will be simplified and amplify efficiency. We
-                work to decrease the development effort from your side while
-                still executing a custom integration solution.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SelectOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Quality-Focused Solutions</b>
+                <p>
+                  We are using cutting-edge technologies and tools in software
+                  development process to bring the highest software development
+                  quality, for example automation testing, RPA...
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Optimize value</p>
-              <p className="text-content">
-                Identify ways to maximize the potential of your platforms before
-                you merge them. Our experts assist you in understanding how to
-                build on existing technologies to add value and compete in the
-                marketplace.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <UserOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Great Talent Pool</b>
+                <p>
+                  Our team has 260+ experienced developers with in-depth skills
+                  & knowledge in software building and powerful technologies
+                  stacks.
+                </p>
+              </div>
             </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+          </div>
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PieChartOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Experience</b>
+                <p>
+                  We are strategic partner of big corporations such as Mitsui
+                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                  Hospital...and delivered 1,000+ systems for enterprise.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SwitcherOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>All-in-One Provider</b>
+                <p>
+                  Our services are comprehensive from consulting, design,
+                  development, integration, deployment to system maintenance and
+                  much mores.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">Protect your data</p>
-              <p className="text-content">
-                Preserve your data not leaked or lost during the integration
-                process. We use the encrypted network and leading security
-                technology to ensure your secure migration.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PaperClipOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Agile Mindset</b>
+                <p>
+                  An agile mindset is about creating and responding to change in
+                  uncertain and turbulent environments.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Risk management</p>
-              <p className="text-content">
-                We analyze each platform and future technology to give you a
-                panorama picture of its integration. From that point, your team
-                can prepare the potential risks and how to overcome them.
-              </p>
-            </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
-            </div>
-            <div className="feature-content col-6">
-              <p className="title">Strong expertise</p>
-              <p className="text-content">
-                For more than six years, we have been delivering enterprise
-                system integration services to small and million-dollar
-                businesses. Thus, our team can provide you with professional
-                consulting on your integration project..
-              </p>
-            </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Free strategy</p>
-              <p className="text-content">
-                We have a good option for those having no idea how to start an
-                integration project. The session with our experts can help you
-                get a step-by-step strategy for your project development for
-                free. You will get many useful materials to kick off your
-                project.
-              </p>
-            </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
 
         <section className="asked-questions container">
           <h2 className="text-title-2">Frequently Asked Questions</h2>
@@ -461,85 +430,6 @@ function Integration() {
           <a href="#" className="btn-schedule">
             Schedule time to talk <ArrowRightOutlined />
           </a>
-        </section>
-        <section className="our-clients">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <div className="title">
-                  <p className="text-v1">Our Clients</p>
-                  <p className="text-v2">Trusted by over 300+ clients</p>
-                  <p className="text-v3">
-                    We bring solutions to make life easier for our customers.
-                  </p>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="row">
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </main>
     </div>

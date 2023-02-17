@@ -21,6 +21,7 @@
     }
 
 }
+<<<<<<< HEAD
 
 .head-totall {
     height             : 100px;
@@ -35,6 +36,20 @@
     /* box-shadow      : 0px 12px 10px -15px #111;  */
     transition-duration: 0.5s;
 
+=======
+.head-totall{
+    height: 100px; 
+    width: 100%; 
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    // box-shadow: 0 1px 5px  rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255,0);
+    /* box-shadow: 0px 12px 10px -15px #111;  */
+    transition-duration: 0.5s;	
+>>>>>>> luong
 
 }
 
@@ -44,12 +59,21 @@
     width              : 100%;
     transition-duration: 0.5s;
 }
+<<<<<<< HEAD
 
 .logo {
     display        : block;
     margin         : 20px 0 10px 10px;
     animation      : fadeIn 2s;
     justify-content: flex-start; ///////////////////////////////////
+=======
+.logo{
+    border-radius: 10px;
+    display: block;
+    margin:20px 0 10px 20px;
+    animation: fadeIn 2s;
+    justify-content: flex-start;///////////////////////////////////
+>>>>>>> luong
 }
 
 #id {
@@ -95,11 +119,20 @@
 
 .link {
     text-decoration: none;
+<<<<<<< HEAD
     color          : #616161;
     font-size      : 20px;
     margin-right   : 25px;
     font-weight    : 600;
     display        : none;
+=======
+    color: white;
+    font-size: 20px;
+    margin-right: 40px;
+    font-weight: 300;
+    display: none;
+    //////////////////////////
+>>>>>>> luong
 }
 
 .link-drop {
@@ -143,6 +176,7 @@
 }
 
 .dropdown-content {
+<<<<<<< HEAD
     margin-top      : 20px;
     margin-left     : -18px;
     display         : none;
@@ -153,6 +187,19 @@
     align-items     : center;
     box-shadow      : 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
+=======
+    margin-top: 20px;
+    margin-left: -18px;
+    display: none;
+    position: absolute;
+    // background-color: white;
+    background-color: rgb(255, 255, 255,0.7);
+    min-width: 250px;
+    min-height: 60px;
+    align-items: center;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+  }
+>>>>>>> luong
 
 .dropdown:hover .dropdown-content {
     display          : block;
@@ -172,6 +219,7 @@
     }
 }
 
+<<<<<<< HEAD
 .div-for-a {
     background-color: white;
     height          : 38px;
@@ -182,6 +230,19 @@
 
 .div-for-a:hover {
     background-color: rgb(226, 240, 252);
+=======
+.div-for-a{
+    background-color: rgb(255, 255, 255,0);
+    // background-color: white;
+    height: 38px; 
+    padding-top: 5px;
+    margin: 14px 10px 14px 10px;
+    border-radius: 5px;
+}
+.div-for-a:hover{
+    // background-color: rgb(226, 240, 252);
+    background-color: rgb(255, 255, 255,1);
+>>>>>>> luong
 }
 
 .dropdown-submenu {
@@ -189,6 +250,7 @@
 }
 
 .dropdown-content-submenu {
+<<<<<<< HEAD
     margin-top      : -35px;
     margin-left     : 200px;
     display         : none;
@@ -199,6 +261,19 @@
     align-items     : center;
     box-shadow      : 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
+=======
+    margin-top: -35px;
+    margin-left: 200px;
+    display: none;
+    position: absolute;
+    // background-color: white;
+    background-color: rgb(255, 255, 255,0.9);
+    min-width: 250px;
+    min-height: 60px;
+    align-items: center;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+  }
+>>>>>>> luong
 
 .dropdown-submenu:hover .dropdown-content-submenu {
     display          : block;
@@ -312,7 +387,14 @@
 @media only screen and (max-width: 1024px) {
 
     /*-- Code cho màn hình vừa (Table) viết ở đây --*/
+<<<<<<< HEAD
     .head-menu {
+=======
+    // .head-totall{
+    //     background-color: white;
+    // }
+    .head-menu{
+>>>>>>> luong
         display: none;
         padding-top: 100px;
         flex-direction: column;
@@ -321,9 +403,14 @@
     #alignRightOutlined {
         display: block;
     }
+<<<<<<< HEAD
 
     .alignRightOutlined {
         color: #0060AD;
+=======
+    .alignRightOutlined{
+        color: white;
+>>>>>>> luong
         font-size: 40px;
         cursor: pointer;
 
@@ -341,8 +428,14 @@
         height: auto;
 
     }
+<<<<<<< HEAD
 
     .link {
+=======
+    .link{
+        color: #717171;
+        font-weight: 400;
+>>>>>>> luong
         margin-bottom: 25px;
     }
 

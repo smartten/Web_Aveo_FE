@@ -13,17 +13,13 @@ import Enterprise from "./Page/Enterprise/Enterprise";
 import Home from "./components/Home/Home.js";
 
 import React, { useEffect } from "react";
-<<<<<<< HEAD
 import Headerr from "./components/Header/Headerr.js";
-=======
 import Contact from "./Page/ContactUs/Contact.js";
->>>>>>> hieu_15/02
 
 function App() {
   return (
     <div className="App">
       <Headerr />
-      <img src={logo} />
       <Routes>
         <Route path="/web-design-and-development" element={<ServiceWeb />} />
         <Route path="/mobile-development" element={<ServiceMobile />} />

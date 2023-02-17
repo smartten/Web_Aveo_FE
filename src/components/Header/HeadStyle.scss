@@ -21,6 +21,7 @@
     }
 
 }
+<<<<<<< HEAD
 
 .head-totall {
     height             : 100px;
@@ -34,6 +35,20 @@
     background-color   : rgb(255, 255, 255, 0);
     /* box-shadow      : 0px 12px 10px -15px #111;  */
     transition-duration: 0.5s;
+=======
+.head-totall{
+    height: 100px; 
+    width: 100%; 
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    // box-shadow: 0 1px 5px  rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0);
+    /* box-shadow: 0px 12px 10px -15px #111;  */
+    transition-duration: 0.5s;	
+>>>>>>> luong
 
 }
 
@@ -43,6 +58,7 @@
     width              : 100%;
     transition-duration: 0.5s;
 }
+<<<<<<< HEAD
 
 .logo {
     border-radius  : 10px;
@@ -50,6 +66,20 @@
     margin         : 20px 0 10px 20px;
     animation      : fadeIn 2s;
     justify-content: flex-start;
+=======
+.sizeLogo{
+    img{
+        width: 90px;
+        height: 90px;
+        margin:-5px 0px 0px 40px;
+    }
+}
+.logo{
+    // padding: 10px;
+    display: block;
+    animation: fadeIn 2s;
+    justify-content: flex-start;///////////////////////////////////
+>>>>>>> luong
 }
 
 #id {
@@ -95,11 +125,19 @@
 
 .link {
     text-decoration: none;
+<<<<<<< HEAD
     color          : white;
     font-size      : 20px;
     margin-right   : 40px;
     font-weight    : 300;
     display        : none;
+=======
+    color: #616161;
+    font-size: 19px;
+    margin-right: 40px;
+    font-weight: 300;
+    display: none;
+>>>>>>> luong
 }
 
 .link-drop {
@@ -120,6 +158,7 @@
 }
 
 .header-but {
+<<<<<<< HEAD
     background-color      : #0161AD;
     border                : none;
     color                 : white;
@@ -132,11 +171,24 @@
     text-decoration       : none;
     padding               : 10px 40px;
     // display            : none;
+=======
+    background-color   : #0161AD;
+    border             : none;
+    color              : white;
+    width              : 150px;
+    height             : 50px;
+    font-size          : 18px;
+    font-weight        : 500;
+    margin-top         : -10px;
+    transition-duration: 0.1s;
+    display            : none;
+    border-radius: 10px;
+>>>>>>> luong
 }
 
 .header-but:hover {
     background-color: white;
-    border          : 4px solid #0161AD;
+    border          : 2px solid #0161AD;
     color           : #0161AD;
 }
 
@@ -145,6 +197,7 @@
 }
 
 .dropdown-content {
+<<<<<<< HEAD
     margin-top         : 20px;
     margin-left        : -18px;
     display            : none;
@@ -156,6 +209,19 @@
     align-items        : center;
     box-shadow         : 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
+=======
+    margin-top: 20px;
+    margin-left: -18px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    // background-color: rgb(255, 255, 255,0.7);
+    min-width: 250px;
+    min-height: 60px;
+    align-items: center;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+  }
+>>>>>>> luong
 
 .dropdown:hover .dropdown-content {
     display          : block;
@@ -175,6 +241,7 @@
     }
 }
 
+<<<<<<< HEAD
 .div-for-a {
     background-color   : rgb(255, 255, 255, 0);
     // background-color: white;
@@ -187,13 +254,25 @@
 .div-for-a:hover {
     // background-color: rgb(226, 240, 252);
     background-color: rgb(255, 255, 255, 1);
+=======
+.div-for-a{
+    background-color: rgb(255, 255, 255,0);
+    height: 38px; 
+    padding-top: 5px;
+    margin: 14px 10px 14px 10px;
+    border-radius: 5px;
+}
+.div-for-a:hover{
+    // background-color: rgb(255, 255, 255,1);
+    background-color: rgb(237, 243, 250);
+>>>>>>> luong
 }
 
 .dropdown-submenu {
     position: relative;
-}
-
+  }
 .dropdown-content-submenu {
+<<<<<<< HEAD
     margin-top         : -35px;
     margin-left        : 200px;
     display            : none;
@@ -205,6 +284,19 @@
     align-items        : center;
     box-shadow         : 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
+=======
+    margin-top: -35px;
+    margin-left: 200px;
+    display: none;
+    position: absolute;
+    // background-color: rgb(255, 255, 255,0.9);
+    background-color: white;
+    min-width: 250px;
+    min-height: 60px;
+    align-items: center;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+  }
+>>>>>>> luong
 
 .dropdown-submenu:hover .dropdown-content-submenu {
     display          : block;
@@ -321,9 +413,95 @@
     // .head-totall{
     //     background-color: white;
     // }
+<<<<<<< HEAD
     .head-menu {
         display       : none;
         padding-top   : 100px;
+=======
+    .head-menu{
+        display: none;
+        padding: 0px 0px 15px 15px;
+        overflow-y: scroll;
+        height: 400px;
+        margin-bottom: 30px;
+        // background-color: white;
+    }
+    #alignRightOutlined{
+        display: block;
+    }
+    .alignRightOutlined{
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+
+    }
+    .head-menu-icon{
+        width: 40%;
+    }
+    .head-top .topcenter {
+        width: 40%;
+    }
+    .head-totall{
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .link{
+        color: #717171;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    .header-but{
+        margin: 25px 0px 25px 0px;
+    }
+    .dropdown-content{
+        width: 20%;
+        z-index: 10;
+        position: relative;
+        display: block;
+        margin-top: -20px;
+        // margin:-10px 10px 10px 40%;
+        padding: 1px 0 1px 0;
+        text-align: left;
+        // display: flex;
+        align-items:start ;
+        box-shadow: 0 0 0 0;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        animation:none;
+        -webkit-animation:none;
+}
+.dropdown-content-submenu {
+    display: block;
+    box-shadow: 0 0 0 0;
+    margin: 10px 0px 0 0;
+    position: static;
+  }
+  #dropdown-submenu{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+.dropdown-submenu:hover .dropdown-content-submenu {display: block;
+    animation:none;
+    -webkit-animation:none;
+}
+}
+
+
+@media (min-width: 1024px) and  (max-width: 1199.98px) { 
+    .head-menu-icon{
+        width: 30%;
+    }
+    .head-top .topcenter {
+        width: 50%;
+    }
+
+    .head-menu{
+        display: none;
+        padding-top: 100px;
+>>>>>>> luong
         flex-direction: column;
     }
 
@@ -332,7 +510,11 @@
     }
 
     .alignRightOutlined {
+<<<<<<< HEAD
         color    : white;
+=======
+        color: #0060AD;
+>>>>>>> luong
         font-size: 40px;
         cursor   : pointer;
 
@@ -352,8 +534,11 @@
     }
 
     .link {
+<<<<<<< HEAD
         color        : #717171;
         font-weight  : 400;
+=======
+>>>>>>> luong
         margin-bottom: 25px;
     }
 
@@ -361,9 +546,14 @@
         margin: 25px 0px 25px 0px;
     }
 
+<<<<<<< HEAD
     .dropdown-content {}
+=======
+    }
+ }
+>>>>>>> luong
 
-    @media only screen and (max-width: 767.98px) {
+ @media only screen and (max-width: 767.98px) {
         .head-menu-icon {
             width: 50%;
         }
@@ -408,10 +598,13 @@
         }
     }
 
+<<<<<<< HEAD
     @media (min-width: 1024px) and (max-width: 1199.98px) {
         .head-menu-icon {}
+=======
+>>>>>>> luong
 
-        @media (min-width: 1024px) and (max-width: 1199.98px) {
+@media (min-width: 1024px) and (max-width: 1199.98px) {
             .head-menu-icon {
                 width: 30%;
             }
@@ -459,6 +652,7 @@
                 align-items: start;
             }
         }
+<<<<<<< HEAD
 
         @media only screen and (max-width: 767.98px) {
             .head-menu-icon {
@@ -469,10 +663,20 @@
                 width: 20%;
             }
 
+=======
+       
+@media only screen and (max-width: 767.98px) {
+        .head-menu-icon {
+            width: 50%;
+>>>>>>> luong
         }
+        .head-top .topcenter {
+            width: 20%;
+        }
+
     }
 
-    @media only screen and (max-width: 648px) {
+@media only screen and (max-width: 648px) {
 
         /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
         .head-menu {
@@ -500,4 +704,3 @@
             font-size: 16px;
         }
     }
-}

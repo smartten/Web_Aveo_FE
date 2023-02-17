@@ -313,8 +313,8 @@
 
     /*-- Code cho màn hình vừa (Table) viết ở đây --*/
     .head-menu {
-        display: none;
-        padding-top: 100px;
+        display       : none;
+        padding-top   : 100px;
         flex-direction: column;
     }
 
@@ -323,9 +323,9 @@
     }
 
     .alignRightOutlined {
-        color: #0060AD;
+        color    : #0060AD;
         font-size: 40px;
-        cursor: pointer;
+        cursor   : pointer;
 
     }
 
@@ -349,9 +349,8 @@
     .header-but {
         margin: 25px 0px 25px 0px;
     }
-    .dropdown-content {
 
-    }
+    .dropdown-content {}
 
     @media only screen and (max-width: 767.98px) {
         .head-menu-icon {
@@ -359,44 +358,47 @@
         }
 
         .head-top .topcenter {
-            width: 20%;
-            z-index: 10;
-            position: relative;
-            display: block;
-            margin-top: -20px;
+            width      : 20%;
+            z-index    : 10;
+            position   : relative;
+            display    : block;
+            margin-top : -20px;
             // margin:-10px 10px 10px 40%;
-            padding: 1px 0 1px 0;
-            text-align: left;
+            padding    : 1px 0 1px 0;
+            text-align : left;
             // display: flex;
             align-items: start;
-            box-shadow: 0 0 0 0;
+            box-shadow : 0 0 0 0;
         }
+
         .dropdown:hover .dropdown-content {
-            display: block;
-            animation: none;
+            display          : block;
+            animation        : none;
             -webkit-animation: none;
         }
+
         .dropdown-content-submenu {
-            display: block;
+            display   : block;
             box-shadow: 0 0 0 0;
-            margin: 10px 0px 0 0;
-            position: static;
+            margin    : 10px 0px 0 0;
+            position  : static;
         }
+
         #dropdown-submenu {
-            display: flex;
+            display       : flex;
             flex-direction: column;
-            height: auto;
+            height        : auto;
         }
+
         .dropdown-submenu:hover .dropdown-content-submenu {
-            display: block;
-            animation: none;
+            display          : block;
+            animation        : none;
             -webkit-animation: none;
         }
     }
 
     @media (min-width: 1024px) and (max-width: 1199.98px) {
-        .head-menu-icon {
-        }
+        .head-menu-icon {}
 
         @media (min-width: 1024px) and (max-width: 1199.98px) {
             .head-menu-icon {
@@ -408,42 +410,50 @@
             }
 
             .head-menu {
-                display: none;
-                padding-top: 100px;
+                display       : none;
+                padding-top   : 100px;
                 flex-direction: column;
-                text-align: center;
+                text-align    : center;
             }
+
             #alignRightOutlined {
                 display: block;
             }
+
             .alignRightOutlined {
-                color: #0060AD;
+                color    : #0060AD;
                 font-size: 40px;
-                cursor: pointer;
+                cursor   : pointer;
             }
+
             .head-totall {
                 height: auto;
             }
+
             .link {
                 margin-bottom: 25px;
             }
+
             .header-but {
                 margin: 25px 5px 25px 5px;
             }
+
             .dropdown-content {
-                z-index: 10;
-                position: relative;
-                margin: -10px 0 10px 0;
-                padding: 1px 0 1px 0;
-                text-align: left;
+                z-index    : 10;
+                position   : relative;
+                margin     : -10px 0 10px 0;
+                padding    : 1px 0 1px 0;
+                text-align : left;
                 // display: flex;
                 align-items: start;
             }
         }
+
         @media only screen and (max-width: 767.98px) {
             .head-menu-icon {
                 width: 50%;
             }
+
             .head-top .topcenter {
                 width: 20%;
             }
@@ -464,7 +474,7 @@
 
         #phoneFilled {
             padding-left: 20%;
-            display: block;
+            display     : block;
         }
 
         .head-menu-icon {

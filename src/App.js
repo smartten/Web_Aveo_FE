@@ -11,16 +11,16 @@ import Integration from "./Page/Service-Integration/Integration";
 import Blockchain from "./Page/Blockchain/Blockchain";
 import Enterprise from "./Page/Enterprise/Enterprise";
 import Home from "./components/Home/Home.js";
-
 import React, { useEffect } from "react";
 import Headerr from "./components/Header/Headerr.js";
+import Contact from "./Page/ContactUs/Contact.js";
 
 function App() {
   return (
     <div className="App">
       <Headerr />
-
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/web-design-and-development" element={<ServiceWeb />} />
         <Route path="/mobile-development" element={<ServiceMobile />} />
         <Route
@@ -33,9 +33,8 @@ function App() {
         <Route path="/testing-service" element={<Testing />} />
         <Route path="/cms-service" element={<CmcService />} />
         <Route path="/ecommerce-solutions" element={<Ecommerce />} />
+        <Route path="/contact-us" element={<Contact />} />
       </Routes>
-      <Home />
-      {/* <CmcService /> */}
       <Footer />
     </div>
   );

@@ -13,7 +13,11 @@ import Enterprise from "./Page/Enterprise/Enterprise";
 import Home from "./components/Home/Home.js";
 
 import React, { useEffect } from "react";
+<<<<<<< HEAD
 import Headerr from "./components/Header/Headerr.js";
+=======
+import Contact from "./Page/ContactUs/Contact.js";
+>>>>>>> hieu_15/02
 
 function App() {
   return (
@@ -33,6 +37,7 @@ function App() {
         <Route path="/testing-service" element={<Testing />} />
         <Route path="/cms-service" element={<CmcService />} />
         <Route path="/ecommerce-solutions" element={<Ecommerce />} />
+        <Route path="/contact-us" element={<Contact />} />
       </Routes>
       <Home />
       {/* <CmcService /> */}

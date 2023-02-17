@@ -1,5 +1,5 @@
 import "./HeadStyle.scss";
-import logo from "./2023-02-09_114503.png";
+import logo from "./logoave.png";
 import React, { useEffect, useState } from "react";
 import {
   CaretRightOutlined,
@@ -59,14 +59,29 @@ function Headerr() {
   }, []);
   const handleColMenu = () => {
     var arrayMenu = document.getElementsByClassName("head-menu");
+    var outline = document.getElementsByClassName("alignRightOutlined");
+    var headTo = document.getElementsByClassName("head-totall");
+
     if (menu) {
       for (var i = 0; i < arrayMenu.length; i++) {
         arrayMenu[i].style.display = "block";
+      }
+      for (var i = 0; i < outline.length; i++) {
+        outline[i].style.color = "#0262AD";
+      }
+      for (var i = 0; i < headTo.length; i++) {
+        headTo[i].style.backgroundColor = "white";
       }
       setMenu(false);
     } else {
       for (var i = 0; i < arrayMenu.length; i++) {
         arrayMenu[i].style.display = "none";
+      }
+      for (var i = 0; i < outline.length; i++) {
+        outline[i].style.color = "white";
+      }
+      for (var i = 0; i < headTo.length; i++) {
+        headTo[i].style.backgroundColor = "";
       }
       setMenu(true);
     }
@@ -78,7 +93,7 @@ function Headerr() {
         style={{
           paddingBottom: 6,
           position: "fixed",
-          marginTop: 0,
+          // marginTop: 0,
           width: "100%",
           zIndex: "9999",
         }}
@@ -234,7 +249,7 @@ function Headerr() {
                 Contact
               </button>
             </div>
-
+            <div></div>
             {/* <div className="triangle-bottomright"></div> */}
           </div>
         </div>

@@ -33,6 +33,8 @@ window.onload = function () {
 };
 function Headerr() {
   const [nav, setNav] = useState("");
+  const [menu, setMenu] = useState(true);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 50) {
@@ -56,14 +58,19 @@ function Headerr() {
     });
   }, []);
   const handleColMenu = () => {
-    var arrayMenu = document
-      .getElementsByClassName("head-menu")
-      .classList.toggle("dislayBlock");
+    var arrayMenu = document.getElementsByClassName("head-menu");
+    if (menu) {
+      for (var i = 0; i < arrayMenu.length; i++) {
+        arrayMenu[i].style.display = "block";
+      }
+      setMenu(false);
+    } else {
+      for (var i = 0; i < arrayMenu.length; i++) {
+        arrayMenu[i].style.display = "none";
+      }
+      setMenu(true);
+    }
     // console.log("check:", arrayMenu);
-    // for (var i = 0; i < arrayMenu.length; i++) {
-    //   arrayMenu[i].style.display = "block";
-    //   // arrayMenu[i].style.flexDirection = "column";
-    // }
   };
   return (
     <>
@@ -77,7 +84,7 @@ function Headerr() {
         }}
       >
         <div id="infor" className="overlay transition"></div>
-        <div style={{ height: 50, width: "100%" }}>
+        {/* <div style={{ height: 50, width: "100%" }}>
           <div id="head-top" className="head-top">
             <h4>
               <a className="top-link" href="">
@@ -95,7 +102,7 @@ function Headerr() {
               </h4>
             </div>
           </div>
-        </div>
+        </div> */}
         <div
           style={{
             display: "flex",
@@ -109,14 +116,19 @@ function Headerr() {
             <div
               style={{
                 display: "flex",
-                justifyContent: "flex-start",
-                flexDirection: "column",
+                justifyContent: "space-between",
+                flexDirection: "row",
               }}
             >
               <img id="logo" src={logo} />
-              <div></div>
+              <div id="alignRightOutlined">
+                <AlignRightOutlined
+                  onClick={handleColMenu}
+                  className="alignRightOutlined m-4"
+                />
+              </div>
             </div>
-            <div className="head-menu">
+            <div id="head-menu" className="head-menu">
               <div>
                 <a href="" class="link">
                   Company
@@ -141,18 +153,23 @@ function Headerr() {
                   Digital Consulting
                 </a>
                 <div class="dropdown-content">
-                  <div className="div-for-a dropdown-submenu">
-                    <a href="" class="link-drop">
-                      Application Services
-                    </a>
-                    <CaretRightOutlined
-                      style={{
-                        color: "gray",
-                        fontSize: 10,
-                        marginLeft: 50,
-                        marginBottom: -40,
-                      }}
-                    />
+                  <div
+                    id="dropdown-submenu"
+                    className="div-for-a dropdown-submenu"
+                  >
+                    <div>
+                      <a href="" class="link-drop">
+                        Application Services
+                      </a>
+                      <CaretRightOutlined
+                        style={{
+                          color: "gray",
+                          fontSize: 10,
+                          marginLeft: 50,
+                          marginBottom: -40,
+                        }}
+                      />
+                    </div>
                     <div className="dropdown-content-submenu">
                       <div className="div-for-a">
                         <a href="/web-design-and-development" class="link-drop">
@@ -217,14 +234,8 @@ function Headerr() {
                 Contact
               </button>
             </div>
-            <div id="alignRightOutlined">
-              <AlignRightOutlined
-                onClick={handleColMenu}
-                className="alignRightOutlined m-4"
-              />
-            </div>
 
-            <div className="triangle-bottomright"></div>
+            {/* <div className="triangle-bottomright"></div> */}
           </div>
         </div>
       </div>

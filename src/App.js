@@ -1,4 +1,4 @@
-import Headerr from "./components/Header/Headerr.js";
+import logo from "../src/components/Header/download.png";
 import Footer from "./components/Footer/Footer.js";
 import CmcService from "./components/CMC_Service/CmcService.js";
 import Testing from "./components/Testing/Testing";
@@ -10,13 +10,16 @@ import ServiceEngineering from "./Page/Service-Engineering/ServiceEngineering";
 import Integration from "./Page/Service-Integration/Integration";
 import Blockchain from "./Page/Blockchain/Blockchain";
 import Enterprise from "./Page/Enterprise/Enterprise";
+import Home from "./components/Home/Home.js";
 
 import React, { useEffect } from "react";
+import Headerr from "./components/Header/Headerr.js";
 
 function App() {
   return (
     <div className="App">
       <Headerr />
+      <img src={logo} />
       <Routes>
         <Route path="/web-design-and-development" element={<ServiceWeb />} />
         <Route path="/mobile-development" element={<ServiceMobile />} />
@@ -31,6 +34,7 @@ function App() {
         <Route path="/cms-service" element={<CmcService />} />
         <Route path="/ecommerce-solutions" element={<Ecommerce />} />
       </Routes>
+      <Home />
       {/* <CmcService /> */}
       <Footer />
     </div>

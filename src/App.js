@@ -12,6 +12,7 @@ import Blockchain from "./Page/Blockchain/Blockchain";
 import Enterprise from "./Page/Enterprise/Enterprise";
 
 import React, { useEffect } from "react";
+import Contact from "./Page/ContactUs/Contact.js";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/testing-service" element={<Testing />} />
         <Route path="/cms-service" element={<CmcService />} />
         <Route path="/ecommerce-solutions" element={<Ecommerce />} />
+        <Route path="/contact-us" element={<Contact />} />
       </Routes>
       {/* <CmcService /> */}
       <Footer />

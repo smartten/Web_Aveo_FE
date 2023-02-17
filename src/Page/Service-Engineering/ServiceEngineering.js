@@ -1,9 +1,15 @@
-import "./style.scss";
+import "./EngiStyle.scss";
 import { Collapse } from "antd";
 import {
   ArrowRightOutlined,
   CaretDownOutlined,
   CaretUpOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
 } from "@ant-design/icons";
 import React, { useState } from "react";
 
@@ -73,16 +79,17 @@ function ServiceEngineering() {
     <div className="body">
       <section className="slider">
         <div className="siler-list">
-          <div className="slider-item">
+          <div className="slider-item-engi">
             <div className="container">
               <div className="slide-content">
                 <div className="text">
                   <p className="text-title">
-                    <span>Engineering & Maintenance</span>
+                    <span>Engineering </span>
                   </p>
+                  <p className="text-title">& Maintenance</p>
                   <p className="sub-text">
-                    Owning an Agile software development team is almost instant
-                    with myriad of skills you need
+                    Owning an Agile software development team is <br /> almost
+                    instant with myriad of skills you need
                   </p>
                 </div>
               </div>
@@ -103,12 +110,7 @@ function ServiceEngineering() {
             </p>
             <div className="row c4-item w-100">
               <div className="col-md-6 col-lg-3 item">
-                <div className="text-center">
-                  <img
-                    src="https://www.propatel.com/wp-content/uploads/2019/09/coding-and-testing-programming-of-software.jpg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
+                <div className="text-center"></div>
                 <div className="title">Engineering</div>
                 <div className="desc">
                   A team of experienced engineers, mastering an agile mindset,
@@ -117,12 +119,7 @@ function ServiceEngineering() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-3 item">
-                <div className="text-center">
-                  <img
-                    src="https://www.propatel.com/wp-content/uploads/2019/09/coding-and-testing-programming-of-software.jpg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
+                <div className="text-center"></div>
                 <div className="title">Creative</div>
                 <div className="desc">
                   Creative design brings software to customers faster, making
@@ -131,12 +128,7 @@ function ServiceEngineering() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-3 item">
-                <div className="text-center">
-                  <img
-                    src="https://www.propatel.com/wp-content/uploads/2019/09/coding-and-testing-programming-of-software.jpg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
+                <div className="text-center"></div>
                 <div className="title">Maintenance</div>
                 <div className="desc">
                   Comprehensive maintenance process, experienced engineer team,
@@ -145,12 +137,7 @@ function ServiceEngineering() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-3 item">
-                <div className="text-center">
-                  <img
-                    src="https://www.propatel.com/wp-content/uploads/2019/09/coding-and-testing-programming-of-software.jpg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
+                <div className="text-center"></div>
                 <div className="title">Human Resource</div>
                 <div className="desc">
                   Deploy an almost instant development team with all the skills
@@ -278,91 +265,90 @@ function ServiceEngineering() {
           <p className="title">The benefit of</p>
           <p className="sub-title">PARTNERING WITH DEHA</p>
         </section>
-        <div className="container">
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+        <section className="container benefit ">
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <BulbOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Expert Advice</b>
+                <p>
+                  We are a leading digital strategy consultant. We can offer an
+                  unique and consultative perspective to your digital
+                  transformation strategy in general and software engineering in
+                  particular.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">Accelerate Development</p>
-              <p className="text-content">
-                By joining the development team quickly, our engineers help you
-                resume unfinished development or maintain legacy systems
-                instantaneously. Working in multiple time zones helps even when
-                your office is closed.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SelectOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Quality-Focused Solutions</b>
+                <p>
+                  We are using cutting-edge technologies and tools in software
+                  development process to bring the highest software development
+                  quality, for example automation testing, RPA...
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Quality first approach</p>
-              <p className="text-content">
-                Quality is our primary goal. We understand that every success
-                always comes from a good product. Our quality guarantee
-                certifications such as{" "}
-                <span style={{ fontWeight: "700" }}>
-                  ISO 9001, 27001, CCMI lv3, ISTQB.
-                </span>
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <UserOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Great Talent Pool</b>
+                <p>
+                  Our team has 260+ experienced developers with in-depth skills
+                  & knowledge in software building and powerful technologies
+                  stacks.
+                </p>
+              </div>
             </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+          </div>
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PieChartOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Experience</b>
+                <p>
+                  We are strategic partner of big corporations such as Mitsui
+                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                  Hospital...and delivered 1,000+ systems for enterprise.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SwitcherOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>All-in-One Provider</b>
+                <p>
+                  Our services are comprehensive from consulting, design,
+                  development, integration, deployment to system maintenance and
+                  much mores.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">Fast delivery</p>
-              <p className="text-content">
-                Using Agile Mindset, we bring you the ability to respond to
-                change quickly, software deployment speed faster than ever.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PaperClipOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Agile Mindset</b>
+                <p>
+                  An agile mindset is about creating and responding to change in
+                  uncertain and turbulent environments.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Up to date technology</p>
-              <p className="text-content">
-                We drink technology for breakfast and software architecture for
-                lunch. Constantly updating new technology is our passion. To us,
-                technology can only be better.
-              </p>
-            </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
-            </div>
-            <div className="feature-content col-6">
-              <p className="title">Continuous improvement</p>
-              <p className="text-content">
-                Continuous improvement is the key that helps businesses thrive.
-                Hence, our knowledge, technology, and quality are improved
-                regularly to meet your business requirements.
-              </p>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
 
         <section className="asked-questions container">
           <h2 className="text-title-2">Frequently Asked Questions</h2>
@@ -415,85 +401,6 @@ function ServiceEngineering() {
           <a href="#" className="btn-schedule">
             Schedule time to talk <ArrowRightOutlined />
           </a>
-        </section>
-        <section className="our-clients">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <div className="title">
-                  <p className="text-v1">Our Clients</p>
-                  <p className="text-v2">Trusted by over 300+ clients</p>
-                  <p className="text-v3">
-                    We bring solutions to make life easier for our customers.
-                  </p>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="row">
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </main>
     </div>

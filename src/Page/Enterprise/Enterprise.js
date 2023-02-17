@@ -1,9 +1,15 @@
-import "./style.scss";
+import "./EnterpriseStyle.scss";
 import { Collapse } from "antd";
 import {
   ArrowRightOutlined,
   CaretDownOutlined,
   CaretUpOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
 } from "@ant-design/icons";
 import React, { useState } from "react";
 const { Panel } = Collapse;
@@ -57,8 +63,9 @@ function Enterprise() {
                     <span>Enterprise Service</span>
                   </p>
                   <p className="sub-text">
-                    Enterprise Service Management has emerged as a highly
+                    Enterprise Service Management has emerged as a highly <br />
                     effective business model for delivering value to customers
+                    <br />
                     either directly or through the internal operations of a
                     company.
                   </p>
@@ -305,76 +312,90 @@ function Enterprise() {
           <p className="title">The benefit of</p>
           <p className="sub-title">PARTNERING WITH DEHA</p>
         </section>
-        <div className="container">
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%" }}
-              />
+        <section className="container benefit ">
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <BulbOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Expert Advice</b>
+                <p>
+                  We are a leading digital strategy consultant. We can offer an
+                  unique and consultative perspective to your digital
+                  transformation strategy in general and software engineering in
+                  particular.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">Quality first approach</p>
-              <p className="text-content">
-                Quality is our primary goal. We understand that every success
-                always comes from an excellent product. Our quality guarantee
-                certifications such as{" "}
-                <span style={{ fontWeight: "600" }}>
-                  ISO 9001, 27001, CCMI lv3, ISTQB
-                </span>
-                .
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SelectOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Quality-Focused Solutions</b>
+                <p>
+                  We are using cutting-edge technologies and tools in software
+                  development process to bring the highest software development
+                  quality, for example automation testing, RPA...
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Fast delivery</p>
-              <p className="text-content">
-                Applying Agile Mindset, we bring you the ability to respond to
-                change quickly, software deployment speed faster than ever.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <UserOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Great Talent Pool</b>
+                <p>
+                  Our team has 260+ experienced developers with in-depth skills
+                  & knowledge in software building and powerful technologies
+                  stacks.
+                </p>
+              </div>
             </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%" }}
-              />
+          </div>
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PieChartOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Experience</b>
+                <p>
+                  We are strategic partner of big corporations such as Mitsui
+                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                  Hospital...and delivered 1,000+ systems for enterprise.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%" }}
-              />
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SwitcherOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>All-in-One Provider</b>
+                <p>
+                  Our services are comprehensive from consulting, design,
+                  development, integration, deployment to system maintenance and
+                  much mores.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">Continuous improvement</p>
-              <p className="text-content">
-                Continuous improvement is the key that helps businesses thrive.
-                Hence, our knowledge, technology, and quality are improved
-                regularly to meet your business requirements.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PaperClipOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Agile Mindset</b>
+                <p>
+                  An agile mindset is about creating and responding to change in
+                  uncertain and turbulent environments.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Expert team</p>
-              <p className="text-content">
-                Our IT team experts are more than like a unity. We build a
-                development team with a shared sense of ownership, knowledge,
-                and high skill sets. We are ready to seamlessly integrate with
-                your industry practices, development approach, and process.
-              </p>
-            </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
         <section className="asked-questions container">
           <h2 className="text-title-2">Frequently Asked Questions</h2>
           <div className="collapse-questions row mt-5">
@@ -426,85 +447,6 @@ function Enterprise() {
           <a href="#" className="btn-schedule">
             Schedule time to talk <ArrowRightOutlined />
           </a>
-        </section>
-        <section className="our-clients">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <div className="title">
-                  <p className="text-v1">Our Clients</p>
-                  <p className="text-v2">Trusted by over 300+ clients</p>
-                  <p className="text-v3">
-                    We bring solutions to make life easier for our customers.
-                  </p>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="row">
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </main>
     </div>

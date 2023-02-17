@@ -20,7 +20,7 @@ function Testing() {
     <div className="">
       <div class="row cms p-0 m-0 pt-5">
         <div class="col-12 m-0 p-5 mt-5 pt-5">
-          <div>
+          <div style={{ marginTop: "15%" }}>
             <p className="cms-p m-0 p-0 mt-5 pt-5">Testing Services</p>
             <p className="cms-p-unlock">
               Improve test coverage and decrease costs by assessing processes,
@@ -86,7 +86,7 @@ function Testing() {
       </div>
       <div className="row">
         <div className="col-12 hmHr p-5">
-          <div className="col-6 offset-3 ">
+          <div className="container">
             <h2>Let’s Make it Happen Together!</h2>
             <p>
               There are still not enough friends to realize our goal of “a world
@@ -169,7 +169,7 @@ function Testing() {
           <img className="image-row3" src={image1} />
         </div>
       </div>
-      <div className="row mt-0 pt-0">
+      <div className="row mt-0 pt-0 technologies">
         <div class="col-12 mt-0 pt-0">
           <div className="section-title-2">
             <p className="title">Our Favourite Stacks</p>
@@ -528,96 +528,6 @@ function Testing() {
           </button>
         </div>
       </div>
-
-      <div className="row client p-5">
-        <div className="col-12 col-md-5 section-title-3 pb-5">
-          <p className="title">Our Clients</p>
-          <p className="desc grad">Trusted by over 300+ clients</p>
-          <p className="section-service">
-            We bring solutions to make life easier for our customers
-          </p>
-        </div>
-        <div className="col-12 col-md-7"></div>
-      </div>
-      <section className="our-clients">
-        <div className="container">
-          <div className="row">
-            <div className="col-6">
-              <div className="title">
-                <p className="text-v1">Our Clients</p>
-                <p className="text-v2">Trusted by over 300+ clients</p>
-                <p className="text-v3">
-                  We bring solutions to make life easier for our customers.
-                </p>
-              </div>
-            </div>
-            <div className="col-6">
-              <div className="row">
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-                <div className="col-md-4 col-6">
-                  <img
-                    src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                    style={{ width: "100%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

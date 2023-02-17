@@ -1,9 +1,15 @@
-import "./style.scss";
+import "./BlockChainStyle.scss";
 import { Collapse } from "antd";
 import {
   ArrowRightOutlined,
   CaretDownOutlined,
   CaretUpOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
 } from "@ant-design/icons";
 import React, { useState } from "react";
 const { Panel } = Collapse;
@@ -295,60 +301,251 @@ function Blockchain() {
           <p className="title">The benefit of</p>
           <p className="sub-title">PARTNERING WITH DEHA</p>
         </section>
-        <div className="container">
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%", height: "100%" }}
-              />
+        <section className="container benefit ">
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <BulbOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Expert Advice</b>
+                <p>
+                  We are a leading digital strategy consultant. We can offer an
+                  unique and consultative perspective to your digital
+                  transformation strategy in general and software engineering in
+                  particular.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">Operational agility and speed to value</p>
-              <p className="text-content">
-                Optimize multiparty workflows around trusted data and accelerate
-                performance across your value chain.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SelectOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Quality-Focused Solutions</b>
+                <p>
+                  We are using cutting-edge technologies and tools in software
+                  development process to bring the highest software development
+                  quality, for example automation testing, RPA...
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Cost takeout and risk mitigation</p>
-              <p className="text-content">
-                Streamline shared processes, increase accountability, minimize
-                disputes and automate reconciliation tasks.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <UserOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Great Talent Pool</b>
+                <p>
+                  Our team has 260+ experienced developers with in-depth skills
+                  & knowledge in software building and powerful technologies
+                  stacks.
+                </p>
+              </div>
             </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%", height: "100%" }}
-              />
+          </div>
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PieChartOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Experience</b>
+                <p>
+                  We are strategic partner of big corporations such as Mitsui
+                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                  Hospital...and delivered 1,000+ systems for enterprise.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://duhocthanhcong.vn/wp-content/uploads/school-photos/IMG%20Academy/IMG-Academy-Album1.jpg"
-                style={{ width: "100%", height: "100%" }}
-              />
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SwitcherOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>All-in-One Provider</b>
+                <p>
+                  Our services are comprehensive from consulting, design,
+                  development, integration, deployment to system maintenance and
+                  much mores.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">New monetization opportunities</p>
-              <p className="text-content">
-                Increase brand trust and sales with product authenticity and
-                open new marketplaces with asset tokenization.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PaperClipOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Agile Mindset</b>
+                <p>
+                  An agile mindset is about creating and responding to change in
+                  uncertain and turbulent environments.
+                </p>
+              </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
         <section className="our-favourite-stacks">
           <div className="container pt-5">
             <div className="text-title text-center">
               <h3 className="text-title-1">Our Favourite Stacks</h3>
               <h2 className="text-title-2">Technologies Expertise</h2>
             </div>
-            <div style={{ height: "300px" }}></div>
+            <div className="section-structure">
+              <div className="structure">
+                <div className="structure-name">Front End</div>
+                <div className="structure-techs">
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/gyf6LnDKTuh8hqNwJzxA/" />
+                    </div>
+                    <div className="tech-name">Javascript</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/5WYUUgt1Q2SM5vjv0Nsr/" />
+                    </div>
+                    <div className="tech-name">Type Script</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/ouQOUiY5RGKeiqYzZ4fj/" />
+                    </div>
+                    <div className="tech-name">Angular JS</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/Hcf5fMeHQWi7c4HI3ZiD/" />
+                    </div>
+                    <div className="tech-name">React</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/0t9KYS3HT5OQUSclmwUs/" />
+                    </div>
+                    <div className="tech-name">Vue.js</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/tQYGWFdHSMGqeUmNIhPr/" />
+                    </div>
+                    <div className="tech-name">HTML5</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/nPahg5ipS5K5N7qAmd4g/" />
+                    </div>
+                    <div className="tech-name">CSS3</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/eag8WXzSlGMg2vGmWumB/" />
+                    </div>
+                    <div className="tech-name">Backbone JS</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/Y2hbzPbqTQWuhCkyLTQA/" />
+                    </div>
+                    <div className="tech-name">Bootstrap</div>
+                  </div>
+                </div>
+              </div>
+              <div className="structure">
+                <div className="structure-name">Back End</div>
+                <div className="structure-techs">
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/bkMNTJDMRZQGve9BTMjw/" />
+                    </div>
+                    <div className="tech-name">Python</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/85noCce9RBeIA1Y40krg/" />
+                    </div>
+                    <div className="tech-name">Ruby</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/j4vxSCWSmOmQRVSxViXg/" />
+                    </div>
+                    <div className="tech-name">PHP</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/3gXAdBG4RiKWK0j1UcST/" />
+                    </div>
+                    <div className="tech-name">Laravel</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/6aBwKpWTlaxsshOLvsR9/" />
+                    </div>
+                    <div className="tech-name">Node.js</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/pfpX7XAHRhSI88LB3ESY" />
+                    </div>
+                    <div className="tech-name">Golang</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/nJIddZvzR6WnrcfYe3eU/" />
+                    </div>
+                    <div className="tech-name">Magento</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/TnyINqlzScuKUw1iylWu/" />
+                    </div>
+                    <div className="tech-name">C</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/5ANwBfVQTZa8bJRFGFJ5/" />
+                    </div>
+                    <div className="tech-name">C#</div>
+                  </div>
+                </div>
+              </div>
+              <div className="structure">
+                <div className="structure-name">Database</div>
+                <div className="structure-techs">
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/87KL6cWrT3SOEEoNoXou/" />
+                    </div>
+                    <div className="tech-name">MS SQL</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/RsVXSgPQQqq81SPDOzsw/" />
+                    </div>
+                    <div className="tech-name">Postgre SQL</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/ja1APEkTTACB1muBU4tA/" />
+                    </div>
+                    <div className="tech-name">Mongo DB</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/LEYQcRDgRx6pWP7DW0bj/" />
+                    </div>
+                    <div className="tech-name">Oracle</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/akjs0V5TSje7zBN64WxY/" />
+                    </div>
+                    <div className="tech-name">MariaDB</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -403,85 +600,6 @@ function Blockchain() {
           <a href="#" className="btn-schedule">
             Schedule time to talk <ArrowRightOutlined />
           </a>
-        </section>
-        <section className="our-clients">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <div className="title">
-                  <p className="text-v1">Our Clients</p>
-                  <p className="text-v2">Trusted by over 300+ clients</p>
-                  <p className="text-v3">
-                    We bring solutions to make life easier for our customers.
-                  </p>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="row">
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </main>
     </div>

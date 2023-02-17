@@ -1,9 +1,15 @@
-import "./style.scss";
+import "./MobileStyle.scss";
 import { Collapse } from "antd";
 import {
   ArrowRightOutlined,
   CaretDownOutlined,
   CaretUpOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
 } from "@ant-design/icons";
 import React, { useState } from "react";
 const { Panel } = Collapse;
@@ -84,16 +90,17 @@ function ServiceMobile() {
     <div className="body">
       <section className="slider">
         <div className="siler-list">
-          <div className="slider-item">
+          <div className="slider-item-mobi">
             <div className="container">
               <div className="slide-content">
                 <div className="text">
                   <p className="text-title">
-                    <span>Mobile Development</span>
+                    <span>Mobile </span>
                   </p>
+                  <p className="text-title">Development</p>
                   <p className="sub-text">
-                    Build and transform your business through strategy, design,
-                    and app development
+                    Build and transform your business through strategy,
+                    <br /> design, and app development
                   </p>
                 </div>
               </div>
@@ -108,10 +115,7 @@ function ServiceMobile() {
             <div className="row c4-item w-100">
               <div className="col-md-6 col-lg-3 item">
                 <div className="text-center">
-                  <img
-                    src="https://cdn.online.codegym.vn/wp-content/uploads/sites/5/2021/08/khoa-hoc-mobile-app-development-9.jpg"
-                    style={{ width: "100%" }}
-                  />
+                  <img src="" style={{ width: "100%" }} />
                 </div>
                 <div className="title">Innovative Design</div>
                 <div className="desc">
@@ -121,10 +125,7 @@ function ServiceMobile() {
               </div>
               <div className="col-md-6 col-lg-3 item">
                 <div className="text-center">
-                  <img
-                    src="https://cdn.online.codegym.vn/wp-content/uploads/sites/5/2021/08/khoa-hoc-mobile-app-development-9.jpg"
-                    style={{ width: "100%" }}
-                  />
+                  <img src="" style={{ width: "100%" }} />
                 </div>
                 <div className="title">Customized App Development Company</div>
                 <div className="desc">
@@ -136,10 +137,7 @@ function ServiceMobile() {
               </div>
               <div className="col-md-6 col-lg-3 item">
                 <div className="text-center">
-                  <img
-                    src="https://cdn.online.codegym.vn/wp-content/uploads/sites/5/2021/08/khoa-hoc-mobile-app-development-9.jpg"
-                    style={{ width: "100%" }}
-                  />
+                  <img src="" style={{ width: "100%" }} />
                 </div>
                 <div className="title">On-Time Delivery</div>
                 <div className="desc">
@@ -149,10 +147,7 @@ function ServiceMobile() {
               </div>
               <div className="col-md-6 col-lg-3 item">
                 <div className="text-center">
-                  <img
-                    src="https://cdn.online.codegym.vn/wp-content/uploads/sites/5/2021/08/khoa-hoc-mobile-app-development-9.jpg"
-                    style={{ width: "100%" }}
-                  />
+                  <img src="" style={{ width: "100%" }} />
                 </div>
                 <div className="title">Years Of Experience</div>
                 <div className="desc">
@@ -273,107 +268,90 @@ function ServiceMobile() {
           <p className="title">The benefit of</p>
           <p className="sub-title">PARTNERING WITH DEHA</p>
         </section>
-        <div className="container">
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+        <section className="container benefit ">
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <BulbOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Expert Advice</b>
+                <p>
+                  We are a leading digital strategy consultant. We can offer an
+                  unique and consultative perspective to your digital
+                  transformation strategy in general and software engineering in
+                  particular.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">Quality first approach</p>
-              <p className="text-content">
-                Quality is our primary goal. We understand that every success
-                always comes from a good product. Our quality guarantee
-                certifications such as{" "}
-                <span style={{ fontWeight: "700" }}>
-                  ISO 9001, 27001, CCMI lv3, ISTQB.
-                </span>
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SelectOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Quality-Focused Solutions</b>
+                <p>
+                  We are using cutting-edge technologies and tools in software
+                  development process to bring the highest software development
+                  quality, for example automation testing, RPA...
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Fast delivery</p>
-              <p className="text-content">
-                OApplying Agile Mindset, we bring you the ability to respond to
-                change quickly, software deployment speed faster than ever.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <UserOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Great Talent Pool</b>
+                <p>
+                  Our team has 260+ experienced developers with in-depth skills
+                  & knowledge in software building and powerful technologies
+                  stacks.
+                </p>
+              </div>
             </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+          </div>
+          <div className="row">
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PieChartOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Experience</b>
+                <p>
+                  We are strategic partner of big corporations such as Mitsui
+                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                  Hospital...and delivered 1,000+ systems for enterprise.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <SwitcherOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>All-in-One Provider</b>
+                <p>
+                  Our services are comprehensive from consulting, design,
+                  development, integration, deployment to system maintenance and
+                  much mores.
+                </p>
+              </div>
             </div>
-            <div className="feature-content col-6">
-              <p className="title">All in one solution</p>
-              <p className="text-content">
-                We provide you an end-to-end website development solution from
-                listening requirements to implementing, testing, deploying, and
-                maintaining the system.
-              </p>
+            <div className="col-4 content-part">
+              <div className="icon-benefit">
+                <PaperClipOutlined />
+              </div>
+              <div className="text-benefit">
+                <b>Agile Mindset</b>
+                <p>
+                  An agile mindset is about creating and responding to change in
+                  uncertain and turbulent environments.
+                </p>
+              </div>
             </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">Up to date technology</p>
-              <p className="text-content">
-                We drink technology for breakfast and software architecture for
-                lunch. Constantly updating new technology is our passion. To us,
-                technology can only be better.
-              </p>
-            </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
-            </div>
-            <div className="feature-content col-6">
-              <p className="title">Continuous improvement</p>
-              <p className="text-content">
-                Continuous improvement is the key that helps businesses thrive.
-                Hence, our knowledge, technology, and quality are improved
-                regularly to meet your business requirements.
-              </p>
-            </div>
-          </section>
-          <section className="section-feature-1 row mb-5">
-            <div className="feature-content col-6">
-              <p className="title">App store deployment consultation</p>
-              <p className="text-content">
-                After many years of developing and deploying a hundred mobile
-                applications, we are glad to say that we have expertise in app
-                store deployment and optimization. We help customers acquire
-                users and generate revenue as soon as possible
-              </p>
-            </div>
-            <div className="feature-img col-6">
-              <img
-                src="https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?w=2000"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
         <section className="creative-portfolio bg-gray">
           <div className="container">
             <div className="text-title text-center">
@@ -419,7 +397,96 @@ function ServiceMobile() {
               <h3 className="text-title-1">Our Favourite Stacks</h3>
               <h2 className="text-title-2">Technologies Expertise</h2>
             </div>
-            <div style={{ height: "300px" }}></div>
+            <div className="section-structure">
+              <div className="structure">
+                <div className="structure-name">Mobile App Development</div>
+                <div className="structure-techs">
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/W5gytm5RxG6p9xcfk8Og/" />
+                    </div>
+                    <div className="tech-name">Swift</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/yDmCjm3SWWcEHMEoRNug/" />
+                    </div>
+                    <div className="tech-name">Java</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/gT7kMmAtQq25tD4IRd5d/" />
+                    </div>
+                    <div className="tech-name">Kotlin</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/nzvg30JaRAKmi7fe8iJb/" />
+                    </div>
+                    <div className="tech-name">Objective-C</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/Hcf5fMeHQWi7c4HI3ZiD/" />
+                    </div>
+                    <div className="tech-name">ReactNative</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/I7gzLhqzS8OeAHmoU1eP/" />
+                    </div>
+                    <div className="tech-name">Flutter</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/3FJNR7HQyCaqtTUdS24w/" />
+                    </div>
+                    <div className="tech-name">Ionic</div>
+                  </div>
+                </div>
+              </div>
+              <div className="structure">
+                <div className="structure-name">Database</div>
+                <div className="structure-techs">
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/doiZ9RTST4GNHQmhGOXA/" />
+                    </div>
+                    <div className="tech-name">MySQL</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/RsVXSgPQQqq81SPDOzsw/" />
+                    </div>
+                    <div className="tech-name">Postgre SQL</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/4xJPaGIySeCcuxQwtm9L/" />
+                    </div>
+                    <div className="tech-name">Redis</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/ja1APEkTTACB1muBU4tA/" />
+                    </div>
+                    <div className="tech-name">Mongo DB</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/akjs0V5TSje7zBN64WxY/" />
+                    </div>
+                    <div className="tech-name">MariaDB</div>
+                  </div>
+                  <div className="tech">
+                    <div className="tech-img">
+                      <img src="https://ntq.com.vn/media/NXxC3ciVRfulE0iDTVV9/" />
+                    </div>
+                    <div className="tech-name">SQ Lite</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -474,85 +541,6 @@ function ServiceMobile() {
           <a href="#" className="btn-schedule">
             Schedule time to talk <ArrowRightOutlined />
           </a>
-        </section>
-        <section className="our-clients">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <div className="title">
-                  <p className="text-v1">Our Clients</p>
-                  <p className="text-v2">Trusted by over 300+ clients</p>
-                  <p className="text-v3">
-                    We bring solutions to make life easier for our customers.
-                  </p>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="row">
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                  <div className="col-md-4 col-6">
-                    <img
-                      src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </main>
     </div>

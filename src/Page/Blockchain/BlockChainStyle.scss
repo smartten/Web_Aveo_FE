@@ -25,10 +25,6 @@
         display: block;
     }
 
-    .transition {
-        transition: all 0.2s ease-in-out
-    }
-
     img,
     svg {
         vertical-align: middle;
@@ -50,11 +46,11 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://web.archive.org/web/20210920042216im_/https://deha-soft.com/wp-content/uploads/2021/07/banner.jpg');
-                height             : 100vh;
+                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+                height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
-                width              : 1903px;
+                width              : 100% !important;
                 background-color   : #f1f1f1;
 
                 .container {
@@ -65,7 +61,7 @@
                         // transform  : translateY(80px);
 
                         .text-title {
-                            color            : #696969;
+                            color            : #ffffff;
                             font-size        : 45px;
                             line-height      : 38px;
                             font-weight      : 800;
@@ -74,7 +70,7 @@
                         }
 
                         .sub-text {
-                            color      : #696969;
+                            color      : #ffffff;
                             font-size  : 20px;
                             line-height: 38px;
                         }
@@ -224,11 +220,6 @@
 
                 }
 
-                .desc {
-                    font-size: 18px;
-                    color    : #60697B;
-                }
-
                 .title-1 {
                     font-weight: bold;
                     font-size  : 29px;
@@ -319,23 +310,6 @@
                 margin-left: 20px;
                 font-size  : 18px;
             }
-
-            .feature-content {
-                ul {
-                    li {
-                        background     : url(https://web.archive.org/web/20210920052015im_/https://deha-soft.com/wp-content/themes/deha-viet-nam/images/deha-arrow.png) no-repeat 0 12px !important;
-                        padding-left   : 10px;
-                        // font-size   : 1.8rem;
-                        color          : #60697B;
-                        list-style     : none;
-                        font-size      : 17px;
-                    }
-
-                    p {
-                        font-size: 17px;
-                    }
-                }
-            }
         }
 
         .our-favourite-stacks {
@@ -391,14 +365,7 @@
                                     color: blue;
                                 }
                             }
-                        }
 
-                        .faq-answer {
-                            .card-body {
-                                // color     : red;
-                                transition: all 0.2s ease-in-out;
-                                transform : translate(0, 0)
-                            }
 
                         }
                     }
@@ -459,7 +426,11 @@
             }
         }
     }
+
+
 }
+
+
 
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
     .slider {
@@ -478,11 +449,11 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://web.archive.org/web/20210920042216im_/https://deha-soft.com/wp-content/uploads/2021/07/banner.jpg');
-                height             : 100vh;
+                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+                height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
-                width              : 1000px !important;
+                width              : 100% !important;
                 background-color   : #f1f1f1;
 
                 .container {
@@ -515,6 +486,58 @@
 
 
 /* PC: with >= 1024px  */
+@media (min-width: 1050px) and (max-width: 1500px) {
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+            transform: translate3d(0, 0, 0);
+
+            .slider-item {
+                background-size    : cover;
+                background-repeat  : no-repeat;
+                background-position: right top;
+                display            : flex;
+                align-items        : center;
+                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+                height             : 100vh !important;
+                min-height         : 1px;
+                float              : left;
+                width              : 100% !important;
+                background-color   : #f1f1f1;
+
+                .container {
+                    position: relative;
+
+                    .text {
+                        overflow      : hidden;
+                        // transform  : translateY(80px);
+
+                        .text-title {
+                            color            : #696969;
+                            font-size        : 35px;
+                            line-height      : 38px;
+                            font-weight      : 800;
+                            text-transform   : uppercase;
+                            // margin        : 0px;
+                        }
+
+                        .sub-text {
+                            color      : #696969;
+                            font-size  : 20px;
+                            line-height: 38px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -536,11 +559,11 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://web.archive.org/web/20210920042216im_/https://deha-soft.com/wp-content/uploads/2021/07/banner.jpg');
-                height             : 100vh;
+                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+                height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
-                width              : 390px !important;
+                width              : 100% !important;
                 background-color   : #f1f1f1;
 
                 .container {

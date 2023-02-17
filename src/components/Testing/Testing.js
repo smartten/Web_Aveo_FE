@@ -94,7 +94,7 @@ function Testing() {
               why don’t you take a look at DEHA VIET NAM?
             </p>
             <a
-              href="contact-us"
+              href="/contact-us"
               style={{ margin: "auto" }}
               className="hmHr-but"
             >
@@ -524,7 +524,11 @@ function Testing() {
       </div>
       <div className="row">
         <div className="col-6 offset-3 mt-5 mb-5">
-          <a href="/contact-us" style={{ margin: "auto" }} className="but-sche">
+          <a
+            href="/contact-us"
+            style={{ margin: "auto", textDecoration: "none" }}
+            className="but-sche"
+          >
             Schedule time to talk
             <LoginOutlined
               style={{ position: "absolute", margin: 6, fontSize: 20 }}

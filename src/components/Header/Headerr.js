@@ -59,14 +59,29 @@ function Headerr() {
   }, []);
   const handleColMenu = () => {
     var arrayMenu = document.getElementsByClassName("head-menu");
+    var outline = document.getElementsByClassName("alignRightOutlined");
+    var headTo = document.getElementsByClassName("head-totall");
+
     if (menu) {
       for (var i = 0; i < arrayMenu.length; i++) {
         arrayMenu[i].style.display = "block";
+      }
+      for (var i = 0; i < outline.length; i++) {
+        outline[i].style.color = "#0262AD";
+      }
+      for (var i = 0; i < headTo.length; i++) {
+        headTo[i].style.backgroundColor = "white";
       }
       setMenu(false);
     } else {
       for (var i = 0; i < arrayMenu.length; i++) {
         arrayMenu[i].style.display = "none";
+      }
+      for (var i = 0; i < outline.length; i++) {
+        outline[i].style.color = "white";
+      }
+      for (var i = 0; i < headTo.length; i++) {
+        headTo[i].style.backgroundColor = "";
       }
       setMenu(true);
     }

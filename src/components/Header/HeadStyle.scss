@@ -28,7 +28,7 @@
     flex-direction: row;
     position: relative;
     justify-content: space-between;
-    box-shadow: 0 1px 5px  rgba(0, 0, 0, 0.3);
+    // box-shadow: 0 1px 5px  rgba(0, 0, 0, 0.3);
     background-color: rgb(255, 255, 255,0);
     /* box-shadow: 0px 12px 10px -15px #111;  */
     transition-duration: 0.5s;	
@@ -131,7 +131,7 @@
     display: none;
     position: absolute;
     // background-color: white;
-    background-color: rgb(255, 255, 255,0.5);
+    background-color: rgb(255, 255, 255,0.7);
     min-width: 250px;
     min-height: 60px;
     align-items: center;
@@ -156,14 +156,16 @@
 }
 
 .div-for-a{
-    background-color: white;
+    background-color: rgb(255, 255, 255,0);
+    // background-color: white;
     height: 38px; 
     padding-top: 5px;
     margin: 14px 10px 14px 10px;
     border-radius: 5px;
 }
 .div-for-a:hover{
-    background-color: rgb(226, 240, 252);
+    // background-color: rgb(226, 240, 252);
+    background-color: rgb(255, 255, 255,1);
 }
 .dropdown-submenu {
     position: relative;
@@ -173,7 +175,8 @@
     margin-left: 200px;
     display: none;
     position: absolute;
-    background-color: white;
+    // background-color: white;
+    background-color: rgb(255, 255, 255,0.9);
     min-width: 250px;
     min-height: 60px;
     align-items: center;
@@ -256,6 +259,9 @@
 
 @media only screen and (max-width: 1024px) {
     /*-- Code cho màn hình vừa (Table) viết ở đây --*/
+    // .head-totall{
+    //     background-color: white;
+    // }
     .head-menu{
         display: none;
         padding: 0px 0px 15px 15px;
@@ -268,7 +274,7 @@
         display: block;
     }
     .alignRightOutlined{
-        color: #0060AD;
+        color: white;
         font-size: 40px;
         cursor: pointer;
 
@@ -285,6 +291,8 @@
         
     }
     .link{
+        color: #717171;
+        font-weight: 400;
         margin-bottom: 25px;
     }
     .header-but{

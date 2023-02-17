@@ -245,9 +245,9 @@ function Headerr() {
                   </div>
                 </div>
               </div>
-              <button id="header-but" className="header-but">
+              <a href="/contact-us" id="header-but" className="header-but">
                 Contact
-              </button>
+              </a>
             </div>
             <div></div>
             {/* <div className="triangle-bottomright"></div> */}

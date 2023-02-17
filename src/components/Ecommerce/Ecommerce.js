@@ -622,12 +622,12 @@ function Ecommerce() {
       </div>
       <div className="row">
         <div className="col-sm-6 offset-sm-3 my-5 my-sm-5">
-          <button style={{ margin: "auto" }} className="but-sche">
+          <a href="/contact-us" style={{ margin: "auto" }} className="but-sche">
             Schedule time to talk
             <LoginOutlined
               style={{ position: "absolute", margin: 6, fontSize: 20 }}
             />
-          </button>
+          </a>
         </div>
       </div>
     </div>

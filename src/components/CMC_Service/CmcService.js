@@ -152,9 +152,13 @@ function CmcService() {
               where everyone can be absorbed in value creation.” If you like,
               why don’t you take a look at DEHA VIET NAM?
             </p>
-            <button style={{ margin: "auto" }} className="hmHr-but">
+            <a
+              href="/contact-us"
+              style={{ margin: "auto" }}
+              className="hmHr-but"
+            >
               Contact us
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -582,12 +586,12 @@ function CmcService() {
       </div>
       <div className="row">
         <div className="col-6 offset-3 mt-5 mb-5">
-          <button style={{ margin: "auto" }} className="but-sche">
+          <a href="/contact-us" style={{ margin: "auto" }} className="but-sche">
             Schedule time to talk
             <LoginOutlined
               style={{ position: "absolute", margin: 6, fontSize: 20 }}
             />
-          </button>
+          </a>
         </div>
       </div>
     </div>

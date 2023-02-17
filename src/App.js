@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Headerr />
-      <img src={logo} />
+
       <Routes>
         <Route path="/web-design-and-development" element={<ServiceWeb />} />
         <Route path="/mobile-development" element={<ServiceMobile />} />

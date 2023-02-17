@@ -171,11 +171,7 @@ function Contact() {
                     <Button
                       type="primary"
                       htmlType="submit"
-                      style={{
-                        width: "100%",
-                        marginLeft: "180px",
-                        // marginTop: "30px",
-                      }}
+                      className="btn-submit"
                     >
                       Submit
                     </Button>

@@ -1,5 +1,5 @@
 import "./HeadStyle.scss";
-import logo from "./2023-02-09_114503.png";
+import logo from "./logoave.png";
 import React, { useEffect, useState } from "react";
 import {
   CaretRightOutlined,
@@ -78,7 +78,7 @@ function Headerr() {
         style={{
           paddingBottom: 6,
           position: "fixed",
-          marginTop: 0,
+          // marginTop: 0,
           width: "100%",
           zIndex: "9999",
         }}
@@ -234,7 +234,7 @@ function Headerr() {
                 Contact
               </button>
             </div>
-
+            <div></div>
             {/* <div className="triangle-bottomright"></div> */}
           </div>
         </div>

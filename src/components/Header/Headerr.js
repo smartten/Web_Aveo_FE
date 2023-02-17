@@ -1,5 +1,5 @@
 import "./HeadStyle.scss";
-import logo from "./logoave.png";
+import logo from "./Asset 2.svg";
 import React, { useEffect, useState } from "react";
 import {
   CaretRightOutlined,
@@ -93,7 +93,7 @@ function Headerr() {
         style={{
           paddingBottom: 6,
           position: "fixed",
-          // marginTop: 0,
+          marginTop: 0,
           width: "100%",
           zIndex: "9999",
         }}
@@ -234,7 +234,7 @@ function Headerr() {
                 </a>
                 <div class="dropdown-content">
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="/ecommerce-solutions" class="link-drop">
                       Ecommerce solutions
                     </a>
                   </div>

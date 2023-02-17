@@ -28,6 +28,7 @@
     img,
     svg {
         vertical-align: middle;
+        width         : 100%;
     }
 
     .slider {
@@ -46,11 +47,11 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://web.archive.org/web/20210920042216im_/https://deha-soft.com/wp-content/uploads/2021/07/banner.jpg');
-                height             : 100vh;
+                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+                height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
-                width              : 1903px;
+                width              : 100% !important;
                 background-color   : #f1f1f1;
 
                 .container {
@@ -61,7 +62,7 @@
                         // transform  : translateY(80px);
 
                         .text-title {
-                            color            : #696969;
+                            color            : #ffffff;
                             font-size        : 45px;
                             line-height      : 38px;
                             font-weight      : 800;
@@ -70,7 +71,7 @@
                         }
 
                         .sub-text {
-                            color      : #696969;
+                            color      : #ffffff;
                             font-size  : 20px;
                             line-height: 38px;
                         }
@@ -287,6 +288,16 @@
                 font-size: 25px;
             }
 
+            .text-title {
+                font-size              : 36px;
+                font-weight            : 800;
+                color                  : #0060ad;
+                display                : inline-block;
+                background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
             .sub-title {
                 text-transform: uppercase;
                 font-size     : 25px;
@@ -295,21 +306,51 @@
             }
         }
 
-        .section-feature-1 {
-            width       : 100%;
-            display     : flex;
-            // flex-wrap: wrap;
+        // .section-feature-1 {
+        //     width       : 100%;
+        //     display     : flex;
+        //     // flex-wrap: wrap;
 
-            .title {
-                font-size  : 30px;
-                margin-left: 20px;
-                font-weight: 700;
+        //     .title {
+        //         font-size  : 30px;
+        //         margin-left: 20px;
+        //         font-weight: 700;
+        //     }
+
+        //     .text-content {
+        //         margin-left: 20px;
+        //         font-size  : 18px;
+        //     }
+        // }
+
+        .benefit {
+            .row {
+                margin-bottom: 20px;
+
+                .content-part {
+                    background-color: #f4f4f9;
+                    width           : 31.33333%;
+                    padding         : 55px 60px;
+                    margin          : 0px 10px;
+
+                    .icon-benefit {
+                        font-size: 60px;
+                    }
+
+                    .text-benefit {
+                        b {
+                            font-size          : 23px;
+                            color              : #000;
+                            // padding-bottom  : 20px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
             }
 
-            .text-content {
-                margin-left: 20px;
-                font-size  : 18px;
-            }
         }
 
         .our-favourite-stacks {
@@ -327,6 +368,54 @@
                     background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                }
+            }
+
+            .section-structure {
+                margin-bottom: 100px;
+
+                .structure {
+                    display       : flex;
+                    flex-direction: row;
+                    padding-top   : 2.6rem;
+                    border-bottom : 1px solid #dddbdb;
+
+                    .structure-name {
+                        max-width   : 8rem;
+                        margin-right: 2.4rem;
+                        margin-top  : 2.4rem;
+                        font-size   : 25px;
+                    }
+
+                    .structure-techs {
+                        display  : flex;
+                        flex-wrap: wrap;
+
+                        .tech {
+                            display        : flex;
+                            flex-direction : column;
+                            justify-content: center;
+                            align-items    : center;
+                            margin-left    : 1rem;
+
+                            .tech-img {
+                                width           : 5.8rem;
+                                height          : 5.8rem;
+                                display         : flex;
+                                justify-content : center;
+                                align-items     : center;
+                                border-radius   : 50%;
+                                background-color: #fff;
+                                padding         : 1.5rem;
+                            }
+
+                            .tech-name {
+                                font-size  : 1.2rem;
+                                line-height: 3rem;
+                            }
+                        }
+
+                    }
                 }
             }
         }
@@ -361,16 +450,33 @@
                             .question-content {
                                 flex: 95%;
 
-                                .text-color {
-                                    color: blue;
+                                .desc {
+                                    font-size: 18px;
+                                    color    : #60697B;
+                                }
+
+                                a {
+                                    text-align     : left;
+                                    display        : flex;
+                                    justify-content: space-between;
+                                }
+
+                                .card-body {
+                                    background-color: #F1F1F1;
+                                    color           : #202020;
+                                    font-size       : 15px;
+                                    // margin-bottom: 20px
                                 }
                             }
-
-
                         }
                     }
                 }
+
+
+
             }
+
+
         }
 
         .schedule {
@@ -392,7 +498,6 @@
                 svg {
                     margin-bottom: 7px;
                 }
-
             }
         }
 
@@ -426,7 +531,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -447,11 +551,11 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://web.archive.org/web/20210920042216im_/https://deha-soft.com/wp-content/uploads/2021/07/banner.jpg');
-                height             : 100vh;
+                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+                height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
-                width              : 1000px !important;
+                width              : 100% !important;
                 background-color   : #f1f1f1;
 
                 .container {
@@ -502,14 +606,14 @@
             .slider-item {
                 background-size    : cover;
                 background-repeat  : no-repeat;
-                background-position: right top;
+                background-position: 50%;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://web.archive.org/web/20210920042216im_/https://deha-soft.com/wp-content/uploads/2021/07/banner.jpg');
-                height             : 100vh;
+                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+                height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
-                width              : 390px !important;
+                width              : 100% !important;
                 background-color   : #f1f1f1;
 
                 .container {
@@ -521,7 +625,7 @@
 
                         .text-title {
                             color            : #696969;
-                            font-size        : 35px;
+                            font-size        : 35px !important;
                             line-height      : 38px;
                             font-weight      : 800;
                             text-transform   : uppercase;
@@ -539,32 +643,34 @@
         }
     }
 
-    .section-feature-1 {
-        width        : 100%;
-        display      : flex;
-        // flex-wrap: wrap;
-        border-bottom: 1px solid #e3dcdc;
+    // .section-feature-1 {
+    //     width        : 100%;
+    //     display      : flex;
+    //     // flex-wrap: wrap;
+    //     border-bottom: 1px solid #e3dcdc;
 
-        .col-6 {
-            width: 100% !important;
+    //     .col-6 {
+    //         width: 100% !important;
 
-            img {
-                display: none !important;
-            }
-        }
+    //         img {
+    //             display: none !important;
+    //         }
+    //     }
 
-        .title {
-            font-size  : 30px;
-            margin-left: 20px;
-            font-weight: 700;
-        }
+    //     .title {
+    //         font-size  : 30px;
+    //         margin-left: 20px;
+    //         font-weight: 700;
+    //     }
 
-        .text-content {
-            margin-left: 20px;
-            font-size  : 18px;
+    //     .text-content {
+    //         margin-left: 20px;
+    //         font-size  : 18px;
 
-        }
-    }
+    //     }
+    // }
+
+
 
     .collapse-questions {
         align-items: center;

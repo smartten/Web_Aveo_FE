@@ -299,9 +299,13 @@ function Home() {
               where everyone can be absorbed in value creation.” If you like,
               why don’t you take a look at DEHA VIET NAM?
             </p>
-            <button style={{ margin: "auto" }} className="hmHr-button">
+            <a
+              href="/contact-us"
+              style={{ margin: "auto" }}
+              className="hmHr-button"
+            >
               Contact us
-            </button>
+            </a>
           </div>
         </div>
       </div>

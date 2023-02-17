@@ -597,7 +597,7 @@ function Blockchain() {
           className="schedule container"
           style={{ marginTop: "100px", marginBottom: "100px" }}
         >
-          <a href="#" className="btn-schedule">
+          <a href="/contact-us" className="btn-schedule">
             Schedule time to talk <ArrowRightOutlined />
           </a>
         </section>

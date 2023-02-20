@@ -1,5 +1,5 @@
 import "./HeadStyle.scss";
-import logo from "./logoave.png";
+import logo from "./Asset 2.svg";
 import React, { useEffect, useState } from "react";
 import {
   CaretRightOutlined,
@@ -38,6 +38,7 @@ function Headerr() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 50) {
+        document.getElementById("navbar").style.display = "none";
         document
           .getElementById("head-top")
           .classList.remove(
@@ -48,6 +49,7 @@ function Headerr() {
           );
         setNav("nav");
       } else {
+        document.getElementById("navbar").style.display = "block";
         setNav("");
         setTimeout(function () {
           document
@@ -90,15 +92,20 @@ function Headerr() {
   return (
     <>
       <div
+        style={{ zIndex: 12 }}
+        id="infor"
+        className="overlay transition"
+      ></div>
+      <div
+        id="navbar"
         style={{
           paddingBottom: 6,
           position: "fixed",
-          // marginTop: 0,
+          marginTop: 0,
           width: "100%",
-          zIndex: "9999",
+          zIndex: 10,
         }}
       >
-        <div id="infor" className="overlay transition"></div>
         {/* <div style={{ height: 50, width: "100%" }}>
           <div id="head-top" className="head-top">
             <h4>
@@ -124,16 +131,14 @@ function Headerr() {
             justifyContent: "space-around",
           }}
         >
-          <div
-            id="navbar"
-            className={nav ? "head-totall sticky" : "head-totall"}
-          >
+          <div className={nav ? "head-totall sticky" : "head-totall"}>
             <div
               style={{
                 display: "flex",
                 justifyContent: "space-between",
                 flexDirection: "row",
               }}
+              className="sizeLogo"
             >
               <img id="logo" src={logo} />
               <div id="alignRightOutlined">

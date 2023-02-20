@@ -1,39 +1,48 @@
 .hero{
-    background-image     : url('./web-development.jpg');
+    background-image     : url('./Home.svg');
     background-repeat    : no-repeat;
-    background-position-x: left;
-    background-position-y: center;
+    background-position-x: top;
+    background-position-y: top;
     background-size      : cover;
     position             : relative;
-    height               : 100%;
-    width                : 100%;
+    height               : 100vh;
+    width                : 110%;
+    // transform: scale(1.1);
+    // transform: translateY(20px);
     .exb{
         font-weight: 800;
-        color: #0060ad;
-        font-size: 49px;
+        color: white;
+        // color: #0060ad;
+        font-size: 39px;
         line-height: 1;
     }
     .dev{
-        font-size: 47px;
-        color: #8aba2b;
+        font-size: 37px;
+        color: white;
+        // color: #8aba2b;
         font-weight: 700;
         line-height: 1;
     }
     .tec{
-        font-size: 42px;
-        color: #696969;
+        font-size: 32px;
+        color: white;
+        // color: #696969;
         font-weight: 300;
         line-height: 1;
     }
     .digi{
-        color: #60697B;
+        // color: #60697B;
+        color: white;
         font-weight: 700;
-        font-size: 42px;
+        font-size: 32px;
         text-transform: uppercase;
         line-height: 1;
 
     }
     
+}
+.titleWeb{
+    display: none;
 }
 .hmHr-but {
     background-color   : #0161AD;;
@@ -68,6 +77,15 @@
         color: #606060;
         font-weight: 300;
     }
+}
+.cssanimation {
+    animation-duration : 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInBottom {
+    animation-name: fadeInBottom;
+    display       : block
 }
 .grad{
     background-image: linear-gradient(to right, rgb(0, 96, 173) 0%, rgb(138, 186, 43) 100%);
@@ -340,7 +358,7 @@
         .title{
             font-weight: 500;
             color: white;
-            font-size: 25px;
+            font-size: 20px;
         }
         .link-more {
             color: #ffffff;
@@ -369,7 +387,7 @@
 }
 .client{
     font-weight: 700;
-    color: #8aba2b;
+    color: #f15f22;
     background-color: white;
 }
 @media (min-width: 1024px) and  (max-width: 1199.98px) { 

@@ -511,7 +511,7 @@
         .siler-list {
             transform: translate3d(0, 0, 0);
 
-            .slider-item {
+            .slider-item-mobi {
                 background-size    : cover;
                 background-repeat  : no-repeat;
                 background-position: right top;
@@ -533,7 +533,7 @@
 
                         .text-title {
                             color            : #696969;
-                            font-size        : 35px;
+                            font-size        : 35px !important;
                             line-height      : 38px;
                             font-weight      : 800;
                             text-transform   : uppercase;
@@ -542,7 +542,7 @@
 
                         .sub-text {
                             color      : #696969;
-                            font-size  : 20px;
+                            font-size  : 13px !important;
                             line-height: 38px;
                         }
                     }

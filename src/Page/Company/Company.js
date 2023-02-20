@@ -48,7 +48,11 @@ function Company() {
           <div className="row">
             <div className="col-4 new-1">
               <div className="img-new">
-                <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                <a>
+                  <figure>
+                    <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                  </figure>
+                </a>
               </div>
               <div>
                 <p>
@@ -58,7 +62,11 @@ function Company() {
             </div>
             <div className="col-4 new-1">
               <div className="img-new">
-                <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                <a>
+                  <figure>
+                    <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                  </figure>
+                </a>
               </div>
               <div>
                 <p>
@@ -68,7 +76,11 @@ function Company() {
             </div>
             <div className="col-4 new-1">
               <div className="img-new">
-                <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                <a>
+                  <figure>
+                    <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                  </figure>
+                </a>
               </div>
               <div>
                 <p>
@@ -80,7 +92,11 @@ function Company() {
           <div className="row">
             <div className="col-4 new-1">
               <div className="img-new">
-                <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                <a>
+                  <figure>
+                    <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                  </figure>
+                </a>
               </div>
               <div>
                 <p>
@@ -90,7 +106,11 @@ function Company() {
             </div>
             <div className="col-4 new-1">
               <div className="img-new">
-                <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                <a>
+                  <figure>
+                    <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                  </figure>
+                </a>
               </div>
               <div>
                 <p>
@@ -100,7 +120,11 @@ function Company() {
             </div>
             <div className="col-4 new-1">
               <div className="img-new">
-                <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                <a>
+                  <figure>
+                    <img src="https://web.archive.org/web/20220105053311im_/https://deha-soft.com/wp-content/uploads/2021/07/Group-23.png" />
+                  </figure>
+                </a>
               </div>
               <div>
                 <p>

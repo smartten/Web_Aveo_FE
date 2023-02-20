@@ -479,7 +479,7 @@ function ServiceMobile() {
                   <div
                     className={
                       selected === i
-                        ? "col faq-answer show"
+                        ? "col faq-answer show collapsing"
                         : "col faq-answer collapse"
                     }
                   >

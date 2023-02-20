@@ -145,7 +145,7 @@ function Headerr() {
             </div>
             <div id="head-menu" className="head-menu">
               <div>
-                <a href="/" class="link">
+                <a href="/company" class="link">
                   Company
                 </a>
               </div>

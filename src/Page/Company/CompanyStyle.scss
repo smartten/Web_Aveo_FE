@@ -181,9 +181,9 @@
 
                     &:hover {
                         img {
-                            // transform : scale(1.15);
-                            // width     : 100%;
-                            // transition: transform 1s ease, opacity .5s ease .25
+                            transform : scale(1.05);
+                            width     : 100%;
+                            transition: transform 1s ease, opacity .5s ease .25
                         }
 
                         ;
@@ -421,17 +421,17 @@
             .timeline-row:nth-child(odd) .timeline-content {
                 background-color: #5a99eeee;
                 /* Fallback Color */
-                background-image: -webkit-gradient(linear, left top, left bottom, from(#1379bb), to(#5a99eeee));
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#5a99ee), to(#5a99eeee));
                 /* Saf4+, Chrome */
-                background-image: -webkit-linear-gradient(top, #1379bb, #5a99eeee);
+                background-image: -webkit-linear-gradient(top, #5a99ee, #5a99eeee);
                 /* Chrome 10+, Saf5.1+, iOS 5+ */
-                background-image: -moz-linear-gradient(top, #1379bb, #5a99eeee);
+                background-image: -moz-linear-gradient(top, #5a99ee, #5a99eeee);
                 /* FF3.6 */
-                background-image: -ms-linear-gradient(top, #1379bb, #5a99eeee);
+                background-image: -ms-linear-gradient(top, #5a99ee, #5a99eeee);
                 /* IE10 */
-                background-image: -o-linear-gradient(top, #1379bb, #5a99eeee);
+                background-image: -o-linear-gradient(top, #5a99ee, #5a99eeee);
                 /* Opera 11.10+ */
-                background-image: linear-gradient(top, #1379bb, #5a99eeee);
+                background-image: linear-gradient(top, #5a99ee, #5a99eeee);
                 margin-right    : 40px;
                 margin-left     : 0;
                 text-align      : right;
@@ -439,7 +439,7 @@
 
             .timeline-row:nth-child(odd) .timeline-content:after {
                 right        : -39px;
-                border-left  : 18px solid #1379bb;
+                border-left  : 18px solid #5a99ee;
                 border-top   : 10px solid transparent;
                 border-bottom: 10px solid transparent;
             }

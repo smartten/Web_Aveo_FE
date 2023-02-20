@@ -22,6 +22,13 @@ import {
   LoginOutlined,
 } from "@ant-design/icons";
 
+setTimeout(function () {
+  var titleWeb = document.getElementsByClassName("titleWeb");
+  for (var i = 0; i < titleWeb.length; i++) {
+    titleWeb[i].classList.add("fadeInBottom", "cssanimation");
+  }
+}, 3000);
+
 function Home() {
   const [select, setSelect] = useState(true);
   const [text, setText] = useState({
@@ -86,8 +93,11 @@ function Home() {
   ];
   return (
     <div className="container-fluid  overflow-hidden m-0 g-0">
-      <div className="row hero py-5 p-sm-5 g-0">
-        <div className="col-sm-12 mx-2 my-5 py-5 m-sm-5 p-sm-5">
+      <div className="row hero py-5 px-sm-5 py-sm-auto g-0">
+        <div
+          id=""
+          className="col-sm-12 mx-2 my-5 py-5 mx-sm-5 my-sm-auto px-sm-5 py-sm-auto titleWeb"
+        >
           <p className="exb">
             WEB DESIGN &<br />
             <span className="dev">DEVELOPMENT SERVICES</span>
@@ -102,7 +112,7 @@ function Home() {
           <h2 className="desc grad">Mission</h2>
           <h3>
             To&nbsp;
-            <span style={{ fontWeight: 700, color: "#0060ad" }}>
+            <span style={{ fontWeight: 700, color: "#1d2055" }}>
               deliver happiness&nbsp;
             </span>
             to our <span className="client">clients</span> and
@@ -182,7 +192,7 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="row my-5 my-sm-0 mb-sm-5">
+      {/* <div className="row my-5 my-sm-0 mb-sm-5">
         <div className="col-12 sTitle">
           <h3 style={{ fontSize: 27, opacity: 0.9, lineHeight: 1 }} class="lig">
             Creative Portfolio
@@ -207,7 +217,7 @@ function Home() {
           <br />
           <img src={w6} />
         </div>
-      </div>
+      </div> */}
 
       <div className="row hmQuote mt-lg-5 p-lg-5">
         <div className="col-12 col-lg-6 px-4 mt-lg-5 p-lg-5">

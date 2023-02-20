@@ -1,5 +1,6 @@
 import "./HeadStyle.scss";
-import logo from "./Asset 2.svg";
+import logo from "./Asset 1.svg";
+import logo2 from "./Logo.svg";
 import React, { useEffect, useState } from "react";
 import {
   CaretRightOutlined,
@@ -34,11 +35,24 @@ window.onload = function () {
 function Headerr() {
   const [nav, setNav] = useState("");
   const [menu, setMenu] = useState(true);
+  const [anhLogo, setLogo] = useState(logo);
+  const [click, setClick] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      var headDrop = document.getElementsByClassName("head-totall");
+      var theLink = document.getElementsByClassName("link");
+
       if (window.scrollY >= 50) {
-        document.getElementById("navbar").style.display = "none";
+        for (var i = 0; i < headDrop.length; i++) {
+          headDrop[i].style.backgroundColor = "white";
+          headDrop[i].style.boxShadow = "0 1px 5px  rgba(0, 0, 0, 0.3)";
+        }
+        for (var i = 0; i < theLink.length; i++) {
+          theLink[i].style.color = "#616161";
+        }
+        setLogo(logo2);
+        setNav("nav");
         document
           .getElementById("head-top")
           .classList.remove(
@@ -47,10 +61,22 @@ function Headerr() {
             "dislay",
             "fadeInTop"
           );
-        setNav("nav");
       } else {
-        document.getElementById("navbar").style.display = "block";
+        if (click) {
+          for (var i = 0; i < headDrop.length; i++) {
+            headDrop[i].style.backgroundColor = "white";
+          }
+        } else {
+          for (var i = 0; i < headDrop.length; i++) {
+            headDrop[i].style.backgroundColor = "#ffffff00";
+            headDrop[i].style.boxShadow = "";
+          }
+        }
+        for (var i = 0; i < theLink.length; i++) {
+          theLink[i].style.color = "white";
+        }
         setNav("");
+        setLogo(logo);
         setTimeout(function () {
           document
             .getElementById("head-top")
@@ -61,27 +87,28 @@ function Headerr() {
   }, []);
   const handleColMenu = () => {
     var arrayMenu = document.getElementsByClassName("head-menu");
-    var outline = document.getElementsByClassName("alignRightOutlined");
+    // var outline = document.getElementsByClassName("alignRightOutlined");
     var headTo = document.getElementsByClassName("head-totall");
 
     if (menu) {
       for (var i = 0; i < arrayMenu.length; i++) {
         arrayMenu[i].style.display = "block";
       }
-      for (var i = 0; i < outline.length; i++) {
-        outline[i].style.color = "#0262AD";
-      }
+      // for (var i = 0; i < outline.length; i++) {
+      //   outline[i].style.color = "#0262AD";
+      // }
       for (var i = 0; i < headTo.length; i++) {
         headTo[i].style.backgroundColor = "white";
       }
       setMenu(false);
+      setClick(true);
     } else {
       for (var i = 0; i < arrayMenu.length; i++) {
         arrayMenu[i].style.display = "none";
       }
-      for (var i = 0; i < outline.length; i++) {
-        outline[i].style.color = "white";
-      }
+      // for (var i = 0; i < outline.length; i++) {
+      //   outline[i].style.color = "white";
+      // }
       for (var i = 0; i < headTo.length; i++) {
         headTo[i].style.backgroundColor = "";
       }
@@ -131,7 +158,10 @@ function Headerr() {
             justifyContent: "space-around",
           }}
         >
-          <div className={nav ? "head-totall sticky" : "head-totall"}>
+          <div
+            id="headDrop"
+            className={nav ? "head-totall sticky" : "head-totall"}
+          >
             <div
               style={{
                 display: "flex",
@@ -140,7 +170,7 @@ function Headerr() {
               }}
               className="sizeLogo"
             >
-              <img id="logo" src={logo} />
+              <img id="logo" className="logoNone" src={anhLogo} />
               <div id="alignRightOutlined">
                 <AlignRightOutlined
                   onClick={handleColMenu}

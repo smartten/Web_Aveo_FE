@@ -170,7 +170,7 @@ function ServiceMobile() {
                     world where everyone can be absorbed in value creation.” If
                     you like, why don’t you take a look at DEHA VIET NAM?
                   </p>
-                  <a href="#" className="button btn-reverse">
+                  <a href="/contact-us" className="button btn-reverse">
                     Contact Us
                   </a>
                 </div>
@@ -352,45 +352,6 @@ function ServiceMobile() {
             </div>
           </div>
         </section>
-        <section className="creative-portfolio bg-gray">
-          <div className="container">
-            <div className="text-title text-center">
-              <h3 className="text-title-1">Creative Portfolio</h3>
-              <h2
-                className="text-title-2"
-                style={{ marginBottom: "80px", marginTop: "15px" }}
-              >
-                Success cases
-              </h2>
-            </div>
-            <div className="list-img row">
-              <div className="col-4">
-                <div className="mb-3 img-hover">
-                  <img src="https://web.archive.org/web/20210920051254im_/https://deha-soft.com/wp-content/uploads/2021/07/w3.jpg" />
-                </div>
-                <div className="img-hover">
-                  <img src="https://web.archive.org/web/20220105053526im_/https://deha-soft.com/wp-content/uploads/2021/07/w6.jpg" />
-                </div>
-              </div>
-              <div className="col-4">
-                <div className="mb-3 img-hover">
-                  <img src="https://web.archive.org/web/20220105053358im_/https://deha-soft.com/wp-content/uploads/2021/07/w5.jpg" />
-                </div>
-                <div className="img-hover">
-                  <img src="https://web.archive.org/web/20220105053545im_/https://deha-soft.com/wp-content/uploads/2021/07/w4.jpg" />
-                </div>
-              </div>
-              <div className="col-4">
-                <div className="mb-3 img-hover">
-                  <img src="https://web.archive.org/web/20220105053331im_/https://deha-soft.com/wp-content/uploads/2021/07/w1.jpg" />
-                </div>
-                <div className="img-hover">
-                  <img src="https://web.archive.org/web/20220105053301im_/https://deha-soft.com/wp-content/uploads/2021/07/w2.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="our-favourite-stacks">
           <div className="container pt-5">
             <div className="text-title text-center">
@@ -538,7 +499,7 @@ function ServiceMobile() {
           className="schedule container"
           style={{ marginTop: "100px", marginBottom: "100px" }}
         >
-          <a href="#" className="btn-schedule">
+          <a href="/contact-us" className="btn-schedule">
             Schedule time to talk <ArrowRightOutlined />
           </a>
         </section>

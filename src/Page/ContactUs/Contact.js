@@ -102,7 +102,7 @@ function Contact() {
                 >
                   <Form.Item
                     label="This question is about:"
-                    name="name"
+                    name="question"
                     rules={[
                       {
                         required: true,
@@ -153,7 +153,7 @@ function Contact() {
                   </Form.Item>
                   <Form.Item
                     label="Your Company Name"
-                    name="name"
+                    name="Company"
                     rules={[
                       {
                         required: true,
@@ -171,11 +171,7 @@ function Contact() {
                     <Button
                       type="primary"
                       htmlType="submit"
-                      style={{
-                        width: "100%",
-                        marginLeft: "180px",
-                        // marginTop: "30px",
-                      }}
+                      className="btn-submit"
                     >
                       Submit
                     </Button>

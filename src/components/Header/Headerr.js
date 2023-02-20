@@ -180,7 +180,7 @@ function Headerr() {
             </div>
             <div id="head-menu" className="head-menu">
               <div>
-                <a href="" class="link">
+                <a href="/company" class="link">
                   Company
                 </a>
               </div>
@@ -280,9 +280,9 @@ function Headerr() {
                   </div>
                 </div>
               </div>
-              <button id="header-but" className="header-but">
+              <a href="/contact-us" id="header-but" className="header-but">
                 Contact
-              </button>
+              </a>
             </div>
             <div></div>
             {/* <div className="triangle-bottomright"></div> */}

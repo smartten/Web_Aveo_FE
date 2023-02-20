@@ -21,6 +21,7 @@
     }
 
 }
+
 .head-totall{
     height: 100px; 
     width: 100%; 
@@ -32,8 +33,7 @@
     // box-shadow: 0 1px 5px  rgba(0, 0, 0, 0.3);
     background-color: rgba(255, 255, 255, 0);
     /* box-shadow: 0px 12px 10px -15px #111;  */
-    transition-duration: 0.5s;	
-
+    transition-duration: 0.5s;
 }
 
 .sticky {
@@ -129,16 +129,18 @@
 }
 
 .header-but {
-    background-color   : #0161AD;
-    border             : none;
-    color              : white;
-    width              : 150px;
-    height             : 50px;
-    font-size          : 18px;
-    font-weight        : 500;
-    margin-top         : -10px;
-    transition-duration: 0.1s;
-    display            : none;
+    background-color      : #0161AD;
+    border                : none;
+    color                 : white;
+    width                 : 150px;
+    height                : 50px;
+    font-size             : 18px;
+    font-weight           : 500;
+    margin-top            : -10px;
+    transition-duration   : 0.1s;
+    text-decoration       : none;
+    padding               : 10px 40px;
+    // display            : none;
     border-radius: 10px;
 }
 
@@ -398,15 +400,15 @@
 }
 
 
-@media (min-width: 1024px) and  (max-width: 1199.98px) { 
-    .head-menu-icon{
+@media (min-width: 1024px) and  (max-width: 1199.98px) {
+    .head-menu-icon {
         width: 30%;
     }
     .head-top .topcenter {
         width: 50%;
     }
 
-    .head-menu{
+    .head-menu {
         display: none;
         padding-top: 100px;
         flex-direction: column;
@@ -417,10 +419,9 @@
     }
 
     .alignRightOutlined {
-        color: #0060AD;
+        color: white;
         font-size: 40px;
         cursor: pointer;
-
     }
 
     .head-menu-icon {
@@ -437,6 +438,8 @@
     }
 
     .link {
+        color: #717171;
+        font-weight: 400;
         margin-bottom: 25px;
     }
 
@@ -446,7 +449,7 @@
     
  }
 
- @media only screen and (max-width: 767.98px) {
+    @media only screen and (max-width: 767.98px) {
         .head-menu-icon {
             width: 50%;
         }
@@ -467,87 +470,86 @@
         
     }
 
+  
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+            .head-menu-icon {
+                width: 30%;
+            }
 
-// @media (min-width: 1024px) and (max-width: 1199.98px) {
-//             .head-menu-icon {
-//                 width: 30%;
-//             }
+            .head-top .topcenter {
+                width: 50%;
+            }
 
-//             .head-top .topcenter {
-//                 width: 50%;
-//             }
-
-//             .head-menu {
-//                 display: none;
-//                 padding-top: 100px;
-//                 flex-direction: column;
-//                 text-align: center;
-//             }
-//             #alignRightOutlined {
-//                 display: block;
-//             }
-//             .alignRightOutlined {
-//                 color: #0060AD;
-//                 font-size: 40px;
-//                 cursor: pointer;
-//             }
-//             .head-totall {
-//                 height: auto;
-//             }
-//             .link {
-//                 margin-bottom: 25px;
-//             }
-//             .header-but {
-//                 margin: 25px 5px 25px 5px;
-//             }
-//             .dropdown-content {
-//                 z-index: 10;
-//                 position: relative;
-//                 margin: -10px 0 10px 0;
-//                 padding: 1px 0 1px 0;
-//                 text-align: left;
-//                 // display: flex;
-//                 align-items: start;
-//             }
-//         }
+            .head-menu {
+                display: none;
+                padding-top: 100px;
+                flex-direction: column;
+                text-align: center;
+            }
+            #alignRightOutlined {
+                display: block;
+            }
+            .alignRightOutlined {
+                color: #0060AD;
+                font-size: 40px;
+                cursor: pointer;
+            }
+            .head-totall {
+                height: auto;
+            }
+            .link {
+                margin-bottom: 25px;
+            }
+            .header-but {
+                margin: 25px 5px 25px 5px;
+            }
+            .dropdown-content {
+                z-index: 10;
+                position: relative;
+                margin: -10px 0 10px 0;
+                padding: 1px 0 1px 0;
+                text-align: left;
+                // display: flex;
+                align-items: start;
+            }
+        }
        
-// @media only screen and (max-width: 767.98px) {
-//         .head-menu-icon {
-//             width: 50%;
-//         }
-//         .head-top .topcenter {
-//             width: 20%;
-//         }
-
-//     }
-
-@media only screen and (max-width: 648px) {
-
-        /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
-        .head-menu {
-            display: none;
-        }
-
-        .icon {
-            display: none;
-        }
-
-        #phoneFilled {
-            padding-left: 20%;
-            display: block;
-        }
-
+@media only screen and (max-width: 767.98px) {
         .head-menu-icon {
-            width: 40%;
+            width: 50%;
         }
-
         .head-top .topcenter {
-            width: 40%;
+            width: 20%;
         }
+    }
 
-        .top-link {
-            font-size: 16px;
-        }
+    @media only screen and (max-width: 648px) {
+            /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
+            .head-menu {
+                display: none;
+            }
+
+            .icon {
+                display: none;
+            }
+
+            #phoneFilled {
+                padding-left: 20%;
+                display: block;
+            }
+
+            .head-menu-icon {
+                width: 40%;
+            }
+
+            .head-top .topcenter {
+                width: 40%;
+            }
+
+            .top-link {
+                font-size: 16px;
+            }
+        
         .sizeLogo{
             img{
                 margin:-5px 0px 0px 10px;

@@ -365,7 +365,7 @@
                     font-weight            : 800;
                     color                  : #0060ad;
                     display                : inline-block;
-                    background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
+                    background             : linear-gradient(to right, #1d2055 0%, #f15f22 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -583,6 +583,36 @@
                 }
             }
         }
+    }
+
+    .benefit {
+        .row {
+            margin-bottom: 20px;
+
+            .content-part {
+                background-color: #f4f4f9;
+                width           : 31.33333%;
+                padding         : 55px 60px;
+                margin          : 0px 5px !important;
+
+                .icon-benefit {
+                    font-size: 60px;
+                }
+
+                .text-benefit {
+                    b {
+                        font-size          : 23px;
+                        color              : #000;
+                        // padding-bottom  : 20px;
+                    }
+
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
     }
 }
 

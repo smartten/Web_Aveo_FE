@@ -21,6 +21,9 @@
     }
 
 }
+.head-reponsive{
+    display: none;
+}
 
 .head-totall{
     height: 100px; 
@@ -58,7 +61,7 @@
     // padding: 10px;
     display: block;
     animation: fadeIn 2s;
-    justify-content: flex-start;///////////////////////////////////
+    justify-content: flex-start;
 }
 
 #id {
@@ -96,7 +99,7 @@
 }
 
 .head-menu {
-    padding        : 40px 10px 0 0;
+    padding        : 40px 100px 0 0;
     display        : flex;
     flex-direction : row;
     justify-content: space-between;
@@ -105,16 +108,16 @@
 .link {
     text-decoration: none;
     color: white;
-    font-size: 19px;
-    margin-right: 40px;
-    font-weight: 300;
+    font-size: 17px;
+    margin-right: 50px;
+    font-weight: 500;
     display: none;
 }
 
 .link-drop {
     text-decoration: none;
     color          : #616161;
-    font-size      : 17px;
+    font-size      : 15px;
     margin-left    : 10px;
     font-weight    : 400;
 
@@ -140,7 +143,7 @@
     transition-duration   : 0.1s;
     text-decoration       : none;
     padding               : 10px 40px;
-    // display            : none;
+    display            : none;
     border-radius: 10px;
 }
 
@@ -321,6 +324,12 @@
 .dislayBlock {
     display: block;
 }
+.CaretDownFilled{
+    font-size: 12px;
+    // color: white;
+    position: fixed;
+    margin: 9px 7px 7px 4px,
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -328,13 +337,24 @@
     // .head-totall{
     //     background-color: white;
     // }
+    .head-reponsive{
+        width: 100%;
+        height: 105px;
+        // border: 1px solid black;
+        position: fixed;
+        background-color: white;
+        margin: 0;
+        z-index: -2;
+        display: none;
+    }
     .head-menu{
         display: none;
-        padding: 0px 0px 15px 15px;
+        padding: 0px 0px 0px 140px;
         overflow-y: scroll;
         height: 400px;
         margin-bottom: 30px;
-        // background-color: white;
+        z-index: 1;
+        background-color: white;
     }
     #alignRightOutlined{
         display: block;
@@ -399,57 +419,7 @@
 }
 }
 
-
-@media (min-width: 1024px) and  (max-width: 1199.98px) {
-    .head-menu-icon {
-        width: 30%;
-    }
-    .head-top .topcenter {
-        width: 50%;
-    }
-
-    .head-menu {
-        display: none;
-        padding-top: 100px;
-        flex-direction: column;
-    }
-
-    #alignRightOutlined {
-        display: block;
-    }
-
-    .alignRightOutlined {
-        color: white;
-        font-size: 40px;
-        cursor: pointer;
-    }
-
-    .head-menu-icon {
-        width: 40%;
-    }
-
-    .head-top .topcenter {
-        width: 40%;
-    }
-
-    .head-totall {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .link {
-        color: #717171;
-        font-weight: 400;
-        margin-bottom: 25px;
-    }
-
-    .header-but {
-        margin: 25px 0px 25px 0px;
-    }
-    
- }
-
-    @media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 767.98px) {
         .head-menu-icon {
             width: 50%;
         }
@@ -470,7 +440,6 @@
         
     }
 
-  
 @media (min-width: 1024px) and (max-width: 1199.98px) {
             .head-menu-icon {
                 width: 30%;
@@ -523,7 +492,7 @@
         }
     }
 
-    @media only screen and (max-width: 648px) {
+@media only screen and (max-width: 648px) {
             /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
             .head-menu {
                 display: none;

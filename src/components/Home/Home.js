@@ -1,4 +1,4 @@
-import imageDeha from "./img-deha.jpg";
+import imageDeha from "./imgwc.jpg";
 import imgDig from "./img_dig_cons@2x.jpg";
 import imgTranf from "./img_digi_tranf@2x.jpg";
 import w1 from "./w1.jpg";
@@ -121,7 +121,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="row  mx-sm-5">
+      <div className="row  mx-sm-5 px-sm-5">
         <div className="col-sm-6 px-4 pt-1 px-sm-5 px-md-1 px-lg-5">
           <p class="lig">
             Happiness, with DEHA, is the highest value that people accumulate
@@ -133,15 +133,15 @@ function Home() {
             of values to members, partners and customers to achieve that
             happiness.
           </p>
+          <button className="hmHr-but">About us</button>
         </div>
         <div className="col-sm-6 px-sm-5">
           <img className="misImg" src={imageDeha} />
         </div>
-        <div className="row mx-1 my-5 mx-sm-3">
+        {/* <div className="row mx-1 my-5 mx-sm-3">
           <div className="col-sm-12">
-            <button className="hmHr-but">About us</button>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="row my-sm-5 imageArea px-sm-5 g-0">
         <div className="col-sm-12 px-sm-5">
@@ -171,7 +171,10 @@ function Home() {
       </div>
 
       <div className="row my-sm-5">
-        <div className="col-sm-6 py-4 p-sm-5 hmLiser">
+        <div
+          style={{ borderRight: "none" }}
+          className="col-sm-6 py-4 p-sm-5 hmLiser"
+        >
           <h3>Digital Consulting</h3>
           <img className="px-sm-5" src={imgDig} />
           <a className="mt-sm-5" href="">

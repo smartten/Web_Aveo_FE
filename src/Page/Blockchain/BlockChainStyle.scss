@@ -1,4 +1,4 @@
-.body {
+.blockchain {
     background              : #fff;
     position                : relative;
     font-size               : 16px;
@@ -30,6 +30,43 @@
         vertical-align: middle;
     }
 
+    .cssanimation {
+        animation-duration : 1s;
+        animation-fill-mode: both;
+    }
+
+    .fadeInLeft {
+        animation-name: fadeInLeft;
+        display       : block
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            opacity  : 0;
+            transform: translateX(-100px);
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    .fadeRight {
+        animation-name: fadeInRight;
+        display       : block
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity  : 0;
+            transform: translateX(-100px);
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
     .slider {
         position   : relative;
         display    : block;
@@ -46,7 +83,7 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+                background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
                 height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
@@ -56,598 +93,292 @@
                 .container {
                     position: relative;
 
-                    .text {
-                        overflow      : hidden;
-                        // transform  : translateY(80px);
+                    .slide-content {
+                        align-items       : center;
+                        // justify-content: space-between;
 
-                        .text-title {
-                            color            : #ffffff;
-                            font-size        : 45px;
-                            line-height      : 38px;
-                            font-weight      : 800;
-                            text-transform   : uppercase;
-                            // margin        : 0px;
+                        .text {
+                            overflow   : hidden;
+                            width      : 60%;
+                            margin-left: 35px;
+
+                            .text-title {
+                                color      : #ffffff;
+                                font-size  : 55px;
+                                line-height: 38px;
+                                font-weight: 600;
+
+                            }
+
+                            .sub-text {
+                                color      : #ffffff;
+                                font-size  : 25px;
+                                line-height: 38px;
+                            }
                         }
 
-                        .sub-text {
-                            color      : #ffffff;
-                            font-size  : 20px;
-                            line-height: 38px;
+                        .image {
+                            width: 40%;
+
+                            img {
+                                width: 100%;
+                            }
                         }
                     }
+
                 }
             }
         }
     }
 
-    main {
-        overflow        : hidden;
-        position        : relative;
-        background-color: white;
+    .developer-service {
+        padding-top   : 70px;
+        padding-bottom: 70px;
 
-        .section-services {
-            margin-top   : 40px;
-            margin-bottom: 40px;
-
-            .container {
-                position: relative;
-
-                .title {
-                    margin-top : 20px;
-                    font-weight: bold;
-                    font-size  : 29px;
-                    color      : #0060ad;
-
-                }
-
-                .desc {
-                    font-size: 18px;
-                    color    : #60697B;
-                    float    : left;
-                }
-
-                .c4-item {
-                    margin-top: 50px;
-
-                    .item {
-                        padding-left : 15px;
-                        padding-right: 15px;
-                        text-align   : center;
-
-                        .title {
-                            font-size    : 20px;
-                            color        : #60697B;
-                            text-align   : center;
-                            margin-bottom: 20px;
-                        }
-
-                        .desc {
-                            font-size : 15px;
-                            color     : #60697B;
-                            text-align: center;
-
-                        }
-                    }
-                }
-            }
-        }
-
-
-        .contact-us::before {
-            content   : '';
-            position  : absolute;
-            top       : 0;
-            left      : 0;
-            width     : 100%;
-            height    : 100%;
-            opacity   : 0.8;
-            background: linear-gradient(to bottom right, #0060AD 0%, #8ABA2B 100%);
-        }
-
-        .contact-us {
-            margin-top            : 40px;
-            margin-bottom         : 40px;
-            background-image      : url(https://web.archive.org/web/20220105053354im_/https://deha-soft.com/wp-content/themes/deha-viet-nam/upload/bg_hr.jpg);
-            background-repeat     : no-repeat;
-            // background-color   : linear-gradient(to bottom right, #0060AD 0%, #8ABA2B 100%);
-            background-position   : left center;
-            background-size       : cover;
-            position              : relative;
-            margin-bottom         : 0;
-
-            .container {
-                position: relative;
-
-                .hrContent {
-                    padding: 100px 0px;
-
-                    h2 {
-                        font-size    : 27px;
-                        font-weight  : 800;
-                        color        : #ffffff;
-                        margin-bottom: 30px;
-                    }
-
-                    p {
-                        color        : #ffffff;
-                        font-size    : 18px;
-                        line-height  : 28px;
-                        margin-bottom: 30px;
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color          : blue;
-                        background     : white;
-                        padding        : 15px 40px;
-                        font-weight    : 700;
-
-                        &:hover {
-                            border: 4px #0060ad solid;
-                            color : #0060ad !important
-                        }
-                    }
-                }
-            }
-        }
-
-        .our-approach {
-            margin-top   : 50px;
-            margin-bottom: 50px;
-
-            .container {
-                position: relative;
-
-                .number {
-                    width          : 71px;
-                    height         : 71px;
-                    border-radius  : 50%;
-                    display        : flex;
-                    align-items    : center;
-                    justify-content: center;
-                    color          : #3F78E0;
-                    font-weight    : 700;
-                    font-size      : 20px;
-                    margin-bottom  : 20px;
-                    background     : #E0E9FA;
-                    margin-top     : 20px;
-                }
-
-                .title {
-                    font-weight: bold;
-                    font-size  : 20px;
-                    color      : #60697B;
-
-                }
-
-                .title-1 {
-                    font-weight: bold;
-                    font-size  : 29px;
-                    color      : #0060ad;
-
-                }
-
-                .list {
-                    font-size: 16px;
-                    color    : #60697B;
-                    float    : left;
-
-                    ul {
-                        list-style-type: circle;
-                        margin-left    : -20px;
-                    }
-                }
-            }
-        }
-
-        .imgv1::before {
-            content   : '';
-            position  : absolute;
-            top       : 0;
-            left      : 0;
-            width     : 100%;
-            height    : 100%;
-            opacity   : 0.5;
-            background: linear-gradient(to bottom right, #0060AD 0%, #8ABA2B 100%);
-        }
-
-        .imgv1 {
-            background-position-y   : 168.379px;
-            font-size               : 26px;
-            text-align              : center;
-            width                   : 100%;
-            height                  : 350px;
-            background-attachment   : fixed;
-            background-position     : center 0;
-            background-size         : cover;
-            background-repeat       : no-repeat;
-            position                : relative;
-            // overflow             : hidden;
-            background-image        : url('https://web.archive.org/web/20220105053405im_/https://deha-soft.com/wp-content/themes/deha-viet-nam/upload/halong-bay.jpg');
-
-            .container {
-                position : relative;
-                max-width: 1000px;
-
-                h2 {
-                    align-items: center;
-                    font-size  : 23px;
-                    color      : white;
-                    font-style : italic;
-
-                }
-            }
-        }
-
-        .secction-title-1 {
+        .title-service {
             text-align: center;
-            margin-top: 20px;
 
             .title {
-                font-size: 25px;
+                color      : #000;
+                font-size  : 40px;
+                font-weight: 600;
             }
 
             .sub-title {
-                text-transform: uppercase;
-                font-size     : 25px;
-                color         : blue;
-                font-weight   : 600;
+                font-size: 20px;
             }
         }
 
-        .section-feature-1 {
-            width       : 100%;
-            display     : flex;
-            // flex-wrap: wrap;
+        .content-service {
+            .row {
+                justify-content: space-between;
 
-            .title {
-                font-size  : 30px;
-                margin-left: 20px;
+                .col-6 {
+                    width: 48%;
+                }
+            }
+
+            .content-text {
+                display   : flex;
+                margin-top: 50px;
+
+                .icon-service {
+                    width: 15%;
+
+                    svg {
+                        font-size: 50px;
+                        color    : #1890ff;
+                    }
+                }
+
+                .text-service {
+                    width: 85%;
+
+                    .text-title {
+                        font-size: 30px;
+                        color    : #000;
+                        margin   : 0;
+                    }
+
+                    .text-sub {
+                        font-size: 16px;
+                        margin   : 0;
+                        width    : 95%;
+                    }
+                }
+            }
+        }
+    }
+
+    .certificates {
+        background-size    : cover;
+        background-repeat  : no-repeat;
+        background-position: 50%;
+        display            : flex;
+        align-items        : center;
+        background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
+        height             : 300px !important;
+        min-height         : 1px;
+        float              : left;
+        width              : 100% !important;
+        background-color   : #f1f1f1;
+
+        .content-certificates {
+            .title-certificates {
+                color      : #fff;
+                text-align : center;
+                font-size  : 40px;
                 font-weight: 700;
             }
+        }
+    }
 
-            .text-content {
-                margin-left: 20px;
-                font-size  : 18px;
+    .our-typical {
+        padding-top   : 370px;
+        padding-bottom: 70px;
+
+        .content-typical {
+            display        : flex;
+            justify-content: center;
+
+            .title-typical {
+                width      : 60%;
+                text-align : center;
+                font-size  : 35px;
+                color      : #000;
+                font-weight: 600;
             }
         }
 
-        .our-favourite-stacks {
-            .text-title {
-                .text-title-1 {
-                    font-size: 27px;
-                    color    : #606060;
+        .box-content-typical {
+            .box {
+                // position: relative;
+                height               : 15rem;
+                display              : block;
+                background-color     : #fff;
+                border               : 1px solid #efefef;
+                padding              : 30px 30px 30px 70px;
+                margin               : 1rem 0;
+                -webkit-border-radius: 0;
+                border-radius        : 0;
+                -webkit-box-shadow   : 0 10px 15px 0 rgb(5 5 5/5%);
+                box-shadow           : 0 10px 15px 0 rgb(5 5 5 / 5%);
+                display              : flex;
+
+                .nummber {
+                    top        : 26px;
+                    left       : 21px;
+                    font-style : normal;
+                    font-weight: 700;
+                    font-size  : 50px;
+                    line-height: 60px;
+                    color      : #c6e7f8;
                 }
 
-                .text-title-2 {
-                    font-size              : 36px;
-                    font-weight            : 800;
-                    color                  : #0060ad;
-                    display                : inline-block;
-                    background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-        }
+                .content-number {
+                    margin-top : 15px;
+                    margin-left: 15px;
 
-        .asked-questions {
-            .text-title-2 {
-                font-size              : 36px;
-                font-weight            : 800;
-                color                  : #0060ad;
-                background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                text-align             : center !important;
-            }
-
-            .collapse-questions {
-                align-items: center;
-
-                .faq-container {
-                    display  : flex;
-                    width    : 100%;
-                    flex-wrap: wrap;
-
-                    .row-item {
-                        flex         : 50%;
-                        padding-right: 30px;
-
-                        .faq-question {
-                            display    : flex;
-                            align-items: center;
-
-                            .question-content {
-                                flex: 95%;
-
-                                .text-color {
-                                    color: blue;
-                                }
-                            }
-
-
-                        }
-                    }
-                }
-            }
-        }
-
-        .schedule {
-            text-align: center;
-
-            .btn-schedule {
-                background-color: blue;
-                color           : white;
-                text-decoration : none;
-                padding         : 20px 60px;
-                font-size       : 20px;
-
-                &:hover {
-                    background-color: white;
-                    color           : blue;
-                    border          : 5px solid blue;
-                }
-
-                svg {
-                    margin-bottom: 7px;
-                }
-            }
-        }
-
-        .our-clients {
-            background-color: #d8d8d8;
-            padding-top     : 40px;
-            padding-bottom  : 40px;
-
-            .container {
-                position: relative;
-
-                .title {
-
-                    .text-v1 {
-                        font-size: 32px;
+                    .title-box {
+                        color      : #000;
+                        font-weight: 600;
+                        font-size  : 25px;
                     }
 
-                    .text-v2 {
-                        font-size              : 30px;
-                        font-weight            : 600;
-                        color                  : #0060ad;
-                        display                : inline-block;
-                        background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-
-                    .text-v3 {
-                        font-size: 20px;
+                    .content-title-box {
+                        font-size: 18px;
                     }
                 }
+
             }
         }
     }
 
+    .big-guys {
+        padding-top   : 70px;
+        padding-bottom: 70px;
 
-}
+        .title-big-guy {
+            font-size: 20px;
+        }
+    }
 
+    .benefits-of-partnering {
+        padding-top   : 70px;
+        padding-bottom: 70px;
 
+        .title-benefit {
+            text-align   : center;
+            color        : #000;
+            font-weight  : 600;
+            font-size    : 40px;
+            margin-bottom: 50px;
+        }
 
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
-    .slider {
-        position   : relative;
-        display    : block;
-        box-sizing : border-box;
-        user-select: none;
-        overflow   : hidden;
+        .benefit {
+            .row {
+                margin-bottom: 20px;
 
-        .siler-list {
-            transform: translate3d(0, 0, 0);
+                .content-part {
+                    background-color: #f4f4f9;
+                    width           : 31.33333%;
+                    padding         : 55px 60px;
+                    margin          : 0px 10px;
 
-            .slider-item {
-                background-size    : cover;
-                background-repeat  : no-repeat;
-                background-position: right top;
-                display            : flex;
-                align-items        : center;
-                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
-                height             : 100vh !important;
-                min-height         : 1px;
-                float              : left;
-                width              : 100% !important;
-                background-color   : #f1f1f1;
+                    .icon-benefit {
+                        font-size: 60px;
+                    }
 
-                .container {
-                    position: relative;
-
-                    .text {
-                        overflow      : hidden;
-                        // transform  : translateY(80px);
-
-                        .text-title {
-                            color            : #696969;
-                            font-size        : 35px;
-                            line-height      : 38px;
-                            font-weight      : 800;
-                            text-transform   : uppercase;
-                            // margin        : 0px;
+                    .text-benefit {
+                        b {
+                            font-size          : 23px;
+                            color              : #000;
+                            // padding-bottom  : 20px;
                         }
 
-                        .sub-text {
-                            color      : #696969;
-                            font-size  : 20px;
-                            line-height: 38px;
+                        p {
+                            font-size: 17px;
                         }
                     }
                 }
             }
+
         }
     }
-}
 
+    .contact-us-v1 {
+        background-position-y   : 168.379px;
+        font-size               : 26px;
+        text-align              : center;
+        width                   : 100%;
+        height                  : 500px;
+        background-attachment   : fixed;
+        background-position     : center 0;
+        background-size         : cover;
+        background-repeat       : no-repeat;
+        position                : relative;
+        // overflow             : hidden;
+        background-image        : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-2');
 
-/* PC: with >= 1024px  */
-@media (min-width: 1050px) and (max-width: 1500px) {
-    .slider {
-        position   : relative;
-        display    : block;
-        box-sizing : border-box;
-        user-select: none;
-        overflow   : hidden;
+        .contact-content {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
 
-        .siler-list {
-            transform: translate3d(0, 0, 0);
+            .contact-text {
+                width     : 50%;
+                color     : white;
+                text-align: left;
+                margin-top: 50px;
 
-            .slider-item {
-                background-size    : cover;
-                background-repeat  : no-repeat;
-                background-position: right top;
-                display            : flex;
-                align-items        : center;
-                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
-                height             : 100vh !important;
-                min-height         : 1px;
-                float              : left;
-                width              : 100% !important;
-                background-color   : #f1f1f1;
+                h2 {
+                    font-size  : 50px;
+                    font-weight: 500;
+                }
 
-                .container {
-                    position: relative;
+                p {
+                    font-size: 23px;
+                }
 
-                    .text {
-                        overflow      : hidden;
-                        // transform  : translateY(80px);
+                .btn-contact {
+                    color           : #fff !important;
+                    background-color: #1890ff;
+                    border-color    : #1890ff !important;
+                    font-size       : 19px;
+                    padding         : 10px 25px;
+                }
+            }
 
-                        .text-title {
-                            color            : #696969;
-                            font-size        : 35px;
-                            line-height      : 38px;
-                            font-weight      : 800;
-                            text-transform   : uppercase;
-                            // margin        : 0px;
-                        }
+            .conact-img {
+                width: 30%;
 
-                        .sub-text {
-                            color      : #696969;
-                            font-size  : 20px;
-                            line-height: 38px;
-                        }
-                    }
+                // height: 00px;
+                img {
+                    width     : 100%;
+                    height    : auto;
+                    margin-top: 90px;
                 }
             }
         }
     }
-}
-
-
-
-
-// Mobile
-@media only screen and (max-width: 46.1875em) {
-    .slider {
-        position   : relative;
-        display    : block;
-        box-sizing : border-box;
-        user-select: none;
-        overflow   : hidden;
-
-        .siler-list {
-            transform: translate3d(0, 0, 0);
-
-            .slider-item {
-                background-size    : cover;
-                background-repeat  : no-repeat;
-                background-position: right top;
-                display            : flex;
-                align-items        : center;
-                background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
-                height             : 100vh !important;
-                min-height         : 1px;
-                float              : left;
-                width              : 100% !important;
-                background-color   : #f1f1f1;
-
-                .container {
-                    position: relative;
-
-                    .text {
-                        overflow      : hidden;
-                        // transform  : translateY(80px);
-
-                        .text-title {
-                            color            : #696969;
-                            font-size        : 35px;
-                            line-height      : 38px;
-                            font-weight      : 800;
-                            text-transform   : uppercase;
-                            // margin        : 0px;
-                        }
-
-                        .sub-text {
-                            color      : #696969;
-                            font-size  : 20px;
-                            line-height: 38px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .section-feature-1 {
-        width        : 100%;
-        display      : flex;
-        // flex-wrap: wrap;
-        border-bottom: 1px solid #e3dcdc;
-
-        .col-6 {
-            width: 100% !important;
-
-            img {
-                display: none !important;
-            }
-        }
-
-        .title {
-            font-size  : 30px;
-            margin-left: 20px;
-            font-weight: 700;
-        }
-
-        .text-content {
-            margin-left: 20px;
-            font-size  : 18px;
-
-        }
-    }
-
-    .collapse-questions {
-        align-items: center;
-
-        .faq-container {
-            display  : flex;
-            width    : 100%;
-            flex-wrap: wrap;
-
-            .row-item {
-                flex         : 100% 1 !important;
-                padding-right: 30px;
-
-                .faq-question {
-                    display    : flex;
-                    align-items: center;
-
-                    .question-content {
-                        flex: 95%;
-
-                        .text-color {
-                            color: blue;
-                        }
-                    }
-
-
-                }
-            }
-        }
-    }
-
 }

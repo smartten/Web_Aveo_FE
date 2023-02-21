@@ -1,13 +1,9 @@
-import image1 from "./2023-02-13_090638.png";
 import "./TestStyle.scss";
-import React from "react";
-import { Button } from "antd";
-import { Layout, Menu, List } from "antd";
-import { Link } from "react-router-dom";
 import {
-  ArrowRightOutlined,
-  CaretDownOutlined,
-  CaretUpOutlined,
+  MobileOutlined,
+  WalletOutlined,
+  ApiOutlined,
+  FileProtectOutlined,
   BulbOutlined,
   SelectOutlined,
   UserOutlined,
@@ -15,560 +11,400 @@ import {
   SwitcherOutlined,
   PaperClipOutlined,
 } from "@ant-design/icons";
-import {
-  CaretDownFilled,
-  CaretUpFilled,
-  LoginOutlined,
-} from "@ant-design/icons";
-
 function Testing() {
-  // function hamDropdown() {
-  //   var t = document.querySelector(".noidung_dropdown");
-  //   console.log(t.div);
-  //   document.querySelector(".noidung_dropdown").classList.toggle("hienThi");
-  // }
+  setTimeout(function () {
+    var text = document.getElementsByClassName("text");
+    for (var i = 0; i < text.length; i++) {
+      text[i].classList.add("fadeRight", "cssanimation");
+    }
+    var image = document.getElementsByClassName("image");
+    for (var i = 0; i < image.length; i++) {
+      image[i].classList.add("fadeInLeft", "cssanimation");
+    }
+  }, 1000);
   return (
-    <div className="">
-      <div class="row cms p-0 m-0 pt-5">
-        <div class="col-12 m-0 p-5 mt-5 pt-5">
-          <div style={{ marginTop: "15%" }}>
-            <p className="cms-p m-0 p-0 mt-5 pt-5">Testing Services</p>
-            <p className="cms-p-unlock">
-              Improve test coverage and decrease costs by assessing processes,
-              tools, and skills.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div style={{ backgroundColor: "white" }} class="col-12 p-5">
-          <div>
-            <p className="title-start pt-3">Our Software Testing Services</p>
-          </div>
-        </div>
-      </div>
-      <div className="row pt-0 p-5">
-        <div className="col-12 col-md-6 col-lg-3">
-          <img className="image-row2" src={image1} />
-          <p className="p-for-title text-align mt-3">
-            Software testing services
-          </p>
-          <p className="p-for-content text-align">
-            Software testing is the process of evaluating and verifying that a
-            software product or application does what it is supposed to do. The
-            benefits of testing include preventing bugs, reducing development
-            costs, and improving performance.
-          </p>
-        </div>
-        <div className="col-12 col-md-6 col-lg-3">
-          <img className="image-row2" src={image1} />
-          <p className="p-for-title text-align mt-3">Mobile testing services</p>
-          <p className="p-for-content text-align">
-            Different mobile phones run on different operating systems and use
-            varied sizes. So, it’s important to do the mobile testing processes
-            in software development. Mobile testing services cover all
-            functionality, usability, and consistency of the application.
-          </p>
-        </div>
-        <div className="col-12 col-md-6 col-lg-3">
-          <img className="image-row2" src={image1} />
-          <p className="p-for-title text-align mt-3">
-            Penetration test services
-          </p>
-          <p className="p-for-content text-align">
-            Penetration test services will figure out all loopholes and
-            weaknesses of the software system which might result in a loss of
-            information, revenue, repute at the hands of the employees or
-            outsiders of the organization.
-          </p>
-        </div>
-        <div className="col-12 col-md-6 col-lg-3">
-          <img className="image-row2" src={image1} />
-          <p className="p-for-title text-align mt-3">
-            Performance testing services
-          </p>
-          <p className="p-for-content text-align">
-            Performance testing services validate numerous factors and checks
-            applications to ensure and maintain their reliability and
-            scalability. It measures the quality attributes of the system, such
-            as scalability, reliability, and resource usage.
-          </p>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-12 hmHr p-5">
-          <div className="container">
-            <h2>Let’s Make it Happen Together!</h2>
-            <p>
-              There are still not enough friends to realize our goal of “a world
-              where everyone can be absorbed in value creation.” If you like,
-              why don’t you take a look at DEHA VIET NAM?
-            </p>
-            <a
-              href="/contact-us"
-              style={{ margin: "auto" }}
-              className="hmHr-but"
-            >
-              Contact us
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="row">
-        <div style={{ backgroundColor: "white" }} class="col-12 p-5">
-          <div className="section-title-1">
-            <p className="title">The benefit of</p>
-            <p className="desc">PARTNERING WITH DEHA</p>
-          </div>
-        </div>
-      </div>
-      <section className="container benefit ">
-        <div className="row">
-          <div className="col-4 content-part">
-            <div className="icon-benefit">
-              <BulbOutlined />
-            </div>
-            <div className="text-benefit">
-              <b>Expert Advice</b>
-              <p>
-                We are a leading digital strategy consultant. We can offer an
-                unique and consultative perspective to your digital
-                transformation strategy in general and software engineering in
-                particular.
-              </p>
-            </div>
-          </div>
-          <div className="col-4 content-part">
-            <div className="icon-benefit">
-              <SelectOutlined />
-            </div>
-            <div className="text-benefit">
-              <b>Quality-Focused Solutions</b>
-              <p>
-                We are using cutting-edge technologies and tools in software
-                development process to bring the highest software development
-                quality, for example automation testing, RPA...
-              </p>
-            </div>
-          </div>
-          <div className="col-4 content-part">
-            <div className="icon-benefit">
-              <UserOutlined />
-            </div>
-            <div className="text-benefit">
-              <b>Great Talent Pool</b>
-              <p>
-                Our team has 260+ experienced developers with in-depth skills &
-                knowledge in software building and powerful technologies stacks.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-4 content-part">
-            <div className="icon-benefit">
-              <PieChartOutlined />
-            </div>
-            <div className="text-benefit">
-              <b>Experience</b>
-              <p>
-                We are strategic partner of big corporations such as Mitsui
-                O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
-                Hospital...and delivered 1,000+ systems for enterprise.
-              </p>
-            </div>
-          </div>
-          <div className="col-4 content-part">
-            <div className="icon-benefit">
-              <SwitcherOutlined />
-            </div>
-            <div className="text-benefit">
-              <b>All-in-One Provider</b>
-              <p>
-                Our services are comprehensive from consulting, design,
-                development, integration, deployment to system maintenance and
-                much mores.
-              </p>
-            </div>
-          </div>
-          <div className="col-4 content-part">
-            <div className="icon-benefit">
-              <PaperClipOutlined />
-            </div>
-            <div className="text-benefit">
-              <b>Agile Mindset</b>
-              <p>
-                An agile mindset is about creating and responding to change in
-                uncertain and turbulent environments.
-              </p>
+    <div className="testing">
+      <section className="slider">
+        <div className="siler-list">
+          <div className="slider-item">
+            <div className="container">
+              <div className="slide-content d-flex">
+                <div className="image">
+                  <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-testing" />
+                </div>
+                <div className="text">
+                  <p className="text-title">
+                    <span>Testing Services</span>
+                  </p>
+                  <p className="sub-text">
+                    We provides full-range testing services based on our
+                    proficiency with application specifics and standards to
+                    ensure your app's high quality and user adoption
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <div className="row mt-0 pt-0 technologies">
-        <div class="col-12 mt-0 pt-0">
-          <div className="section-title-2">
-            <p className="title">Our Favourite Stacks</p>
-            <p className="desc grad">Technologies Expertise</p>
-          </div>
-        </div>
-      </div>
-      <div className="row mt-5 pt-5">
-        <div class="col-12 ">
-          <div className="section-title-2 pt-5">
-            <p className="desc grad">Frequently Asked Questions</p>
-          </div>
-        </div>
-      </div>
-      <div className="row g-0 mt-5 m-5 mb-0">
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
-          <div
-            onClick={() => {
-              document
-                .querySelector(".noidung_dropdown")
-                .classList.toggle("hienThi");
-            }}
-            className="row pt-0 pb-0 mt-0 mb-0 dropdownCms"
-          >
-            <div class="col-11 col-sm-11 p-0 m-0 mb-2 ">
-              <b>What types of software testing services do you offer?</b>
-            </div>
-            <div className="col-1 col-sm-1 m-0 pt-2 p-0">
-              <CaretDownFilled
-                style={{
-                  color: "gray",
-                  fontSize: 20,
-                  float: "right",
-                }}
-              />
+      <section className="developer-service">
+        <div className="container">
+          <div className="title-service">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-xl-8">
+                <div class="section-title title-01 mb-70">
+                  <h3 class="title">Our Services</h3>
+                  <p class="sub-title">
+                    Our testing service ensures each aspect of your software:
+                    functioning, integrations, performance, usability, and
+                    security is defect-free and fully compliant with its
+                    requirements.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div className="row mt-3 mb-0">
-            <div className="col-12 p-0 m-0">
-              <div class="noidung_dropdown p-3 pb-0 mb-3">
-                <p>
-                  We offer a broad array of software testing services that
-                  include performance testing, functional testing, regression
-                  testing, integration testing, security testing, compatibility
-                  testing, unit testing, usability testing, and automated
-                  testing.
-                </p>
+          <div className="content-service">
+            <div className="row row-cols-1 row-cols-md-2">
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <ApiOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">API Testing</b>
+                    <p className="text-sub">
+                      Our testing services use best practices and open-source
+                      tools to reduce your delivery cycles. We evaluate your
+                      APIs based on their specifications, performance, error
+                      handling, and security.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <MobileOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Mobile Testing</b>
+                    <p className="text-sub">
+                      Mobile testing comprises functional, compatibility,
+                      usability, performance, error handling, security testing
+                      types.s
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <WalletOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Automation Testing</b>
+                    <p className="text-sub">
+                      To ensure sufficient test coverage, we can apply test
+                      automation for functional and regression, performance,
+                      compatibility, and security.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <FileProtectOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Penetration Testing</b>
+                    <p className="text-sub">
+                      Detect Security Vulnerabilities and Security Hotspots
+                      during code review.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
-          <div
-            onClick={() => {
-              document
-                .querySelector(".noidung_dropdown1")
-                .classList.toggle("hienThi");
-            }}
-            className="row  dropdownCms"
-          >
-            <div class="col-11 col-sm-11 p-0 m-0 mb-2 ">
-              <b>What is automation testing?</b>
-            </div>
-            <div className="col-1 col-sm-1 m-0 pt-2 p-0">
-              <CaretDownFilled
-                style={{
-                  color: "gray",
-                  fontSize: 20,
-                  float: "right",
-                }}
-              />
-            </div>
-          </div>
-
-          <div className="row mt-3 mb-0">
-            <div className="col-12 p-0 m-0">
-              <div class="noidung_dropdown1 p-3 pb-0 mb-3">
-                <p>
-                  Automation testing is the process of running software tests
-                  automatically, handling test data and evaluating results to
-                  improve product quality. It is a way of measuring the quality
-                  assurance of a software through automated tests to save time,
-                  money and effort.
-                </p>
+      </section>
+      <section className="certificates">
+        <div className="container">
+          <div className="content-certificates">
+            <h3 className="title-certificates mb-3">
+              Certificates & International Standards
+            </h3>
+            <div className="row justify-content-center">
+              <div className="col-2">
+                <img
+                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
+                  style={{ width: "100%" }}
+                />
+              </div>
+              <div className="col-2">
+                <img
+                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
+                  style={{ width: "100%" }}
+                />
+              </div>
+              <div className="col-2">
+                <img
+                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
+                  style={{ width: "100%" }}
+                />
+              </div>
+              <div className="col-2">
+                <img
+                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
+                  style={{ width: "100%" }}
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="row g-0 mt-0 m-5 mb-0">
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
-          <div
-            onClick={() => {
-              document
-                .querySelector(".noidung_dropdown2")
-                .classList.toggle("hienThi");
-            }}
-            className="row pt-0 pb-0 mt-0 mb-0 dropdownCms"
-          >
-            <div class="col-11 col-sm-11 p-0 m-0 mb-2 ">
-              <b>What is automation testing?</b>
-            </div>
-            <div className="col-1 col-sm-1 m-0 pt-2 p-0">
-              <CaretDownFilled
-                style={{
-                  color: "gray",
-                  fontSize: 20,
-                  float: "right",
-                }}
-              />
-            </div>
+      </section>
+      <section className="our-typical">
+        <div className="container">
+          <div className="content-typical">
+            <p className="title-typical">Our Software Testing Approach</p>
           </div>
-
-          <div className="row mt-3 mb-0">
-            <div className="col-12 p-0 m-0">
-              <div class="noidung_dropdown2 p-3 pb-0 mb-3">
-                <p>
-                  Manual testing is the practice of testing a software manually
-                  to detect bugs and errors. During this process, the tester
-                  executes test cases to evaluate each component of a website or
-                  a mobile application (without using any tool or script), and
-                  reports to the developers if they find any discrepancies or
-                  inconsistencies in the app.
-                </p>
+          <div className="box-content-typical">
+            <div className="row row-cols-1 row-cols-md-2">
+              <div className="col">
+                <div className="box">
+                  <span className="nummber">1</span>
+                  <div className="content-number">
+                    <h3 className="title-box">Discover</h3>
+                    <p className="content-title-box">
+                      We work with you to gain clarity on your software testing
+                      needs, defining clear business outcomes to set up a
+                      successful engagement
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="box">
+                  <span className="nummber">2</span>
+                  <div className="content-number">
+                    <h3 className="title-box">Elaborate</h3>
+                    <p className="content-title-box">
+                      We determine the best solution for your needs and align
+                      our team to fill your skill and resource gaps.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="box">
+                  <span className="nummber">3</span>
+                  <div className="content-number">
+                    <h3 className="title-box">Execute</h3>
+                    <p className="content-title-box">
+                      Our team assesses and develops a software testing plan and
+                      strategy, executing the updated processes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="box">
+                  <span className="nummber">4</span>
+                  <div className="content-number">
+                    <h3 className="title-box">Report</h3>
+                    <p className="content-title-box">
+                      We deliver and implement the proposed solution, evaluating
+                      the software testing results to ensure we’re meeting your
+                      needs. We also deliver a detail report to allow you fix
+                      bugs and update your software.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
-          <div
-            onClick={() => {
-              document
-                .querySelector(".noidung_dropdown3")
-                .classList.toggle("hienThi");
-            }}
-            className="row  dropdownCms"
-          >
-            <div class="col-11 col-sm-11 p-0 m-0 mb-2 ">
-              <b>Can I hire Selenium developers and manage them directly?</b>
+      </section>
+      <section className="big-guys">
+        <div className="container">
+          <p className="text-center title-big-guy">
+            This BIG guys are using DEHA services and they are more than happier
+            ever
+          </p>
+          <div className="row">
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
             </div>
-            <div className="col-1 col-sm-1 m-0 pt-2 p-0">
-              <CaretDownFilled
-                style={{
-                  color: "gray",
-                  fontSize: 20,
-                  float: "right",
-                }}
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
           </div>
-
-          <div className="row mt-3 mb-0">
-            <div className="col-12 p-0 m-0">
-              <div class="noidung_dropdown3 p-3 pb-0 mb-3">
-                <p>
-                  Yes, you can hire highly proficient selenium developers from
-                  us. If you want, you can manage your developers directly,
-                  assign tasks, and review the output. Alternatively, we are
-                  happy to offer a free-of-cost Project Manager who can act as
-                  your single point of contact while managing multiple
-                  developers on your behalf.
-                </p>
+          <div className="row mt-3">
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="col">
+              <img
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="benefits-of-partnering">
+        <div className="container">
+          <p className="title-benefit">Benefits of Partnering with DEHA</p>
+          <div className="container benefit ">
+            <div className="row">
+              <div className="col-4 content-part">
+                <div className="icon-benefit">
+                  <BulbOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Expert Advice</b>
+                  <p>
+                    We are a leading digital strategy consultant. We can offer
+                    an unique and consultative perspective to your digital
+                    transformation strategy in general and software engineering
+                    in particular.
+                  </p>
+                </div>
+              </div>
+              <div className="col-4 content-part">
+                <div className="icon-benefit">
+                  <SelectOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Quality-Focused Solutions</b>
+                  <p>
+                    We are using cutting-edge technologies and tools in software
+                    development process to bring the highest software
+                    development quality, for example automation testing, RPA...
+                  </p>
+                </div>
+              </div>
+              <div className="col-4 content-part">
+                <div className="icon-benefit">
+                  <UserOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Great Talent Pool</b>
+                  <p>
+                    Our team has 260+ experienced developers with in-depth
+                    skills & knowledge in software building and powerful
+                    technologies stacks.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-4 content-part">
+                <div className="icon-benefit">
+                  <PieChartOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Experience</b>
+                  <p>
+                    We are strategic partner of big corporations such as Mitsui
+                    O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec
+                    International Hospital...and delivered 1,000+ systems for
+                    enterprise.
+                  </p>
+                </div>
+              </div>
+              <div className="col-4 content-part">
+                <div className="icon-benefit">
+                  <SwitcherOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>All-in-One Provider</b>
+                  <p>
+                    Our services are comprehensive from consulting, design,
+                    development, integration, deployment to system maintenance
+                    and much mores.
+                  </p>
+                </div>
+              </div>
+              <div className="col-4 content-part">
+                <div className="icon-benefit">
+                  <PaperClipOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Agile Mindset</b>
+                  <p>
+                    An agile mindset is about creating and responding to change
+                    in uncertain and turbulent environments.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="row g-0 mt-0 m-5 mb-0">
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
-          <div
-            onClick={() => {
-              document
-                .querySelector(".noidung_dropdown4")
-                .classList.toggle("hienThi");
-            }}
-            className="row pt-0 pb-0 mt-0 mb-0 dropdownCms"
-          >
-            <div class="col-11 col-sm-11 p-0 m-0 mb-2 ">
-              <b>What is 'Software Testing'?</b>
+      </section>
+      <section className="contact-us-v1">
+        <div className="container">
+          <div className="contact-content">
+            <div className="contact-text">
+              <h2>Connect with us</h2>
+              <p>We're ready to talk opportunity</p>
+              <a className="btn btn-contact" href="/contact-us">
+                Contact Us
+              </a>
             </div>
-            <div className="col-1 col-sm-1 m-0 pt-2 p-0">
-              <CaretDownFilled
-                style={{
-                  color: "gray",
-                  fontSize: 20,
-                  float: "right",
-                }}
-              />
-            </div>
-          </div>
-
-          <div className="row mt-3 mb-0">
-            <div className="col-12 p-0 m-0">
-              <div class="noidung_dropdown4 p-3 pb-0 mb-3">
-                <p>
-                  The operation of a system or application under controlled
-                  conditions refers to 'software testing'. Software testing is
-                  carried out, in order to evaluate the results of the
-                  operation. In the process of software testing, the controlled
-                  conditions would include both normal and abnormal conditions.
-                  While testing applications, testers would intentionally try to
-                  make things go wrong in order to determine if application
-                  works well and is error-free. Software testing teams usually
-                  consist of testers, developers and project managers. At times
-                  software testing would also include a part of QA testing.
-                </p>
-              </div>
+            <div className="conact-img">
+              <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-img-default" />
             </div>
           </div>
         </div>
-
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
-          <div
-            onClick={() => {
-              document
-                .querySelector(".noidung_dropdown5")
-                .classList.toggle("hienThi");
-            }}
-            className="row  dropdownCms"
-          >
-            <div class="col-11 col-sm-11 p-0 m-0 mb-2 ">
-              <b>How can World Wide Web sites be tested?</b>
-            </div>
-            <div className="col-1 col-sm-1 m-0 pt-2 p-0">
-              <CaretDownFilled
-                style={{
-                  color: "gray",
-                  fontSize: 20,
-                  float: "right",
-                }}
-              />
-            </div>
-          </div>
-
-          <div className="row mt-3 mb-0">
-            <div className="col-12 p-0 m-0">
-              <div class="noidung_dropdown5 p-3 pb-0 mb-0">
-                <p>
-                  Testing websites can become a long-time effort because
-                  websites are client/server applications with browser clients
-                  and web servers. While testing web sites, firewalls, internet
-                  connections, TCP/IP communications, applications that run in
-                  web pages and applications that run on the server side.
-                  Testing websites is also a major effort because there are a
-                  wide variety of browsers and servers to be considered,
-                  multiple protocols and standards, different connection speeds
-                  and varied technologies. The expected load on the server,
-                  target audience, performance expected on the client side,
-                  security, HTML specifications, standards of page appearance,
-                  validation of links, tracking of programs and other features
-                  are kept in mind while testing websites.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="row g-0 mt-0 m-5 mb-0">
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
-          <div
-            onClick={() => {
-              document
-                .querySelector(".noidung_dropdown6")
-                .classList.toggle("hienThi");
-            }}
-            className="row pt-0 pb-0 mt-0 mb-0 dropdownCms"
-          >
-            <div class="col-11 col-sm-11 p-0 m-0 mb-2 ">
-              <b>What's a 'test plan'?</b>
-            </div>
-            <div className="col-1 col-sm-1 m-0 pt-2 p-0">
-              <CaretDownFilled
-                style={{
-                  color: "gray",
-                  fontSize: 20,
-                  float: "right",
-                }}
-              />
-            </div>
-          </div>
-
-          <div className="row mt-3 mb-0">
-            <div className="col-12 p-0 m-0">
-              <div class="noidung_dropdown6 p-3 pb-0 mb-3">
-                <p>
-                  A test plan is a document that contains details about the
-                  objectives, approach, scope and focus of a software testing
-                  project. Test plans are usually created in order to enable
-                  people outside the group of software testers to understand
-                  more about the project. These test plans should contain enough
-                  information to make it useful but not too much information to
-                  make it difficult for people outside the project to
-                  understand. Test plans usually include details about the
-                  target audience, the objectives of testing, overviews of
-                  software products, legal requirements, traceability
-                  requirements, testing priorities, database set up requirements
-                  and project risk analysis amongst others.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-12 col-sm-6 m-0 pt-0 p-5 pb-0">
-          <div
-            onClick={() => {
-              document
-                .querySelector(".noidung_dropdown7")
-                .classList.toggle("hienThi");
-            }}
-            className="row  dropdownCms"
-          >
-            <div class="col-11 col-sm-11 p-0 m-0 mb-2 ">
-              <b>What's a 'test case'?</b>
-            </div>
-            <div className="col-1 col-sm-1 m-0 pt-2 p-0">
-              <CaretDownFilled
-                style={{
-                  color: "gray",
-                  fontSize: 20,
-                  float: "right",
-                }}
-              />
-            </div>
-          </div>
-
-          <div className="row mt-3 mb-0">
-            <div className="col-12 p-0 m-0">
-              <div class="noidung_dropdown7 p-3 pb-0 mb-3">
-                <p>
-                  A test case is a document that contains details about an
-                  action and the expected response, to verify if a particular
-                  feature in an application is working correctly. Test cases are
-                  developed early in the development cycle so that software
-                  testers can find problems in the design or requirements of a
-                  software application. Test plans usually contains details such
-                  as, test case name, test case identifier, test conditions,
-                  objectives, steps, input data requirements and the desired
-                  results.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-6 offset-3 mt-5 mb-5">
-          <a
-            href="/contact-us"
-            style={{ margin: "auto", textDecoration: "none" }}
-            className="but-sche"
-          >
-            Schedule time to talk
-            <LoginOutlined
-              style={{ position: "absolute", margin: 6, fontSize: 20 }}
-            />
-          </a>
-        </div>
-      </div>
+      </section>
     </div>
   );
 }

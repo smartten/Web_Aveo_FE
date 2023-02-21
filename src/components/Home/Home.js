@@ -296,7 +296,7 @@ function Home() {
                     className="btns-group mb-30 wow fadeInUp"
                     style={{ visibility: "visible" }}
                   >
-                    <a className="btn btn-contact" href="/contact">
+                    <a className="btn btn-contact" href="/contact-us">
                       Contact Us
                     </a>
                   </div>
@@ -314,44 +314,7 @@ function Home() {
                 <div className="text mb-5">
                   <p className="text-title">What our clients say about us?</p>
                 </div>
-                {/* <div className="row comment-content mt-5">
-                  <div className="col-4">
-                    <div className="box-comment">
-                      <p className="comment-content">
-                        Nulla quis lorem ut libero malesuada feugiat. Praesent
-                        sapien massa, convallis a pellentesque nec, egestas non
-                        nisi. Nulla quis lorem ut libero malesuada feugiat.
-                      </p>
-                      <p className="name-comment">Nguyen Hieu</p>
-                      <p className="address-name">Ha Noi, Viet Nam</p>
-                      <Rate defaultValue={5} disabled />
-                    </div>
-                  </div>
-                  <div className="col-4">
-                    <div className="box-comment">
-                      <p className="comment-content">
-                        Nulla quis lorem ut libero malesuada feugiat. Praesent
-                        sapien massa, convallis a pellentesque nec, egestas non
-                        nisi. Nulla quis lorem ut libero malesuada feugiat.
-                      </p>
-                      <p className="name-comment">Nguyen Hieu</p>
-                      <p className="address-name">Ha Noi, VIet Nam</p>
-                      <Rate defaultValue={5} disabled />
-                    </div>
-                  </div>
-                  <div className="col-4">
-                    <div className="box-comment">
-                      <p className="comment-content">
-                        Nulla quis lorem ut libero malesuada feugiat. Praesent
-                        sapien massa, convallis a pellentesque nec, egestas non
-                        nisi. Nulla quis lorem ut libero malesuada feugiat.
-                      </p>
-                      <p className="name-comment">Nguyen Hieu</p>
-                      <p className="address-name">Ha Noi, Viet Nam</p>
-                      <Rate defaultValue={5} disabled />
-                    </div>
-                  </div>
-                </div> */}
+
                 <Slider {...settings}>
                   <div className="row comment-content d-flex">
                     <div className="col-4">
@@ -447,7 +410,7 @@ function Home() {
             <div className="contact-text">
               <h2>Connect with us</h2>
               <p>We're ready to talk opportunity</p>
-              <a className="btn btn-contact" href="/contact">
+              <a className="btn btn-contact" href="/contact-us">
                 Contact Us
               </a>
             </div>

@@ -311,7 +311,7 @@ function Home() {
           <div className="slider-item-comment">
             <div className="container">
               <div className="slide-content">
-                <div className="text">
+                <div className="text mb-5">
                   <p className="text-title">What our clients say about us?</p>
                 </div>
                 {/* <div className="row comment-content mt-5">

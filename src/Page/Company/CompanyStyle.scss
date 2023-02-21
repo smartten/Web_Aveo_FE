@@ -1032,6 +1032,18 @@
         }
     }
 
+    .misson {
+        margin-top: 50px;
+
+        .container {
+            .row {
+                .col-6 {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
     .contact {
         .container {
             .row {

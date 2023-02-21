@@ -441,10 +441,10 @@
         .siler-list {
             transform: translate3d(0, 0, 0);
 
-            .slider-item {
+            .slider-item-engi {
                 background-size    : cover;
                 background-repeat  : no-repeat;
-                background-position: right top;
+                background-position: 50% !important;
                 display            : flex;
                 align-items        : center;
                 background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
@@ -502,7 +502,7 @@
             .slider-item {
                 background-size    : cover;
                 background-repeat  : no-repeat;
-                background-position: right top;
+                background-position: 50% !important;
                 display            : flex;
                 align-items        : center;
                 background-image   : url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');

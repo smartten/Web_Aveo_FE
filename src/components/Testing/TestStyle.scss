@@ -1,9 +1,44 @@
 .cms {
-    background-color: #F6F6F6;
-    background-image: url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
+    // background-color: #F6F6F6;
+    background-image: url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/') !important;
     height          : 100vh !important;
     background-size : cover;
+    height          : 100vh;
 }
+
+
+
+.benefit {
+    .row {
+        margin-bottom: 20px;
+
+        .content-part {
+            background-color: #f4f4f9;
+            width           : 31.33333%;
+            padding         : 55px 60px;
+            margin          : 0px 10px;
+
+            .icon-benefit {
+                font-size: 60px;
+            }
+
+            .text-benefit {
+                b {
+                    font-size          : 23px;
+                    color              : #000;
+                    // padding-bottom  : 20px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+
 
 .cms-p {
     // padding-top: 20%;

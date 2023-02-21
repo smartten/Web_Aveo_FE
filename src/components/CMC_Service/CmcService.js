@@ -8,6 +8,12 @@ import {
   CaretDownFilled,
   CaretUpFilled,
   LoginOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
 } from "@ant-design/icons";
 
 function CmcService() {
@@ -228,39 +234,89 @@ function CmcService() {
           </div>
         </div>
       </div>
-      <div className="row m-0 pt-0 p-5 pb-0">
-        <div className="col-12 col-sm-5 pt-0 p-3">
-          <img className="image-row3" src={image1} />
+      <section className="container benefit ">
+        <div className="row">
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <BulbOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Expert Advice</b>
+              <p>
+                We are a leading digital strategy consultant. We can offer an
+                unique and consultative perspective to your digital
+                transformation strategy in general and software engineering in
+                particular.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <SelectOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Quality-Focused Solutions</b>
+              <p>
+                We are using cutting-edge technologies and tools in software
+                development process to bring the highest software development
+                quality, for example automation testing, RPA...
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <UserOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Great Talent Pool</b>
+              <p>
+                Our team has 260+ experienced developers with in-depth skills &
+                knowledge in software building and powerful technologies stacks.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="col-12 col-sm-7 pt-0 p-3 pb-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            Security
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            There are numerous security threats like malware, ransomware, and
-            other security vulnerabilities that are lurking around to break your
-            site. We have helped our clients in successfully countering any
-            malicious attacks and keep them at bay.
-          </p>
+        <div className="row">
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <PieChartOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Experience</b>
+              <p>
+                We are strategic partner of big corporations such as Mitsui
+                O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                Hospital...and delivered 1,000+ systems for enterprise.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <SwitcherOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>All-in-One Provider</b>
+              <p>
+                Our services are comprehensive from consulting, design,
+                development, integration, deployment to system maintenance and
+                much mores.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <PaperClipOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Agile Mindset</b>
+              <p>
+                An agile mindset is about creating and responding to change in
+                uncertain and turbulent environments.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="row pt-2 p-5 pb-0">
-        <div className="col-12 col-sm-7 pt-0  p-4 pb-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            Scalability
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            We spend enough time understanding your requirements and seeing
-            which CMS and features will accomplish what you need with effortless
-            ease. We focus on some elements such as SEO, payment gateways, to
-            name a few. We offer extensive scalability of your website and this
-            is handled with great care to avoid frustrations down the road.
-          </p>
-        </div>
-        <div className="col-12 col-sm-5 pt-0 p-3">
-          <img className="image-row3" src={image1} />
-        </div>
-      </div>
+      </section>
       <div className="row mt-0 pt-0">
         <div class="col-12 mt-0 pt-0">
           <div className="section-title-2">

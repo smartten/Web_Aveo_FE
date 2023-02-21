@@ -5,6 +5,17 @@ import { Button } from "antd";
 import { Layout, Menu, List } from "antd";
 import { Link } from "react-router-dom";
 import {
+  ArrowRightOutlined,
+  CaretDownOutlined,
+  CaretUpOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
+} from "@ant-design/icons";
+import {
   CaretDownFilled,
   CaretUpFilled,
   LoginOutlined,
@@ -112,67 +123,89 @@ function Testing() {
           </div>
         </div>
       </div>
-      <div className="row m-0 pt-0 p-5 pb-0">
-        <div className="col-12 col-sm-5 pt-0 p-3">
-          <img className="image-row3" src={image1} />
+      <section className="container benefit ">
+        <div className="row">
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <BulbOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Expert Advice</b>
+              <p>
+                We are a leading digital strategy consultant. We can offer an
+                unique and consultative perspective to your digital
+                transformation strategy in general and software engineering in
+                particular.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <SelectOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Quality-Focused Solutions</b>
+              <p>
+                We are using cutting-edge technologies and tools in software
+                development process to bring the highest software development
+                quality, for example automation testing, RPA...
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <UserOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Great Talent Pool</b>
+              <p>
+                Our team has 260+ experienced developers with in-depth skills &
+                knowledge in software building and powerful technologies stacks.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="col-12 col-sm-7 pt-0 p-3 pb-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            Automation mindset
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            We apply an automation mindset to everything we build. This approach
-            allows our testers to reduce product lead times, and increase
-            software delivery speed.
-          </p>
+        <div className="row">
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <PieChartOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Experience</b>
+              <p>
+                We are strategic partner of big corporations such as Mitsui
+                O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                Hospital...and delivered 1,000+ systems for enterprise.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <SwitcherOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>All-in-One Provider</b>
+              <p>
+                Our services are comprehensive from consulting, design,
+                development, integration, deployment to system maintenance and
+                much mores.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <PaperClipOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Agile Mindset</b>
+              <p>
+                An agile mindset is about creating and responding to change in
+                uncertain and turbulent environments.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="row pt-2 p-5 pb-0">
-        <div className="col-12 col-sm-7 pt-0  p-4 pb-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            End-to-End Testing
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            We provide full-cycle automation testing combine with manual testing
-            to guarantee the test cover throughout the entire software
-            development process.
-          </p>
-        </div>
-        <div className="col-12 col-sm-5 pt-0 p-3">
-          <img className="image-row3" src={image1} />
-        </div>
-      </div>
-      <div className="row m-0 pt-0 p-5 pb-0">
-        <div className="col-12 col-sm-5 pt-0 p-3">
-          <img className="image-row3" src={image1} />
-        </div>
-        <div className="col-12 col-sm-7 pt-0 p-3 pb-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            Agile delivery
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            We help our clients seamlessly move towards continuous delivery by
-            adopting DevOps practices, advanced functional and non-functional
-            testing, and detailed business assurance workflows.
-          </p>
-        </div>
-      </div>
-      <div className="row pt-2 p-5 pb-0">
-        <div className="col-12 col-sm-7 pt-0  p-4 pb-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            Expertise team
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            We leverage our expertise to ensure to deliver the highest-quality
-            version of your product. Our engineers pull from their domain
-            experience, modeling, and intuition to pursue workflows that have
-            the potential for risks.
-          </p>
-        </div>
-        <div className="col-12 col-sm-5 pt-0 p-3">
-          <img className="image-row3" src={image1} />
-        </div>
-      </div>
+      </section>
       <div className="row mt-0 pt-0 technologies">
         <div class="col-12 mt-0 pt-0">
           <div className="section-title-2">

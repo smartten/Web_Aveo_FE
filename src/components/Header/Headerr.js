@@ -171,7 +171,7 @@ function Headerr() {
               className="sizeLogo"
             >
               <a href="/">
-                <img id="logo" src={logo} />
+                <img id="logo" src={anhLogo} />
               </a>
               <div id="alignRightOutlined">
                 <AlignRightOutlined

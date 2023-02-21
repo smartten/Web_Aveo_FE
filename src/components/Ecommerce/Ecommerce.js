@@ -8,6 +8,12 @@ import {
   CaretDownFilled,
   CaretUpFilled,
   LoginOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
 } from "@ant-design/icons";
 
 function Ecommerce() {
@@ -238,60 +244,89 @@ function Ecommerce() {
           </div>
         </div>
       </div>
-      <div className="row m-sm-5 p-sm-3 py-sm-0 my-sm-2">
-        <div className="col-12 col-sm-6 p-sm-5 py-sm-0 ">
-          <img className="image-row3" src={image1} />
+      <section className="container benefit ">
+        <div className="row">
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <BulbOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Expert Advice</b>
+              <p>
+                We are a leading digital strategy consultant. We can offer an
+                unique and consultative perspective to your digital
+                transformation strategy in general and software engineering in
+                particular.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <SelectOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Quality-Focused Solutions</b>
+              <p>
+                We are using cutting-edge technologies and tools in software
+                development process to bring the highest software development
+                quality, for example automation testing, RPA...
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <UserOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Great Talent Pool</b>
+              <p>
+                Our team has 260+ experienced developers with in-depth skills &
+                knowledge in software building and powerful technologies stacks.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="col-12 px-4 py-4 col-sm-6 p-sm-5 py-sm-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            Quality first approach
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            Quality is always our number one priority. We understand that every
-            success always comes from a superior product. We always try to bring
-            the perfect product to our customers and make everyone happy.
-            Quality is always guaranteed with ISO 9001, 27001, CCMI lv3, ISTQB
-          </p>
+        <div className="row">
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <PieChartOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Experience</b>
+              <p>
+                We are strategic partner of big corporations such as Mitsui
+                O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                Hospital...and delivered 1,000+ systems for enterprise.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <SwitcherOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>All-in-One Provider</b>
+              <p>
+                Our services are comprehensive from consulting, design,
+                development, integration, deployment to system maintenance and
+                much mores.
+              </p>
+            </div>
+          </div>
+          <div className="col-4 content-part">
+            <div className="icon-benefit">
+              <PaperClipOutlined />
+            </div>
+            <div className="text-benefit">
+              <b>Agile Mindset</b>
+              <p>
+                An agile mindset is about creating and responding to change in
+                uncertain and turbulent environments.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="row m-sm-5 p-sm-3 py-sm-0 mt-sm-4">
-        <div className="col-12 px-4 py-4 col-sm-6 p-sm-5 py-sm-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            Technical expertise
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            Technology is the core and most important part of running
-            e-commerce. Understanding that, we are constantly improving the
-            latest technologies, giving customers the best performance and
-            experience at the lowest cost. We have experience in building
-            high-performance e-commerce systems, mobile e-commerce applications,
-            and multi-channel integration.
-          </p>
-        </div>
-        <div className="col-12 col-sm-6 p-sm-5 py-sm-0 ">
-          <img className="image-row3" src={image1} />
-        </div>
-      </div>
-
-      <div className="row mt-5 m-sm-5 p-sm-3 py-sm-0 mt-sm-4">
-        <div className="col-12 col-sm-6 p-sm-5 py-sm-0 ">
-          <img className="image-row3" src={image1} />
-        </div>
-        <div className="col-12 px-4 py-4 col-sm-6 p-sm-5 py-sm-0">
-          <p style={{ fontSize: 28 }} className="p-for-title">
-            Up to date technology
-          </p>
-          <p style={{ fontSize: 20 }} className="section-service">
-            We drink technology for breakfast and software architecture for
-            lunch. Constantly updating modern technology is our passion. You
-            will always experience the latest technological achievements in the
-            field of e-commerce when working with us. To us, technology can only
-            be better and better
-          </p>
-        </div>
-      </div>
-
+      </section>
       <div className="row mt-0 pt-0">
         <div class="col-12 mt-0 pt-0">
           <div className="section-title-2">

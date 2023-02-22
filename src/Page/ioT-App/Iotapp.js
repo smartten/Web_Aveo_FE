@@ -1,15 +1,18 @@
 import "./IotStyle.scss";
 import {
-  CloudServerOutlined,
-  DashboardOutlined,
-  FieldTimeOutlined,
-  CodeOutlined,
+  SearchOutlined,
+  FileProtectOutlined,
+  QrcodeOutlined,
+  PushpinOutlined,
   BulbOutlined,
   SelectOutlined,
   UserOutlined,
   PieChartOutlined,
   SwitcherOutlined,
   PaperClipOutlined,
+  ApartmentOutlined,
+  ProfileOutlined,
+  DiffOutlined,
 } from "@ant-design/icons";
 function Iotapp() {
   setTimeout(function () {
@@ -30,16 +33,16 @@ function Iotapp() {
             <div className="container">
               <div className="slide-content d-flex">
                 <div className="image">
-                  <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-cloud" />
+                  <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-iot-1_gfh00f" />
                 </div>
                 <div className="text">
                   <p className="text-title">
-                    <span>Cloud Computing</span>
+                    <span>IoT Application</span>
                   </p>
                   <p className="sub-text">
-                    An effective cloud strategy ensures that the enterprise
-                    makes the right technology investments at the right time and
-                    on the right platforms to improve business performance
+                    Our IoT App development services provide you with the
+                    ability to remotely control your products from anywhere in
+                    the world
                   </p>
                 </div>
               </div>
@@ -55,7 +58,9 @@ function Iotapp() {
                 <div class="section-title title-01 mb-70">
                   <h3 class="title">Our Services</h3>
                   <p class="sub-title">
-                    Shift your business to cloud with support from our experts.
+                    We drive value-centered IoT solutions and set up multi-level
+                    data pipelines for that: from edge computing to cloud data
+                    processing and data science.
                   </p>
                 </div>
               </div>
@@ -66,13 +71,15 @@ function Iotapp() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <CloudServerOutlined />
+                    <ApartmentOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">Cloud Strategy Consulting</b>
+                    <b className="text-title">Process automation</b>
                     <p className="text-sub">
-                      We help you find out the right cloud strategy supports
-                      core business and innovation in any hybrid multicloud
+                      Automating manual actions based on commands sent from
+                      control apps to actuators. Applicable to simple actions
+                      like switching on/off, opening/closing, and complicated
+                      industrial processes, like robotic order picking.
                     </p>
                   </div>
                 </div>
@@ -80,15 +87,16 @@ function Iotapp() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <FieldTimeOutlined />
+                    <ProfileOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">Cloud System Optimization</b>
+                    <b className="text-title">Environmental monitoring</b>
                     <p className="text-sub">
-                      Cloud optimization is the process of eliminating cloud
-                      resource waste by selecting, provisioning, and
-                      right-sizing the resources you spend on specific cloud
-                      features.
+                      Measuring the required environmental metrics. Helps check
+                      the compliance of asset storage and transportation,
+                      monitor operation conditions for industrial equipment and
+                      at human workplaces, understand the environmental impact
+                      of processes.
                     </p>
                   </div>
                 </div>
@@ -96,15 +104,13 @@ function Iotapp() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <DashboardOutlined />
+                    <ProfileOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">Cloud Monitoring</b>
+                    <b className="text-title">Asset and inventory management</b>
                     <p className="text-sub">
-                      Utilization of manual or automation techniques to monitor
-                      the performance of applications, servers...Assessment and
-                      evaluation of resource utilization, server response times,
-                      availability and operating speeds.
+                      Remote tracking of assets' geoposition and movements.
+                      Instant indication of low stock.
                     </p>
                   </div>
                 </div>
@@ -112,16 +118,75 @@ function Iotapp() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <CodeOutlined />
+                    <DiffOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Remote diagnostics</b>
+                    <p className="text-sub">
+                      Analyzing vital signs measured by wearable devices and
+                      informing a supervising doctor on deviations from normal
+                      levels. An advanced level of telehealth
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <SearchOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Video surveillance</b>
+                    <p className="text-sub">
+                      Real-time alerting on abnormal behavior within the area
+                      under surveillance. Used for crime prevention, early fire
+                      detection, traffic incident alerts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <QrcodeOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Product quality management</b>
+                    <p className="text-sub">
+                      Monitoring product parameters and process compliance
+                      during manufacturing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <FileProtectOutlined />
                   </div>
                   <div className="text-service">
                     <b className="text-title">
-                      Legacy System to Cloud Migration
+                      Preventive equipment maintenance
                     </b>
                     <p className="text-sub">
-                      We help you transform all the data, applications, and
-                      other business digital assets from an on-premise
-                      infrastructure to the cloud.
+                      Remote monitoring of equipment performance metrics and
+                      early detection of potential malfunctioning. Prevents
+                      equipment breakage and production interruptions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <PushpinOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Transportation management</b>
+                    <p className="text-sub">
+                      Real-time monitoring of cargo in transit to cerify its
+                      quality and validate the compliance with transportation
+                      requirements
                     </p>
                   </div>
                 </div>
@@ -160,70 +225,6 @@ function Iotapp() {
                   src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
                   style={{ width: "100%" }}
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="our-typical">
-        <div className="container">
-          <div className="content-typical">
-            <p className="title-typical">
-              Our Typical Blockchain Implementation Roadmap
-            </p>
-          </div>
-          <div className="box-content-typical">
-            <div className="row row-cols-1 row-cols-md-2">
-              <div className="col">
-                <div className="box">
-                  <span className="nummber">1</span>
-                  <div className="content-number">
-                    <h3 className="title-box">Discover</h3>
-                    <p className="content-title-box">
-                      We work with you to gain clarity on your needs, learn when
-                      and where blockchains makes sense in your business.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="box">
-                  <span className="nummber">2</span>
-                  <div className="content-number">
-                    <h3 className="title-box">Research</h3>
-                    <p className="content-title-box">
-                      We determine and select the blockchain technology stack
-                      and develop functional and technical architecture.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="box">
-                  <span className="nummber">3</span>
-                  <div className="content-number">
-                    <h3 className="title-box">Build</h3>
-                    <p className="content-title-box">
-                      Our skilled blockchain engineers efficiently build and
-                      test the proof of concept iteratively, retrospective to
-                      confirm value and identify new challenges.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="box">
-                  <span className="nummber">4</span>
-                  <div className="content-number">
-                    <h3 className="title-box">Scale</h3>
-                    <p className="content-title-box">
-                      We work with you to develop operating models and
-                      governence, deploy blockchain solution in live production
-                      environment. We also design roll-out strategy and
-                      integrate with your legacy systems.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

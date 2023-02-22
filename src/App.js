@@ -14,15 +14,19 @@ import React, { useEffect } from "react";
 import Headerr from "./components/Header/Headerr.js";
 import Contact from "./Page/ContactUs/Contact.js";
 import Company from "./Page/Company/Company";
+<<<<<<< HEAD
 import CloudComputing from "./Page/Cloud-Computing/CloudComputing";
 import Iotapp from "./Page/ioT-App/Iotapp";
 
+=======
+import WebApplication from "./components/Application/Application";
+>>>>>>> luong
 function App() {
   return (
     <div className="App">
       <Headerr />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<WebApplication />} />
         <Route path="/web-design-and-development" element={<ServiceWeb />} />
         <Route path="/mobile-development" element={<ServiceMobile />} />
         <Route
@@ -37,8 +41,12 @@ function App() {
         <Route path="/ecommerce-solutions" element={<Ecommerce />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/company" element={<Company />} />
+<<<<<<< HEAD
         <Route path="/cloud-computing" element={<CloudComputing />} />
         <Route path="/iot-application" element={<Iotapp />} />
+=======
+        <Route path="/web-application" element={<WebApplication />} />
+>>>>>>> luong
       </Routes>
       <Footer />
     </div>

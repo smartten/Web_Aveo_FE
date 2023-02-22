@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+import imageDeha from "./imgwc.jpg";
+import imgDig from "./img_dig_cons@2x.jpg";
+import imgTranf from "./img_digi_tranf@2x.jpg";
+import w1 from "./w1.jpg";
+import w4 from "./w4.jpg";
+import w2 from "./w2.jpg";
+import w5 from "./w5.jpg";
+import w3 from "./w3.jpg";
+import w6 from "./w6.jpg";
+import quote from "./icons8-get-quote-96.png";
+import { useState } from "react";
+
+>>>>>>> luong
 import "./HomeStyles.scss";
 import React from "react";
 import Slider from "react-slick";
@@ -16,6 +31,7 @@ function Home() {
     slidesToScroll: 1,
   };
   return (
+<<<<<<< HEAD
     <div className="home">
       <section className="slider">
         <div className="siler-list">
@@ -52,6 +68,64 @@ function Home() {
                   businesses
                 </p>
               </div>
+=======
+    <div className="container-fluid  overflow-hidden m-0 g-0">
+      <div className="row hero py-5 px-sm-5 py-sm-auto g-0">
+        <div
+          id=""
+          className="col-sm-12 mx-2 my-5 py-5 mx-sm-5 my-sm-auto px-sm-5 py-sm-auto titleWeb"
+        >
+          <p className="exb">
+            WEB DESIGN &<br />
+            <span className="dev">DEVELOPMENT SERVICES</span>
+          </p>
+          <p className="tec">catch up with the</p>
+          <p className="digi">digital transformation</p>
+          <button className="hmHr-but my-5 mt-sm-5">Read more</button>
+        </div>
+      </div>
+      <div className="row mt-5 m-sm-5">
+        <div className="col-sm-12 miss">
+          <h2 className="desc grad">Mission</h2>
+          <h3>
+            To&nbsp;
+            <span style={{ fontWeight: 700, color: "#1d2055" }}>
+              deliver happiness&nbsp;
+            </span>
+            to our <span className="client">clients</span> and
+            <span className="client"> staffs</span> .
+          </h3>
+        </div>
+      </div>
+
+      <div className="row  mx-sm-5 px-sm-5">
+        <div className="col-sm-6 px-4 pt-1 px-sm-5 px-md-1 px-lg-5">
+          <p class="lig">
+            Happiness, with DEHA, is the highest value that people accumulate
+            through work, cooperation with a positive attitude along with a
+            worthy life. Happiness is not an outcome, but a collection of
+            experiences, long-lasting and enduring. DEHA considers the
+            attainment of happiness as the goal of its business activities. All
+            activities of DEHA are aimed at the continuous, unlimited transfer
+            of values to members, partners and customers to achieve that
+            happiness.
+          </p>
+          <button className="hmHr-but">About us</button>
+        </div>
+        <div className="col-sm-6 px-sm-5">
+          <img className="misImg" src={imageDeha} />
+        </div>
+        {/* <div className="row mx-1 my-5 mx-sm-3">
+          <div className="col-sm-12">
+          </div>
+        </div> */}
+      </div>
+      <div className="row my-sm-5 imageArea px-sm-5 g-0">
+        <div className="col-sm-12 px-sm-5">
+          <div className="row px-3 m-sm-5 px-sm-5">
+            <div className="col-6 col-sm-3">
+              <h3>220</h3> <p>Members</p>
+>>>>>>> luong
             </div>
           </div>
         </div>
@@ -121,6 +195,7 @@ function Home() {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="row mt-3">
             <div className="col-4">
               <div
@@ -137,6 +212,103 @@ function Home() {
                     where they need to be, then closes them by using Digital
                     Technologies.
                   </p>
+=======
+        </div>
+      </div>
+      <div className="row my-4 my-sm-0">
+        <div className="col-12 sTitle">
+          <h3 style={{ fontSize: 27, opacity: 0.9 }} class="lig">
+            Services
+          </h3>
+          <h2 class="grad ">What We Do</h2>
+        </div>
+      </div>
+
+      <div className="row my-sm-5">
+        <div
+          style={{ borderRight: "none" }}
+          className="col-sm-6 py-4 p-sm-5 hmLiser"
+        >
+          <h3>Digital Consulting</h3>
+          <img className="px-sm-5" src={imgDig} />
+          <a className="mt-sm-5" href="">
+            Application services, Next-gen technologies services and more…
+          </a>
+        </div>
+        <div className="col-sm-6 py-4 p-sm-5 hmLiser">
+          <h3 style={{ color: "#8aba2b" }}>
+            DIGITAL TRANSFORMATION CONSULTING
+          </h3>
+          <img className="px-sm-5" src={imgTranf} />
+          <a
+            style={{ color: "#8aba2b", border: "1px #8aba2b solid" }}
+            className="mt-sm-5"
+            href=""
+          >
+            Ecommerce services, Smart Logistics and more…
+          </a>
+        </div>
+      </div>
+      {/* <div className="row my-5 my-sm-0 mb-sm-5">
+        <div className="col-12 sTitle">
+          <h3 style={{ fontSize: 27, opacity: 0.9, lineHeight: 1 }} class="lig">
+            Creative Portfolio
+          </h3>
+          <h2 class="grad">Success cases</h2>
+        </div>
+      </div>
+
+      <div className="row mx-sm-5 px-sm-5 g-0 listFolio">
+        <div className="col-sm-4 g-0 ">
+          <img className="mb-4 g-0" src={w1} />
+          <br />
+          <img src={w4} />
+        </div>
+        <div className="col-sm-4 g-0">
+          <img className="mb-4" src={w2} />
+          <br />
+          <img src={w5} />
+        </div>
+        <div className="col-sm-4 g-0">
+          <img className="mb-4" src={w3} />
+          <br />
+          <img src={w6} />
+        </div>
+      </div> */}
+
+      <div className="row hmQuote mt-lg-5 p-lg-5">
+        <div className="col-12 col-lg-6 px-4 mt-lg-5 p-lg-5">
+          <img src={quote} />
+          <p>
+            {text.desc
+              ? text.desc
+              : "Using DEHA market research services provide us a positive result. We grasped the market situation and used it for our strategy and policy."}
+          </p>
+          <h6>
+            <span>{text.auth ? text.auth : "LE ANH DUONG"} </span>
+            {text.office
+              ? text.office
+              : "- Sales Manager, Mitsubishi Electric Viet Nam"}
+          </h6>
+        </div>
+        <div className="col-12 px-5 col-lg-6 mt-lg-5 p-lg-5">
+          <div className="row mt-3 mt-sm-5 g-0 imgQuote px-sm-5">
+            {quotes &&
+              quotes.map((p) => (
+                <div className="col-4 col-sm-4">
+                  <img
+                    src={p.src}
+                    id="selected"
+                    alt="Testimonial Images"
+                    onClick={() => {
+                      setText({
+                        desc: p.desc,
+                        auth: p.auth,
+                        office: p.office,
+                      });
+                    }}
+                  ></img>
+>>>>>>> luong
                 </div>
               </div>
               <div className="title-active">

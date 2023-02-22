@@ -1,0 +1,318 @@
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+.hero-section {
+    background-image     : url('./Hero-bg-default.webp');
+    background-repeat    : no-repeat;
+    background-position-x: top;
+    background-position-y: top;
+    background-size      : cover;
+    position             : relative;
+    height               : 100vh;
+    width                : 100%;
+
+}
+
+.hero-text {
+    display: none;
+
+    h1 {
+        font-size     : 62px;
+        color         : white;
+        font-weight   : 700;
+        letter-spacing: -.75px;
+    }
+
+    p {
+        font-size  : 1.175rem;
+        color      : white;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+}
+
+.img-fluid {
+    width  : 85% !important;
+    height : auto !important;
+    float  : right;
+    display: none;
+}
+
+.mobility {
+    display: none;
+}
+
+.cssanimation {
+    animation-duration : 2s;
+    animation-fill-mode: both;
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name        : fadeInRight;
+    display               : block;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name        : fadeInLeft;
+    display               : block;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name        : fadeInUp;
+    display               : block;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity  : 0;
+        transform: translate3d(-20%, 0, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity  : 0;
+        transform: translate3d(20%, 0, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity  : 0;
+        transform: translate3d(0, 30%, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+.section-title {
+    text-align: center;
+
+    h3 {
+        color         : #2f353e;
+        letter-spacing: -.75px;
+        font-size     : 2.3rem;
+        letter-spacing: -.75px;
+        font-weight   : 700;
+        line-height   : 1.5;
+    }
+
+    p {
+        font-size  : 1.1rem;
+        color      : #6C757D;
+        line-height: 1.6666;
+        font-weight: 400;
+        opacity    : 0.95;
+    }
+}
+
+.img {
+    width : 60px;
+    height: 60px;
+}
+
+.fbox-txt {
+    h5 {
+        color         : #2f353e;
+        letter-spacing: -.75px;
+        font-size     : 1.6rem;
+        font-weight   : 600;
+    }
+
+    p {
+        font-size  : 1.1rem;
+        color      : #6C757D;
+        line-height: 1.6666;
+        font-weight: 400;
+        opacity    : 0.95;
+    }
+}
+
+.bg-01 {
+    background-image     : url("./Hero-bg-default.webp");
+    background-repeat    : no-repeat;
+    background-position  : 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size      : cover;
+    background-attachment: fixed !important;
+    width                : 100%;
+    height               : 300px;
+}
+
+.txt-block {
+    h3 {
+        color         : #2f353e;
+        letter-spacing: -.75px;
+        font-weight   : 700;
+        line-height   : 1.2;
+        font-size     : 2.5rem;
+        font-family   : inherit;
+    }
+
+    ul {
+        margin    : 0;
+        padding   : 0;
+        list-style: none;
+
+        li {
+            display   : list-item;
+            text-align: -webkit-match-parent;
+
+            p {
+                font-size  : 1.1rem;
+                color      : #71757D;
+                // color: #6c757d;
+                line-height: 1.6666;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.img-digi {
+    width: 95%;
+    float: right;
+}
+
+.bg-snow {
+    // text-align: center;
+    background-color: #fbfbfd;
+    height          : 192px;
+
+    span {
+        color      : #2f353e;
+        font-weight: 700;
+        font-size  : 3.5rem;
+        float      : right;
+    }
+
+    p {
+        font-size  : 1.075rem;
+        font-weight: 500;
+        color      : #757575;
+    }
+}
+
+.step {
+    height               : 13rem;
+    display              : block;
+    background-color     : #fff;
+    border               : 1px solid #efefef;
+    // padding: 30px 0px 30px 0px;
+    margin               : 1rem 0;
+    -webkit-border-radius: 0;
+    border-radius        : 0;
+    -webkit-box-shadow   : 0 10px 15px 0 rgb(5 5 5/5%);
+    box-shadow           : 0 10px 15px 0 rgb(5 5 5/5%);
+
+    .nr {
+        font-style : normal;
+        font-weight: 700;
+        font-size  : 56px;
+        line-height: 60px;
+        color      : #d6e9f3;
+    }
+}
+
+.h3-md {
+    font-size     : 2.6rem;
+    color         : #2f353e;
+    letter-spacing: -.75px;
+    font-weight   : 700;
+    line-height   : 1.2;
+    text-align    : center;
+    opacity       : 0.9;
+}
+
+.content-part {
+    background-color: #f4f4f9;
+    margin-left     : 28px;
+    height          : 427px;
+
+    .icon-benefit {
+        color    : #6C757D;
+        font-size: 60px;
+    }
+
+    .text-benefit {
+        span {
+            color         : #2f353e;
+            letter-spacing: -.75px;
+            line-height   : 1.3;
+            font-size     : 1.25rem;
+            font-weight   : 700;
+        }
+
+        p {
+            font-size  : 1.075rem;
+            font-weight: 500;
+            color      : #757575;
+            line-height: 1.8;
+        }
+    }
+}
+
+.bg-04 {
+    background-image     : url('./Hero-bg-2.webp');
+    background-repeat    : no-repeat;
+    background-position  : 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size      : cover;
+    background-attachment: fixed !important;
+}
+
+.cta-11-txt {
+    h2 {
+        font-size        : 3rem;
+        color            : white;
+        // letter-spacing: -.75px;
+        font-weight      : 700;
+    }
+
+    p {
+        font-size  : 1.075rem;
+        color      : white;
+        font-weight: 500;
+    }
+
+    .btn-deha {
+        background-color: #1890ff;
+        font-weight     : 500;
+        font-size       : 1.1rem;
+        line-height     : 1;
+        width           : 160px;
+        height          : 50px;
+        text-align      : center;
+
+        a {
+            text-decoration: none;
+            color          : #fff !important;
+        }
+    }
+
+    .btn-deha:hover {
+        cursor: pointer;
+    }
+}
+
+.img-defaultt {
+    width : 80%;
+    height: auto;
+}

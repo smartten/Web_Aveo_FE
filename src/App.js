@@ -16,6 +16,7 @@ import Contact from "./Page/ContactUs/Contact.js";
 import Company from "./Page/Company/Company";
 import CloudComputing from "./Page/Cloud-Computing/CloudComputing";
 import Iotapp from "./Page/ioT-App/Iotapp";
+import WebApplication from "./components/Application/Application";
 
 function App() {
   return (
@@ -39,9 +40,11 @@ function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/cloud-computing" element={<CloudComputing />} />
         <Route path="/iot-application" element={<Iotapp />} />
+        <Route path="/web-application" element={<WebApplication />} />
       </Routes>
       <Footer />
     </div>
   );
 }
+
 export default App;

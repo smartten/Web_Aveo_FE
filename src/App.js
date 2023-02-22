@@ -17,6 +17,9 @@ import Company from "./Page/Company/Company";
 import CloudComputing from "./Page/Cloud-Computing/CloudComputing";
 import Iotapp from "./Page/ioT-App/Iotapp";
 import WebApplication from "./components/Application/Application";
+import Manufacturing from "./Page/Manufacturing/Manufacturing.js";
+import Financial from "./Page/Financial/Financial.js";
+import AboutUs from "./Page/About-Us/AboutUs.js";
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
         <Route path="/cloud-computing" element={<CloudComputing />} />
         <Route path="/iot-application" element={<Iotapp />} />
         <Route path="/web-application" element={<WebApplication />} />
+        <Route path="/manufacturing" element={<Manufacturing />} />
+        <Route path="/financial" element={<Financial />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <Footer />
     </div>

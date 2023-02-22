@@ -1,19 +1,19 @@
-import "./EcommerceStyle.scss";
+import "./FinancialStyle.scss";
 import {
   AppstoreOutlined,
-  RetweetOutlined,
-  FolderAddOutlined,
+  LineChartOutlined,
+  CopyOutlined,
   FundOutlined,
-  ControlOutlined,
+  FieldTimeOutlined,
   BulbOutlined,
   SelectOutlined,
   UserOutlined,
   PieChartOutlined,
   SwitcherOutlined,
   PaperClipOutlined,
-  BarChartOutlined,
+  SafetyCertificateOutlined,
 } from "@ant-design/icons";
-function Ecommerce() {
+function Financial() {
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
@@ -25,7 +25,7 @@ function Ecommerce() {
     }
   }, 1000);
   return (
-    <div className="ecommerce">
+    <div className="financial">
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item">
@@ -33,11 +33,12 @@ function Ecommerce() {
               <div className="slide-content">
                 <div className="text">
                   <p className="text-title">
-                    <span>Ecommerce</span>
+                    <span>Financial</span>
                   </p>
                   <p className="sub-text">
-                    We'll help you build a scalable, secure platform that will
-                    guide your buyer through a seamless purchasing process
+                    We'll help you develop a solution, capable of beautifully
+                    visualizing data and revolutionize the financial services
+                    market
                   </p>
                   <a className="btn btn-contact">Contact Us</a>
                 </div>
@@ -53,9 +54,7 @@ function Ecommerce() {
               <div class="col-lg-10 col-xl-8">
                 <div class="section-title title-01 mb-70">
                   <h3 class="title">Our Solutions</h3>
-                  <p class="sub-title">
-                    Ecommerce solutions suited to your needs
-                  </p>
+                  <p class="sub-title">Solving Your Fintech Needs</p>
                 </div>
               </div>
             </div>
@@ -69,13 +68,13 @@ function Ecommerce() {
                   </div>
                   <div className="text-service">
                     <b className="text-title">
-                      Cart to Cart Migration Made Easy
+                      Offering Your Customers An Excellent Experience
                     </b>
                     <p className="text-sub">
-                      With the most advanced shopping cart migration solution,
-                      we ensure the highest accuracy and the least human
-                      involvement. Only 3 simple steps to set everything up. No
-                      coding required!
+                      Get apps that collect, analyze, and assess data to learn
+                      what your customers want and need. We help you create
+                      solutions to better target your customers based on
+                      preferences and online behaviors.
                     </p>
                   </div>
                 </div>
@@ -86,13 +85,14 @@ function Ecommerce() {
                     <FundOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">Channel and System Integration</b>
+                    <b className="text-title">
+                      Accelerating Your Payment Lifecycle With Automation
+                    </b>
                     <p className="text-sub">
-                      Our ecommerce services enhance your business operations
-                      through effective channel integration and help increase
-                      your customer reach. We connect your internal management
-                      systems like ERP, CRM, PIM, and CMS to external systems
-                      and enable bidirectional data flow.
+                      Use technology like blockchain to help you securely accept
+                      and transmit payments around the world in mere minutes.
+                      Our solutions increase transparency while reducing your
+                      transaction time and costs.
                     </p>
                   </div>
                 </div>
@@ -100,15 +100,18 @@ function Ecommerce() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <FolderAddOutlined />
+                    <CopyOutlined />
                   </div>
                   <div className="text-service">
                     <b className="text-title">
-                      Centralized Inventory Management
+                      Predicting Risks With Big Data And Artificial Intelligence
                     </b>
                     <p className="text-sub">
-                      Manage 100% error-free inventory that gets updated in real
-                      time across all your sale channels.
+                      Use all the data you have at your fingertips to help your
+                      customers with wealth management and other financial
+                      needs. We harness Big Data and AI for use in customized
+                      finance development services to predict your financial
+                      risks.
                     </p>
                   </div>
                 </div>
@@ -116,48 +119,53 @@ function Ecommerce() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <BarChartOutlined />
-                  </div>
-                  <div className="text-service">
-                    <b className="text-title">Analytics and Forecasting</b>
-                    <p className="text-sub">
-                      We deliver actionable insights based on historical and
-                      present data to help you predict and understand evolving
-                      customer requirements. Our automated ecommerce solution
-                      helps you determine the structural changes your site needs
-                      based on customer preferences and more.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
-                    <RetweetOutlined />
-                  </div>
-                  <div className="text-service">
-                    <b className="text-title">Competitive Intelligence </b>
-                    <p className="text-sub">
-                      Our ecommerce experts monitor product prices using product
-                      GAP analysis to enhance your portfolio and safeguard your
-                      brand value.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
-                    <ControlOutlined />
+                    <SafetyCertificateOutlined />
                   </div>
                   <div className="text-service">
                     <b className="text-title">
-                      Omnichannel eCommerce Solutions
+                      Securing Your Assets Against Fraud
                     </b>
                     <p className="text-sub">
-                      Deliver a consistent brand experience across every
-                      channel, from your physical store to your online store—and
-                      everything in between.
+                      Our Fintech software adheres to strict policies and
+                      regulations to help you attain international
+                      certifications and to comply with global financial
+                      industry standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <LineChartOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">
+                      Strengthening Your Investment Management
+                    </b>
+                    <p className="text-sub">
+                      Get agile investment performance and optimize your
+                      investment management strategy through innovative
+                      investment management solutions that aggregate and process
+                      real-time data to identify risks and fluctuating market
+                      conditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <FieldTimeOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">
+                      Boosting Your Operational Efficiency
+                    </b>
+                    <p className="text-sub">
+                      If you don't innovate, you risk shrinking your profit and
+                      earnings. Streamline your services and offerings by
+                      automating your processes for faster performance.
                     </p>
                   </div>
                 </div>
@@ -384,4 +392,4 @@ function Ecommerce() {
   );
 }
 
-export default Ecommerce;
+export default Financial;

@@ -1,19 +1,19 @@
-import "./EcommerceStyle.scss";
+import "./ManufacturingStyle.scss";
 import {
-  AppstoreOutlined,
-  RetweetOutlined,
-  FolderAddOutlined,
-  FundOutlined,
-  ControlOutlined,
+  CommentOutlined,
+  OneToOneOutlined,
+  NodeIndexOutlined,
+  ClockCircleOutlined,
+  ScheduleOutlined,
   BulbOutlined,
   SelectOutlined,
   UserOutlined,
   PieChartOutlined,
   SwitcherOutlined,
   PaperClipOutlined,
-  BarChartOutlined,
+  DashboardOutlined,
 } from "@ant-design/icons";
-function Ecommerce() {
+function Manufacturing() {
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
@@ -25,7 +25,7 @@ function Ecommerce() {
     }
   }, 1000);
   return (
-    <div className="ecommerce">
+    <div className="manufacturing">
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item">
@@ -33,11 +33,10 @@ function Ecommerce() {
               <div className="slide-content">
                 <div className="text">
                   <p className="text-title">
-                    <span>Ecommerce</span>
+                    <span>Manufacturing</span>
                   </p>
                   <p className="sub-text">
-                    We'll help you build a scalable, secure platform that will
-                    guide your buyer through a seamless purchasing process
+                    Maintenance + Product Lifecycle Management + Quality
                   </p>
                   <a className="btn btn-contact">Contact Us</a>
                 </div>
@@ -53,9 +52,7 @@ function Ecommerce() {
               <div class="col-lg-10 col-xl-8">
                 <div class="section-title title-01 mb-70">
                   <h3 class="title">Our Solutions</h3>
-                  <p class="sub-title">
-                    Ecommerce solutions suited to your needs
-                  </p>
+                  <p class="sub-title">Manufacturing Reinvented</p>
                 </div>
               </div>
             </div>
@@ -65,17 +62,59 @@ function Ecommerce() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <AppstoreOutlined />
+                    <CommentOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Realtime Communication</b>
+                    <p className="text-sub">
+                      Display worksheets, quality alerts to workers during
+                      operations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <ClockCircleOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">No more time clocking</b>
+                    <p className="text-sub">
+                      Accurate planning directly based on real manufacturing
+                      times measures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <NodeIndexOutlined />
+                  </div>
+                  <div className="text-service">
+                    <b className="text-title">Artificial intelligence (AI)</b>
+                    <p className="text-sub">
+                      The next wave of manufacturing automation will involve AI,
+                      which refers to the ability for machines to perform
+                      complex tasks and become smarter over time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="content-text">
+                  <div className="icon-service">
+                    <DashboardOutlined />
                   </div>
                   <div className="text-service">
                     <b className="text-title">
-                      Cart to Cart Migration Made Easy
+                      Industrial Internet of Things (IIoT)
                     </b>
                     <p className="text-sub">
-                      With the most advanced shopping cart migration solution,
-                      we ensure the highest accuracy and the least human
-                      involvement. Only 3 simple steps to set everything up. No
-                      coding required!
+                      IIoT refers to intelligent devices and sensors that
+                      collect data from the manufacturing floor for use in AI,
+                      machine learning, and predictive analytics systems.
                     </p>
                   </div>
                 </div>
@@ -83,32 +122,17 @@ function Ecommerce() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <FundOutlined />
-                  </div>
-                  <div className="text-service">
-                    <b className="text-title">Channel and System Integration</b>
-                    <p className="text-sub">
-                      Our ecommerce services enhance your business operations
-                      through effective channel integration and help increase
-                      your customer reach. We connect your internal management
-                      systems like ERP, CRM, PIM, and CMS to external systems
-                      and enable bidirectional data flow.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
-                    <FolderAddOutlined />
+                    <OneToOneOutlined />
                   </div>
                   <div className="text-service">
                     <b className="text-title">
-                      Centralized Inventory Management
+                      Asset performance management (APM)
                     </b>
                     <p className="text-sub">
-                      Manage 100% error-free inventory that gets updated in real
-                      time across all your sale channels.
+                      APM involves automating asset control, providing a
+                      streamlined way to manage and control everything from
+                      fleets to assembly lines to forklifts, and everything in
+                      between.
                     </p>
                   </div>
                 </div>
@@ -116,48 +140,12 @@ function Ecommerce() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <BarChartOutlined />
+                    <ScheduleOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">Analytics and Forecasting</b>
+                    <b className="text-title">All-in-one solution</b>
                     <p className="text-sub">
-                      We deliver actionable insights based on historical and
-                      present data to help you predict and understand evolving
-                      customer requirements. Our automated ecommerce solution
-                      helps you determine the structural changes your site needs
-                      based on customer preferences and more.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
-                    <RetweetOutlined />
-                  </div>
-                  <div className="text-service">
-                    <b className="text-title">Competitive Intelligence </b>
-                    <p className="text-sub">
-                      Our ecommerce experts monitor product prices using product
-                      GAP analysis to enhance your portfolio and safeguard your
-                      brand value.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
-                    <ControlOutlined />
-                  </div>
-                  <div className="text-service">
-                    <b className="text-title">
-                      Omnichannel eCommerce Solutions
-                    </b>
-                    <p className="text-sub">
-                      Deliver a consistent brand experience across every
-                      channel, from your physical store to your online store—and
-                      everything in between.
+                      RP, Quality, Maintenance and PLM fully integrated.
                     </p>
                   </div>
                 </div>
@@ -384,4 +372,4 @@ function Ecommerce() {
   );
 }
 
-export default Ecommerce;
+export default Manufacturing;

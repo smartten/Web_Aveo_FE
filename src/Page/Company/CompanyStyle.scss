@@ -155,8 +155,17 @@
                     padding        : 0px 8px;
 
                     img {
-                        width     : 100%;
-                        transition: transform 1s ease, opacity .5s ease .25
+                        -webkit-transform    : scale(1);
+                        transform            : scale(1);
+                        -webkit-transition   : .3s ease-in-out;
+                        transition           : .3s ease-in-out;
+                        display              : block;
+                        width                : 100%;
+                        // height            : 300px;
+                    }
+
+                    figure {
+                        overflow: hidden;
                     }
 
                     .img-new::after {
@@ -181,12 +190,10 @@
 
                     &:hover {
                         img {
-                            transform : scale(1.05);
-                            width     : 100%;
-                            transition: transform 1s ease, opacity .5s ease .25
+                            -webkit-transform: scale(1.18);
+                            transform        : scale(1.18);
+                            transition       : transform 1s ease, opacity .5s ease .25s;
                         }
-
-                        ;
                     }
                 }
             }
@@ -984,13 +991,14 @@
         .siler-list {
             transform: translate3d(0, 0, 0);
 
-            .slider-item-contact {
+            .slider-item-company {
                 background-size    : cover;
                 background-repeat  : no-repeat;
+                background-position: 55% !important;
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
+                background-image   : url('https://web.archive.org/web/20220105053613im_/https://deha-soft.com/wp-content/themes/deha-viet-nam/upload/banner-company.jpg');
                 height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
@@ -1019,6 +1027,18 @@
                             line-height: 38px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .misson {
+        margin-top: 50px;
+
+        .container {
+            .row {
+                .col-6 {
+                    width: 100% !important;
                 }
             }
         }
@@ -1074,6 +1094,36 @@
             }
         }
     }
+
+    .benefit {
+        .row {
+            margin-bottom: 20px;
+
+            .content-part {
+                background-color: #f4f4f9;
+                width           : 100% !important;
+                padding         : 20px 40px !important;
+                margin          : 5px 5px !important;
+
+                .icon-benefit {
+                    font-size: 60px;
+                }
+
+                .text-benefit {
+                    b {
+                        font-size          : 23px;
+                        color              : #000;
+                        // padding-bottom  : 20px;
+                    }
+
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 
@@ -1093,13 +1143,13 @@
         .siler-list {
             transform: translate3d(0, 0, 0);
 
-            .slider-item-contact {
+            .slider-item-company {
                 background-size    : cover;
                 background-repeat  : no-repeat;
-                background-position: 50%;
+                background-position: 55% !important;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
+                background-image   : url('https://web.archive.org/web/20220105053613im_/https://deha-soft.com/wp-content/themes/deha-viet-nam/upload/banner-company.jpg');
                 height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
@@ -1131,6 +1181,145 @@
                 }
             }
         }
+    }
+
+    .benefit {
+        .row {
+            margin-bottom: 20px;
+
+            .content-part {
+                background-color: #f4f4f9;
+                width           : 90% !important;
+                padding         : 20px 40px !important;
+                margin          : 5px 20px !important;
+
+                .icon-benefit {
+                    font-size: 60px;
+                }
+
+                .text-benefit {
+                    b {
+                        font-size          : 23px;
+                        color              : #000;
+                        // padding-bottom  : 20px;
+                    }
+
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .misson {
+        margin-top: 50px;
+
+        .container {
+            .row {
+                .col-6 {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    .news {
+        margin-top: 100px;
+
+        .new-1 {
+            width: 100% !important;
+        }
+    }
+
+    .the-teams {
+        .team-people {
+            .row {
+                .col-3 {
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+
+    .timeline {
+        padding: 15px 10px !important;
+    }
+
+    .timeline:after {
+        left: 28px !important;
+    }
+
+    .timeline .timeline-row {
+        padding-left : 0 !important;
+        margin-bottom: 16px !important;
+    }
+
+    .timeline .timeline-row .timeline-time {
+        position  : relative !important;
+        right     : auto !important;
+        top       : 0 !important;
+        text-align: left !important;
+        margin    : 0 0 6px 56px !important;
+    }
+
+    .timeline .timeline-row .timeline-time strong {
+        display     : inline-block !important;
+        margin-right: 10px !important;
+    }
+
+    .timeline .timeline-row .timeline-icon {
+        top        : 52px !important;
+        left       : -2px !important;
+        margin-left: 0 !important;
+    }
+
+    .timeline .timeline-row .timeline-content {
+        padding    : 15px !important;
+        margin-left: 56px !important;
+        box-shadow : 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+        position   : relative !important;
+    }
+
+    .timeline .timeline-row .timeline-content:after {
+        right: auto !important;
+        left : -39px !important;
+        top  : 32px !important;
+    }
+
+    .timeline .timeline-row:nth-child(odd) {
+        padding-right: 0 !important;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-time {
+        position  : relative !important;
+        right     : auto !important;
+        left      : auto !important;
+        top       : 0 !important;
+        text-align: left !important;
+        margin    : 0 0 6px 56px !important;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-content {
+        margin-right: 0 !important;
+        margin-left : 55px !important;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+        right       : auto !important;
+        left        : -39px !important;
+        top         : 32px !important;
+        border-right: 18px solid #5a99ee !important;
+        border-left : inherit !important;
+    }
+
+    .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
+        left: 20px !important;
+    }
+
+    .timeline.animated .timeline-row.active:nth-child(odd) .timeline-content {
+        left: 0 !important;
     }
 
     // .section-feature-1 {

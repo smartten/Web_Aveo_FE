@@ -1,9 +1,9 @@
-import "./TestStyle.scss";
+import "./CloudComputingStyle.scss";
 import {
-  MobileOutlined,
-  WalletOutlined,
-  ApiOutlined,
-  FileProtectOutlined,
+  CloudServerOutlined,
+  DashboardOutlined,
+  FieldTimeOutlined,
+  CodeOutlined,
   BulbOutlined,
   SelectOutlined,
   UserOutlined,
@@ -11,7 +11,7 @@ import {
   SwitcherOutlined,
   PaperClipOutlined,
 } from "@ant-design/icons";
-function Testing() {
+function CloudComputing() {
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
@@ -23,23 +23,23 @@ function Testing() {
     }
   }, 1000);
   return (
-    <div className="testing">
+    <div className="cloud-computing">
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item">
             <div className="container">
               <div className="slide-content d-flex">
                 <div className="image">
-                  <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-testing" />
+                  <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-cloud" />
                 </div>
                 <div className="text">
                   <p className="text-title">
-                    <span>Testing Services</span>
+                    <span>Cloud Computing</span>
                   </p>
                   <p className="sub-text">
-                    We provides full-range testing services based on our
-                    proficiency with application specifics and standards to
-                    ensure your app's high quality and user adoption
+                    An effective cloud strategy ensures that the enterprise
+                    makes the right technology investments at the right time and
+                    on the right platforms to improve business performance
                   </p>
                 </div>
               </div>
@@ -55,10 +55,7 @@ function Testing() {
                 <div class="section-title title-01 mb-70">
                   <h3 class="title">Our Services</h3>
                   <p class="sub-title">
-                    Our testing service ensures each aspect of your software:
-                    functioning, integrations, performance, usability, and
-                    security is defect-free and fully compliant with its
-                    requirements.
+                    Shift your business to cloud with support from our experts.
                   </p>
                 </div>
               </div>
@@ -69,15 +66,13 @@ function Testing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <ApiOutlined />
+                    <CloudServerOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">API Testing</b>
+                    <b className="text-title">Cloud Strategy Consulting</b>
                     <p className="text-sub">
-                      Our testing services use best practices and open-source
-                      tools to reduce your delivery cycles. We evaluate your
-                      APIs based on their specifications, performance, error
-                      handling, and security.
+                      We help you find out the right cloud strategy supports
+                      core business and innovation in any hybrid multicloud
                     </p>
                   </div>
                 </div>
@@ -85,14 +80,15 @@ function Testing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <MobileOutlined />
+                    <FieldTimeOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">Mobile Testing</b>
+                    <b className="text-title">Cloud System Optimization</b>
                     <p className="text-sub">
-                      Mobile testing comprises functional, compatibility,
-                      usability, performance, error handling, security testing
-                      types.s
+                      Cloud optimization is the process of eliminating cloud
+                      resource waste by selecting, provisioning, and
+                      right-sizing the resources you spend on specific cloud
+                      features.
                     </p>
                   </div>
                 </div>
@@ -100,14 +96,15 @@ function Testing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <WalletOutlined />
+                    <DashboardOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">Automation Testing</b>
+                    <b className="text-title">Cloud Monitoring</b>
                     <p className="text-sub">
-                      To ensure sufficient test coverage, we can apply test
-                      automation for functional and regression, performance,
-                      compatibility, and security.
+                      Utilization of manual or automation techniques to monitor
+                      the performance of applications, servers...Assessment and
+                      evaluation of resource utilization, server response times,
+                      availability and operating speeds.
                     </p>
                   </div>
                 </div>
@@ -115,13 +112,16 @@ function Testing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <FileProtectOutlined />
+                    <CodeOutlined />
                   </div>
                   <div className="text-service">
-                    <b className="text-title">Penetration Testing</b>
+                    <b className="text-title">
+                      Legacy System to Cloud Migration
+                    </b>
                     <p className="text-sub">
-                      Detect Security Vulnerabilities and Security Hotspots
-                      during code review.
+                      We help you transform all the data, applications, and
+                      other business digital assets from an on-premise
+                      infrastructure to the cloud.
                     </p>
                   </div>
                 </div>
@@ -168,7 +168,9 @@ function Testing() {
       <section className="our-typical">
         <div className="container">
           <div className="content-typical">
-            <p className="title-typical">Our Software Testing Approach</p>
+            <p className="title-typical">
+              Our Typical Blockchain Implementation Roadmap
+            </p>
           </div>
           <div className="box-content-typical">
             <div className="row row-cols-1 row-cols-md-2">
@@ -178,9 +180,8 @@ function Testing() {
                   <div className="content-number">
                     <h3 className="title-box">Discover</h3>
                     <p className="content-title-box">
-                      We work with you to gain clarity on your software testing
-                      needs, defining clear business outcomes to set up a
-                      successful engagement
+                      We work with you to gain clarity on your needs, learn when
+                      and where blockchains makes sense in your business.
                     </p>
                   </div>
                 </div>
@@ -189,10 +190,10 @@ function Testing() {
                 <div className="box">
                   <span className="nummber">2</span>
                   <div className="content-number">
-                    <h3 className="title-box">Elaborate</h3>
+                    <h3 className="title-box">Research</h3>
                     <p className="content-title-box">
-                      We determine the best solution for your needs and align
-                      our team to fill your skill and resource gaps.
+                      We determine and select the blockchain technology stack
+                      and develop functional and technical architecture.
                     </p>
                   </div>
                 </div>
@@ -201,10 +202,11 @@ function Testing() {
                 <div className="box">
                   <span className="nummber">3</span>
                   <div className="content-number">
-                    <h3 className="title-box">Execute</h3>
+                    <h3 className="title-box">Build</h3>
                     <p className="content-title-box">
-                      Our team assesses and develops a software testing plan and
-                      strategy, executing the updated processes.
+                      Our skilled blockchain engineers efficiently build and
+                      test the proof of concept iteratively, retrospective to
+                      confirm value and identify new challenges.
                     </p>
                   </div>
                 </div>
@@ -213,12 +215,12 @@ function Testing() {
                 <div className="box">
                   <span className="nummber">4</span>
                   <div className="content-number">
-                    <h3 className="title-box">Report</h3>
+                    <h3 className="title-box">Scale</h3>
                     <p className="content-title-box">
-                      We deliver and implement the proposed solution, evaluating
-                      the software testing results to ensure we’re meeting your
-                      needs. We also deliver a detail report to allow you fix
-                      bugs and update your software.
+                      We work with you to develop operating models and
+                      governence, deploy blockchain solution in live production
+                      environment. We also design roll-out strategy and
+                      integrate with your legacy systems.
                     </p>
                   </div>
                 </div>
@@ -409,4 +411,4 @@ function Testing() {
   );
 }
 
-export default Testing;
+export default CloudComputing;

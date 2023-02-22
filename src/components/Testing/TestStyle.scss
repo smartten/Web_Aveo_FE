@@ -1,688 +1,384 @@
-.cms {
-    background-color: #F6F6F6;
-    background-image: url('https://ntq.com.vn/media/WHg55YEnRYeIlBgyPU9k/');
-    height          : 100vh !important;
-    background-size : cover;
-}
-
-.cms-p {
-    // padding-top: 20%;
-    font-size      : 49px;
-    font-weight    : 800;
-    color          : #ffffff !important;
-    font-style     : inherit;
-    text-transform : uppercase;
-    // padding-left: 5%;
-}
-
-a {
-    text-decoration: none;
-}
-
-.cms-p-unlock {
-    color          : #ffffff !important;
-    // padding-left: 5%;
-    font-size      : 1.3rem;
-    // margin-top: -1%;
-}
-
-.title-start {
-    font-weight: bold;
-    font-size  : 29px;
-    color      : #0060ad;
-    font-style : inherit;
-    opacity    : 0.9;
-}
-
-.section-service {
-    font-size: 18px;
-    color    : #60697B;
-}
-
-p {
-    font-family: inherit;
-}
-
-.p-for-title {
-    font-size    : 20px;
-    color        : #60697B;
-    margin-bottom: 20px;
-    font-weight  : bold;
-}
-
-.text-align {
-
-    text-align: center;
-}
-
-.p-for-content {
-    color        : #777F8E;
-    font-size    : 15px;
-    // text-align: center;
-
-}
-
-.image-row2 {
-    width: 97%;
-}
-
-.hmHr {
-    background-image     : url('./bg_hr.jpg');
-    background-repeat    : no-repeat;
-    background-position-x: left;
-    background-position-y: center;
-    background-size      : cover;
-    position             : relative;
-    margin-bottom        : 0;
-    height               : 100%;
-    width                : 100%;
-    text-align           : center;
-
-    h2 {
-        font-size    : 27px;
-        font-weight  : 800;
-        color        : #ffffff;
-        margin-bottom: 30px;
-        z-index      : 2;
-        position     : relative;
-
-
-    }
-
-    p {
-        color        : #ffffff;
-        font-size    : 19px;
-        line-height  : 28px;
-        margin-bottom: 20px;
-        z-index      : 2;
-        position     : relative;
-        opacity      : 0.9;
-
-    }
-
-    .hmHr-but {
-        background-color   : white;
-        border             : none;
-        color              : #0161AD;
-        width              : 12.5rem;
-        height             : 3.125rem;
-        font-size          : 18px;
-        font-weight        : 500;
-        transition-duration: 0.1s;
-        display            : block;
-        z-index            : 2;
-        position           : relative;
-        text-decoration    : none;
-        // margin-left: 45%;
-    }
-
-    .hmHr-but:hover {
-        background-color   : #E8EFE6;
-        border             : 4px solid #0161AD;
-        color              : #0161AD;
-        // height          : 700px;
-    }
-
-    .cms-p {
-        // padding-top: 20%;
-        font-size      : 49px;
-        font-weight    : 800;
-        color          : #696969;
-        font-style     : inherit;
-        text-transform : uppercase;
-        // padding-left: 5%;
-    }
-
-    .cms-p-unlock {
-        color          : #696969;
-        // padding-left: 5%;
-        font-size      : 1.3rem;
-        // margin-top: -1%;
-    }
-
-    .title-start {
-        font-weight: bold;
-        font-size  : 29px;
-        color      : #0060ad;
-        font-style : inherit;
-        opacity    : 0.9;
-    }
-
-    .section-service {
-        font-size: 18px;
-        color    : #60697B;
-    }
-
-    p {
-        font-family: inherit;
-    }
-
-    .p-for-title {
-        font-size    : 20px;
-        color        : #60697B;
-        margin-bottom: 20px;
-        font-weight  : bold;
-    }
-
-    .text-align {
-
-        text-align: center;
-    }
-
-    .p-for-content {
-        color        : #777F8E;
-        font-size    : 15px;
-        // text-align: center;
-
-    }
-
-    .image-row2 {
-        width: 97%;
-    }
-
-    .hmHr {
-        background-image     : url('./bg_hr.jpg');
-        background-repeat    : no-repeat;
-        background-position-x: left;
-        background-position-y: center;
-        background-size      : cover;
-        position             : relative;
-        margin-bottom        : 0;
-        height               : 100%;
-        width                : 100%;
-        text-align           : center;
-
-        h2 {
-            font-size    : 27px;
-            font-weight  : 800;
-            color        : #ffffff;
-            margin-bottom: 30px;
-            z-index      : 2;
-            position     : relative;
-
-
-        }
-
-        p {
-            color        : #ffffff;
-            font-size    : 19px;
-            line-height  : 28px;
-            margin-bottom: 20px;
-            z-index      : 2;
-            position     : relative;
-            opacity      : 0.9;
-
-        }
-
-        .hmHr-but {
-            background-color   : white;
-            border             : none;
-            color              : #0161AD;
-            width              : 12.5rem;
-            height             : 3.125rem;
-            font-size          : 18px;
-            font-weight        : 500;
-            transition-duration: 0.1s;
-            display            : block;
-            z-index            : 2;
-            position           : relative;
-            // margin-left: 45%;
-        }
-
-        .hmHr-but:hover {
-            background-color: #E8EFE6;
-            border          : 4px solid #0161AD;
-            color           : #0161AD;
-        }
-    }
-
-    .hmHr::before {
-        content         : '';
-        position        : absolute;
-        top             : 0;
-        left            : 0;
-        width           : 100%;
-        height          : 100%;
-        opacity         : 0.8;
-        z-index         : 1;
-        background      : linear-gradient(to bottom right, #0060AD 0%, #8ABA2B 100%);
-        background-image: linear-gradient(to right bottom, rgb(0, 96, 173) 0%, rgb(138, 186, 43) 100%);
-    }
-
-    .ul-for-content {
-        font-size      : 15px;
-        color          : #60697B;
-        list-style-type: circle;
-    }
-
-    .circle {
-        width                : 70px;
-        height               : 70px;
-        -moz-border-radius   : 50px;
-        -webkit-border-radius: 50px;
-        border-radius        : 50px;
-        text-align           : center;
-        line-height          : 70px;
-        color                : #3F78E0;
-        font-size            : 20px;
-        font-weight          : 700;
-        background-color     : #E0E9FA;
-    }
-
-    .imageArea {
-        background-image     : url('./halong-bay.jpg');
-        background-repeat    : no-repeat;
-        text-align           : center;
-        background-size      : cover;
-        background-position-x: center;
-        width                : 100%;
-        background-position-y: 0px;
-        background-attachment: fixed;
-        position             : relative;
-        overflow             : hidden;
-
-        h2 {
-            font-size  : 25px;
-            font-style : italic;
-            color      : white;
-            font-weight: 400;
-            position   : relative;
-            z-index    : 2;
-            opacity    : 0.9;
-        }
-    }
-
-    .imageArea::before {
-        content         : '';
-        position        : absolute;
-        top             : 0;
-        left            : 0;
-        width           : 100%;
-        height          : 100%;
-        opacity         : 0.8;
-        z-index         : 1;
-        background      : linear-gradient(to bottom right, #0060AD 0%, #8ABA2B 100%);
-        background-image: linear-gradient(to right bottom, rgb(0, 96, 173) 0%, rgb(138, 186, 43) 100%);
-    }
-
-    .section-title-1 {
-        text-align: center;
-
-        .title {
-            font-size: 27px;
-            color    : #60697B;
-            opacity  : 0.9;
-            margin   : 0;
-        }
-
-        .desc {
-            color         : #0060AD;
-            font-size     : 26px;
-            font-weight   : bold;
-            text-transform: uppercase;
-        }
-    }
-
-    .image-row3 {
-        width : 100%;
-        height: 100%;
-        float : right;
-    }
-
-    .section-title-2 {
-        text-align: center;
-
-        .title {
-            font-size  : 27px;
-            color      : #606060;
-            font-weight: 300;
-            margin     : 0;
-
-        }
-
-        .desc {
-            font-size  : 36px;
-            font-weight: 800;
-            color      : #0060ad;
-            display    : inline-block;
-        }
-    }
-
-    .grad {
-        background-image       : linear-gradient(to right, rgb(0, 96, 173) 0%, rgb(138, 186, 43) 100%);
-        background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
-        background-position-x  : initial;
-        background-position-y  : initial;
-        background-size        : initial;
-        background-attachment  : initial;
-        background-origin      : initial;
-        background-clip        : initial;
-        background-color       : initial;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .dropdownCms {
-        position        : relative;
-        content         : '';
-        position        : absolute;
-        top             : 0;
-        left            : 0;
-        width           : 100%;
-        height          : 100%;
-        opacity         : 0.8;
-        z-index         : 1;
-        background      : linear-gradient(to bottom right, #0060AD 0%, #8ABA2B 100%);
-        background-image: linear-gradient(to right bottom, rgb(0, 96, 173) 0%, rgb(138, 186, 43) 100%);
-    }
-
-    .ul-for-content {
-        font-size      : 15px;
-        color          : #60697B;
-        list-style-type: circle;
-    }
-
-    .circle {
-        width                : 70px;
-        height               : 70px;
-        -moz-border-radius   : 50px;
-        -webkit-border-radius: 50px;
-        border-radius        : 50px;
-        text-align           : center;
-        line-height          : 70px;
-        color                : #3F78E0;
-        font-size            : 20px;
-        font-weight          : 700;
-        background-color     : #E0E9FA;
-    }
-
-    .imageArea {
-        background-image     : url('./halong-bay.jpg');
-        background-repeat    : no-repeat;
-        text-align           : center;
-        background-size      : cover;
-        background-position-x: center;
-        width                : 100%;
-        background-position-y: 0px;
-        background-attachment: fixed;
-        position             : relative;
-        overflow             : hidden;
-
-        h2 {
-            font-size  : 25px;
-            font-style : italic;
-            color      : white;
-            font-weight: 400;
-            position   : relative;
-            z-index    : 2;
-            opacity    : 0.9;
-        }
-    }
-
-    .imageArea::before {
-        content         : '';
-        position        : absolute;
-        top             : 0;
-        left            : 0;
-        width           : 100%;
-        height          : 100%;
-        opacity         : 0.8;
-        z-index         : 1;
-        background      : linear-gradient(to bottom right, #0060AD 0%, #8ABA2B 100%);
-        background-image: linear-gradient(to right bottom, rgb(0, 96, 173) 0%, rgb(138, 186, 43) 100%);
-    }
-
-    .section-title-1 {
-        text-align: center;
-
-        .title {
-            font-size: 27px;
-            color    : #60697B;
-            opacity  : 0.9;
-            margin   : 0;
-        }
-
-        .desc {
-            color         : #0060AD;
-            font-size     : 26px;
-            font-weight   : bold;
-            text-transform: uppercase;
-        }
-    }
-
-    .image-row3 {
-        width : 100%;
-        height: 100%;
-        float : right;
-    }
-
-    .section-title-2 {
-        text-align: center;
-
-        .title {
-            font-size  : 27px;
-            color      : #606060;
-            font-weight: 300;
-            margin     : 0;
-
-        }
-
-        .desc {
-            font-size  : 36px;
-            font-weight: 800;
-            color      : #0060ad;
-            display    : inline-block;
-        }
-    }
-
-    .grad {
-        background-image       : linear-gradient(to right, rgb(0, 96, 173) 0%, rgb(138, 186, 43) 100%);
-        background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
-        background-position-x  : initial;
-        background-position-y  : initial;
-        background-size        : initial;
-        background-attachment  : initial;
-        background-origin      : initial;
-        background-clip        : initial;
-        background-color       : initial;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .dropdownCms {
-        position     : relative;
-        // width: 85%;
-        // border: 1px solid black;
-        // float: right;
-        border-bottom: 0.5px solid #D3D3D3;
-
-        b {
-            color    : #78808F;
-            font-size: 18px;
-        }
-    }
-
-    /* Nội dung Dropdown */
-    .noidung_dropdown,
-    .noidung_dropdown1,
-    .noidung_dropdown2,
-    .noidung_dropdown3,
-    .noidung_dropdown4,
-    .noidung_dropdown5,
-    .noidung_dropdown6,
-    .noidung_dropdown7 {
-        display         : none;
-        // width: 100%;
-        // position: absolute;
-        background-color: #F1F1F1;
-        font-family     : inherit;
-        border          : 1px solid #D3D3D3;
-        border-radius   : 2px;
-        float           : left;
-    }
-
-    .hienThi {
+.testing {
+    background              : #fff;
+    position                : relative;
+    font-size               : 16px;
+    overflow                : hidden;
+    margin                  : 0 auto;
+    color                   : #60697B;
+    line-height             : 1.7;
+    -webkit-text-size-adjust: 100%;
+    font-family             : 'Open Sans', sans-serif;
+    -webkit-font-smoothing  : antialiased;
+
+    article,
+    aside,
+    br,
+    dialog,
+    figure,
+    footer,
+    header,
+    hr,
+    main,
+    menu,
+    nav,
+    section {
         display: block;
     }
 
-    .but-sche {
-        background-color   : #0161AD;
-        border             : none;
-        color              : #EEF4FA;
-        width              : 300px;
-        height             : 50px;
-        font-size          : 20px;
-        font-weight        : 500;
-        transition-duration: 0.1s;
-        display            : block;
-        // margin-left: 49%;
-        padding            : 10px 40px;
-        position           : relative;
-        align-items        : center;
+    img,
+    svg {
+        vertical-align: middle;
     }
 
-    .but-sche:hover {
-        background-color: white;
-        border          : 4px solid #0161AD;
-        color           : #0161AD;
+    .cssanimation {
+        animation-duration : 1s;
+        animation-fill-mode: both;
     }
 
-    .client {
-        background-color: #F6F6F6;
-        height          : 30%;
+    .fadeInLeft {
+        animation-name: fadeInLeft;
+        display       : block
     }
 
-    .section-title-3 {
-        .title {
-            font-size: 27px;
-            color    : #60697B;
+    @keyframes fadeInLeft {
+        from {
+            opacity  : 0;
+            transform: translateX(-100px);
         }
 
-        .desc {
-            font-size  : 30px;
-            font-weight: bold;
-            color      : #0060ad;
-            display    : inline-block;
-            margin     : 0;
+        to {
+            opacity: 1
+        }
+    }
 
-            b {
-                color    : #78808F;
-                font-size: 18px;
+    .fadeRight {
+        animation-name: fadeInRight;
+        display       : block
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity  : 0;
+            transform: translateX(-100px);
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+            transform: translate3d(0, 0, 0);
+
+            .slider-item {
+                background-size    : cover;
+                background-repeat  : no-repeat;
+                background-position: right top;
+                display            : flex;
+                align-items        : center;
+                background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
+                height             : 100vh !important;
+                min-height         : 1px;
+                float              : left;
+                width              : 100% !important;
+                background-color   : #f1f1f1;
+
+                .container {
+                    position: relative;
+
+                    .slide-content {
+                        align-items       : center;
+                        // justify-content: space-between;
+
+                        .text {
+                            overflow   : hidden;
+                            width      : 60%;
+                            margin-left: 35px;
+
+                            .text-title {
+                                color      : #ffffff;
+                                font-size  : 55px;
+                                line-height: 38px;
+                                font-weight: 600;
+
+                            }
+
+                            .sub-text {
+                                color      : #ffffff;
+                                font-size  : 25px;
+                                line-height: 38px;
+                            }
+                        }
+
+                        .image {
+                            width: 40%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
             }
         }
     }
 
-    /* Nội dung Dropdown */
-    .noidung_dropdown,
-    .noidung_dropdown1,
-    .noidung_dropdown2,
-    .noidung_dropdown3,
-    .noidung_dropdown4,
-    .noidung_dropdown5,
-    .noidung_dropdown6,
-    .noidung_dropdown7 {
-        display         : none;
-        // width: 100%;
-        // position: absolute;
-        background-color: #F1F1F1;
-        font-family     : inherit;
-        border          : 1px solid #D3D3D3;
-        border-radius   : 2px;
-        float           : left;
-    }
+    .developer-service {
+        padding-top   : 70px;
+        padding-bottom: 70px;
 
-    .hienThi {
-        display: block;
-    }
-
-    .but-sche {
-        background-color   : #0161AD;
-        border             : none;
-        color              : #EEF4FA;
-        width              : 300px;
-        height             : 50px;
-        font-size          : 20px;
-        font-weight        : 500;
-        transition-duration: 0.1s;
-        display            : block;
-        // margin-left: 49%;
-        position           : relative;
-        align-items        : center;
-    }
-
-    .but-sche:hover {
-        background-color: white;
-        border          : 4px solid #0161AD;
-        color           : #0161AD;
-    }
-
-    .client {
-        background-color: #F6F6F6;
-        height          : 30%;
-    }
-
-    .section-title-3 {
-        .title {
-            font-size: 27px;
-            color    : #60697B;
-        }
-
-        .desc {
-            font-size  : 30px;
-            font-weight: bold;
-            color      : #0060ad;
-            display    : inline-block;
-            margin     : 0;
-        }
-    }
-
-    .our-clients {
-        background-color: #d8d8d8;
-        padding-top     : 40px;
-        padding-bottom  : 40px;
-
-        .container {
-            position: relative;
+        .title-service {
+            text-align: center;
 
             .title {
+                color      : #000;
+                font-size  : 40px;
+                font-weight: 600;
+            }
 
-                .text-v1 {
-                    font-size: 32px;
+            .sub-title {
+                font-size: 20px;
+            }
+        }
+
+        .content-service {
+            .row {
+                justify-content: space-between;
+
+                .col-6 {
+                    width: 48%;
+                }
+            }
+
+            .content-text {
+                display   : flex;
+                margin-top: 50px;
+
+                .icon-service {
+                    width: 15%;
+
+                    svg {
+                        font-size: 50px;
+                        color    : #1890ff;
+                    }
                 }
 
-                .text-v2 {
-                    font-size              : 30px;
-                    font-weight            : 600;
-                    color                  : #0060ad;
-                    display                : inline-block;
-                    background             : linear-gradient(to right, #0060AD 0%, #8ABA2B 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+                .text-service {
+                    width: 85%;
 
-                .text-v3 {
-                    font-size: 20px;
+                    .text-title {
+                        font-size: 30px;
+                        color    : #000;
+                        margin   : 0;
+                    }
+
+                    .text-sub {
+                        font-size: 16px;
+                        margin   : 0;
+                        width    : 95%;
+                    }
                 }
             }
         }
     }
 
+    .certificates {
+        background-size    : cover;
+        background-repeat  : no-repeat;
+        background-position: 50%;
+        display            : flex;
+        align-items        : center;
+        background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
+        height             : 300px !important;
+        min-height         : 1px;
+        float              : left;
+        width              : 100% !important;
+        background-color   : #f1f1f1;
 
-}
-
-
-
-
-// Tablet
-
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
-    .cms {
-        height: 100vh !important;
+        .content-certificates {
+            .title-certificates {
+                color      : #fff;
+                text-align : center;
+                font-size  : 40px;
+                font-weight: 700;
+            }
+        }
     }
-}
 
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
-    .cms {
-        height: 100vh !important;
+    .our-typical {
+        padding-top   : 370px;
+        padding-bottom: 70px;
+
+        .content-typical {
+            display        : flex;
+            justify-content: center;
+
+            .title-typical {
+                width      : 60%;
+                text-align : center;
+                font-size  : 35px;
+                color      : #000;
+                font-weight: 600;
+            }
+        }
+
+        .box-content-typical {
+            .box {
+                // position: relative;
+                height               : 15rem;
+                display              : block;
+                background-color     : #fff;
+                border               : 1px solid #efefef;
+                padding              : 30px 30px 30px 70px;
+                margin               : 1rem 0;
+                -webkit-border-radius: 0;
+                border-radius        : 0;
+                -webkit-box-shadow   : 0 10px 15px 0 rgb(5 5 5/5%);
+                box-shadow           : 0 10px 15px 0 rgb(5 5 5 / 5%);
+                display              : flex;
+
+                .nummber {
+                    top        : 26px;
+                    left       : 21px;
+                    font-style : normal;
+                    font-weight: 700;
+                    font-size  : 50px;
+                    line-height: 60px;
+                    color      : #c6e7f8;
+                }
+
+                .content-number {
+                    margin-top : 15px;
+                    margin-left: 15px;
+
+                    .title-box {
+                        color      : #000;
+                        font-weight: 600;
+                        font-size  : 25px;
+                    }
+
+                    .content-title-box {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .big-guys {
+        padding-top   : 70px;
+        padding-bottom: 70px;
+
+        .title-big-guy {
+            font-size: 20px;
+        }
+    }
+
+    .benefits-of-partnering {
+        padding-top   : 70px;
+        padding-bottom: 70px;
+
+        .title-benefit {
+            text-align   : center;
+            color        : #000;
+            font-weight  : 600;
+            font-size    : 40px;
+            margin-bottom: 50px;
+        }
+
+        .benefit {
+            .row {
+                margin-bottom: 20px;
+
+                .content-part {
+                    background-color: #f4f4f9;
+                    width           : 31.33333%;
+                    padding         : 55px 60px;
+                    margin          : 0px 10px;
+
+                    .icon-benefit {
+                        font-size: 60px;
+                    }
+
+                    .text-benefit {
+                        b {
+                            font-size          : 23px;
+                            color              : #000;
+                            // padding-bottom  : 20px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .contact-us-v1 {
+        background-position-y   : 168.379px;
+        font-size               : 26px;
+        text-align              : center;
+        width                   : 100%;
+        height                  : 500px;
+        background-attachment   : fixed;
+        background-position     : center 0;
+        background-size         : cover;
+        background-repeat       : no-repeat;
+        position                : relative;
+        // overflow             : hidden;
+        background-image        : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-2');
+
+        .contact-content {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+
+            .contact-text {
+                width     : 50%;
+                color     : white;
+                text-align: left;
+                margin-top: 50px;
+
+                h2 {
+                    font-size  : 50px;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 23px;
+                }
+
+                .btn-contact {
+                    color           : #fff !important;
+                    background-color: #1890ff;
+                    border-color    : #1890ff !important;
+                    font-size       : 19px;
+                    padding         : 10px 25px;
+                }
+            }
+
+            .conact-img {
+                width: 30%;
+
+                // height: 00px;
+                img {
+                    width     : 100%;
+                    height    : auto;
+                    margin-top: 90px;
+                }
+            }
+        }
     }
 }

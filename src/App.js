@@ -1,4 +1,3 @@
-import logo from "../src/components/Header/download.png";
 import Footer from "./components/Footer/Footer.js";
 import CmcService from "./components/CMC_Service/CmcService.js";
 import Testing from "./components/Testing/Testing";
@@ -15,7 +14,10 @@ import React, { useEffect } from "react";
 import Headerr from "./components/Header/Headerr.js";
 import Contact from "./Page/ContactUs/Contact.js";
 import Company from "./Page/Company/Company";
+import CloudComputing from "./Page/Cloud-Computing/CloudComputing";
+import Iotapp from "./Page/ioT-App/Iotapp";
 import WebApplication from "./components/Application/Application";
+
 function App() {
   return (
     <div className="App">
@@ -36,10 +38,13 @@ function App() {
         <Route path="/ecommerce-solutions" element={<Ecommerce />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/company" element={<Company />} />
+        <Route path="/cloud-computing" element={<CloudComputing />} />
+        <Route path="/iot-application" element={<Iotapp />} />
         <Route path="/web-application" element={<WebApplication />} />
       </Routes>
       <Footer />
     </div>
   );
 }
+
 export default App;

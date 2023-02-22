@@ -139,7 +139,9 @@ function Headerr() {
               }}
               className="sizeLogo"
             >
-              <img id="logo" className="logoNone" src={anhLogo} />
+              <a href="/">
+                <img id="logo" src={anhLogo} />
+              </a>
               <div id="alignRightOutlined">
                 <AlignRightOutlined
                   onClick={handleColMenu}

@@ -42,13 +42,35 @@ function Application() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       var mobility = document.getElementsByClassName("mobility");
+      var mobility2 = document.getElementsByClassName("mobility-2");
+      var mobility3 = document.getElementsByClassName("mobility-3");
+      var imgDigi = document.getElementsByClassName("img-digi");
+      var txtBlock = document.getElementsByClassName("txt-block");
+
       if (window.scrollY >= 380) {
-        console.log("check point:", window.scrollY);
         for (var i = 0; i < mobility.length; i++) {
           mobility[i].classList.add("fadeInUp", "cssanimation");
         }
-      } else {
       }
+      if (window.scrollY >= 600) {
+        for (var i = 0; i < mobility2.length; i++) {
+          mobility2[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 950) {
+        for (var i = 0; i < mobility3.length; i++) {
+          mobility3[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1000) {
+        for (var i = 0; i < imgDigi.length; i++) {
+          imgDigi[i].classList.add("fadeInLeft", "cssanimation");
+        }
+        for (var i = 0; i < txtBlock.length; i++) {
+          txtBlock[i].classList.add("fadeInRight", "cssanimation");
+        }
+      }
+      console.log("check point:", window.scrollY);
     });
   }, []);
   return (
@@ -66,6 +88,7 @@ function Application() {
         </div>
         <div className="col-12 col-sm-1"></div>
       </div>
+
       <div className="row g-0 m-0">
         <div className="col-12 my-5 section-title">
           <h3>Our Services</h3>
@@ -111,7 +134,7 @@ function Application() {
       </div>
 
       <div className="row g-0 m-0 px-sm-5 mx-sm-5 mb-sm-3">
-        <div className="col-12 col-sm-6 px-sm-5">
+        <div className="col-12 col-sm-6 px-sm-5 mobility-2">
           <div className="row m-0 p-0 g-0">
             <div className="col-12 col-sm-2">
               <img src={webDe} />
@@ -125,7 +148,7 @@ function Application() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 px-sm-5">
+        <div className="col-12 col-sm-6 px-sm-5 mobility-2">
           <div className="row m-0 p-0 g-0">
             <div className="col-12 col-sm-2">
               <img src={graph} />
@@ -139,7 +162,7 @@ function Application() {
       </div>
 
       <div className="row g-0 m-0 px-sm-5 mx-sm-5 mb-sm-5">
-        <div className="col-12 col-sm-6 px-sm-5">
+        <div className="col-12 col-sm-6 px-sm-5 mobility-3">
           <div className="row m-0 p-0 g-0">
             <div className="col-12 col-sm-2">
               <img src={test} />
@@ -153,7 +176,7 @@ function Application() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 px-sm-5">
+        <div className="col-12 col-sm-6 px-sm-5 mobility-3">
           <div className="row m-0 p-0 g-0">
             <div className="col-12 col-sm-2">
               <img src={support} />

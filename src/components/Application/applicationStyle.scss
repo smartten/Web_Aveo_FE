@@ -34,6 +34,12 @@
 .mobility{
     display: none;
 }
+.mobility-2{
+    display: none;
+}
+.mobility-3{
+    display: none;
+}
 .cssanimation {
     animation-duration : 2s;
     animation-fill-mode: both;
@@ -135,6 +141,7 @@
     height: 300px;
 }
 .txt-block{
+    // display: none;
     h3{
         color: #2f353e;
         letter-spacing: -.75px;
@@ -164,6 +171,7 @@
 .img-digi{
     width: 95%;
     float: right;
+    // display: none;
 }
 .bg-snow{
     // text-align: center;

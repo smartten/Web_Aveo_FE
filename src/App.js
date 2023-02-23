@@ -20,7 +20,8 @@ import WebApplication from "./components/Application/Application";
 import Manufacturing from "./Page/Manufacturing/Manufacturing.js";
 import Financial from "./Page/Financial/Financial.js";
 import AboutUs from "./Page/About-Us/AboutUs.js";
-
+import Retail from "./components/Retail/Retail";
+import Healthcare from "./components/Healthcare/Healthcare";
 function App() {
   return (
     <div className="App">
@@ -38,7 +39,7 @@ function App() {
         <Route path="/enterprise-service" element={<Enterprise />} />
         <Route path="/testing-service" element={<Testing />} />
         <Route path="/cms-service" element={<CmcService />} />
-        <Route path="/ecommerce-solutions" element={<Ecommerce />} />
+        <Route path="/ecommerce" element={<Ecommerce />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/company" element={<Company />} />
         <Route path="/cloud-computing" element={<CloudComputing />} />
@@ -47,6 +48,8 @@ function App() {
         <Route path="/manufacturing" element={<Manufacturing />} />
         <Route path="/financial" element={<Financial />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/retail" element={<Retail />} />
+        <Route path="/healthcare" element={<Healthcare />} />
       </Routes>
       <Footer />
     </div>

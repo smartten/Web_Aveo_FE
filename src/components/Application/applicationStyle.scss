@@ -31,10 +31,10 @@
 }
 
 .img-fluid {
-    width  : 85% !important;
-    height : auto !important;
-    float  : right;
-    display: none;
+    width     : 85% !important;
+    height    : auto !important;
+    // float  : right;
+    display   : none;
 }
 
 .mobility {
@@ -155,7 +155,12 @@
     height               : 300px;
 }
 
+
+
+
 .txt-block {
+
+    // display: none;
     h3 {
         color         : #2f353e;
         letter-spacing: -.75px;
@@ -186,8 +191,9 @@
 }
 
 .img-digi {
-    width: 95%;
-    float: right;
+    width     : 95%;
+    float     : right;
+    // display: none;
 }
 
 .bg-snow {
@@ -241,9 +247,12 @@
 }
 
 .content-part {
-    background-color: #f4f4f9;
-    margin-left     : 28px;
-    height          : 427px;
+    background-color   : #f4f4f9;
+    // margin-left     : 28px;
+    height             : 427px;
+
+    // margin-right:28px;
+    height: 427px;
 
     .icon-benefit {
         color    : #6C757D;
@@ -276,6 +285,10 @@
     background-position-y: center;
     background-size      : cover;
     background-attachment: fixed !important;
+    background-size      : cover;
+    background-attachment: fixed !important;
+    // height: auto;
+
 }
 
 .cta-11-txt {
@@ -312,7 +325,10 @@
     }
 }
 
+
 .img-defaultt {
-    width : 80%;
-    height: auto;
+    width    : 100%;
+    float    : right;
+    // height: auto;
+
 }

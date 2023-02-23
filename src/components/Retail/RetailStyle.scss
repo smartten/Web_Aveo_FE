@@ -1,16 +1,15 @@
-@import "~@flaticon/flaticon-uicons/css/all/all";
-.hero-section{
-    background-image     : url('./Hero-bg-default.webp');
+.retail-section{
+    background-image     : url('./Hero-bg-6.webp');
     background-repeat    : no-repeat;
     background-position-x: top;
     background-position-y: top;
     background-size      : cover;
     position             : relative;
-    height               : 100vh;
     width                : 100%;
+    height               : 100vh;
 
 }
-.hero-text{
+.heath-text{
     display: none;
     h1{
         font-size: 62px;
@@ -19,14 +18,30 @@
         letter-spacing: -.75px;
     }
     p{
-        font-size: 1.175rem;
+        font-size: 1.25rem;
         color: white;
         font-weight: 500;
-        line-height: 1.5;
+        line-height: 1.8;
+    }
+    .btn-deha{
+        background-color: #1890ff;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 1;
+        width: 160px;
+        height: 50px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: #fff!important;
+        }
+    }
+    .btn-deha:hover{
+        cursor: pointer;
     }
 }
 .img-fluid {
-    width: 80%!important;
+    width: 85%!important;
     height: auto!important;
     float: right;
     display: none;
@@ -219,9 +234,8 @@
     opacity: 0.9;
 }
 
-.content-part {
+.content-part{
     background-color: #f4f4f9;
-    // margin-right:28px;
     height: 427px;
     .icon-benefit {
         color: #6C757D;
@@ -246,14 +260,13 @@
     }
 }
 .bg-04{
-    background-image: url('./Hero-bg-2.webp');
+    // background-image: url('./Hero-bg-2.webp');
     background-repeat: no-repeat;
     background-position: 50%;
     background-position-x: 50%;
     background-position-y: center;
     background-size: cover;
     background-attachment: fixed!important;
-    // height: auto;
 }
 .cta-11-txt{
     h2{
@@ -267,25 +280,9 @@
         color: white;
         font-weight: 500;
     }
-    .btn-deha{
-        background-color: #1890ff;
-        font-weight: 500;
-        font-size: 1.1rem;
-        line-height: 1;
-        width: 160px;
-        height: 50px;
-        text-align: center;
-        a{
-            text-decoration: none;
-            color: #fff!important;
-        }
-    }
-    .btn-deha:hover{
-        cursor: pointer;
-    }
+    
 }
 .img-defaultt{
-    width: 100%;
-    float: right;
-    // height: auto;
+    width: 80%;
+    height: auto;
 }

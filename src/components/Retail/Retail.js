@@ -64,20 +64,27 @@ function Retail() {
         <div className="container d-flex">
           <div
             style={{
-              position: "absolute",
-              marginTop: 200,
+              height: "100vh",
+              position: "relative",
             }}
             className="col-12 col-sm-4  py-sm-5  g-0 heath-text"
           >
-            <h1>Retail</h1>
-            <p>
-              We transform the retail customer experience with personalized,
-              enterprise omnichannel platforms for your business demands
-            </p>
-            <div className="btn-deha mt-sm-4 py-sm-3">
-              <a className="" href="">
-                Contact Us
-              </a>
+            <div
+              style={{
+                position: "absolute",
+                bottom: "18%",
+              }}
+            >
+              <h1>Retail</h1>
+              <p>
+                We transform the retail customer experience with personalized,
+                enterprise omnichannel platforms for your business demands
+              </p>
+              <div className="btn-deha mt-sm-4 py-sm-3">
+                <a className="" href="">
+                  Contact Us
+                </a>
+              </div>
             </div>
           </div>
           <div className="col-12 col-sm-8"></div>

@@ -14,6 +14,7 @@ import {
 } from "@ant-design/icons";
 
 import React, { useEffect } from "react";
+import { auto } from "@popperjs/core";
 function Healthcare() {
   setTimeout(function () {
     var heathText = document.getElementsByClassName("heath-text");
@@ -52,25 +53,32 @@ function Healthcare() {
   }, []);
   return (
     <div className="container-fluid overflow-hidden p-0 m-0 g-0">
-      <div className="health-section g-0 m-0">
+      <div className="health-section  g-0 m-0">
         <div className="container d-flex">
           <div
             style={{
-              position: "absolute",
-              marginTop: 200,
+              height: "100vh",
+              position: "relative",
             }}
-            className="col-12 col-sm-5  py-sm-5  g-0 heath-text"
+            className="col-12 col-sm-5 g-0 heath-text"
           >
-            <h1>Health Care</h1>
-            <p>
-              DEHA empowers healthcare providers with innovative solutions that
-              automate processes, improve treatment outcomes and the patient
-              experience, and reduce costs.
-            </p>
-            <div className="btn-deha mt-sm-4 py-sm-3">
-              <a className="" href="">
-                Contact Us
-              </a>
+            <div
+              style={{
+                position: "absolute",
+                bottom: "18%",
+              }}
+            >
+              <h1>Health Care</h1>
+              <p>
+                DEHA empowers healthcare providers with innovative solutions
+                that automate processes, improve treatment outcomes and the
+                patient experience, and reduce costs.
+              </p>
+              <div className="btn-deha mt-sm-4 py-sm-3">
+                <a className="" href="">
+                  Contact Us
+                </a>
+              </div>
             </div>
           </div>
           <div className="col-12 col-sm-7"></div>

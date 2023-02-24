@@ -1,14 +1,16 @@
 .home {
-  background              : #fff;
-  position                : relative;
-  font-size               : 16px;
-  overflow                : hidden;
-  margin                  : 0 auto;
-  color                   : #000;
-  line-height             : 1.7;
-  -webkit-text-size-adjust: 100%;
-  font-family             : Inter, Rubik, Helvetica Neue, Helvetica, Arial, sans-serif !important;
-  -webkit-font-smoothing  : antialiased;
+  background                 : #fff;
+  position                   : relative;
+  font-size                  : 16px;
+  overflow                   : hidden;
+  margin                     : 0 auto;
+  color                      : #000;
+  line-height                : 1.7;
+  -webkit-text-size-adjust   : 100%;
+  // font-family             : Inter, Rubik, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  font-family                : inherit !important;
+  font-style                 : inherit !important;
+  -webkit-font-smoothing     : antialiased;
 
 
   article,
@@ -29,6 +31,65 @@
   img,
   svg {
     vertical-align: middle;
+  }
+
+  .cssanimation {
+    animation-duration : 2s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name        : fadeInRight;
+    display               : block !important;
+  }
+
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name        : fadeInLeft;
+    display               : block;
+  }
+
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name        : fadeInUp;
+    display               : block;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity  : 0;
+      transform: translate3d(-20%, 0, 0);
+    }
+
+    100% {
+      opacity  : 1;
+      transform: none
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity  : 0;
+      transform: translate3d(20%, 0, 0);
+    }
+
+    100% {
+      opacity  : 1;
+      transform: none;
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity  : 0;
+      transform: translate3d(0, 30%, 0);
+    }
+
+    100% {
+      opacity  : 1;
+      transform: none;
+    }
   }
 
   .slider {
@@ -61,10 +122,10 @@
           .slide-content {
             padding: 0;
 
-            .text {
-              overflow    : hidden;
-              // transform: translateX(38px);
+            .text-slider {
+              overflow: hidden;
 
+              // transform: translateX(38px);
               .text-title {
                 color               : #fff;
                 font-size           : 55px;
@@ -141,6 +202,15 @@
     }
 
     .service-content {
+
+      .row {
+        justify-content: center;
+      }
+
+      .col-3 {
+        width: 384px // margin-right: 5px !important;
+      }
+
       .our-service-box {
         position                   : relative;
         // border               : 1px solid #efefef;
@@ -150,33 +220,47 @@
         box-shadow                 : 0 10px 15px 0 rgb(5 5 5 / 5%);
         // margin-bottom     : 16px;
 
+
         .box-service-content {
           // display                  : flex;
           // align-items        : center;
-          border-radius      : 0;
+          border-radius         : 0;
           // background-color: #000000;
-          opacity            : 1;
-          padding            : 20px;
-          min-height         : 450px;
-          color              : #fff;
+          opacity               : 1;
+          padding               : 20px;
+          min-height            : 450px;
+          // min-width          : 360px;
+          color                 : #fff;
 
           .title-box {
             font-size  : 30px;
-            font-weight: 700;
+            font-weight: 500;
           }
 
+
+
           .icon-box {
-            font-size    : 40px;
+            font-size    : 30px;
             // margin-top: 193px; 
+            margin-top   : 20px;
 
             // color    : #fff;
             a {
-              color: #fff;
+              color        : #fff;
+              border       : 1px solid #fff;
+              // text-align: center;
+              border-radius: 50%;
+              padding      : 0px 11px;
+
+              svg {
+                margin-bottom: 18px;
+                font-size    : 20px;
+              }
             }
           }
 
           .text-content {
-            font-size: 1.1875rem;
+            font-size: 16px;
             opacity  : 0;
             height   : 150px;
           }
@@ -195,7 +279,8 @@
 
           .icon-box {
             // font-size : 40px;
-            margin-top: 0px;
+            // margin-top: 0px;
+            margin-top: 20px;
 
             // color    : #fff;
             a {
@@ -204,7 +289,7 @@
           }
 
           .text-content {
-            font-size   : 1.1875rem;
+            font-size   : 16px;
             // display  : block;
             opacity     : 1;
           }
@@ -228,7 +313,7 @@
   .big-guys {
     padding-top   : 70px;
     padding-bottom: 70px;
-    background    : #bababa;
+    background    : #fff;
 
     .title-big-guy {
       font-size: 20px;
@@ -236,7 +321,7 @@
   }
 
   .contact-us {
-    padding-top   : 70px;
+    padding-top   : 140px;
     padding-bottom: 70px;
 
     .contact-content {
@@ -247,20 +332,31 @@
     }
 
     .h3-xs {
-      font-size  : 35px;
-      font-weight: 600;
+      font-size    : 40px;
+      font-weight  : 600;
+      margin-bottom: 30px;
     }
 
     .p-lg {
-      font-size: 17px;
+      font-size: 18px;
     }
 
     .btn-contact {
       color           : #fff !important;
-      background-color: #1890ff;
-      border-color    : #1890ff !important;
+      background-color: #f15f22;
+      border-color    : #f15f22 !important;
       font-size       : 19px;
       padding         : 10px 25px;
+    }
+
+    .img-fluid {
+      width     : 90% !important;
+      // display: none;
+    }
+
+    .txt-block {
+      // width     : 90% !important;
+      display: none;
     }
   }
 
@@ -398,8 +494,8 @@
 
         .btn-contact {
           color           : #fff !important;
-          background-color: #1890ff;
-          border-color    : #1890ff !important;
+          background-color: #f15f22;
+          border-color    : #f15f22 !important;
           font-size       : 19px;
           padding         : 10px 25px;
         }
@@ -423,6 +519,8 @@
   .home {
     .slider-item-home {
       background-position: 50% !important;
+      text-align         : center !important;
+      background-position: 0% !important;
     }
 
     .text-title {
@@ -435,10 +533,27 @@
 
     .our-services {
       .service-content {
-        .col-4 {
+        .col-3 {
           width        : 100% !important;
           margin-bottom: 20px;
         }
+      }
+    }
+
+    .contact-us {
+      .row {
+        text-align: center !important;
+      }
+
+      .h3-xs {
+        font-size: 30px !important;
+      }
+    }
+
+    .big-guys {
+      .col-2 {
+        width     : 30% !important;
+        margin-top: 10px;
       }
     }
 
@@ -498,10 +613,17 @@
 
   .our-services {
     .service-content {
-      .col-4 {
+      .col-3 {
         width        : 100% !important;
         margin-bottom: 20px;
       }
+    }
+  }
+
+  .contact-us {
+    .col-lg-6 {
+      width     : 100% !important;
+      text-align: center;
     }
   }
 

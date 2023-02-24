@@ -152,19 +152,19 @@ function CloudComputing() {
               </div>
               <div className="col-2">
                 <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
+                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-iso-9001"
                   style={{ width: "100%" }}
                 />
               </div>
               <div className="col-2">
                 <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
+                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-iso-27001"
                   style={{ width: "100%" }}
                 />
               </div>
               <div className="col-2">
                 <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
+                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-istqb"
                   style={{ width: "100%" }}
                 />
               </div>
@@ -241,20 +241,20 @@ function CloudComputing() {
           <p className="text-center title-big-guy">
             This BIG guys are using services and they are more than happier ever
           </p>
-          <div className="row">
-            <div className="col">
+          <div className="row justify-content-center flex-wrap">
+            <div className="col-2">
               <img
                 src={logo1}
                 style={{ width: "100%", height: "auto", marginTop: "10px" }}
               />
             </div>
-            <div className="col">
+            {/* <div className="col">
               <img
                 src={logo2}
                 style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
-            </div>
-            <div className="col">
+            </div> */}
+            <div className="col-2">
               <img
                 src={logo3}
                 style={{
@@ -265,22 +265,22 @@ function CloudComputing() {
                 }}
               />
             </div>
-            <div className="col">
+            {/* <div className="col">
               <img src={logo4} style={{ width: "80%", height: "auto" }} />
-            </div>
-            <div className="col">
+            </div> */}
+            <div className="col-2">
               <img
                 src={logo6}
                 style={{ width: "70%", height: "auto", marginTop: "10px" }}
               />
             </div>
-            <div className="col">
+            <div className="col-2">
               <img
                 src={logo7}
                 style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
-            <div className="col">
+            <div className="col-2">
               <img src={logo5} style={{ width: "25%", height: "auto" }} />
             </div>
           </div>

@@ -277,7 +277,7 @@
     .big-guys {
         padding-top   : 70px;
         padding-bottom: 70px;
-        background    : #bababa;
+        background    : #fff;
 
         .title-big-guy {
             font-size: 20px;
@@ -363,8 +363,8 @@
 
                 .btn-contact {
                     color           : #fff !important;
-                    background-color: #1890ff;
-                    border-color    : #1890ff !important;
+                    background-color: #f15f22;
+                    border-color    : #f15f22 !important;
                     font-size       : 19px;
                     padding         : 10px 25px;
                 }
@@ -378,6 +378,90 @@
                     width     : 100%;
                     height    : auto;
                     margin-top: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 46.1875em) {
+    .testing {
+        .slider-item {
+            text-align: center !important;
+
+            .slide-content {
+                flex-wrap      : wrap;
+                justify-content: center;
+
+                .image {
+                    width     : 70% !important;
+                    margin-top: 50px;
+                }
+
+                .text {
+                    width      : 100% !important;
+                    margin-left: 0px !important;
+                }
+            }
+        }
+
+        .certificates {
+            .title-certificates {
+                font-size: 30px !important;
+            }
+
+            .col-2 {
+                width: 25% !important;
+            }
+        }
+
+        .our-typical {
+            .title-typical {
+                font-size: 25px !important;
+            }
+
+            .box {
+                height: 17rem !important;
+            }
+
+            .content-number {
+                .title-box {
+                    font-size: 20px !important;
+                }
+
+                .content-title-box {
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+        .benefits-of-partnering {
+            .title-benefit {
+                font-size: 30px !important;
+            }
+        }
+
+        .big-guys {
+            .col-2 {
+                width     : 30% !important;
+                margin-top: 10px;
+            }
+        }
+
+        .contact-us-v1 {
+            .contact-content {
+                .contact-text {
+                    width     : 100% !important;
+                    text-align: center;
+                    margin-top: 50%;
+
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+
+                .conact-img {
+                    display: none !important;
                 }
             }
         }

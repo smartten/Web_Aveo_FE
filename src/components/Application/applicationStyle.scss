@@ -31,7 +31,7 @@
 }
 
 .img-fluid {
-    width     : 85% !important;
+    width     : 100% !important;
     height    : auto !important;
     // float  : left;
     display   : none;
@@ -216,7 +216,7 @@
 }
 
 .step {
-    height               : 13rem;
+    height               : auto;
     display              : block;
     background-color     : #fff;
     border               : 1px solid #efefef;
@@ -324,11 +324,20 @@
         cursor: pointer;
     }
 }
-
-
 .img-defaultt {
     width    : 100%;
     float    : right;
     // height: auto;
 
+}
+.content-bot{
+    .col-lg-4{
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .col-lg-4{
+        width: 50%;
+    }
 }

@@ -80,7 +80,7 @@ function Application() {
           <div className="col-12 col-sm-5 py-sm-5">
             <img className="img-fluid pt-sm-5" src={image1} />
           </div>
-          <div className="col-12 col-sm-6 px-sm-1 my-sm-auto hero-text">
+          <div className="col-12 col-sm-6 px-sm-4 my-sm-auto hero-text">
             <h1>Application Development</h1>
             <p>
               Automate your business processes, cost saving, stay connected with
@@ -109,10 +109,10 @@ function Application() {
             className="col-12 col-sm-6 mobility"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
                 <img src={smartphone} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Mobility Transformation</h5>
                 <p>
                   We help global brands design and build superior digital
@@ -124,10 +124,10 @@ function Application() {
           </div>
           <div style={{ width: "47%" }} className="col-12 col-sm-6  mobility">
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
                 <img src={web} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Enterprise Web Application</h5>
                 <p>
                   Keep your business running in terms of sales, marketing,
@@ -145,10 +145,10 @@ function Application() {
             className="col-12 col-sm-6  mobility-2"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
                 <img src={webDe} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Experience & Creative Design</h5>
                 <p>
                   We create an UI/UX that will make your users feel familiar and
@@ -159,10 +159,10 @@ function Application() {
           </div>
           <div style={{ width: "47%" }} className="col-12 col-sm-6  mobility-2">
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
                 <img src={graph} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Testing, Automation Testing</h5>
                 <p>Test automation and manual testing (Agile Testing).</p>
               </div>
@@ -176,10 +176,10 @@ function Application() {
             className="col-12 col-sm-6  mobility-3"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
                 <img src={test} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Penetration Testing</h5>
                 <p>
                   Detect Security Vulnerabilities and Security Hotspots during
@@ -190,10 +190,10 @@ function Application() {
           </div>
           <div style={{ width: "47%" }} className="col-12 col-sm-6  mobility-3">
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
                 <img src={support} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Maintenance And Support</h5>
                 <p>
                   We help you keep your business run smoothly, stay secure and
@@ -210,41 +210,43 @@ function Application() {
         <div className="col-12"></div>
       </div>
 
-      <div className="row g-0 m-5 px-sm-5">
-        <div className="col-12 col-sm-6">
-          <img className="img-digi" src={didwnm} />
-        </div>
-        <div
-          style={{ width: "40%" }}
-          className="col-12 col-sm-6 py-sm-5 my-sm-5 mx-sm-4 txt-block"
-        >
-          <h3>
-            Digitalize your business, increase your customer experience and
-            revenue
-          </h3>
-          <div>
-            <ul>
-              <li class="list-item">
-                <p class="p-lg mt-sm-5">
-                  Tapping your digital full potential clients. With 90% of
-                  people use smartphones, you can reach your audience everytime,
-                  everywhere.
-                </p>
-              </li>
-              <li class="list-item">
-                <p class="p-lg">
-                  It's not only helps clients to stay connect with your brand,
-                  but also be used to deliver deals, offers, and coupons to the
-                  clients effectively.
-                </p>
-              </li>
-              <li class="list-item">
-                <p class="p-lg">
-                  Applying digital technologies, you can save 60% operation
-                  costs with Business Process Automation.
-                </p>
-              </li>
-            </ul>
+      <div className="container">
+        <div className="row g-0 mt-5">
+          <div className="col-12 col-sm-6 col-lg-6">
+            <img className="img-digi" src={didwnm} />
+          </div>
+          <div
+            style={{}}
+            className="col-12 col-sm-6 col-lg-6 py-lg-5 my-lg-5 txt-block"
+          >
+            <h3>
+              Digitalize your business, increase your customer experience and
+              revenue
+            </h3>
+            <div>
+              <ul>
+                <li class="list-item">
+                  <p class="p-lg mt-sm-5">
+                    Tapping your digital full potential clients. With 90% of
+                    people use smartphones, you can reach your audience
+                    everytime, everywhere.
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="p-lg">
+                    It's not only helps clients to stay connect with your brand,
+                    but also be used to deliver deals, offers, and coupons to
+                    the clients effectively.
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="p-lg">
+                    Applying digital technologies, you can save 60% operation
+                    costs with Business Process Automation.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -316,7 +318,7 @@ function Application() {
               <div className="col-12 col-sm-1">
                 <span className="nr">1</span>
               </div>
-              <div className="col-12 col-sm-11 p-sm-2 fbox-txt">
+              <div className="col-12 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Discover</h5>
                 <p>
                   We work with you to gain clarity on your needs, defining clear
@@ -333,7 +335,7 @@ function Application() {
               <div className="col-12 col-sm-1">
                 <span className="nr">2</span>
               </div>
-              <div className="col-12 col-sm-11 p-sm-2 fbox-txt">
+              <div className="col-12 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Research</h5>
                 <p>
                   We determine the best solution for your software and develop a
@@ -354,7 +356,7 @@ function Application() {
               <div className="col-12 col-sm-1">
                 <span className="nr">3</span>
               </div>
-              <div className="col-12 col-sm-11 p-sm-2 fbox-txt">
+              <div className="col-12 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Develop</h5>
                 <p>
                   Our skilled engineers efficiently execute the plan and
@@ -372,7 +374,7 @@ function Application() {
               <div className="col-12 col-sm-1">
                 <span className="nr">4</span>
               </div>
-              <div className="col-12 col-sm-11 p-sm-2 fbox-txt">
+              <div className="col-12 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Operate</h5>
                 <p>
                   We implement and support the final product, delivering defined
@@ -389,10 +391,10 @@ function Application() {
           </div>
         </div>
 
-        <div className="row g-0 m-0 p-0">
+        <div className="row g-0 m-0 p-0 content-bot">
           <div
-            style={{ width: "32%", marginRight: "auto" }}
-            className="col-sm-4 px-sm-4 content-part"
+            style={{ marginRight: "auto" }}
+            className="col-lg-4 col-sm-6  px-sm-4 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <BulbOutlined />
@@ -408,8 +410,8 @@ function Application() {
             </div>
           </div>
           <div
-            style={{ width: "32%", marginRight: "auto" }}
-            className="col-sm-4 px-sm-4 content-part"
+            style={{ marginRight: "auto" }}
+            className="col-sm-6 col-lg-4 px-sm-4 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <SelectOutlined />
@@ -423,10 +425,7 @@ function Application() {
               </p>
             </div>
           </div>
-          <div
-            style={{ width: "32%" }}
-            className="col-sm-4 px-sm-4 content-part"
-          >
+          <div className="col-sm-6  col-lg-4 px-sm-4 content-part">
             <div className="icon-benefit mb-sm-4">
               <UserOutlined />
             </div>
@@ -443,7 +442,7 @@ function Application() {
         <div className="row mx-0 px-0 g-0 mt-sm-4 mb-sm-5 pb-sm-5">
           <div
             style={{ width: "32%", marginRight: "auto" }}
-            className="col-sm-4 px-sm-4 g-0 content-part"
+            className="col-lg-4 px-sm-4 g-0 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <PieChartOutlined />
@@ -459,7 +458,7 @@ function Application() {
           </div>
           <div
             style={{ width: "32%", marginRight: "auto" }}
-            className="col-sm-4 px-sm-4 content-part"
+            className="col-lg-4 px-sm-4 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <SwitcherOutlined />
@@ -475,7 +474,7 @@ function Application() {
           </div>
           <div
             style={{ width: "32%" }}
-            className="col-sm-4 px-sm-4 content-part"
+            className="col-lg-4 px-sm-4 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <PaperClipOutlined />

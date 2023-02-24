@@ -157,7 +157,34 @@ function Headerr() {
                     Home
                   </a>
                 </div>
-
+                <div class="dropdown">
+                  <a href="/about-us" class="link">
+                    About Us
+                    {/* <CaretDownFilled className="CaretDownFilled" /> */}
+                  </a>
+                  {/* <div class="dropdown-content">
+                    <div className="div-for-a">
+                      <a href="/blogs" class="link-drop">
+                        Blogs
+                      </a>
+                    </div>
+                    <div className="div-for-a">
+                      <a href="/whitepapers" class="link-drop">
+                        Whitepapers
+                      </a>
+                    </div>
+                    <div className="div-for-a">
+                      <a href="/about-us" class="link-drop">
+                        About Us
+                      </a>
+                    </div>
+                    <div className="div-for-a">
+                      <a href="/contact-us" class="link-drop">
+                        Contact
+                      </a>
+                    </div>
+                  </div> */}
+                </div>
                 <div class="dropdown">
                   <a href="" class="link">
                     Services
@@ -224,33 +251,7 @@ function Headerr() {
                     </div>
                   </div>
                 </div>
-                <div class="dropdown">
-                  <a href="" class="link">
-                    Resources <CaretDownFilled className="CaretDownFilled" />
-                  </a>
-                  <div class="dropdown-content">
-                    <div className="div-for-a">
-                      <a href="/blogs" class="link-drop">
-                        Blogs
-                      </a>
-                    </div>
-                    <div className="div-for-a">
-                      <a href="/Whitepapers" class="link-drop">
-                        Whitepapers
-                      </a>
-                    </div>
-                    <div className="div-for-a">
-                      <a href="/about-us" class="link-drop">
-                        About Us
-                      </a>
-                    </div>
-                    <div className="div-for-a">
-                      <a href="/contact-us" class="link-drop">
-                        Contact
-                      </a>
-                    </div>
-                  </div>
-                </div>
+
                 <a href="/contact-us" id="header-but" className="header-but">
                   Contact
                 </a>

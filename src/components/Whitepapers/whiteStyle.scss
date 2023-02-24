@@ -1,0 +1,98 @@
+.white-section{
+    background-image     : url('./Hero-bg-10.webp');
+    background-repeat    : no-repeat;
+    background-position-x: top;
+    background-position-y: top;
+    background-size      : cover;
+    position             : relative;
+    width                : 100%;
+    height               : 100vh;
+
+}
+.white-text{
+    position: absolute;
+    display: none;
+    h1{
+        font-size: 62px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: -.75px;
+        line-height: 2;
+    }
+    p{
+        font-size: 1.175rem;
+        color: white;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+}
+.success-stories {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    margin-bottom: 20px;
+    border-radius: 0;
+    box-shadow: 0 10px 15px 0 rgba(5,5,5,.05);
+    height: 100%;
+    img{
+        width: 100%;
+    }
+    h5{
+        color: rgba(0,0,0,.85);
+        font-weight: 700;
+        font-size: 1.3125rem;
+        line-height: 1.3;
+        letter-spacing: -.75px;
+    }
+    .item{
+        color: #6c757d;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        line-height: 1;
+    }
+    .desc{
+        font-size: 1.125rem;
+        color: #6c757d;
+        font-weight: 400;
+    }
+    .but-detail{
+        width: 100%;
+        height: 50px;
+        background-color: #1890ff;
+        border-color: #1890ff!important;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 12px;        
+    }
+    a:hover{
+        cursor: pointer;
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        line-height: 1;
+        font-weight: 500;
+    }
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    display: block;
+}
+.cssanimation {
+    animation-duration : 2s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,30%,0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

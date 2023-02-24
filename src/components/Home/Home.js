@@ -1,13 +1,20 @@
+import logo1 from "./COMATCH's_logo.svg";
+import logo2 from "./Group.svg";
+import logo3 from "./logo-tisa-white.svg";
+import logo4 from "./Logo-white_340x156-px-01.svg";
+import logo5 from "./layer1.svg";
+import logo6 from "./g16.svg";
+import logo7 from "./imageLogo1.svg";
+import img1 from "./ImgTeam.jpg";
+import img2 from "./AppMobile.jpg";
+import img3 from "./WebDev.jpg";
 import "./HomeStyles.scss";
 import React from "react";
 import Slider from "react-slick";
 import { Rate, Carousel } from "antd";
+import { RightCircleOutlined } from "@ant-design/icons";
 
 function Home() {
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
-
   var settings = {
     dots: true,
     infinite: true,
@@ -61,63 +68,81 @@ function Home() {
               <div
                 className="our-service-box"
                 style={{
-                  background: `url("https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img-digital-consulting") 0% 0% / cover no-repeat`,
+                  background: `url("http://smartten.com.vn/static/media/Smartten-Services-1000-4.703fb17628d102013d8e.jpeg") 0% 0% / cover no-repeat`,
                   visibility: "visible",
                 }}
               >
                 <div className="box-service-content">
+                  <div className="title-box">
+                    <p>Cloud Services</p>
+                  </div>
                   <p className="text-content">
-                    DEHA's Digital Transformation Consultancy service helps
-                    customers identify the gaps between where they are now and
-                    where they need to be, then closes them by using Digital
-                    Technologies.
+                    Our Cloud services are wide-ranging and innovative. So no
+                    matter where you are on your Cloud journey, Smartten will
+                    help build a practical solution and fulfill your business
+                    requirements.
                   </p>
+                  <br />
+                  <div className="icon-box">
+                    <a href="/cloud-computing">
+                      <RightCircleOutlined />
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="title-active">
-                <h4 style={{ fontWeight: "700" }}>Digital Consulting</h4>
+            </div>
+
+            <div className="col-4">
+              <div
+                className="our-service-box"
+                style={{
+                  background: `url(${img3}) 0% 0% / cover no-repeat`,
+                  visibility: "visible",
+                }}
+              >
+                <div className="box-service-content">
+                  <div className="title-box">
+                    <p>Web App Development</p>
+                  </div>
+                  <p className="text-content">
+                    We always keep up with the latest Front & Back-end Web
+                    Development technologies to create high-quality Web
+                    Applications in a constantly changing business environment
+                  </p>
+                  <br />
+
+                  <div className="icon-box">
+                    <a href="/web-application">
+                      <RightCircleOutlined />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-4">
               <div
                 className="our-service-box"
                 style={{
-                  background: `url("https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img-digital-consulting") 0% 0% / cover no-repeat`,
+                  background: `url(${img2}) 0% 0% / cover no-repeat`,
                   visibility: "visible",
                 }}
               >
                 <div className="box-service-content">
+                  <div className="title-box">
+                    <p>Mobile App Development</p>
+                  </div>
                   <p className="text-content">
-                    DEHA's Digital Transformation Consultancy service helps
-                    customers identify the gaps between where they are now and
-                    where they need to be, then closes them by using Digital
-                    Technologies.
+                    We quickly allocate independent software developers for your
+                    internal projects with a focus on communication processes &
+                    detailed development phases.
                   </p>
+                  <br />
+                  <div className="icon-box">
+                    <a href="/web-application">
+                      <RightCircleOutlined />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="title-active">
-                <h4 style={{ fontWeight: "700" }}>Digital Consulting</h4>
-              </div>
-            </div>
-            <div className="col-4">
-              <div
-                className="our-service-box"
-                style={{
-                  background: `url("https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img-digital-consulting") 0% 0% / cover no-repeat`,
-                  visibility: "visible",
-                }}
-              >
-                <div className="box-service-content">
-                  <p className="text-content">
-                    DEHA's Digital Transformation Consultancy service helps
-                    customers identify the gaps between where they are now and
-                    where they need to be, then closes them by using Digital
-                    Technologies.
-                  </p>
-                </div>
-              </div>
-              <div className="title-active">
-                <h4 style={{ fontWeight: "700" }}>Digital Consulting</h4>
               </div>
             </div>
           </div>
@@ -126,63 +151,75 @@ function Home() {
               <div
                 className="our-service-box"
                 style={{
-                  background: `url("https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img-digital-consulting") 0% 0% / cover no-repeat`,
+                  background: `url("http://smartten.com.vn/static/media/Smartten-Services-1000-5.5d0639777e2b133c05e9.jpeg") 0% 0% / cover no-repeat`,
                   visibility: "visible",
                 }}
               >
                 <div className="box-service-content">
+                  <div className="title-box">
+                    <p>Quality Assurance and Testing</p>
+                  </div>
                   <p className="text-content">
-                    DEHA's Digital Transformation Consultancy service helps
-                    customers identify the gaps between where they are now and
-                    where they need to be, then closes them by using Digital
-                    Technologies.
+                    Rigorous testing and stringent quality assurance at every
+                    stage ensure zero defects after releaseIN.
                   </p>
+                  <div className="icon-box">
+                    <a href="/testing-service">
+                      <RightCircleOutlined />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="title-active">
-                <h4 style={{ fontWeight: "700" }}>Digital Consulting</h4>
               </div>
             </div>
             <div className="col-4">
               <div
                 className="our-service-box"
                 style={{
-                  background: `url("https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img-digital-consulting") 0% 0% / cover no-repeat`,
+                  background: `url(${img1}) 0% 0% / cover no-repeat`,
                   visibility: "visible",
                 }}
               >
                 <div className="box-service-content">
+                  <div className="title-box">
+                    <p>Dedicated Development Team</p>
+                  </div>
                   <p className="text-content">
-                    DEHA's Digital Transformation Consultancy service helps
-                    customers identify the gaps between where they are now and
-                    where they need to be, then closes them by using Digital
-                    Technologies.
+                    We quickly allocate independent software developers for your
+                    internal projects with a focus on communication processes &
+                    detailed development phases.
                   </p>
+                  <div className="icon-box">
+                    <a href="#">
+                      <RightCircleOutlined />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="title-active">
-                <h4 style={{ fontWeight: "700" }}>Digital Consulting</h4>
               </div>
             </div>
             <div className="col-4">
               <div
                 className="our-service-box"
                 style={{
-                  background: `url("https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img-digital-consulting") 0% 0% / cover no-repeat`,
+                  background: `url("http://smartten.com.vn/static/media/Smartten-Services-1000-2.c44a54aad023c97cdde1.jpeg") 0% 0% / cover no-repeat`,
                   visibility: "visible",
                 }}
               >
                 <div className="box-service-content">
+                  <div className="title-box">
+                    <p>Custom Software Development</p>
+                  </div>
                   <p className="text-content">
-                    DEHA's Digital Transformation Consultancy service helps
-                    customers identify the gaps between where they are now and
-                    where they need to be, then closes them by using Digital
-                    Technologies.
+                    We design bold and unique digital products that help you
+                    achieve your business goals. Every feature included in each
+                    product is designed to boost your company’s value, customer
+                    base, and profitability.
                   </p>
+                  <div className="icon-box">
+                    <a href="#">
+                      <RightCircleOutlined />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="title-active">
-                <h4 style={{ fontWeight: "700" }}>Digital Consulting</h4>
               </div>
             </div>
           </div>
@@ -191,71 +228,49 @@ function Home() {
       <section className="big-guys">
         <div className="container">
           <p className="text-center title-big-guy">
-            This BIG guys are using DEHA services and they are more than happier
-            ever
+            This BIG guys are using services and they are more than happier ever
           </p>
           <div className="row">
             <div className="col">
               <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
+                src={logo1}
+                style={{ width: "100%", height: "auto", marginTop: "10px" }}
               />
             </div>
             <div className="col">
               <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
+                src={logo2}
+                style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
             </div>
             <div className="col">
               <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
+                src={logo3}
+                style={{
+                  width: "80%",
+                  height: "auto",
+                  marginLeft: "20px",
+                  marginTop: "10px",
+                }}
+              />
+            </div>
+            <div className="col">
+              <img src={logo4} style={{ width: "80%", height: "auto" }} />
+            </div>
+            <div className="col">
+              <img
+                src={logo6}
+                style={{ width: "70%", height: "auto", marginTop: "10px" }}
               />
             </div>
             <div className="col">
               <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
+                src={logo7}
+                style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
             <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-          <div className="row mt-3">
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
+              <img src={logo5} style={{ width: "25%", height: "auto" }} />
             </div>
           </div>
         </div>

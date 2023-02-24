@@ -105,7 +105,7 @@
                             .text-title {
                                 color      : #ffffff;
                                 font-size  : 55px;
-                                line-height: 38px;
+                                line-height: 45px;
                                 font-weight: 600;
 
                             }
@@ -113,7 +113,7 @@
                             .sub-text {
                                 color      : #ffffff;
                                 font-size  : 25px;
-                                line-height: 38px;
+                                line-height: 45px;
                             }
                         }
 
@@ -277,6 +277,7 @@
     .big-guys {
         padding-top   : 70px;
         padding-bottom: 70px;
+        background    : #bababa;
 
         .title-big-guy {
             font-size: 20px;
@@ -302,7 +303,7 @@
                 .content-part {
                     background-color: #f4f4f9;
                     width           : 31.33333%;
-                    padding         : 55px 60px;
+                    padding         : 30px 60px;
                     margin          : 0px 10px;
 
                     .icon-benefit {

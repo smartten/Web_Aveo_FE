@@ -77,7 +77,7 @@
               .sub-text {
                 color      : #ffffff;
                 font-size  : 20px;
-                line-height: 38px;
+                line-height: 45px;
               }
 
               .btn-detail {
@@ -142,26 +142,71 @@
 
     .service-content {
       .our-service-box {
-        position                : relative;
+        position                   : relative;
         // border               : 1px solid #efefef;
-        min-height              : 600px;
-        border-radius           : 0;
-        -webkit-box-shadow      : 0 10px 15px 0 rgb(5 5 5/5%);
-        box-shadow              : 0 10px 15px 0 rgb(5 5 5 / 5%);
+        // min-height              : 600px;
+        border-radius              : 10px;
+        -webkit-box-shadow         : 0 10px 15px 0 rgb(5 5 5/5%);
+        box-shadow                 : 0 10px 15px 0 rgb(5 5 5 / 5%);
         // margin-bottom     : 16px;
 
         .box-service-content {
-          display         : flex;
-          align-items     : center;
-          border-radius   : 0;
-          background-color: #1890ff;
-          opacity         : .8;
-          padding         : 40px;
-          min-height      : 600px;
-          color           : #fff;
+          // display                  : flex;
+          // align-items        : center;
+          border-radius      : 0;
+          // background-color: #000000;
+          opacity            : 1;
+          padding            : 20px;
+          min-height         : 450px;
+          color              : #fff;
+
+          .title-box {
+            font-size  : 30px;
+            font-weight: 700;
+          }
+
+          .icon-box {
+            font-size    : 40px;
+            // margin-top: 193px; 
+
+            // color    : #fff;
+            a {
+              color: #fff;
+            }
+          }
 
           .text-content {
             font-size: 1.1875rem;
+            opacity  : 0;
+            height   : 150px;
+          }
+        }
+
+        &:hover {
+          .box-service-content {
+            background-image: linear-gradient(90deg, #1d2055, #3b41a5);
+            opacity         : 1;
+            padding         : 20px;
+            min-height      : 450px;
+            color           : #fff;
+            border-radius   : 10px;
+
+          }
+
+          .icon-box {
+            // font-size : 40px;
+            margin-top: 0px;
+
+            // color    : #fff;
+            a {
+              color: #fff;
+            }
+          }
+
+          .text-content {
+            font-size   : 1.1875rem;
+            // display  : block;
+            opacity     : 1;
           }
         }
       }
@@ -183,6 +228,7 @@
   .big-guys {
     padding-top   : 70px;
     padding-bottom: 70px;
+    background    : #bababa;
 
     .title-big-guy {
       font-size: 20px;
@@ -368,6 +414,131 @@
           height    : auto;
           margin-top: 90px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .home {
+    .slider-item-home {
+      background-position: 50% !important;
+    }
+
+    .text-title {
+      font-size: 35px !important;
+    }
+
+    .sub-text {
+      font-size: 18px !important;
+    }
+
+    .our-services {
+      .service-content {
+        .col-4 {
+          width        : 100% !important;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .comment {
+      .box-comment {
+        margin-left: 20px !important;
+      }
+
+      .slick-arrow {
+        display: none !important;
+      }
+
+      .col-4 {
+        width: 100% !important;
+      }
+
+      .d-flex {
+        flex-wrap: nowrap !important;
+      }
+    }
+
+    .contact-us-v1 {
+      .contact-content {
+        .contact-text {
+          width     : 100% !important;
+          text-align: center;
+          margin-top: 50%;
+
+          h2 {
+            font-size: 40px;
+          }
+        }
+
+        .conact-img {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .home {
+    .slider-item-home {
+      background-position: 50% !important;
+    }
+
+    .text-title {
+      font-size: 35px !important;
+    }
+
+    .sub-text {
+      font-size: 18px !important;
+    }
+  }
+
+  .our-services {
+    .service-content {
+      .col-4 {
+        width        : 100% !important;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .comment {
+    .box-comment {
+      margin-left: 20px !important;
+    }
+
+    .slick-arrow {
+      display: none !important;
+    }
+
+    .col-4 {
+      width: 100% !important;
+    }
+
+    .d-flex {
+      flex-wrap: nowrap !important;
+    }
+  }
+
+  .contact-us-v1 {
+    height: 300px !important;
+
+    .contact-content {
+      .contact-text {
+        width     : 100% !important;
+        text-align: center;
+        margin-top: 50%;
+
+        h2 {
+          font-size: 35px;
+        }
+      }
+
+      .conact-img {
+        // display: none !important;
       }
     }
   }

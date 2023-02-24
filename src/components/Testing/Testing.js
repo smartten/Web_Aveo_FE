@@ -1,4 +1,11 @@
 import "./TestStyle.scss";
+import logo1 from "./COMATCH's_logo.svg";
+import logo2 from "./Group.svg";
+import logo3 from "./logo-tisa-white.svg";
+import logo4 from "./Logo-white_340x156-px-01.svg";
+import logo5 from "./layer1.svg";
+import logo6 from "./g16.svg";
+import logo7 from "./imageLogo1.svg";
 import {
   MobileOutlined,
   WalletOutlined,
@@ -230,71 +237,49 @@ function Testing() {
       <section className="big-guys">
         <div className="container">
           <p className="text-center title-big-guy">
-            This BIG guys are using DEHA services and they are more than happier
-            ever
+            This BIG guys are using services and they are more than happier ever
           </p>
           <div className="row">
             <div className="col">
               <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
+                src={logo1}
+                style={{ width: "100%", height: "auto", marginTop: "10px" }}
               />
             </div>
             <div className="col">
               <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
+                src={logo2}
+                style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
             </div>
             <div className="col">
               <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
+                src={logo3}
+                style={{
+                  width: "80%",
+                  height: "auto",
+                  marginLeft: "20px",
+                  marginTop: "10px",
+                }}
+              />
+            </div>
+            <div className="col">
+              <img src={logo4} style={{ width: "80%", height: "auto" }} />
+            </div>
+            <div className="col">
+              <img
+                src={logo6}
+                style={{ width: "70%", height: "auto", marginTop: "10px" }}
               />
             </div>
             <div className="col">
               <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
+                src={logo7}
+                style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
             <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-          <div className="row mt-3">
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="col">
-              <img
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/img_client_vinmec_pdzx1b"
-                style={{ width: "100%", height: "auto" }}
-              />
+              <img src={logo5} style={{ width: "25%", height: "auto" }} />
             </div>
           </div>
         </div>

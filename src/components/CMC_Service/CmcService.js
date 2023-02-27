@@ -156,7 +156,7 @@ function CmcService() {
             <p>
               There are still not enough friends to realize our goal of “a world
               where everyone can be absorbed in value creation.” If you like,
-              why don’t you take a look at DEHA VIET NAM?
+              why don’t you take a look at AVEO VIET NAM?
             </p>
             <a
               href="/contact-us"
@@ -175,7 +175,7 @@ function CmcService() {
               How we deliver the perfect website to you?
             </p>
             <p className="section-service">
-              DEHA's approach offers a whole gamut of CMS to facilitate you to
+              AVEO's approach offers a whole gamut of CMS to facilitate you to
               build complex websites, manage content and business data, and
               render pages as you desired.
             </p>
@@ -219,7 +219,7 @@ function CmcService() {
       <div className="row">
         <div className="col-12 imageArea p-5">
           <h2 className="p-2">
-            At DEHA, we apply the mobile-first approach in all products. Your
+            At AVEO, we apply the mobile-first approach in all products. Your
             website will design from the mobile device before moving on to the
             tablet and desktop. This approach makes your website and content
             adapt to screens of any size, and you also save time and money.
@@ -230,7 +230,7 @@ function CmcService() {
         <div style={{ backgroundColor: "white" }} class="col-12 p-5">
           <div className="section-title-1">
             <p className="title">The benefit of</p>
-            <p className="desc">PARTNERING WITH DEHA</p>
+            <p className="desc">PARTNERING WITH AVEO</p>
           </div>
         </div>
       </div>

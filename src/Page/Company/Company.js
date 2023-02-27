@@ -20,15 +20,15 @@ function Company() {
                 and <span style={{ color: "#f15f22" }}>staffs</span>.
               </p>
               <b className="text-content">
-                Happiness, with DEHA, is the highest value that people
+                Happiness, with AVEO, is the highest value that people
                 accumulate through work, cooperation with a positive attitude
                 along with a worthy life.
               </b>
               <p className="sub-content">
                 Happiness is not an outcome, but a collection of experiences,
-                long-lasting and enduring. DEHA considers the attainment of
+                long-lasting and enduring. AVEO considers the attainment of
                 happiness as the goal of its business activities. All activities
-                of DEHA are aimed at the continuous, unlimited transfer of
+                of AVEO are aimed at the continuous, unlimited transfer of
                 values to members, partners and customers to achieve that
                 happiness.
               </p>
@@ -56,7 +56,7 @@ function Company() {
               </div>
               <div>
                 <p>
-                  DEHA Viet Nam received an investment license into Hue city
+                  AVEO Viet Nam received an investment license into Hue city
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ function Company() {
               </div>
               <div>
                 <p>
-                  DEHA Viet Nam received an investment license into Hue city
+                  AVEO Viet Nam received an investment license into Hue city
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ function Company() {
               </div>
               <div>
                 <p>
-                  DEHA Viet Nam received an investment license into Hue city
+                  AVEO Viet Nam received an investment license into Hue city
                 </p>
               </div>
             </div>
@@ -100,7 +100,7 @@ function Company() {
               </div>
               <div>
                 <p>
-                  DEHA Viet Nam received an investment license into Hue city
+                  AVEO Viet Nam received an investment license into Hue city
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ function Company() {
               </div>
               <div>
                 <p>
-                  DEHA Viet Nam received an investment license into Hue city
+                  AVEO Viet Nam received an investment license into Hue city
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ function Company() {
               </div>
               <div>
                 <p>
-                  DEHA Viet Nam received an investment license into Hue city
+                  AVEO Viet Nam received an investment license into Hue city
                 </p>
               </div>
             </div>

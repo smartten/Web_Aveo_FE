@@ -6,6 +6,11 @@ import logo4 from "./Logo-white_340x156-px-01.svg";
 import logo5 from "./layer1.svg";
 import logo6 from "./g16.svg";
 import logo7 from "./imageLogo1.svg";
+import icon1 from "./api.svg";
+import icon2 from "./Mobile-Development.svg";
+import icon3 from "./Automation-Service.svg";
+import icon4 from "./Penetration.svg";
+import img1 from "./Hero-testing.webp";
 import {
   MobileOutlined,
   WalletOutlined,
@@ -37,7 +42,7 @@ function Testing() {
             <div className="container">
               <div className="slide-content d-flex">
                 <div className="image">
-                  <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-testing" />
+                  <img src={img1} />
                 </div>
                 <div className="text">
                   <p className="text-title">
@@ -76,7 +81,7 @@ function Testing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <ApiOutlined />
+                    <img src={icon1} />
                   </div>
                   <div className="text-service">
                     <b className="text-title">API Testing</b>
@@ -92,7 +97,7 @@ function Testing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <MobileOutlined />
+                    <img src={icon2} style={{ width: "60%" }} />
                   </div>
                   <div className="text-service">
                     <b className="text-title">Mobile Testing</b>
@@ -107,7 +112,7 @@ function Testing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <WalletOutlined />
+                    <img src={icon3} />
                   </div>
                   <div className="text-service">
                     <b className="text-title">Automation Testing</b>
@@ -122,7 +127,7 @@ function Testing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <FileProtectOutlined />
+                    <img src={icon4} />
                   </div>
                   <div className="text-service">
                     <b className="text-title">Penetration Testing</b>
@@ -137,41 +142,7 @@ function Testing() {
           </div>
         </div>
       </section>
-      <section className="certificates">
-        <div className="container">
-          <div className="content-certificates">
-            <h3 className="title-certificates mb-3">
-              Certificates & International Standards
-            </h3>
-            <div className="row justify-content-center">
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-iso-9001"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-iso-27001"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-istqb"
-                  style={{ width: "100%" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section className="our-typical">
         <div className="container">
           <div className="content-typical">
@@ -286,7 +257,7 @@ function Testing() {
       </section>
       <section className="benefits-of-partnering">
         <div className="container">
-          <p className="title-benefit">Benefits of Partnering with DEHA</p>
+          <p className="title-benefit">Benefits of Partnering with AVEO</p>
           <div className="container benefit ">
             <div className="row">
               <div className="col-4 content-part">

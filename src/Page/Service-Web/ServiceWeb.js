@@ -37,7 +37,7 @@ function ServiceWeb() {
     {
       question: "Do you provide maintenance and support after development?",
       answer:
-        "DEHA provides a full maintenance and support cycle after completion of your PHP project. Being top php web development company we ensure that, during this time period, we focus on performance enhancement, fixing any bugs, SEO-related improvements, and other activities.",
+        "AVEO provides a full maintenance and support cycle after completion of your PHP project. Being top php web development company we ensure that, during this time period, we focus on performance enhancement, fixing any bugs, SEO-related improvements, and other activities.",
     },
     {
       question: "How do you ensure the quality of the project?",
@@ -47,12 +47,12 @@ function ServiceWeb() {
     {
       question: "How much time do you require to complete a project?",
       answer:
-        "At DEHA, we believe in accountability and are reasonable with our consumers and clients. We never give them false promises or commitments. This is why we also address all the relevant specifics of the project and then determine the time needed to complete the work. Our experts will calculate the length of time needed based on the work they are assigned.",
+        "At AVEO, we believe in accountability and are reasonable with our consumers and clients. We never give them false promises or commitments. This is why we also address all the relevant specifics of the project and then determine the time needed to complete the work. Our experts will calculate the length of time needed based on the work they are assigned.",
     },
     {
       question: "How much does it cost for web application development?",
       answer:
-        "At the start of the project, DEHA seeks the approval of the client on all project details and then quotes an estimate cost for the same. This PHP web development company also shares the project duration and all minute developments included in the project. In case of any last-minute additions, DEHA informs the client of additional costs and time to complete the project.",
+        "At the start of the project, AVEO seeks the approval of the client on all project details and then quotes an estimate cost for the same. This PHP web development company also shares the project duration and all minute developments included in the project. In case of any last-minute additions, AVEO informs the client of additional costs and time to complete the project.",
     },
     {
       question: "What are the benefits of Web development services?",
@@ -153,7 +153,7 @@ function ServiceWeb() {
                   <p>
                     There are still not enough friends to realize our goal of “a
                     world where everyone can be absorbed in value creation.” If
-                    you like, why don’t you take a look at DEHA VIET NAM?
+                    you like, why don’t you take a look at AVEO VIET NAM?
                   </p>
                   <a href="/contact-us" className="button btn-reverse">
                     Contact Us
@@ -248,7 +248,7 @@ function ServiceWeb() {
         </div>
         <section className="secction-title-1 mb-5">
           <p className="title">The benefit of</p>
-          <p className="sub-title">PARTNERING WITH DEHA</p>
+          <p className="sub-title">PARTNERING WITH AVEO</p>
         </section>
         <section className="container benefit ">
           <div className="row">

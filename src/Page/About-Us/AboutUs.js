@@ -13,7 +13,7 @@ function AboutUs() {
                     <span>Vietnam Leading Digital Strategy Consultant</span>
                   </p>
                   <p className="sub-text">
-                    DEHA Vietnam specialized in digital strategy consulting for
+                    AVEO Vietnam specialized in digital strategy consulting for
                     business firm varies from industries such as: Manufacturing,
                     Retail, Ecommerce, Finance, Internet Service,
                     Transportation, Construction... With a team of experienced
@@ -34,7 +34,7 @@ function AboutUs() {
               <tbody>
                 <tr>
                   <th>Company Name</th>
-                  <td>DEHA VIETNAM JOINT STOCK COMPANY</td>
+                  <td>AVEO VIETNAM JOINT STOCK COMPANY</td>
                 </tr>
                 <tr>
                   <th>Established</th>

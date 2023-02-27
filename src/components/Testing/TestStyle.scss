@@ -83,7 +83,7 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
+                background-image   : url('./Hero-bg-default.webp');
                 height             : 100vh;
                 min-height         : 1px;
                 float              : left;
@@ -163,7 +163,8 @@
                 margin-top: 50px;
 
                 .icon-service {
-                    width: 15%;
+                    width       : 10%;
+                    margin-right: 10px;
 
                     svg {
                         font-size: 50px;
@@ -214,7 +215,7 @@
     }
 
     .our-typical {
-        padding-top   : 370px;
+        padding-top   : 70px;
         padding-bottom: 70px;
 
         .content-typical {
@@ -462,6 +463,113 @@
 
                 .conact-img {
                     display: none !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .testing {
+        .slider-item {
+            text-align: center !important;
+
+            .slide-content {
+                flex-wrap      : wrap;
+                justify-content: center;
+
+                .image {
+                    width     : 70% !important;
+                    margin-top: 50px;
+                }
+
+                .text {
+                    width      : 100% !important;
+                    margin-left: 0px !important;
+
+                    .sub-text {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .developer-service {
+        .icon-service {
+            width: 20% !important;
+        }
+    }
+
+    .our-typical {
+        .title-typical {
+            font-size: 25px !important;
+        }
+
+        .box {
+            height: 19rem !important;
+        }
+
+        .content-number {
+            .title-box {
+                font-size: 20px !important;
+            }
+
+            .content-title-box {
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 64em) and (max-width: 79.5em) {
+    .testing {
+        .slider {
+            .text-title {
+                font-size: 45px !important;
+            }
+
+            .sub-text {
+                font-size  : 18px !important;
+                line-height: 35px !important;
+            }
+        }
+
+        .our-typical {
+            .title-typical {
+                font-size: 26px !important;
+            }
+
+            .box {
+                height: 19rem !important;
+            }
+
+            .content-number {
+                .title-box {
+                    font-size: 25px !important;
+                }
+
+                .content-title-box {
+                    font-size: 16px !important;
+                }
+            }
+        }
+
+
+        .developer-service {
+            .text-service {
+                .text-title {
+                    font-size: 28px !important;
+                }
+            }
+        }
+
+        .benefits-of-partnering {
+            .benefit {
+                .content-part {
+                    width : 30% !important;
+                    height: 600px !important;
                 }
             }
         }

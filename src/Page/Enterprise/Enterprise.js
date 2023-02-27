@@ -310,7 +310,7 @@ function Enterprise() {
         </div>
         <section className="secction-title-1 mb-5">
           <p className="title">The benefit of</p>
-          <p className="sub-title">PARTNERING WITH DEHA</p>
+          <p className="sub-title">PARTNERING WITH AVEO</p>
         </section>
         <section className="container benefit ">
           <div className="row">

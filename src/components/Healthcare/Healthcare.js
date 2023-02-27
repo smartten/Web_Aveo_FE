@@ -70,7 +70,7 @@ function Healthcare() {
             >
               <h1>Health Care</h1>
               <p>
-                DEHA empowers healthcare providers with innovative solutions
+                AVEO empowers healthcare providers with innovative solutions
                 that automate processes, improve treatment outcomes and the
                 patient experience, and reduce costs.
               </p>
@@ -184,7 +184,7 @@ function Healthcare() {
       <div className="container">
         <div className="row my-sm-5 py-sm-5 g-0">
           <div className="col-12 g-0">
-            <h3 class="h3-md">Benefits of Partnering with DEHA</h3>
+            <h3 class="h3-md">Benefits of Partnering with AVEO</h3>
           </div>
         </div>
 

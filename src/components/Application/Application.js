@@ -390,7 +390,7 @@ function Application() {
 
         <div className="row my-sm-5 py-sm-5 g-0">
           <div className="col-12 g-0">
-            <h3 class="h3-md">Benefits of Partnering with DEHA</h3>
+            <h3 class="h3-md">Benefits of Partnering with AVEO</h3>
           </div>
         </div>
 

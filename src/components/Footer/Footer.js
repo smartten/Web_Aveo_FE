@@ -73,7 +73,7 @@ function Footer() {
               <br />
               <br />
               <a className="footer-link" href="">
-                DEHA Solutions
+                AVEO Solutions
               </a>
               <br />
               <a className="footer-link" href="">
@@ -180,7 +180,7 @@ function Footer() {
         <div className="row my-sm-4">
           <div className="col-12 g-0 p-0 m-0">
             <p style={{ color: "white", fontWeight: 600, fontSize: 18 }}>
-              © 2023 DEHA. All Rights Reserved
+              © 2023 AVEO. All Rights Reserved
             </p>
           </div>
         </div>

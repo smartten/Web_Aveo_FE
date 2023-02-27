@@ -409,6 +409,7 @@
             .box-comment {
               background-color: #fff;
               padding         : 50px;
+              height          : 400px;
 
               .comment-content {
                 color: #000;
@@ -538,6 +539,12 @@
           margin-bottom: 20px;
         }
       }
+
+      .title-service {
+        p {
+          font-size: 16px !important;
+        }
+      }
     }
 
     .contact-us {
@@ -547,6 +554,10 @@
 
       .h3-xs {
         font-size: 30px !important;
+      }
+
+      .img-fluid {
+        margin-left: 20px !important;
       }
     }
 
@@ -673,6 +684,56 @@
       .conact-img {
         // display: none !important;
       }
+    }
+  }
+}
+
+@media (min-width: 64em) and (max-width: 79.5em) {
+  .home {
+
+    .slider {
+      .text-title {
+        font-size: 45px !important;
+      }
+
+      .sub-text {
+        font-size: 18px !important;
+      }
+    }
+
+    .contact-us {
+      .h3-xs {
+        margin-bottom: 0px;
+        font-size    : 30px;
+      }
+
+      .p-lg {
+        font-size: 16px;
+      }
+    }
+
+    .our-services {
+      .service-content {
+        .col-3 {
+          width        : 320px !important;
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 79.5em) and (max-width: 89.5em) {
+  .home {
+    .our-services {
+      .service-content {
+        .col-3 {
+          width        : 380px !important;
+          margin-bottom: 20px;
+        }
+      }
+
     }
   }
 }

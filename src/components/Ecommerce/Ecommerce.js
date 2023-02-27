@@ -173,42 +173,6 @@ function Ecommerce() {
           </div>
         </div>
       </section>
-      <section className="certificates">
-        <div className="container">
-          <div className="content-certificates">
-            <h3 className="title-certificates mb-3">
-              Certificates & International Standards
-            </h3>
-            <div className="row justify-content-center">
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
-                  style={{ width: "100%" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="big-guys">
         <div className="container">
           <p className="text-center title-big-guy">
@@ -261,7 +225,7 @@ function Ecommerce() {
       </section>
       <section className="benefits-of-partnering">
         <div className="container">
-          <p className="title-benefit">Benefits of Partnering with DEHA</p>
+          <p className="title-benefit">Benefits of Partnering with AVEO</p>
           <div className="container benefit ">
             <div className="row">
               <div className="col-4 content-part">

@@ -262,7 +262,7 @@ function Blockchain() {
       <section className="big-guys">
         <div className="container">
           <p className="text-center title-big-guy">
-            This BIG guys are using DEHA services and they are more than happier
+            This BIG guys are using AVEO services and they are more than happier
             ever
           </p>
           <div className="row">
@@ -333,7 +333,7 @@ function Blockchain() {
       </section>
       <section className="benefits-of-partnering">
         <div className="container">
-          <p className="title-benefit">Benefits of Partnering with DEHA</p>
+          <p className="title-benefit">Benefits of Partnering with AVEO</p>
           <div className="container benefit ">
             <div className="row">
               <div className="col-4 content-part">

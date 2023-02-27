@@ -6,6 +6,11 @@ import logo4 from "./Logo-white_340x156-px-01.svg";
 import logo5 from "./layer1.svg";
 import logo6 from "./g16.svg";
 import logo7 from "./imageLogo1.svg";
+import icon1 from "./Cloud.svg";
+import icon2 from "./icons-05-22.svg";
+import icon3 from "./CloudMonitoring.svg";
+import icon4 from "./LegacySystemtoCloudMigration.svg";
+import img1 from "./Cloud-Services-1-01.svg";
 import {
   CloudServerOutlined,
   DashboardOutlined,
@@ -37,7 +42,7 @@ function CloudComputing() {
             <div className="container">
               <div className="slide-content d-flex">
                 <div className="image">
-                  <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-cloud" />
+                  <img src={img1} />
                 </div>
                 <div className="text">
                   <p className="text-title">
@@ -73,7 +78,7 @@ function CloudComputing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <CloudServerOutlined />
+                    <img src={icon3} />
                   </div>
                   <div className="text-service">
                     <b className="text-title">Cloud Strategy Consulting</b>
@@ -87,7 +92,7 @@ function CloudComputing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <FieldTimeOutlined />
+                    <img src={icon2} />
                   </div>
                   <div className="text-service">
                     <b className="text-title">Cloud System Optimization</b>
@@ -103,7 +108,7 @@ function CloudComputing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <DashboardOutlined />
+                    <img src={icon1} />
                   </div>
                   <div className="text-service">
                     <b className="text-title">Cloud Monitoring</b>
@@ -119,7 +124,7 @@ function CloudComputing() {
               <div className="col">
                 <div className="content-text">
                   <div className="icon-service">
-                    <CodeOutlined />
+                    <img src={icon4} />
                   </div>
                   <div className="text-service">
                     <b className="text-title">
@@ -132,41 +137,6 @@ function CloudComputing() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="certificates">
-        <div className="container">
-          <div className="content-certificates">
-            <h3 className="title-certificates mb-3">
-              Certificates & International Standards
-            </h3>
-            <div className="row justify-content-center">
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-cmmi-level3"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-iso-9001"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-iso-27001"
-                  style={{ width: "100%" }}
-                />
-              </div>
-              <div className="col-2">
-                <img
-                  src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/services/Img-cert-istqb"
-                  style={{ width: "100%" }}
-                />
               </div>
             </div>
           </div>
@@ -288,7 +258,7 @@ function CloudComputing() {
       </section>
       <section className="benefits-of-partnering">
         <div className="container">
-          <p className="title-benefit">Benefits of Partnering with DEHA</p>
+          <p className="title-benefit">Benefits of Partnering with AVEO</p>
           <div className="container benefit ">
             <div className="row">
               <div className="col-4 content-part">

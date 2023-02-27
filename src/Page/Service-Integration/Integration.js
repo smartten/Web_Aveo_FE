@@ -83,7 +83,7 @@ function Integration() {
     {
       question: "Do I have full ownership of my data?",
       answer:
-        "DEHA do not own or store your data. The data is only moving through our solutions in the cloud, but you maintain complete ownership of your data. Although, if you want, we can store the data on your behalf, as well as provide data logs for your reference.",
+        "AVEO do not own or store your data. The data is only moving through our solutions in the cloud, but you maintain complete ownership of your data. Although, if you want, we can store the data on your behalf, as well as provide data logs for your reference.",
     },
     {
       question:
@@ -192,7 +192,7 @@ function Integration() {
                   <p>
                     There are still not enough friends to realize our goal of “a
                     world where everyone can be absorbed in value creation.” If
-                    you like, why don’t you take a look at DEHA VIET NAM?
+                    you like, why don’t you take a look at AVEO VIET NAM?
                   </p>
                   <a href="/contact-us" className="button btn-reverse">
                     Contact Us
@@ -292,7 +292,7 @@ function Integration() {
         </div>
         <section className="secction-title-1 mb-5">
           <p className="title">The benefit of</p>
-          <p className="sub-title">PARTNERING WITH DEHA</p>
+          <p className="sub-title">PARTNERING WITH AVEO</p>
         </section>
         <section className="container benefit ">
           <div className="row">

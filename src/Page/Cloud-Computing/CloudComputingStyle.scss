@@ -83,7 +83,7 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
+                background-image   : url('./Hero-bg-default.webp');
                 height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
@@ -163,7 +163,8 @@
                 margin-top: 50px;
 
                 .icon-service {
-                    width: 15%;
+                    width       : 10%;
+                    margin-right: 20px;
 
                     svg {
                         font-size: 50px;
@@ -214,7 +215,7 @@
     }
 
     .our-typical {
-        padding-top   : 370px;
+        padding-top   : 70px;
         padding-bottom: 70px;
 
         .content-typical {
@@ -378,6 +379,187 @@
                     width     : 100%;
                     height    : auto;
                     margin-top: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 46.1875em) {
+    .cloud-computing {
+        .slider-item {
+            text-align: center !important;
+
+            .slide-content {
+                flex-wrap      : wrap;
+                justify-content: center;
+
+                .image {
+                    width     : 70% !important;
+                    margin-top: 50px;
+                }
+
+                .text {
+                    width      : 100% !important;
+                    margin-left: 0px !important;
+
+                    .text-title {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .certificates {
+            .title-certificates {
+                font-size: 30px !important;
+            }
+
+            .col-2 {
+                width: 25% !important;
+            }
+        }
+
+        .our-typical {
+            .title-typical {
+                font-size: 25px !important;
+            }
+
+            .box {
+                height: 17rem !important;
+            }
+
+            .content-number {
+                .title-box {
+                    font-size: 20px !important;
+                }
+
+                .content-title-box {
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+        .benefits-of-partnering {
+            padding-top: 0px !important;
+
+            .title-benefit {
+                font-size: 30px !important;
+            }
+        }
+
+        .big-guys {
+            padding-top: 0px !important;
+
+            .col-2 {
+                width     : 30% !important;
+                margin-top: 10px;
+            }
+        }
+
+        .contact-us-v1 {
+            .contact-content {
+                .contact-text {
+                    width     : 100% !important;
+                    text-align: center;
+                    margin-top: 50%;
+
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+
+                .conact-img {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .cloud-computing {
+        .slider-item {
+            text-align: center !important;
+
+            .slide-content {
+                flex-wrap      : wrap;
+                justify-content: center;
+
+                .image {
+                    width     : 70% !important;
+                    margin-top: 50px;
+                }
+
+                .text {
+                    width      : 100% !important;
+                    margin-left: 0px !important;
+                }
+            }
+        }
+
+
+    }
+
+    .our-typical {
+        .title-typical {
+            font-size: 25px !important;
+        }
+
+        .box {
+            height: 19rem !important;
+        }
+
+        .content-number {
+            .title-box {
+                font-size: 20px !important;
+            }
+
+            .content-title-box {
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 64em) and (max-width: 79.5em) {
+    .cloud-computing {
+        .slider {
+            .text-title {
+                font-size: 45px !important;
+            }
+
+            .sub-text {
+                font-size  : 18px !important;
+                line-height: 35px !important;
+            }
+        }
+
+        .our-typical {
+            .title-typical {
+                font-size: 26px !important;
+            }
+
+            .box {
+                height: 19rem !important;
+            }
+
+            .content-number {
+                .title-box {
+                    font-size: 25px !important;
+                }
+
+                .content-title-box {
+                    font-size: 16px !important;
+                }
+            }
+        }
+
+        .benefits-of-partnering {
+            .benefit {
+                .content-part {
+                    width : 30% !important;
+                    height: 600px !important;
                 }
             }
         }

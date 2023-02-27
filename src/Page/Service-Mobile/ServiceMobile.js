@@ -20,9 +20,9 @@ function ServiceMobile() {
   const question = [
     {
       question:
-        "How can I start Mobile development services with DEHA for my business?",
+        "How can I start Mobile development services with AVEO for my business?",
       answer:
-        "You can simply call or email DEHA to begin your Mobile development services. DEHA's developers can make your Mobile development easy and fruitfu",
+        "You can simply call or email AVEO to begin your Mobile development services. AVEO's developers can make your Mobile development easy and fruitfu",
     },
     {
       question:
@@ -34,13 +34,13 @@ function ServiceMobile() {
       question:
         "Will you partner with us as an android app development company for our clients?",
       answer:
-        "DEHA can partner with you to provide an android app development for your clients. DEHA's android developers can note the client requirements and then recommend the right solution to them",
+        "AVEO can partner with you to provide an android app development for your clients. AVEO's android developers can note the client requirements and then recommend the right solution to them",
     },
     {
       question:
-        "Is DEHA provides custom android app development services for my business?",
+        "Is AVEO provides custom android app development services for my business?",
       answer:
-        "DEHA doesn't aim to offer a standard solution to all enterprises. Instead, they can create a tailored android app to suffice the needs of your business. The app development company can custom-build a robust solution based on your industry and brand position.",
+        "AVEO doesn't aim to offer a standard solution to all enterprises. Instead, they can create a tailored android app to suffice the needs of your business. The app development company can custom-build a robust solution based on your industry and brand position.",
     },
     {
       question:
@@ -151,7 +151,7 @@ function ServiceMobile() {
                 </div>
                 <div className="title">Years Of Experience</div>
                 <div className="desc">
-                  Being top Mobile app development company DEHA houses a team of
+                  Being top Mobile app development company AVEO houses a team of
                   designers and developers with hands-on experience in Mobile
                   app development services.
                 </div>
@@ -168,7 +168,7 @@ function ServiceMobile() {
                   <p>
                     There are still not enough friends to realize our goal of “a
                     world where everyone can be absorbed in value creation.” If
-                    you like, why don’t you take a look at DEHA VIET NAM?
+                    you like, why don’t you take a look at AVEO VIET NAM?
                   </p>
                   <a href="/contact-us" className="button btn-reverse">
                     Contact Us
@@ -266,7 +266,7 @@ function ServiceMobile() {
         </div>
         <section className="secction-title-1 mb-5">
           <p className="title">The benefit of</p>
-          <p className="sub-title">PARTNERING WITH DEHA</p>
+          <p className="sub-title">PARTNERING WITH AVEO</p>
         </section>
         <section className="container benefit ">
           <div className="row">

@@ -83,7 +83,7 @@
                 background-position: right top;
                 display            : flex;
                 align-items        : center;
-                background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-5');
+                background-image   : url('./Hero-bg-default.webp');
                 height             : 100vh !important;
                 min-height         : 1px;
                 float              : left;
@@ -284,7 +284,7 @@
     }
 
     .big-guys {
-        padding-top   : 350px;
+        padding-top   : 70px;
         padding-bottom: 70px;
 
         .title-big-guy {

@@ -23,7 +23,7 @@ function ServiceEngineering() {
     {
       question: `What Are "Engineering" Services?`,
       answer:
-        "In context of what we do at DEHA, Engineering Services are tasks, or consulting, or analysis on technical topics; usually to support businesses with product design, product development, failure analysis (forensics), or manufacturing. The list also includes supply chain support, material choices, and process optimization.",
+        "In context of what we do at AVEO, Engineering Services are tasks, or consulting, or analysis on technical topics; usually to support businesses with product design, product development, failure analysis (forensics), or manufacturing. The list also includes supply chain support, material choices, and process optimization.",
     },
     {
       question: "Why Hire an Engineering Consultant?",
@@ -31,21 +31,21 @@ function ServiceEngineering() {
         "The Short Answer: It maximizes your capabilities with short-term, significant expertise.",
     },
     {
-      question: "How do I contact DEHA to outsource my engineering projects?",
+      question: "How do I contact AVEO to outsource my engineering projects?",
       answer:
         "You can either call us or fill up the contact form along with your requirements. We will get back to you with a quote.",
     },
     {
       question:
-        "How much experience does DEHA have in providing engineering services?",
+        "How much experience does AVEO have in providing engineering services?",
       answer:
         "We have an experience of more than a decade (12 years) and have been serving customers around the globe through our multiple delivery centers",
     },
     {
       question:
-        "Is DEHA equipped with the latest technology and infrastructure to provide engineering services?",
+        "Is AVEO equipped with the latest technology and infrastructure to provide engineering services?",
       answer:
-        "We are equipped with state-of-the-art infrastructure and technologies which leave our competitors far behind. Our team of engineers at DEHA can address any kind of engineering requirement.",
+        "We are equipped with state-of-the-art infrastructure and technologies which leave our competitors far behind. Our team of engineers at AVEO can address any kind of engineering requirement.",
     },
     {
       question:
@@ -157,7 +157,7 @@ function ServiceEngineering() {
                   <p>
                     There are still not enough friends to realize our goal of “a
                     world where everyone can be absorbed in value creation.” If
-                    you like, why don’t you take a look at DEHA VIET NAM?
+                    you like, why don’t you take a look at AVEO VIET NAM?
                   </p>
                   <a href="/contact-us" className="button btn-reverse">
                     Contact Us
@@ -173,7 +173,7 @@ function ServiceEngineering() {
               Advantages of a Dedicated Development Team
             </p>
             <p className="desc">
-              No matter how big or small your development project is, DEHA has
+              No matter how big or small your development project is, AVEO has
               access to a big pool of dedicated developers for quick
               augmentation.
             </p>
@@ -263,7 +263,7 @@ function ServiceEngineering() {
         </div>
         <section className="secction-title-1 mb-5">
           <p className="title">The benefit of</p>
-          <p className="sub-title">PARTNERING WITH DEHA</p>
+          <p className="sub-title">PARTNERING WITH AVEO</p>
         </section>
         <section className="container benefit ">
           <div className="row">

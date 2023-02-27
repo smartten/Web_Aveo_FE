@@ -378,10 +378,12 @@ function Home() {
                     <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
-                          Nulla quis lorem ut libero malesuada feugiat. Praesent
-                          sapien massa, convallis a pellentesque nec, egestas
-                          non nisi. Nulla quis lorem ut libero malesuada
-                          feugiat.
+                          AVEO Global is the best technology partner any
+                          business could ask for, they go above and beyond to
+                          satisfy my business needs and they will do research
+                          and develop anything you need. I will never switch to
+                          any other company, may your success be our success!
+                          P.S. AVEO is the best.
                         </p>
                         <p className="name-comment">Nguyen Hieu</p>
                         <p className="address-name">Ha Noi, Viet Nam</p>
@@ -391,10 +393,10 @@ function Home() {
                     <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
-                          Nulla quis lorem ut libero malesuada feugiat. Praesent
-                          sapien massa, convallis a pellentesque nec, egestas
-                          non nisi. Nulla quis lorem ut libero malesuada
-                          feugiat.
+                          They spent more time waiting on me than I did them,
+                          and they were patient and courteous every step of the
+                          way. I would definitely recommend hiring them and I
+                          will continue to use them for my future projects
                         </p>
                         <p className="name-comment">Nguyen Hieu</p>
                         <p className="address-name">Ha Noi, VIet Nam</p>
@@ -404,10 +406,11 @@ function Home() {
                     <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
-                          Nulla quis lorem ut libero malesuada feugiat. Praesent
-                          sapien massa, convallis a pellentesque nec, egestas
-                          non nisi. Nulla quis lorem ut libero malesuada
-                          feugiat.
+                          I was very happy with the promises made and, more
+                          importantly, delivered. Quality code. Neat and
+                          organized. They assisted with the last tweaks to
+                          ensure I was a happy client. I would be happy to work
+                          with them again on my next project.
                         </p>
                         <p className="name-comment">Nguyen Hieu</p>
                         <p className="address-name">Ha Noi, Viet Nam</p>
@@ -419,10 +422,12 @@ function Home() {
                     <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
-                          Nulla quis lorem ut libero malesuada feugiat. Praesent
-                          sapien massa, convallis a pellentesque nec, egestas
-                          non nisi. Nulla quis lorem ut libero malesuada
-                          feugiat.
+                          The project thus far was not complicated and we are
+                          continuing to the next phase. My experience with AVEO
+                          to date: Very good service - friendly and helpful with
+                          high level of technical understanding and competence .
+                          Listens to what I want, makes suggestions where
+                          appropriate and delivers very quickly.
                         </p>
                         <p className="name-comment">Nguyen Minh Hieu</p>
                         <p className="address-name">Ha Noi, Viet Nam</p>
@@ -432,10 +437,12 @@ function Home() {
                     <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
-                          Nulla quis lorem ut libero malesuada feugiat. Praesent
-                          sapien massa, convallis a pellentesque nec, egestas
-                          non nisi. Nulla quis lorem ut libero malesuada
-                          feugiat.
+                          AVEO Global is the best technology partner any
+                          business could ask for, they go above and beyond to
+                          satisfy my business needs and they will do research
+                          and develop anything you need. I will never switch to
+                          any other company, may your success be our success!
+                          P.S. AVEO is the best.
                         </p>
                         <p className="name-comment">Nguyen Minh Hieu</p>
                         <p className="address-name">Ha Noi, VIet Nam</p>
@@ -445,10 +452,11 @@ function Home() {
                     <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
-                          Nulla quis lorem ut libero malesuada feugiat. Praesent
-                          sapien massa, convallis a pellentesque nec, egestas
-                          non nisi. Nulla quis lorem ut libero malesuada
-                          feugiat.
+                          I was very happy with the promises made and, more
+                          importantly, delivered. Quality code. Neat and
+                          organized. They assisted with the last tweaks to
+                          ensure I was a happy client. I would be happy to work
+                          with them again on my next project.
                         </p>
                         <p className="name-comment">Nguyen Minh Hieu</p>
                         <p className="address-name">Ha Noi, Viet Nam</p>

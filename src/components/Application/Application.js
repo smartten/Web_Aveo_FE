@@ -77,17 +77,19 @@ function Application() {
     <div className="container-fluid overflow-hidden p-0 m-0 g-0">
       <div className="hero-section g-0 m-0 py-sm-5">
         <div className="container d-flex">
-          <div className="col-12 col-sm-5 py-sm-5">
-            <img className="img-fluid pt-sm-5" src={image1} />
+          <div className="row mt-5 pt-5 mt-sm-0 pt-sm-0">
+            <div className="col-12  col-md-5 py-sm-4">
+              <img className="img-fluid pt-sm-5" src={image1} />
+            </div>
+            <div className="col-12 col-md-6 px-1 px-sm-4 my-sm-auto hero-text">
+              <h1>Application Development</h1>
+              <p className="px-3 px-sm-0">
+                Automate your business processes, cost saving, stay connected
+                with your clients and get more revenue. The market is now in
+                your hand.
+              </p>
+            </div>
           </div>
-          <div className="col-12 col-sm-6 px-sm-4 my-sm-auto hero-text">
-            <h1>Application Development</h1>
-            <p>
-              Automate your business processes, cost saving, stay connected with
-              your clients and get more revenue. The market is now in your hand.
-            </p>
-          </div>
-          {/* <div className="col-12 col-sm-1"></div> */}
         </div>
       </div>
 
@@ -103,13 +105,13 @@ function Application() {
           </div>
         </div>
 
-        <div className="row g-0 m-0 mb-sm-3">
+        <div className="row g-0 m-0 mb-sm-3 content-mob">
           <div
-            style={{ width: "47%", marginRight: "auto" }}
+            style={{ marginRight: "auto" }}
             className="col-12 col-sm-6 mobility"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
+              <div className="col-12  col-lg-2">
                 <img src={smartphone} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
@@ -122,9 +124,9 @@ function Application() {
               </div>
             </div>
           </div>
-          <div style={{ width: "47%" }} className="col-12 col-sm-6  mobility">
+          <div className="col-12 col-sm-6  mobility">
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
+              <div className="col-12 col-lg-2">
                 <img src={web} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
@@ -139,13 +141,13 @@ function Application() {
           </div>
         </div>
 
-        <div className="row g-0 m-0  mb-sm-3">
+        <div className="row g-0 m-0  mb-sm-3 content-mob">
           <div
-            style={{ width: "47%", marginRight: "auto" }}
+            style={{ marginRight: "auto" }}
             className="col-12 col-sm-6  mobility-2"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
+              <div className="col-12  col-lg-2">
                 <img src={webDe} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
@@ -157,9 +159,9 @@ function Application() {
               </div>
             </div>
           </div>
-          <div style={{ width: "47%" }} className="col-12 col-sm-6  mobility-2">
+          <div className="col-12 col-sm-6  mobility-2">
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
+              <div className="col-12  col-lg-2">
                 <img src={graph} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
@@ -170,13 +172,13 @@ function Application() {
           </div>
         </div>
 
-        <div className="row g-0 m-0 mb-sm-5">
+        <div className="row g-0 m-0 mb-sm-5 content-mob">
           <div
-            style={{ width: "47%", marginRight: "auto" }}
+            style={{ marginRight: "auto" }}
             className="col-12 col-sm-6  mobility-3"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
+              <div className="col-12  col-lg-2">
                 <img src={test} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
@@ -188,9 +190,9 @@ function Application() {
               </div>
             </div>
           </div>
-          <div style={{ width: "47%" }} className="col-12 col-sm-6  mobility-3">
+          <div className="col-12 col-sm-6  mobility-3">
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 pb-3 px-5 mx-5 pb-lg-0 mx-lg-0 px-lg-0 col-lg-2">
+              <div className="col-12 col-lg-2">
                 <img src={support} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
@@ -219,7 +221,7 @@ function Application() {
             style={{}}
             className="col-12 col-sm-6 col-lg-6 py-lg-5 my-lg-5 txt-block"
           >
-            <h3>
+            <h3 className="px-2">
               Digitalize your business, increase your customer experience and
               revenue
             </h3>
@@ -251,38 +253,45 @@ function Application() {
         </div>
       </div>
       <br />
-      <div className="row  my-5 px-sm-5 py-sm-5 bg-snow">
-        <div style={{ width: "30%" }} className="col-sm-4 mx-sm-5">
-          <div className="row g-0 p-0">
-            <div className="col-sm-6 g-0">
-              <span>600+</span>
-            </div>
-            <div className="col-sm-6 my-sm-auto pt-sm-3 px-sm-3 g-0">
-              <p>Businesses Are Digitized</p>
-            </div>
-          </div>
-        </div>
 
-        <div
-          style={{ width: "36%", marginLeft: -80 }}
-          className="col-sm-4 g-0 p-0"
-        >
-          <div className="row g-0 p-0 m-0">
-            <div className="col-sm-6 g-0">
-              <span>80%</span>
+      <div className="my-5 py-sm-5 bg-snow">
+        <div className="container">
+          <div className="row px-2 px-sm-0">
+            <div className="col-sm-4 g-0">
+              <div className="row g-0 p-0 ">
+                <div className="col-5  g-0">
+                  <span>600+</span>
+                </div>
+                <div className="col-7 my-sm-auto pt-3 g-0">
+                  <p>Businesses Are Digitized</p>
+                </div>
+              </div>
             </div>
-            <div className="col-sm-6 my-sm-auto pt-sm-3 px-sm-3 g-0">
-              <p>Increase 4X Revenue</p>
+
+            <div style={{ margin: "auto" }} className="col-sm-4 g-0 p-0">
+              <div className="row g-0 p-0 m-0">
+                <div className="col-xl-2"></div>
+                <div className="col-5 col-xl-4 g-0">
+                  <span>80%</span>
+                </div>
+                <div className="col-7  col-xl-6 my-sm-auto pt-3 g-0">
+                  <p>Increase 4X Revenue</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div style={{ width: "30%" }} className="col-sm-4">
-          <div className="row g-0 p-0 m-0">
-            <div className="col-sm-6 g-0">
-              <span>96%</span>
-            </div>
-            <div className="col-sm-6 my-sm-auto pt-sm-3 px-sm-3 g-0">
-              <p>Cost Saving</p>
+            <div className="col-sm-4">
+              <div className="row">
+                <div className="col-xl-4"></div>
+                <div className="col-5 col-xl-4 g-0">
+                  <span>96%</span>
+                </div>
+                <div
+                  // style={{ float: "right" }}
+                  className="col-7 col-xl-4 my-sm-auto pt-3  g-0"
+                >
+                  <p>Cost Saving</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -309,16 +318,16 @@ function Application() {
       </div>
 
       <div className="container">
-        <div className="row g-0 mb-sm-3">
+        <div className="row g-0 mb-sm-3 step-for-col">
           <div
-            style={{ width: "48.5%", marginRight: "auto" }}
+            style={{ marginRight: "auto" }}
             className="col-12 col-sm-6 px-sm-4 step"
           >
             <div className="row m-0 py-sm-4 g-0">
-              <div className="col-12 col-sm-1">
+              <div className="col-2 col-sm-1">
                 <span className="nr">1</span>
               </div>
-              <div className="col-12 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
+              <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Discover</h5>
                 <p>
                   We work with you to gain clarity on your needs, defining clear
@@ -327,15 +336,12 @@ function Application() {
               </div>
             </div>
           </div>
-          <div
-            style={{ width: "48.5%" }}
-            className="col-12 col-sm-6  px-sm-4 step"
-          >
+          <div className="col-2 col-sm-6  px-sm-4 step">
             <div className="row py-sm-4 g-0">
-              <div className="col-12 col-sm-1">
+              <div className="col-2 col-sm-1">
                 <span className="nr">2</span>
               </div>
-              <div className="col-12 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
+              <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Research</h5>
                 <p>
                   We determine the best solution for your software and develop a
@@ -347,16 +353,16 @@ function Application() {
           </div>
         </div>
 
-        <div className="row g-0 mb-sm-5">
+        <div className="row g-0 mb-sm-5 step-for-col">
           <div
-            style={{ width: "48.5%", marginRight: "auto" }}
+            style={{ marginRight: "auto" }}
             className="col-12 col-sm-6  px-sm-4 step"
           >
             <div className="row m-0 py-sm-4 g-0">
-              <div className="col-12 col-sm-1">
+              <div className="col-2 col-sm-1">
                 <span className="nr">3</span>
               </div>
-              <div className="col-12 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
+              <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Develop</h5>
                 <p>
                   Our skilled engineers efficiently execute the plan and
@@ -366,15 +372,12 @@ function Application() {
               </div>
             </div>
           </div>
-          <div
-            style={{ width: "48.5%" }}
-            className="col-12 col-sm-6  px-sm-4 step"
-          >
+          <div className="col-12 col-sm-6  px-sm-4 step">
             <div className="row py-sm-4 g-0">
-              <div className="col-12 col-sm-1">
+              <div className="col-2 col-sm-1">
                 <span className="nr">4</span>
               </div>
-              <div className="col-12 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
+              <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Operate</h5>
                 <p>
                   We implement and support the final product, delivering defined
@@ -394,7 +397,7 @@ function Application() {
         <div className="row g-0 m-0 p-0 content-bot">
           <div
             style={{ marginRight: "auto" }}
-            className="col-lg-4 col-sm-6  px-sm-4 content-part"
+            className="col-lg-4 mb-3 mb-lg-0  px-sm-4 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <BulbOutlined />
@@ -411,7 +414,7 @@ function Application() {
           </div>
           <div
             style={{ marginRight: "auto" }}
-            className="col-sm-6 col-lg-4 px-sm-4 content-part"
+            className="col-lg-4 mb-3 mb-lg-0 px-sm-4 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <SelectOutlined />
@@ -425,7 +428,7 @@ function Application() {
               </p>
             </div>
           </div>
-          <div className="col-sm-6  col-lg-4 px-sm-4 content-part">
+          <div className="col-lg-4 mb-3 mb-lg-0 px-sm-4 content-part">
             <div className="icon-benefit mb-sm-4">
               <UserOutlined />
             </div>
@@ -439,10 +442,10 @@ function Application() {
           </div>
         </div>
 
-        <div className="row mx-0 px-0 g-0 mt-sm-4 mb-sm-5 pb-sm-5">
+        <div className="row mx-0 px-0 g-0 mt-lg-4 mb-sm-5 pb-sm-5 content-bot">
           <div
-            style={{ width: "32%", marginRight: "auto" }}
-            className="col-lg-4 px-sm-4 g-0 content-part"
+            style={{ marginRight: "auto" }}
+            className="col-lg-4 mb-3 mb-lg-0 px-sm-4 g-0 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <PieChartOutlined />
@@ -457,8 +460,8 @@ function Application() {
             </div>
           </div>
           <div
-            style={{ width: "32%", marginRight: "auto" }}
-            className="col-lg-4 px-sm-4 content-part"
+            style={{ marginRight: "auto" }}
+            className="col-lg-4 mb-3 mb-lg-0 px-sm-4 content-part"
           >
             <div className="icon-benefit mb-sm-4">
               <SwitcherOutlined />
@@ -472,10 +475,7 @@ function Application() {
               </p>
             </div>
           </div>
-          <div
-            style={{ width: "32%" }}
-            className="col-lg-4 px-sm-4 content-part"
-          >
+          <div className="col-lg-4 px-sm-4 content-part">
             <div className="icon-benefit mb-sm-4">
               <PaperClipOutlined />
             </div>
@@ -492,18 +492,18 @@ function Application() {
       {/* end container */}
       <div className="bg-04 m-0 p-0 g-0">
         <div className="container">
-          <div className="row">
-            <div className="col-sm-6 g-0 my-sm-5 cta-11-txt">
+          <div className="row py-5 py-sm-0 for-contac">
+            <div className="col-12 col-sm-6 g-0 my-sm-5 cta-11-txt">
               <h2>Connect with us</h2>
               <p className="my-sm-3">We’re ready to talk opportunity</p>
-              <div className="btn-deha mt-sm-4 py-sm-3">
+              <div className="btn-deha mb-4 mb-sm-0 mt-4 py-3">
                 <a className="" href="">
                   Contact Us
                 </a>
               </div>
             </div>
             <div className="col-sm-2"></div>
-            <div className="col-sm-4 my-sm-5">
+            <div className="col-12 col-sm-4 my-sm-5">
               <img className="img-defaultt" src={defaultt} />
             </div>
           </div>

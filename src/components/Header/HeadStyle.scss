@@ -22,9 +22,6 @@
 
 }
 
-.head-reponsive {
-    display: none;
-}
 
 .head-totall {
     height             : 100px;
@@ -46,7 +43,13 @@
     width              : 100%;
     transition-duration: 0.5s;
 }
-
+#repon-menu{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 15;
+}
 .sizeLogo {
     img {
         width    : 110px;
@@ -116,6 +119,21 @@
     font-weight    : 500;
     display        : none;
 }
+.link-for-res {
+        color          : #616161;
+        text-decoration: none;
+        font-size      : 17px;
+        margin-right   : 50px;
+        font-weight    : 500;
+}
+.link-for-res:hover{
+    cursor: pointer;
+}
+.draw-menu{
+    width: 35vh;
+    height: 100vh;
+    padding-right: 85,
+}
 
 .link-drop {
     text-decoration: none;
@@ -177,6 +195,12 @@
     display          : block;
     animation        : fadeInRight .5s ease;
     -webkit-animation: fadeInRight .5s ease;
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name        : fadeInRight;
+    display               : block;
 }
 
 @keyframes fadeInRight {
@@ -337,209 +361,38 @@
     margin   : 9px 7px 7px 4px,
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1000px) {
 
     /*-- Code cho màn hình vừa (Table) viết ở đây --*/
-    // .head-totall{
-    //     background-color: white;
-    // }
-    .head-reponsive {
-        width           : 100%;
-        height          : 105px;
-        // border: 1px solid black;
-        position        : fixed;
-        background-color: white;
-        margin          : 0;
-        z-index         : -2;
-        display         : none;
-    }
 
     .head-menu {
         display         : none;
-        padding         : 0px 0px 0px 140px;
-        overflow-y      : scroll;
-        height          : 400px;
-        margin-bottom   : 30px;
-        z-index         : 1;
-        background-color: white;
+    }
+    .head-totall {
+        // background-color: white;
     }
 
     #alignRightOutlined {
         display: block;
-    }
-
-    .alignRightOutlined {
-        color    : #0262AD;
-        font-size: 40px;
+        color: white;
+        font-size: 36px;
         cursor   : pointer;
-
+        margin-top: 22px;
     }
 
-    .head-menu-icon {
-        width: 40%;
-    }
-
-    .head-top .topcenter {
-        width: 40%;
-    }
-
-    .head-totall {
-        flex-direction: column;
-        height        : auto;
-
-    }
-
-    .link {
-        color        : #717171;
-        font-weight  : 400;
-        margin-bottom: 25px;
-    }
-
-    .header-but {
-        margin: 25px 0px 25px 0px;
-    }
-
-    .dropdown-content {
-        width      : 20%;
-        z-index    : 10;
-        position   : relative;
-        display    : block;
-        margin-top : -20px;
-        // margin:-10px 10px 10px 40%;
-        padding    : 1px 0 1px 0;
-        text-align : left;
-        // display: flex;
-        align-items: start;
-        box-shadow : 0 0 0 0;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display          : block;
-        animation        : none;
-        -webkit-animation: none;
-    }
-
-    .dropdown-content-submenu {
-        display   : block;
-        box-shadow: 0 0 0 0;
-        margin    : 10px 0px 0 0;
-        position  : static;
-    }
-
-    #dropdown-submenu {
-        display       : flex;
-        flex-direction: column;
-        height        : auto;
-    }
-
-    .dropdown-submenu:hover .dropdown-content-submenu {
-        display          : block;
-        animation        : none;
-        -webkit-animation: none;
-    }
+    
 }
-
-@media only screen and (max-width: 767.98px) {
-    .head-menu-icon {
-        width: 50%;
-    }
-
-    .head-top .topcenter {
-        width      : 20%;
-        z-index    : 10;
-        position   : relative;
-        display    : block;
-        margin-top : -20px;
-        // margin:-10px 10px 10px 40%;
-        padding    : 1px 0 1px 0;
-        text-align : left;
-        // display: flex;
-        align-items: start;
-        box-shadow : 0 0 0 0;
-    }
-
-}
-
-@media (min-width: 1024px) and (max-width: 1199.98px) {
-    .head-menu-icon {
-        width: 30%;
-    }
-
-    .head-top .topcenter {
-        width: 50%;
-    }
-
-    .head-menu {
-        display       : none;
-        padding-top   : 100px;
-        flex-direction: column;
-        text-align    : center;
-    }
-
-    #alignRightOutlined {
-        display: block;
-    }
-
-    .alignRightOutlined {
-        color    : #0060AD;
-        font-size: 40px;
-        cursor   : pointer;
-    }
-
-    .head-totall {
-        height: auto;
-    }
-
-    .link {
-        margin-bottom: 25px;
-    }
-
-    .header-but {
-        margin: 25px 5px 25px 5px;
-    }
-
-    .dropdown-content {
-        z-index    : 10;
-        position   : relative;
-        margin     : -10px 0 10px 0;
-        padding    : 1px 0 1px 0;
-        text-align : left;
-        // display: flex;
-        align-items: start;
-    }
-}
+// @media only screen and (max-width: 767.98px) {
+//     .head-menu {
+//         display: none;
+// }
+// }
 
 @media only screen and (max-width: 648px) {
 
     /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
-    .head-menu {
-        display: none;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    #phoneFilled {
-        padding-left: 20%;
-        display     : block;
-    }
-
-    .head-menu-icon {
-        width: 40%;
-    }
-
-    .head-top .topcenter {
-        width: 40%;
-    }
-
-    .top-link {
-        font-size: 16px;
-    }
-
-    .sizeLogo {
-        img {
-            margin: -5px 0px 0px 10px;
-        }
-    }
+    // .head-menu {
+    //     display: none;
+    // }
+   
 }

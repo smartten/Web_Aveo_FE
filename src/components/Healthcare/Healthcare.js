@@ -74,7 +74,7 @@ function Healthcare() {
                 that automate processes, improve treatment outcomes and the
                 patient experience, and reduce costs.
               </p>
-              <div className="btn-deha mt-sm-4 py-sm-3">
+              <div className="btn-deha mt-4 py-3">
                 <a className="" href="">
                   Contact Us
                 </a>
@@ -101,9 +101,9 @@ function Healthcare() {
           </div>
         </div>
 
-        <div className="row g-0 m-0  mb-sm-3">
+        <div className="row g-0 m-0  mb-sm-3 content-mob">
           <div
-            style={{ width: "47%", marginRight: "auto" }}
+            style={{ marginRight: "auto" }}
             className="col-12 col-sm-6 mobility"
           >
             <div className="row m-0 p-0 g-0">
@@ -122,7 +122,7 @@ function Healthcare() {
               </div>
             </div>
           </div>
-          <div style={{ width: "47%" }} className="col-12 col-sm-6 mobility">
+          <div className="col-12 col-sm-6 mobility">
             <div className="row m-0 p-0 g-0">
               <div className="col-12 col-sm-2">
                 <img src={Patient} />
@@ -140,9 +140,9 @@ function Healthcare() {
             </div>
           </div>
         </div>
-        <div className="row g-0 m-0 mb-sm-3">
+        <div className="row g-0 m-0 mb-sm-3 content-mob">
           <div
-            style={{ width: "47%", marginRight: "auto" }}
+            style={{ marginRight: "auto" }}
             className="col-12 col-sm-6 mobility-2"
           >
             <div className="row m-0 p-0 g-0">
@@ -160,7 +160,7 @@ function Healthcare() {
               </div>
             </div>
           </div>
-          <div style={{ width: "47%" }} className="col-12 col-sm-6 mobility-2">
+          <div className="col-12 col-sm-6 mobility-2">
             <div className="row m-0 p-0 g-0">
               <div className="col-12 col-sm-2">
                 <img src={webBrower} />

@@ -1,11 +1,11 @@
-import image1 from "./hero-application-development.webp";
-import smartphone from "./smartphone.png";
-import webDe from "./web-design.png";
-import web from "./web-brower.png";
+import image1 from "./Application dev.png";
+import smartphone from "./icon/Mobile-Development.svg";
+import web from "./icon/Front-End-Development.svg";
+import webDe from "./icon/UI-UX-Design-1.svg";
 import didwnm from "./img_didwnm.webp";
-import graph from "./graph.png";
-import test from "./test.png";
-import support from "./support.png";
+import graph from "./icon/Automation-Service.svg";
+import test from "./icon/Icon-4-2.svg";
+import support from "./icon/24hours.svg";
 import defaultt from "./Hero-img-default.webp";
 import "./applicationStyle.scss";
 import React, { useEffect } from "react";
@@ -27,10 +27,10 @@ function Application() {
     for (var i = 0; i < testarray.length; i++) {
       testarray[i].classList.add("fadeInLeft", "cssanimation");
     }
-    var heroSection = document.getElementsByClassName("hero-section");
-    for (var i = 0; i < heroSection.length; i++) {
-      heroSection[i].style.height = "auto";
-    }
+    // var heroSection = document.getElementsByClassName("hero-section");
+    // for (var i = 0; i < heroSection.length; i++) {
+    //   heroSection[i].style.height = "auto";
+    // }
   }, 2500);
   setTimeout(function () {
     var heroText = document.getElementsByClassName("hero-text");
@@ -46,6 +46,8 @@ function Application() {
       var mobility3 = document.getElementsByClassName("mobility-3");
       var imgDigi = document.getElementsByClassName("img-digi");
       var txtBlock = document.getElementsByClassName("txt-block");
+      var animate = document.getElementsByClassName("animate");
+      var animate2 = document.getElementsByClassName("animate-2");
 
       if (window.scrollY >= 380) {
         for (var i = 0; i < mobility.length; i++) {
@@ -70,6 +72,16 @@ function Application() {
           txtBlock[i].classList.add("fadeInRight", "cssanimation");
         }
       }
+      if (window.scrollY >= 1100) {
+        for (var i = 0; i < animate.length; i++) {
+          animate[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1400) {
+        for (var i = 0; i < animate2.length; i++) {
+          animate2[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
       console.log("check point:", window.scrollY);
     });
   }, []);
@@ -78,8 +90,8 @@ function Application() {
       <div className="hero-section g-0 m-0 py-sm-5">
         <div className="container d-flex">
           <div className="row mt-5 pt-5 mt-sm-0 pt-sm-0">
-            <div className="col-12  col-md-5 py-sm-4">
-              <img className="img-fluid pt-sm-5" src={image1} />
+            <div className="col-12  col-md-5 py-sm-5">
+              <img className="img-fluid py-sm-5" src={image1} />
             </div>
             <div className="col-12 col-md-6 px-1 px-sm-4 my-sm-auto hero-text">
               <h1>Application Development</h1>
@@ -111,7 +123,7 @@ function Application() {
             className="col-12 col-sm-6 mobility"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12  col-lg-2">
+              <div className="col-12 col-lg-2">
                 <img src={smartphone} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
@@ -208,10 +220,10 @@ function Application() {
       </div>
       {/* div end container */}
 
-      <div className="row g-0  bg-01">
+      {/* <div className="row g-0  bg-01">
         <div className="col-12"></div>
-      </div>
-
+      </div> */}
+      <br />
       <div className="container">
         <div className="row g-0 mt-5">
           <div className="col-12 col-sm-6 col-lg-6">
@@ -388,103 +400,108 @@ function Application() {
           </div>
         </div>
 
-        <div className="row my-sm-5 py-sm-5 g-0">
+        <div className="row my-sm-5 py-5 g-0">
           <div className="col-12 g-0">
-            <h3 class="h3-md">Benefits of Partnering with DEHA</h3>
+            <h3 class="h3-md">Benefits of Partnering with AVEO</h3>
           </div>
         </div>
 
-        <div className="row g-0 m-0 p-0 content-bot">
-          <div
-            style={{ marginRight: "auto" }}
-            className="col-lg-4 mb-3 mb-lg-0  px-sm-4 content-part"
-          >
-            <div className="icon-benefit mb-sm-4">
-              <BulbOutlined />
+        <div className="animate">
+          <div className="row g-0 m-0 p-0 content-bot">
+            <div
+              style={{ marginRight: "auto" }}
+              className="col-lg-4 mb-3 mb-lg-0  px-4 content-part"
+            >
+              <div className="icon-benefit mb-4">
+                <BulbOutlined />
+              </div>
+              <div className="text-benefit">
+                <span>Expert Advice</span>
+                <p className="my-sm-3">
+                  We are a leading digital strategy consultant. We can offer an
+                  unique and consultative perspective to your digital
+                  transformation strategy in general and software engineering in
+                  particular.
+                </p>
+              </div>
             </div>
-            <div className="text-benefit">
-              <span>Expert Advice</span>
-              <p className="my-sm-3">
-                We are a leading digital strategy consultant. We can offer an
-                unique and consultative perspective to your digital
-                transformation strategy in general and software engineering in
-                particular.
-              </p>
+            <div
+              style={{ marginRight: "auto" }}
+              className="col-lg-4 mb-3 mb-lg-0 px-4 content-part"
+            >
+              <div className="icon-benefit mb-4">
+                <SelectOutlined />
+              </div>
+              <div className="text-benefit">
+                <span>Quality-Focused Solutions</span>
+                <p className="my-sm-3">
+                  We are using cutting-edge technologies and tools in software
+                  development process to bring the highest software development
+                  quality, for example automation testing, RPA...
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            style={{ marginRight: "auto" }}
-            className="col-lg-4 mb-3 mb-lg-0 px-sm-4 content-part"
-          >
-            <div className="icon-benefit mb-sm-4">
-              <SelectOutlined />
-            </div>
-            <div className="text-benefit">
-              <span>Quality-Focused Solutions</span>
-              <p className="my-sm-3">
-                We are using cutting-edge technologies and tools in software
-                development process to bring the highest software development
-                quality, for example automation testing, RPA...
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4 mb-3 mb-lg-0 px-sm-4 content-part">
-            <div className="icon-benefit mb-sm-4">
-              <UserOutlined />
-            </div>
-            <div className="text-benefit">
-              <span>Great Talent Pool</span>
-              <p className="my-sm-3">
-                Our team has 260+ experienced developers with in-depth skills &
-                knowledge in software building and powerful technologies stacks.
-              </p>
+            <div className="col-lg-4 mb-3 mb-lg-0 px-4 content-part">
+              <div className="icon-benefit mb-4">
+                <UserOutlined />
+              </div>
+              <div className="text-benefit">
+                <span>Great Talent Pool</span>
+                <p className="my-sm-3">
+                  Our team has 260+ experienced developers with in-depth skills
+                  & knowledge in software building and powerful technologies
+                  stacks.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="row mx-0 px-0 g-0 mt-lg-4 mb-sm-5 pb-sm-5 content-bot">
-          <div
-            style={{ marginRight: "auto" }}
-            className="col-lg-4 mb-3 mb-lg-0 px-sm-4 g-0 content-part"
-          >
-            <div className="icon-benefit mb-sm-4">
-              <PieChartOutlined />
+        <div className="animate-2">
+          <div className="row mx-0 px-0 g-0 mt-lg-4 mb-sm-5 pb-sm-5 content-bot">
+            <div
+              style={{ marginRight: "auto" }}
+              className="col-lg-4 mb-3 mb-lg-0 px-4 g-0 content-part"
+            >
+              <div className="icon-benefit mb-4">
+                <PieChartOutlined />
+              </div>
+              <div className="text-benefit">
+                <span>Experience</span>
+                <p className="my-sm-3">
+                  We are strategic partner of big corporations such as Mitsui
+                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                  Hospital...and delivered 1,000+ systems for enterprise.
+                </p>
+              </div>
             </div>
-            <div className="text-benefit">
-              <span>Experience</span>
-              <p className="my-sm-3">
-                We are strategic partner of big corporations such as Mitsui
-                O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
-                Hospital...and delivered 1,000+ systems for enterprise.
-              </p>
+            <div
+              style={{ marginRight: "auto" }}
+              className="col-lg-4 mb-3 mb-lg-0 px-4 content-part"
+            >
+              <div className="icon-benefit mb-4">
+                <SwitcherOutlined />
+              </div>
+              <div className="text-benefit">
+                <span>All-in-One Provider</span>
+                <p className="my-sm-3">
+                  Our services are comprehensive from consulting, design,
+                  development, integration, deployment to system maintenance and
+                  much mores.
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            style={{ marginRight: "auto" }}
-            className="col-lg-4 mb-3 mb-lg-0 px-sm-4 content-part"
-          >
-            <div className="icon-benefit mb-sm-4">
-              <SwitcherOutlined />
-            </div>
-            <div className="text-benefit">
-              <span>All-in-One Provider</span>
-              <p className="my-sm-3">
-                Our services are comprehensive from consulting, design,
-                development, integration, deployment to system maintenance and
-                much mores.
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4 px-sm-4 content-part">
-            <div className="icon-benefit mb-sm-4">
-              <PaperClipOutlined />
-            </div>
-            <div className="text-benefit">
-              <span>Agile Mindset</span>
-              <p className="my-sm-3">
-                An agile mindset is about creating and responding to change in
-                uncertain and turbulent environments.
-              </p>
+            <div className="col-lg-4 mb-4 mb-sm-0 px-4 content-part">
+              <div className="icon-benefit mb-4">
+                <PaperClipOutlined />
+              </div>
+              <div className="text-benefit">
+                <span>Agile Mindset</span>
+                <p className="my-sm-3">
+                  An agile mindset is about creating and responding to change in
+                  uncertain and turbulent environments.
+                </p>
+              </div>
             </div>
           </div>
         </div>

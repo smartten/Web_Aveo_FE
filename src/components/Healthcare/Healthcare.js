@@ -60,7 +60,7 @@ function Healthcare() {
               height: "100vh",
               position: "relative",
             }}
-            className="col-12 col-sm-5 g-0 heath-text"
+            className="col-12 col-md-9  col-lg-5 g-0 heath-text"
           >
             <div
               style={{
@@ -70,7 +70,7 @@ function Healthcare() {
             >
               <h1>Health Care</h1>
               <p>
-                DEHA empowers healthcare providers with innovative solutions
+                AVEO empowers healthcare providers with innovative solutions
                 that automate processes, improve treatment outcomes and the
                 patient experience, and reduce costs.
               </p>
@@ -81,7 +81,7 @@ function Healthcare() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-7"></div>
+          <div className="col-12 col-md-3 col-lg-7"></div>
         </div>
       </div>
 
@@ -107,10 +107,10 @@ function Healthcare() {
             className="col-12 col-sm-6 mobility"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 col-lg-2">
                 <img src={Medical} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Medical Operations Optimization</h5>
                 <p>
                   You can improve your clinical and operating systems at any
@@ -124,10 +124,10 @@ function Healthcare() {
           </div>
           <div className="col-12 col-sm-6 mobility">
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 col-lg-2">
                 <img src={Patient} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Digital Patient Experience</h5>
                 <p>
                   With our technologies, you can digitize the entire process of
@@ -146,10 +146,10 @@ function Healthcare() {
             className="col-12 col-sm-6 mobility-2"
           >
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 col-lg-2">
                 <img src={improved} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Improved Medical Imaging And Research</h5>
                 <p>
                   In your work, you will use intelligent image processing
@@ -162,10 +162,10 @@ function Healthcare() {
           </div>
           <div className="col-12 col-sm-6 mobility-2">
             <div className="row m-0 p-0 g-0">
-              <div className="col-12 col-sm-2">
+              <div className="col-12 col-lg-2">
                 <img src={webBrower} />
               </div>
-              <div className="col-12 col-sm-10 fbox-txt">
+              <div className="col-12 col-lg-10 fbox-txt">
                 <h5>Feature-Rich Pharmaceutical Solutions</h5>
                 <p>
                   You will have access to software tailored to the specifics of
@@ -184,17 +184,16 @@ function Healthcare() {
       <div className="container">
         <div className="row my-sm-5 py-sm-5 g-0">
           <div className="col-12 g-0">
-            <h3 class="h3-md">Benefits of Partnering with DEHA</h3>
+            <h3 class="h3-md">Benefits of Partnering with AVEO</h3>
           </div>
         </div>
-
         <div className="animate">
-          <div className="row g-0 m-0 p-0 ">
+          <div className="row g-0 m-0 p-0 content-bot">
             <div
-              style={{ width: "32%", marginRight: "auto" }}
-              className="col-sm-4 px-sm-4 content-part"
+              style={{ marginRight: "auto" }}
+              className="col-lg-4 mb-3 mb-lg-0  px-4 content-part"
             >
-              <div className="icon-benefit mb-sm-4">
+              <div className="icon-benefit mb-4">
                 <BulbOutlined />
               </div>
               <div className="text-benefit">
@@ -208,10 +207,10 @@ function Healthcare() {
               </div>
             </div>
             <div
-              style={{ width: "32%", marginRight: "auto" }}
-              className="col-sm-4 px-sm-4 content-part"
+              style={{ marginRight: "auto" }}
+              className="col-lg-4 mb-3 mb-lg-0 px-4 content-part"
             >
-              <div className="icon-benefit mb-sm-4">
+              <div className="icon-benefit mb-4">
                 <SelectOutlined />
               </div>
               <div className="text-benefit">
@@ -223,11 +222,8 @@ function Healthcare() {
                 </p>
               </div>
             </div>
-            <div
-              style={{ width: "32%" }}
-              className="col-sm-4 px-sm-4 content-part"
-            >
-              <div className="icon-benefit mb-sm-4">
+            <div className="col-lg-4 mb-3 mb-lg-0 px-4 content-part">
+              <div className="icon-benefit mb-4">
                 <UserOutlined />
               </div>
               <div className="text-benefit">
@@ -242,12 +238,12 @@ function Healthcare() {
           </div>
         </div>
         <div className="animate-2">
-          <div className="row mx-0 px-0 g-0 mt-sm-4 mb-sm-5 pb-sm-5">
+          <div className="row mx-0 px-0 g-0 mt-lg-4 mb-sm-5 pb-sm-5 content-bot">
             <div
-              style={{ width: "32%", marginRight: "auto" }}
-              className="col-sm-4 px-sm-4 g-0 content-part"
+              style={{ marginRight: "auto" }}
+              className="col-lg-4 mb-3 mb-lg-0 px-4 g-0 content-part"
             >
-              <div className="icon-benefit mb-sm-4">
+              <div className="icon-benefit mb-4">
                 <PieChartOutlined />
               </div>
               <div className="text-benefit">
@@ -260,10 +256,10 @@ function Healthcare() {
               </div>
             </div>
             <div
-              style={{ width: "32%", marginRight: "auto" }}
-              className="col-sm-4 px-sm-4 content-part"
+              style={{ marginRight: "auto" }}
+              className="col-lg-4 mb-3 mb-lg-0 px-4 content-part"
             >
-              <div className="icon-benefit mb-sm-4">
+              <div className="icon-benefit mb-4">
                 <SwitcherOutlined />
               </div>
               <div className="text-benefit">
@@ -275,11 +271,8 @@ function Healthcare() {
                 </p>
               </div>
             </div>
-            <div
-              style={{ width: "32%" }}
-              className="col-sm-4 px-sm-4 content-part"
-            >
-              <div className="icon-benefit mb-sm-4">
+            <div className="col-lg-4 mb-3 mb-sm-0 px-4 content-part">
+              <div className="icon-benefit mb-4">
                 <PaperClipOutlined />
               </div>
               <div className="text-benefit">
@@ -296,18 +289,18 @@ function Healthcare() {
 
       <div className="bg-04 m-0 p-0 g-0">
         <div className="container">
-          <div className="row">
-            <div className="col-sm-6 g-0 my-sm-5 cta-11-txt">
+          <div className="row py-5 py-sm-0 for-contac">
+            <div className="col-12 col-sm-6 g-0 my-sm-5 cta-11-txt">
               <h2>Connect with us</h2>
               <p className="my-sm-3">We’re ready to talk opportunity</p>
-              <div className="btn-deha mt-sm-4 py-sm-3">
+              <div className="btn-deha mb-4 mb-sm-0 mt-4 py-3">
                 <a className="" href="">
                   Contact Us
                 </a>
               </div>
             </div>
             <div className="col-sm-2"></div>
-            <div className="col-sm-4 my-sm-5">
+            <div className="col-12 col-sm-4 my-sm-5">
               <img className="img-defaultt" src={defaultt} />
             </div>
           </div>

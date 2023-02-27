@@ -1,3 +1,4 @@
+import logo from "./Asset1.svg";
 import logo1 from "./COMATCH's_logo.svg";
 import logo2 from "./Group.svg";
 import logo3 from "./logo-tisa-white.svg";
@@ -463,17 +464,95 @@ function Home() {
         </div>
       </section>
       <section className="contact-us-v1">
-        <div className="container">
-          <div className="contact-content">
-            <div className="contact-text">
-              <h2>Connect with us</h2>
+        <div className="container ">
+          <div className="row mb-0 my-5 py-5">
+            <br />
+            <div className="col-12 col-sm-4 footer-headquarter-col1">
+              <img className="footer-logo" src={logo} />
+              <div className=" pt-sm-0 ">
+                <br />
+                <p>
+                  5F, Intracom building, 82 Dich Vong Hau, Cau Giay, Ha Noi,
+                  Viet Nam
+                </p>
+                <p>28 Nguyen Tri Phuong, Phu Nhuan, Thua Thien Hue, Viet Nam</p>
+                <p>
+                  104-0045, 4F, CUBE TSUKIJI, 3-7-11 Tsukiji, Chuo-ward, Tokyo
+                </p>
+                <p>Email: info@deha-soft.com</p>
+              </div>
+              {/* </div> */}
+              {/* <h2>Connect with us</h2>
               <p>We're ready to talk opportunity</p>
               <a className="btn btn-contact" href="/contact-us">
                 Contact Us
-              </a>
+              </a> */}
             </div>
-            <div className="conact-img">
-              <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-img-default" />
+            <div className="col-6 col-sm-2 footer-headquarter-col1">
+              <b style={{ fontFamily: "revert-layer", fontSize: 20 }}>
+                Services
+              </b>
+              <p className="mt-2">
+                <a className="footer-link" href="/web-design-and-development">
+                  Offshore Development Services
+                </a>
+              </p>
+              <p>
+                <a className="footer-link" href="/mobile-development">
+                  Web Application Development
+                </a>
+              </p>
+              <p>
+                <a className="footer-link" href="/engineering-and-maintenance">
+                  Mobile Application Development
+                </a>
+              </p>
+              <p>
+                <a className="footer-link" href="/testing-service">
+                  Testing services
+                </a>
+                <br />
+                <a className="footer-link" href="/integration-services">
+                  Cloud Services
+                </a>
+              </p>
+            </div>
+            <div className="col-6 col-sm-2  footer-headquarter-col1">
+              <b
+                style={{
+                  fontFamily: "revert-layer",
+                  fontSize: 20,
+                }}
+              >
+                Industries
+              </b>
+              <p className="mt-2">
+                <a className="footer-link" href="">
+                  Manufacturing
+                </a>
+                <br />
+                <a className="footer-link" href="">
+                  Health Care
+                </a>
+                <br />
+                <a className="footer-link" href="">
+                  Retail
+                </a>
+                <br />
+                <a className="footer-link" href="">
+                  Ecommerce
+                </a>
+                <br />
+                <a className="footer-link" href="">
+                  Financial
+                </a>
+              </p>
+            </div>
+            <div className="col-12 col-sm-4 g-0 mt-3 mt-sm-0 conact-img">
+              <img
+                className="px-4"
+                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-img-default"
+              />
             </div>
           </div>
         </div>

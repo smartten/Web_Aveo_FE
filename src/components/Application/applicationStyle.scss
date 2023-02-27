@@ -3,8 +3,8 @@
 .hero-section {
     background-image     : url('./Hero-bg-default.webp');
     background-repeat    : no-repeat;
-    background-position-x: top;
-    background-position-y: top;
+    background-position-x: right;
+    background-position-y:right;
     background-size      : cover;
     position             : relative;
     height               : 100vh;
@@ -339,6 +339,14 @@
     }
 }
 .content-mob{
+    img{
+        width: 60px;
+        height: 60px;
+        margin: 7px 0px 0;
+        // float: right;
+        text-align: center;
+        align-items: center;
+    }
     .col-sm-6{
         width: 47%;
     }

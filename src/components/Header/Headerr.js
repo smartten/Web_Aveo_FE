@@ -3,10 +3,11 @@ import logo from "./Asset 1.svg";
 import logo2 from "./Logo.svg";
 import React, { useEffect, useState } from "react";
 import {
-  CaretRightOutlined,
+  CaretDownOutlined,
   AlignRightOutlined,
   CaretDownFilled,
 } from "@ant-design/icons";
+import { Menu, Drawer } from "antd";
 
 window.onload = function () {
   setTimeout(function () {
@@ -23,18 +24,150 @@ window.onload = function () {
       .classList.add("fadeInBottom", "cssanimation");
   }, 1500);
 };
+
+function getItem(label, key, children) {
+  return {
+    key,
+    label,
+    children,
+  };
+}
+const items = [
+  getItem(
+    <a className="link-for-res" style={{ color: "#616161" }} href="/">
+      Home
+    </a>,
+    "home"
+  ),
+  getItem(
+    <a style={{ color: "#616161" }} className="link-for-res" href="/about-us">
+      About Us
+    </a>,
+    "about"
+  ),
+  getItem(
+    <a style={{ color: "#616161" }} className="link-for-res">
+      Services
+    </a>,
+    "services",
+    [
+      getItem(
+        <a style={{ color: "#616161" }} className="link-for-res" href="">
+          Offshore Development Services
+        </a>,
+        "1"
+      ),
+      getItem(
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/web-application"
+        >
+          Web Application Development
+        </a>,
+        "2"
+      ),
+      getItem(
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/mobile-application"
+        >
+          Mobile Application Development
+        </a>,
+        "3"
+      ),
+      getItem(
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/testing-service"
+        >
+          Testing Service
+        </a>,
+        "4"
+      ),
+      getItem(
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/cloud-computing"
+        >
+          Cloud Services
+        </a>,
+        "5"
+      ),
+    ]
+  ),
+  getItem(
+    <a style={{ color: "#616161" }} className="link-for-res">
+      Industries
+    </a>,
+    "industries",
+    [
+      getItem(
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/manufacturing"
+        >
+          Manufacturing
+        </a>,
+        "6"
+      ),
+      getItem(
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/healthcare"
+        >
+          Health Care
+        </a>,
+        "7"
+      ),
+      getItem(
+        <a style={{ color: "#616161" }} className="link-for-res" href="/retail">
+          Retail
+        </a>,
+        "8"
+      ),
+      getItem(
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/ecommerce"
+        >
+          Ecommerce
+        </a>,
+        "9"
+      ),
+      getItem(
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/financial"
+        >
+          Financial
+        </a>,
+        "10"
+      ),
+    ]
+  ),
+];
 function Headerr() {
   const [nav, setNav] = useState("");
-  const [menu, setMenu] = useState(true);
   const [anhLogo, setLogo] = useState(logo);
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       var headDrop = document.getElementsByClassName("head-totall");
       var theLink = document.getElementsByClassName("link");
+      var alignRightOutlined = document.getElementById("alignRightOutlined");
 
       if (window.scrollY >= 50) {
+        alignRightOutlined.style.color = "#0161AD";
         for (var i = 0; i < headDrop.length; i++) {
           headDrop[i].style.backgroundColor = "white";
           headDrop[i].style.boxShadow = "0 1px 5px  rgba(0, 0, 0, 0.3)";
@@ -42,18 +175,19 @@ function Headerr() {
         for (var i = 0; i < theLink.length; i++) {
           theLink[i].style.color = "#616161";
         }
+        for (var i = 0; i < theLink.length; i++) {
+          theLink[i].style.color = "#616161";
+        }
         setLogo(logo2);
         setNav("nav");
       } else {
-        if (click) {
-          for (var i = 0; i < headDrop.length; i++) {
-            headDrop[i].style.backgroundColor = "white";
-          }
-        } else {
-          for (var i = 0; i < headDrop.length; i++) {
-            headDrop[i].style.backgroundColor = "#ffffff00";
-            headDrop[i].style.boxShadow = "";
-          }
+        alignRightOutlined.style.color = "white";
+        for (var i = 0; i < headDrop.length; i++) {
+          headDrop[i].style.backgroundColor = "white";
+        }
+        for (var i = 0; i < headDrop.length; i++) {
+          headDrop[i].style.backgroundColor = "#ffffff00";
+          headDrop[i].style.boxShadow = "";
         }
         for (var i = 0; i < theLink.length; i++) {
           theLink[i].style.color = "white";
@@ -64,43 +198,10 @@ function Headerr() {
     });
   }, []);
   const handleColMenu = () => {
-    var arrayMenu = document.getElementsByClassName("head-menu");
-    var headTo = document.getElementsByClassName("head-totall");
-    var headRepon = document.getElementsByClassName("head-reponsive");
-    var theLink = document.getElementsByClassName("link");
-
-    if (menu) {
-      for (var i = 0; i < arrayMenu.length; i++) {
-        arrayMenu[i].style.display = "block";
-      }
-      for (var i = 0; i < headRepon.length; i++) {
-        headRepon[i].style.display = "block";
-      }
-      for (var i = 0; i < theLink.length; i++) {
-        theLink[i].style.color = "#717171";
-      }
-
-      for (var i = 0; i < headTo.length; i++) {
-        headTo[i].style.backgroundColor = "white";
-      }
-      setMenu(false);
-      setClick(true);
-    } else {
-      for (var i = 0; i < arrayMenu.length; i++) {
-        arrayMenu[i].style.display = "none";
-      }
-      for (var i = 0; i < headRepon.length; i++) {
-        headRepon[i].style.display = "none";
-      }
-      for (var i = 0; i < theLink.length; i++) {
-        theLink[i].style.color = "#717171";
-      }
-      for (var i = 0; i < headTo.length; i++) {
-        headTo[i].style.backgroundColor = "";
-      }
-      setMenu(true);
-    }
-    // console.log("check:", arrayMenu);
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
   };
   return (
     <>
@@ -110,7 +211,23 @@ function Headerr() {
         className="overlay transition"
       ></div>
 
-      <div className="head-reponsive"></div>
+      {/* <div id="repon-menu">
+       
+      </div> */}
+
+      <Drawer width="35vh" onClose={onClose} open={open}>
+        <Menu
+          style={{
+            // width: "35vh",
+            height: "100vh",
+            // paddingRight: 85,
+          }}
+          // className="draw-menu"
+          mode="inline"
+          theme="light"
+          items={items}
+        />
+      </Drawer>
 
       <div
         id="navbar"
@@ -133,23 +250,13 @@ function Headerr() {
             className={nav ? "head-totall sticky" : "head-totall"}
           >
             <div className="container d-flex justify-content-between">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  flexDirection: "row",
-                }}
-                className="sizeLogo"
-              >
+              <div className="sizeLogo">
                 <a href="/">
                   <img id="logo" src={anhLogo} />
                 </a>
-                <div id="alignRightOutlined">
-                  <AlignRightOutlined
-                    onClick={handleColMenu}
-                    className="alignRightOutlined m-4"
-                  />
-                </div>
+              </div>
+              <div id="alignRightOutlined">
+                <AlignRightOutlined onClick={handleColMenu} />
               </div>
               <div id="head-menu" className="head-menu">
                 <div>
@@ -160,30 +267,7 @@ function Headerr() {
                 <div class="dropdown">
                   <a href="/about-us" class="link">
                     About Us
-                    {/* <CaretDownFilled className="CaretDownFilled" /> */}
                   </a>
-                  {/* <div class="dropdown-content">
-                    <div className="div-for-a">
-                      <a href="/blogs" class="link-drop">
-                        Blogs
-                      </a>
-                    </div>
-                    <div className="div-for-a">
-                      <a href="/whitepapers" class="link-drop">
-                        Whitepapers
-                      </a>
-                    </div>
-                    <div className="div-for-a">
-                      <a href="/about-us" class="link-drop">
-                        About Us
-                      </a>
-                    </div>
-                    <div className="div-for-a">
-                      <a href="/contact-us" class="link-drop">
-                        Contact
-                      </a>
-                    </div>
-                  </div> */}
                 </div>
                 <div class="dropdown">
                   <a href="" class="link">
@@ -202,7 +286,7 @@ function Headerr() {
                       </a>
                     </div>
                     <div className="div-for-a">
-                      <a href="/web-application" class="link-drop">
+                      <a href="/mobile-application" class="link-drop">
                         Mobile Application Development
                       </a>
                     </div>
@@ -257,7 +341,6 @@ function Headerr() {
                 </a>
               </div>
             </div>
-            {/* <div className="triangle-bottomright"></div> */}
           </div>
         </div>
       </div>

@@ -625,6 +625,17 @@
       width     : 100% !important;
       text-align: center;
     }
+
+    .img-fluid {
+      margin-left: 30px !important;
+    }
+  }
+
+  .big-guys {
+    .col-2 {
+      width     : 26% !important;
+      margin-top: 10px !important;
+    }
   }
 
   .comment {

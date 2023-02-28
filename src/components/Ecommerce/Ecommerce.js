@@ -6,6 +6,7 @@ import logo4 from "./Logo-white_340x156-px-01.svg";
 import logo5 from "./layer1.svg";
 import logo6 from "./g16.svg";
 import logo7 from "./imageLogo1.svg";
+import React, { useEffect } from "react";
 import {
   AppstoreOutlined,
   RetweetOutlined,
@@ -21,6 +22,10 @@ import {
   BarChartOutlined,
 } from "@ant-design/icons";
 function Ecommerce() {
+  useEffect(() => {
+    document.title = "AVEO Global - Ecommerce";
+  }, []);
+
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
@@ -70,11 +75,11 @@ function Ecommerce() {
           <div className="content-service">
             <div className="row row-cols-1 row-cols-md-2">
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <AppstoreOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Cart to Cart Migration Made Easy
                     </b>
@@ -88,11 +93,11 @@ function Ecommerce() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <FundOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Channel and System Integration</b>
                     <p className="text-sub">
                       Our ecommerce services enhance your business operations
@@ -105,11 +110,11 @@ function Ecommerce() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <FolderAddOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Centralized Inventory Management
                     </b>
@@ -121,11 +126,11 @@ function Ecommerce() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <BarChartOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Analytics and Forecasting</b>
                     <p className="text-sub">
                       We deliver actionable insights based on historical and
@@ -138,11 +143,11 @@ function Ecommerce() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <RetweetOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Competitive Intelligence </b>
                     <p className="text-sub">
                       Our ecommerce experts monitor product prices using product
@@ -153,11 +158,11 @@ function Ecommerce() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <ControlOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Omnichannel eCommerce Solutions
                     </b>
@@ -179,7 +184,7 @@ function Ecommerce() {
             This BIG guys are using services and they are more than happier ever
           </p>
           <div className="row justify-content-center flex-wrap">
-            <div className="col-2">
+            <div className="col-2 ml">
               <img
                 src={logo1}
                 style={{ width: "100%", height: "auto", marginTop: "10px" }}
@@ -191,13 +196,13 @@ function Ecommerce() {
                 style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo3}
                 style={{
                   width: "80%",
                   height: "auto",
-                  marginLeft: "20px",
+                  // marginLeft: "20px",
                   marginTop: "10px",
                 }}
               />
@@ -205,7 +210,7 @@ function Ecommerce() {
             {/* <div className="col">
               <img src={logo4} style={{ width: "80%", height: "auto" }} />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo6}
                 style={{ width: "70%", height: "auto", marginTop: "10px" }}
@@ -217,8 +222,8 @@ function Ecommerce() {
                 style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
-            <div className="col-2">
-              <img src={logo5} style={{ width: "25%", height: "auto" }} />
+            <div className="col-2 left">
+              <img src={logo5} style={{ width: "30%", height: "auto" }} />
             </div>
           </div>
         </div>

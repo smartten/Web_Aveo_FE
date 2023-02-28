@@ -391,3 +391,295 @@
         }
     }
 }
+
+@media only screen and (max-width: 46.1875em) {
+    .financial {
+        .slider-item {
+            text-align: center !important;
+
+            .slide-content {
+                flex-wrap      : wrap;
+                justify-content: center;
+
+                .image {
+                    width     : 70% !important;
+                    margin-top: 50px;
+                }
+
+                .text {
+                    width      : 100% !important;
+                    margin-left: 0px !important;
+                }
+
+                .text-title {
+                    font-size: 40px !important;
+                }
+
+                .sub-text {
+                    width    : 100% !important;
+                    font-size: 18px !important;
+                }
+            }
+        }
+
+        .developer-service {
+            .col-2 {
+                width: 100% !important;
+            }
+
+            img {
+                width      : 25%;
+                margin-left: 140px;
+            }
+
+            .text-title {
+                font-size: 28px !important;
+            }
+
+            .icon-service {
+                margin-right: 0px !important;
+                padding     : 0px;
+                margin-left : 330px !important;
+            }
+
+            .text-service {
+                text-align: center;
+            }
+
+            .col {
+                .row {
+                    justify-content: center;
+                }
+            }
+        }
+
+        .certificates {
+            .title-certificates {
+                font-size: 30px !important;
+            }
+
+            .col-2 {
+                width: 25% !important;
+            }
+        }
+
+        .our-typical {
+            .title-typical {
+                font-size: 25px !important;
+                width    : 100% !important;
+            }
+
+            .box {
+                height: 17rem !important;
+            }
+
+            .content-number {
+                .title-box {
+                    font-size: 20px !important;
+                }
+
+                .content-title-box {
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+        .benefit {
+            .row {
+                margin-bottom: 0px !important;
+            }
+
+            .col-4 {
+                width: 100% !important;
+            }
+
+            .content-part {
+                margin: 10px 0px !important;
+            }
+        }
+
+
+        .benefits-of-partnering {
+            .title-benefit {
+                font-size: 30px !important;
+            }
+        }
+
+        .big-guys {
+            padding-top   : 0px !important;
+            padding-bottom: 0px !important;
+
+            .col-2 {
+                width     : 45% !important;
+                margin-top: 10px;
+            }
+
+            .left {
+                margin-left: 20px;
+            }
+
+            .justify-content-center {
+                justify-content: start !important;
+            }
+
+            .ml {
+                margin-left: 0px !important;
+            }
+        }
+
+        .contact-us-v1 {
+            .contact-content {
+                .contact-text {
+                    width     : 100% !important;
+                    text-align: center;
+                    margin-top: 50%;
+
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+
+                .conact-img {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .financial {
+        .slider-item {
+            text-align: center !important;
+
+            .slide-content {
+                flex-wrap      : wrap;
+                justify-content: center;
+
+                .image {
+                    width     : 70% !important;
+                    margin-top: 50px;
+                }
+
+                .text {
+                    width      : 100% !important;
+                    margin-left: 0px !important;
+
+                    .sub-text {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .benefit {
+        .row {
+            margin-bottom: 0px !important;
+        }
+
+        .col-4 {
+            width: 100% !important;
+        }
+
+        .content-part {
+            margin: 10px 0px !important;
+        }
+    }
+
+
+    .developer-service {
+        .icon-service {
+            width: 20% !important;
+        }
+    }
+
+    .our-typical {
+        .title-typical {
+            font-size: 25px !important;
+        }
+
+        .box {
+            height: 19rem !important;
+        }
+
+        .content-number {
+            .title-box {
+                font-size: 20px !important;
+            }
+
+            .content-title-box {
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 64em) and (max-width: 79.5em) {
+    .financial {
+        .slider {
+            .text-title {
+                font-size: 45px !important;
+            }
+
+            .sub-text {
+                font-size  : 18px !important;
+                line-height: 35px !important;
+            }
+        }
+
+        .big-guys {
+            .col-2 {
+                width     : 50% !important;
+                margin-top: 10px;
+            }
+
+            .justify-content-center {
+                justify-content: start !important;
+            }
+
+            .ml {
+                margin-left: 0px !important;
+            }
+        }
+
+        .our-typical {
+            .title-typical {
+                font-size: 26px !important;
+            }
+
+            .box {
+                height: 19rem !important;
+            }
+
+            .content-number {
+                .title-box {
+                    font-size: 25px !important;
+                }
+
+                .content-title-box {
+                    font-size: 16px !important;
+                }
+            }
+        }
+
+
+        // .developer-service {
+        //     .text-service {
+        //         .text-title {
+        //             font-size: 28px !important;
+        //         }
+        //     }
+        // }
+
+        .benefits-of-partnering {
+            .benefit {
+                .content-part {
+                    width : 30% !important;
+                    height: 600px !important;
+                }
+            }
+        }
+    }
+}

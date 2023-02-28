@@ -13,7 +13,6 @@ import Home from "./components/Home/Home.js";
 import React, { useEffect } from "react";
 import Headerr from "./components/Header/Headerr.js";
 import Contact from "./Page/ContactUs/Contact.js";
-import Company from "./Page/Company/Company";
 import CloudComputing from "./Page/Cloud-Computing/CloudComputing";
 import Iotapp from "./Page/ioT-App/Iotapp";
 import WebApplication from "./components/Application/Application";
@@ -44,7 +43,7 @@ function App() {
         <Route path="/ecommerce" element={<Ecommerce />} />
         <Route path="/contact-us" element={<Contact />} />
         {/* <Route path="/company" element={<Company />} /> */}
-        <Route path="/cloud-computing" element={<CloudComputing />} />
+        <Route path="/cloud-service" element={<CloudComputing />} />
         {/* <Route path="/iot-application" element={<Iotapp />} /> */}
         <Route path="/web-application" element={<WebApplication />} />
         <Route path="/manufacturing" element={<Manufacturing />} />

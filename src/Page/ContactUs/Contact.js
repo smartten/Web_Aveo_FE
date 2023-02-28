@@ -1,6 +1,7 @@
 import "./ContactStyle.scss";
 import { HomeOutlined, MailOutlined } from "@ant-design/icons";
 import { Button, Form, Input, Select } from "antd";
+import React, { useEffect } from "react";
 const onFinish = (values) => {
   console.log("Success:", values);
 };
@@ -9,8 +10,11 @@ const onFinishFailed = (errorInfo) => {
 };
 function Contact() {
   const { TextArea } = Input;
+  useEffect(() => {
+    document.title = "AVEO Global";
+  }, []);
   return (
-    <div className="body">
+    <div className="contact">
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item-contact">

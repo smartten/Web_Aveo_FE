@@ -7,7 +7,7 @@ import logo5 from "./layer1.svg";
 import logo6 from "./g16.svg";
 import logo7 from "./imageLogo1.svg";
 import icon1 from "./api.svg";
-import icon2 from "./Mobile-Development.svg";
+import icon2 from "./Mobile-Development2.svg";
 import icon3 from "./Automation-Service.svg";
 import icon4 from "./Penetration.svg";
 import img1 from "./Hero-testing.webp";
@@ -26,6 +26,10 @@ import {
   PaperClipOutlined,
 } from "@ant-design/icons";
 function Testing() {
+  useEffect(() => {
+    document.title = "AVEO Global - Testing Service";
+  }, []);
+
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
@@ -81,11 +85,11 @@ function Testing() {
           <div className="content-service">
             <div className="row row-cols-1 row-cols-md-2">
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <img src={icon1} />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">API Testing</b>
                     <p className="text-sub">
                       Our testing services use best practices and open-source
@@ -97,11 +101,11 @@ function Testing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
-                    <img src={icon2} style={{ width: "60%" }} />
+                <div className="content-text row">
+                  <div className="icon-service col-2 left w-mobi">
+                    <img src={icon2} />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col left">
                     <b className="text-title">Mobile Testing</b>
                     <p className="text-sub">
                       Mobile testing comprises functional, compatibility,
@@ -112,11 +116,11 @@ function Testing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <img src={icon3} />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Automation Testing</b>
                     <p className="text-sub">
                       To ensure sufficient test coverage, we can apply test
@@ -127,11 +131,11 @@ function Testing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <img src={icon4} />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Penetration Testing</b>
                     <p className="text-sub">
                       Detect Security Vulnerabilities and Security Hotspots
@@ -213,7 +217,7 @@ function Testing() {
             This BIG guys are using services and they are more than happier ever
           </p>
           <div className="row justify-content-center flex-wrap">
-            <div className="col-2">
+            <div className="col-2 ml">
               <img
                 src={logo1}
                 style={{ width: "100%", height: "auto", marginTop: "10px" }}
@@ -225,13 +229,13 @@ function Testing() {
                 style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo3}
                 style={{
                   width: "80%",
                   height: "auto",
-                  marginLeft: "20px",
+                  // marginLeft: "20px",
                   marginTop: "10px",
                 }}
               />
@@ -239,7 +243,7 @@ function Testing() {
             {/* <div className="col">
               <img src={logo4} style={{ width: "80%", height: "auto" }} />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo6}
                 style={{ width: "70%", height: "auto", marginTop: "10px" }}
@@ -251,8 +255,8 @@ function Testing() {
                 style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
-            <div className="col-2">
-              <img src={logo5} style={{ width: "25%", height: "auto" }} />
+            <div className="col-2 left">
+              <img src={logo5} style={{ width: "30%", height: "auto" }} />
             </div>
           </div>
         </div>

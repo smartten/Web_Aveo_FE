@@ -6,6 +6,7 @@ import logo4 from "./Logo-white_340x156-px-01.svg";
 import logo5 from "./layer1.svg";
 import logo6 from "./g16.svg";
 import logo7 from "./imageLogo1.svg";
+import React, { useEffect } from "react";
 import {
   CommentOutlined,
   OneToOneOutlined,
@@ -21,6 +22,9 @@ import {
   DashboardOutlined,
 } from "@ant-design/icons";
 function Manufacturing() {
+  useEffect(() => {
+    document.title = "AVEO Global - Manufacturing";
+  }, []);
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
@@ -67,11 +71,11 @@ function Manufacturing() {
           <div className="content-service">
             <div className="row row-cols-1 row-cols-md-2">
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <CommentOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Realtime Communication</b>
                     <p className="text-sub">
                       Display worksheets, quality alerts to workers during
@@ -81,11 +85,11 @@ function Manufacturing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <ClockCircleOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">No more time clocking</b>
                     <p className="text-sub">
                       Accurate planning directly based on real manufacturing
@@ -95,11 +99,11 @@ function Manufacturing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <NodeIndexOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Artificial intelligence (AI)</b>
                     <p className="text-sub">
                       The next wave of manufacturing automation will involve AI,
@@ -110,11 +114,11 @@ function Manufacturing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <DashboardOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Industrial Internet of Things (IIoT)
                     </b>
@@ -127,11 +131,11 @@ function Manufacturing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <OneToOneOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Asset performance management (APM)
                     </b>
@@ -145,11 +149,11 @@ function Manufacturing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <ScheduleOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">All-in-one solution</b>
                     <p className="text-sub">
                       RP, Quality, Maintenance and PLM fully integrated.
@@ -167,7 +171,7 @@ function Manufacturing() {
             This BIG guys are using services and they are more than happier ever
           </p>
           <div className="row justify-content-center flex-wrap">
-            <div className="col-2">
+            <div className="col-2 ml">
               <img
                 src={logo1}
                 style={{ width: "100%", height: "auto", marginTop: "10px" }}
@@ -179,13 +183,13 @@ function Manufacturing() {
                 style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo3}
                 style={{
                   width: "80%",
                   height: "auto",
-                  marginLeft: "20px",
+                  // marginLeft: "20px",
                   marginTop: "10px",
                 }}
               />
@@ -193,7 +197,7 @@ function Manufacturing() {
             {/* <div className="col">
               <img src={logo4} style={{ width: "80%", height: "auto" }} />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo6}
                 style={{ width: "70%", height: "auto", marginTop: "10px" }}
@@ -205,8 +209,8 @@ function Manufacturing() {
                 style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
-            <div className="col-2">
-              <img src={logo5} style={{ width: "25%", height: "auto" }} />
+            <div className="col-2 left">
+              <img src={logo5} style={{ width: "30%", height: "auto" }} />
             </div>
           </div>
         </div>

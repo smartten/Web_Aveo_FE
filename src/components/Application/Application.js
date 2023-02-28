@@ -38,6 +38,9 @@ function Application() {
       heroText[i].classList.add("fadeInRight", "cssanimation");
     }
   }, 2500);
+  useEffect(() => {
+    document.title = "AVEO Global - Application Development";
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

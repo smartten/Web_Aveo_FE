@@ -28,6 +28,9 @@ function Home() {
   }, 500);
 
   useEffect(() => {
+    document.title = "AVEO Global";
+  }, []);
+  useEffect(() => {
     window.addEventListener("scroll", () => {
       var imageBlock = document.getElementsByClassName("img-fluid");
       var txtblock = document.getElementsByClassName("txt-block");
@@ -278,7 +281,7 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <a href="/cloud-computing">
+                    <a href="/cloud-service">
                       <ArrowRightOutlined />
                     </a>
                   </div>
@@ -333,13 +336,13 @@ function Home() {
                 style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo3}
                 style={{
                   width: "80%",
                   height: "auto",
-                  marginLeft: "20px",
+                  // marginLeft: "20px",
                   marginTop: "10px",
                 }}
               />
@@ -347,7 +350,7 @@ function Home() {
             {/* <div className="col">
               <img src={logo4} style={{ width: "80%", height: "auto" }} />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo6}
                 style={{ width: "70%", height: "auto", marginTop: "10px" }}
@@ -359,7 +362,7 @@ function Home() {
                 style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
-            <div className="col-2">
+            <div className="col-2 left">
               <img src={logo5} style={{ width: "30%", height: "auto" }} />
             </div>
           </div>

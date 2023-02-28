@@ -163,7 +163,7 @@
                 margin-top: 50px;
 
                 .icon-service {
-                    width       : 10%;
+                    width       : 15%;
                     margin-right: 20px;
 
                     svg {
@@ -402,10 +402,36 @@
                 .text {
                     width      : 100% !important;
                     margin-left: 0px !important;
+                }
+            }
+        }
 
-                    .text-title {
-                        margin-top: 20px;
-                    }
+        .developer-service {
+            .col-2 {
+                width: 100% !important;
+            }
+
+            img {
+                width      : 25%;
+                margin-left: 140px;
+            }
+
+            .text-title {
+                font-size: 28px !important;
+            }
+
+            .icon-service {
+                margin-right: 0px !important;
+                padding     : 0px;
+            }
+
+            .text-service {
+                text-align: center;
+            }
+
+            .col {
+                .row {
+                    justify-content: center;
                 }
             }
         }
@@ -423,6 +449,7 @@
         .our-typical {
             .title-typical {
                 font-size: 25px !important;
+                width    : 100% !important;
             }
 
             .box {
@@ -440,20 +467,46 @@
             }
         }
 
-        .benefits-of-partnering {
-            padding-top: 0px !important;
+        .benefit {
+            .row {
+                margin-bottom: 0px !important;
+            }
 
+            .col-4 {
+                width: 100% !important;
+            }
+
+            .content-part {
+                margin: 10px 0px !important;
+            }
+        }
+
+
+        .benefits-of-partnering {
             .title-benefit {
                 font-size: 30px !important;
             }
         }
 
         .big-guys {
-            padding-top: 0px !important;
+            padding-top   : 0px !important;
+            padding-bottom: 0px !important;
 
             .col-2 {
-                width     : 30% !important;
+                width     : 45% !important;
                 margin-top: 10px;
+            }
+
+            .left {
+                margin-left: 20px;
+            }
+
+            .justify-content-center {
+                justify-content: start !important;
+            }
+
+            .ml {
+                margin-left: 0px !important;
             }
         }
 
@@ -477,6 +530,7 @@
     }
 }
 
+
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
     .cloud-computing {
         .slider-item {
@@ -494,11 +548,34 @@
                 .text {
                     width      : 100% !important;
                     margin-left: 0px !important;
+
+                    .sub-text {
+                        margin-left: 50px;
+                    }
                 }
             }
         }
+    }
+
+    .benefit {
+        .row {
+            margin-bottom: 0px !important;
+        }
+
+        .col-4 {
+            width: 100% !important;
+        }
+
+        .content-part {
+            margin: 10px 0px !important;
+        }
+    }
 
 
+    .developer-service {
+        .icon-service {
+            width: 20% !important;
+        }
     }
 
     .our-typical {
@@ -535,6 +612,21 @@
             }
         }
 
+        .big-guys {
+            .col-2 {
+                width     : 50% !important;
+                margin-top: 10px;
+            }
+
+            .justify-content-center {
+                justify-content: start !important;
+            }
+
+            .ml {
+                margin-left: 0px !important;
+            }
+        }
+
         .our-typical {
             .title-typical {
                 font-size: 26px !important;
@@ -554,6 +646,15 @@
                 }
             }
         }
+
+
+        // .developer-service {
+        //     .text-service {
+        //         .text-title {
+        //             font-size: 28px !important;
+        //         }
+        //     }
+        // }
 
         .benefits-of-partnering {
             .benefit {

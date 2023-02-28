@@ -579,14 +579,29 @@
       }
     }
 
+    .justify-content-center {
+      justify-content: start !important;
+    }
+
     .big-guys {
+      padding-top   : 0px !important;
+      padding-bottom: 0px !important;
+
       .col-2 {
-        width     : 30% !important;
+        width     : 45% !important;
         margin-top: 10px;
       }
 
+      .left {
+        margin-left: 20px;
+      }
+
+      .justify-content-center {
+        justify-content: start !important;
+      }
+
       .ml {
-        margin-left: 20px !important;
+        margin-left: 0px !important;
       }
     }
 
@@ -645,6 +660,7 @@
       }
 
     }
+
   }
 }
 
@@ -680,6 +696,28 @@
         }
       }
 
+    }
+  }
+
+  .comment {
+    .box-comment {
+      margin-left: 20px !important;
+
+      .comment-content {
+        height: 150px !important;
+      }
+    }
+
+    .slick-arrow {
+      display: none !important;
+    }
+
+    .col-4 {
+      width: 100% !important;
+    }
+
+    .d-flex {
+      flex-wrap: nowrap !important;
     }
   }
 }

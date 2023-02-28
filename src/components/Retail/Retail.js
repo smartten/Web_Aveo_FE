@@ -23,6 +23,11 @@ function Retail() {
       heathText[i].classList.add("fadeInRight", "cssanimation");
     }
   }, 2000);
+
+  useEffect(() => {
+    document.title = "AVEO Global - Retail";
+  }, []);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       var mobility = document.getElementsByClassName("mobility");

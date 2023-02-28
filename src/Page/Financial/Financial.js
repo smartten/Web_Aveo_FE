@@ -6,6 +6,7 @@ import logo4 from "./Logo-white_340x156-px-01.svg";
 import logo5 from "./layer1.svg";
 import logo6 from "./g16.svg";
 import logo7 from "./imageLogo1.svg";
+import React, { useEffect } from "react";
 import {
   AppstoreOutlined,
   LineChartOutlined,
@@ -21,6 +22,9 @@ import {
   SafetyCertificateOutlined,
 } from "@ant-design/icons";
 function Financial() {
+  useEffect(() => {
+    document.title = "AVEO Global - Financial";
+  }, []);
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
@@ -69,11 +73,11 @@ function Financial() {
           <div className="content-service">
             <div className="row row-cols-1 row-cols-md-2">
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <AppstoreOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Offering Your Customers An Excellent Experience
                     </b>
@@ -87,11 +91,11 @@ function Financial() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <FundOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Accelerating Your Payment Lifecycle With Automation
                     </b>
@@ -105,11 +109,11 @@ function Financial() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <CopyOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Predicting Risks With Big Data And Artificial Intelligence
                     </b>
@@ -124,11 +128,11 @@ function Financial() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <SafetyCertificateOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Securing Your Assets Against Fraud
                     </b>
@@ -142,11 +146,11 @@ function Financial() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <LineChartOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Strengthening Your Investment Management
                     </b>
@@ -161,11 +165,11 @@ function Financial() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <FieldTimeOutlined />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Boosting Your Operational Efficiency
                     </b>
@@ -187,7 +191,7 @@ function Financial() {
             This BIG guys are using services and they are more than happier ever
           </p>
           <div className="row justify-content-center flex-wrap">
-            <div className="col-2">
+            <div className="col-2 ml">
               <img
                 src={logo1}
                 style={{ width: "100%", height: "auto", marginTop: "10px" }}
@@ -199,13 +203,13 @@ function Financial() {
                 style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo3}
                 style={{
                   width: "80%",
                   height: "auto",
-                  marginLeft: "20px",
+                  // marginLeft: "20px",
                   marginTop: "10px",
                 }}
               />
@@ -213,7 +217,7 @@ function Financial() {
             {/* <div className="col">
               <img src={logo4} style={{ width: "80%", height: "auto" }} />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo6}
                 style={{ width: "70%", height: "auto", marginTop: "10px" }}
@@ -225,8 +229,8 @@ function Financial() {
                 style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
-            <div className="col-2">
-              <img src={logo5} style={{ width: "25%", height: "auto" }} />
+            <div className="col-2 left">
+              <img src={logo5} style={{ width: "30%", height: "auto" }} />
             </div>
           </div>
         </div>

@@ -22,6 +22,11 @@ function Healthcare() {
       heathText[i].classList.add("fadeInRight", "cssanimation");
     }
   }, 2000);
+
+  useEffect(() => {
+    document.title = "AVEO Global - Health Care";
+  }, []);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       var mobility = document.getElementsByClassName("mobility");

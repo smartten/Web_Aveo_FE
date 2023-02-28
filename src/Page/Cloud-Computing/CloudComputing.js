@@ -1,4 +1,5 @@
 import "./CloudComputingStyle.scss";
+import React, { useEffect } from "react";
 import logo1 from "./COMATCH's_logo.svg";
 import logo2 from "./Group.svg";
 import logo3 from "./logo-tisa-white.svg";
@@ -24,6 +25,10 @@ import {
   PaperClipOutlined,
 } from "@ant-design/icons";
 function CloudComputing() {
+  useEffect(() => {
+    document.title = "AVEO Global - Cloud Service";
+  }, []);
+
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
@@ -76,11 +81,11 @@ function CloudComputing() {
           <div className="content-service">
             <div className="row row-cols-1 row-cols-md-2">
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <img src={icon3} />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Cloud Strategy Consulting</b>
                     <p className="text-sub">
                       We help you find out the right cloud strategy supports
@@ -90,11 +95,11 @@ function CloudComputing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <img src={icon2} />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Cloud System Optimization</b>
                     <p className="text-sub">
                       Cloud optimization is the process of eliminating cloud
@@ -106,11 +111,11 @@ function CloudComputing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <img src={icon1} />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">Cloud Monitoring</b>
                     <p className="text-sub">
                       Utilization of manual or automation techniques to monitor
@@ -122,11 +127,11 @@ function CloudComputing() {
                 </div>
               </div>
               <div className="col">
-                <div className="content-text">
-                  <div className="icon-service">
+                <div className="content-text row">
+                  <div className="icon-service col-2">
                     <img src={icon4} />
                   </div>
-                  <div className="text-service">
+                  <div className="text-service col">
                     <b className="text-title">
                       Legacy System to Cloud Migration
                     </b>
@@ -212,7 +217,7 @@ function CloudComputing() {
             This BIG guys are using services and they are more than happier ever
           </p>
           <div className="row justify-content-center flex-wrap">
-            <div className="col-2">
+            <div className="col-2 ml">
               <img
                 src={logo1}
                 style={{ width: "100%", height: "auto", marginTop: "10px" }}
@@ -224,13 +229,13 @@ function CloudComputing() {
                 style={{ width: "110%", height: "auto", marginTop: "20px" }}
               />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo3}
                 style={{
                   width: "80%",
                   height: "auto",
-                  marginLeft: "20px",
+                  // marginLeft: "20px",
                   marginTop: "10px",
                 }}
               />
@@ -238,7 +243,7 @@ function CloudComputing() {
             {/* <div className="col">
               <img src={logo4} style={{ width: "80%", height: "auto" }} />
             </div> */}
-            <div className="col-2">
+            <div className="col-2 left">
               <img
                 src={logo6}
                 style={{ width: "70%", height: "auto", marginTop: "10px" }}
@@ -250,8 +255,8 @@ function CloudComputing() {
                 style={{ width: "70%", height: "auto", marginTop: "0px" }}
               />
             </div>
-            <div className="col-2">
-              <img src={logo5} style={{ width: "25%", height: "auto" }} />
+            <div className="col-2 left">
+              <img src={logo5} style={{ width: "30%", height: "auto" }} />
             </div>
           </div>
         </div>

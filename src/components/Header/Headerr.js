@@ -91,7 +91,7 @@ const items = [
         <a
           style={{ color: "#616161" }}
           className="link-for-res"
-          href="/cloud-computing"
+          href="/cloud-service"
         >
           Cloud Services
         </a>,
@@ -293,7 +293,7 @@ function Headerr() {
                       </a>
                     </div>
                     <div className="div-for-a">
-                      <a href="/cloud-computing" class="link-drop">
+                      <a href="/cloud-service" class="link-drop">
                         Cloud Services
                       </a>
                     </div>

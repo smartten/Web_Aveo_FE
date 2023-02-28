@@ -1,6 +1,9 @@
 import "./AboutStyle.scss";
-
+import React, { useEffect } from "react";
 function AboutUs() {
+  useEffect(() => {
+    document.title = "AVEO Global";
+  }, []);
   return (
     <div className="about-us">
       <section className="slider">
@@ -10,9 +13,7 @@ function AboutUs() {
               <div className="slide-content">
                 <div className="text">
                   <p className="text-title">
-                    <span>
-                      Vietnam's Top Software Development, Outsourcing Company
-                    </span>
+                    Vietnam's Top Software Development, Outsourcing Company
                   </p>
                   <p className="sub-text">
                     AVEO Global is one of the leading Information Technology

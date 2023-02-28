@@ -10,7 +10,7 @@ function Footer() {
   return (
     <section className="contact-us-v1">
       <div className="container ">
-        <div className="row mb-0 my-5 pt-5 pb-4">
+        <div className="row mb-0 mb-5 pt-5 pb-4">
           <br />
           <div className="col-12 col-sm-4 footer-headquarter-col1">
             <img className="footer-logo" src={logo} />

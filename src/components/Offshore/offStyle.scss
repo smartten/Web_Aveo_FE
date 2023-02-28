@@ -364,6 +364,16 @@
         width: 48.5%;
     }
 }
+.big-guys {
+    padding-top   : 70px;
+    padding-bottom: 70px;
+    background    : #fff;
+
+    .title-big-guy {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
 .content-bot{
     .col-lg-4{
@@ -456,4 +466,14 @@
         font-size: 2rem;
     }
 }
+}
+@media only screen and (max-width: 46.1875em) {
+        
+        .big-guys {
+            .col-2 {
+                width     : 30% !important;
+                margin-top: 10px;
+            }
+        }
+       
 }

@@ -102,8 +102,23 @@ hr{
       // border: 1px solid white;
     }
   }
+
+.hanoi{
+    .col-sm-4{
+        width: 31%;
+    }
+
+}
 @media only screen and (max-width: 1024px) {
     /*-- Code cho màn hình vừa (Table) viết ở đây --*/
+}
+@media only screen and (max-width: 768px) { 
+    .hanoi{
+        .col-sm-4{
+            width: 32%;
+        }
+    
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -118,6 +133,12 @@ hr{
     .h1{
         text-align: center;
         font-size: 25px;
+    }
+    .hanoi{
+        .col-sm-4{
+            width: 100%;
+        }
+    
     }
 }
 

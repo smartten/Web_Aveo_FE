@@ -52,7 +52,11 @@ const items = [
     "services",
     [
       getItem(
-        <a style={{ color: "#616161" }} className="link-for-res" href="">
+        <a
+          style={{ color: "#616161" }}
+          className="link-for-res"
+          href="/offshore-development"
+        >
           Offshore Development Services
         </a>,
         "1"
@@ -119,7 +123,7 @@ const items = [
         <a
           style={{ color: "#616161" }}
           className="link-for-res"
-          href="/healthcare"
+          href="/health-care"
         >
           Health Care
         </a>,
@@ -164,10 +168,8 @@ function Headerr() {
     window.addEventListener("scroll", () => {
       var headDrop = document.getElementsByClassName("head-totall");
       var theLink = document.getElementsByClassName("link");
-      var alignRightOutlined = document.getElementById("alignRightOutlined");
 
       if (window.scrollY >= 50) {
-        alignRightOutlined.style.color = "#0161AD";
         for (var i = 0; i < headDrop.length; i++) {
           headDrop[i].style.backgroundColor = "white";
           headDrop[i].style.boxShadow = "0 1px 5px  rgba(0, 0, 0, 0.3)";
@@ -178,7 +180,6 @@ function Headerr() {
         setLogo(logo2);
         setNav("nav");
       } else {
-        alignRightOutlined.style.color = "white";
         for (var i = 0; i < headDrop.length; i++) {
           headDrop[i].style.backgroundColor = "white";
         }
@@ -203,27 +204,30 @@ function Headerr() {
   return (
     <>
       <div
-        style={{ zIndex: 12 }}
+        style={{ zIndex: 999 }}
         id="infor"
         className="overlay transition"
       ></div>
 
-      {/* <div id="repon-menu">
-       
-      </div> */}
+      {/* <div id="repon-menu"></div> */}
 
       <Drawer width="45vh" onClose={onClose} open={open}>
         <Menu
-          style={{
-            // width: "35vh",
-            height: "100vh",
-            // paddingRight: 85,
-          }}
+          style={
+            {
+              // width: "35vh",
+              // height: "100vh",
+              // paddingRight: 85,
+            }
+          }
           // className="draw-menu"
           mode="inline"
           theme="light"
           items={items}
         />
+        <a href="/contact-us" id="header-but" className="header-but m-4 ">
+          Contact
+        </a>
       </Drawer>
 
       <div
@@ -246,10 +250,16 @@ function Headerr() {
             id="headDrop"
             className={nav ? "head-totall sticky" : "head-totall"}
           >
+            <div id="repon-menu"></div>
             <div className="container d-flex justify-content-between">
               <div className="sizeLogo">
                 <a href="/">
                   <img id="logo" src={anhLogo} />
+                </a>
+              </div>
+              <div className="sizeLogo2">
+                <a href="/">
+                  <img id="logo" src={logo2} />
                 </a>
               </div>
               <div id="alignRightOutlined">
@@ -273,7 +283,7 @@ function Headerr() {
                   </a>
                   <div class="dropdown-content">
                     <div className="div-for-a">
-                      <a href="" class="link-drop">
+                      <a href="/offshore-development" class="link-drop">
                         Offshore Development Services
                       </a>
                     </div>
@@ -311,7 +321,7 @@ function Headerr() {
                       </a>
                     </div>
                     <div className="div-for-a">
-                      <a href="/healthcare" class="link-drop">
+                      <a href="/health-care" class="link-drop">
                         Health Care
                       </a>
                     </div>

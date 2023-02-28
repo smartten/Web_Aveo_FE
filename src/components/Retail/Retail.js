@@ -67,7 +67,7 @@ function Retail() {
               height: "100vh",
               position: "relative",
             }}
-            className="col-12 col-sm-4  py-sm-5  g-0 heath-text"
+            className="col-12 col-md-9  col-lg-4  py-sm-5  g-0 heath-text"
           >
             <div
               style={{
@@ -80,14 +80,14 @@ function Retail() {
                 We transform the retail customer experience with personalized,
                 enterprise omnichannel platforms for your business demands
               </p>
-              <div className="btn-deha mt-sm-4 py-sm-3">
+              <div className="btn-deha mt-4 py-3">
                 <a className="" href="">
                   Contact Us
                 </a>
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-8"></div>
+          <div className="col-12 col-md-3 col-lg-8"></div>
         </div>
       </div>
 
@@ -108,16 +108,13 @@ function Retail() {
         </div>
 
         <div className="mobility">
-          <div className="row g-0 m-0  mb-sm-3">
-            <div
-              style={{ width: "47%", marginRight: "auto" }}
-              className="col-12 col-sm-6 "
-            >
+          <div className="row g-0 m-0  mb-sm-3 content-mob">
+            <div style={{ marginRight: "auto" }} className="col-12 col-sm-6 ">
               <div className="row m-0 p-0 g-0">
-                <div className="col-12 col-sm-2">
+                <div className="col-12 col-lg-2">
                   <img src={boost} />
                 </div>
-                <div className="col-12 col-sm-10 fbox-txt">
+                <div className="col-12 col-lg-10 fbox-txt">
                   <h5>Boost Customer Engagement And Conversions</h5>
                   <p>
                     Convert browsers into buyers through an engaging,
@@ -128,12 +125,12 @@ function Retail() {
                 </div>
               </div>
             </div>
-            <div style={{ width: "47%" }} className="col-12 col-sm-6">
+            <div className="col-12 col-sm-6">
               <div className="row m-0 p-0 g-0">
-                <div className="col-12 col-sm-2">
+                <div className="col-12 col-lg-2">
                   <img src={Skyrocket} />
                 </div>
-                <div className="col-12 col-sm-10 fbox-txt">
+                <div className="col-12 col-lg-10 fbox-txt">
                   <h5>Skyrocket Sales And Customer Loyalty</h5>
                   <p>
                     Turn visitors into raving fans and watch your sales explode
@@ -147,16 +144,13 @@ function Retail() {
           </div>
         </div>
         <div className="mobility-2">
-          <div className="row g-0 m-0 mb-sm-3">
-            <div
-              style={{ width: "47%", marginRight: "auto" }}
-              className="col-12 col-sm-6 "
-            >
+          <div className="row g-0 m-0 mb-sm-3 content-mob">
+            <div style={{ marginRight: "auto" }} className="col-12 col-sm-6 ">
               <div className="row m-0 p-0 g-0">
-                <div className="col-12 col-sm-2">
+                <div className="col-12 col-lg-2">
                   <img src={Harness} />
                 </div>
-                <div className="col-12 col-sm-10 fbox-txt">
+                <div className="col-12 col-lg-10 fbox-txt">
                   <h5>Harness Demand Prediction For Improved Retention</h5>
                   <p>
                     Our consulting services result in disruptive retailer
@@ -168,12 +162,12 @@ function Retail() {
                 </div>
               </div>
             </div>
-            <div style={{ width: "47%" }} className="col-12 col-sm-6">
+            <div className="col-12 col-sm-6">
               <div className="row m-0 p-0 g-0">
-                <div className="col-12 col-sm-2">
+                <div className="col-12 col-lg-2">
                   <img src={Engage} />
                 </div>
-                <div className="col-12 col-sm-10 fbox-txt">
+                <div className="col-12 col-lg-10 fbox-txt">
                   <h5>Engage Shoppers Through Omnichannel Capabilities</h5>
                   <p>
                     How do you reach more consumers? You meet them where they
@@ -187,16 +181,13 @@ function Retail() {
           </div>
         </div>
         <div className="mobility-3">
-          <div className="row g-0 m-0 mb-sm-3">
-            <div
-              style={{ width: "47%", marginRight: "auto" }}
-              className="col-12 col-sm-6 "
-            >
+          <div className="row g-0 m-0 mb-sm-3 content-mob">
+            <div style={{ marginRight: "auto" }} className="col-12 col-sm-6 ">
               <div className="row m-0 p-0 g-0">
-                <div className="col-12 col-sm-2">
+                <div className="col-12 col-lg-2">
                   <img src={Disrupt} />
                 </div>
-                <div className="col-12 col-sm-10 fbox-txt">
+                <div className="col-12 col-lg-10 fbox-txt">
                   <h5>Disrupt And Improve Your Supply Chain</h5>
                   <p>
                     Innovate your entire supply chain from sourcing to
@@ -207,12 +198,12 @@ function Retail() {
                 </div>
               </div>
             </div>
-            <div style={{ width: "47%" }} className="col-12 col-sm-6">
+            <div className="col-12 col-sm-6">
               <div className="row m-0 p-0 g-0">
-                <div className="col-12 col-sm-2">
+                <div className="col-12 col-lg-2">
                   <img src={Automate} />
                 </div>
-                <div className="col-12 col-sm-10 fbox-txt">
+                <div className="col-12 col-lg-10 fbox-txt">
                   <h5>Automate And Streamline Inventory Control</h5>
                   <p>
                     Having just enough and not too much inventory is easy when
@@ -231,113 +222,102 @@ function Retail() {
       </div>
 
       <div className="container">
-        <div className="row my-sm-5 py-sm-5 g-0">
+        <div className="row my-5 py-sm-5 g-0">
           <div className="col-12 g-0">
             <h3 class="h3-md">Benefits of Partnering with AVEO</h3>
           </div>
         </div>
 
-        <div className="animate">
-          <div className="row g-0 m-0 p-0">
-            <div
-              style={{ width: "32%", marginRight: "auto" }}
-              className="col-sm-4 px-sm-4 content-part"
-            >
-              <div className="icon-benefit mb-sm-4">
-                <BulbOutlined />
-              </div>
-              <div className="text-benefit">
-                <span>Expert Advice</span>
-                <p className="my-sm-3">
-                  We are a leading digital strategy consultant. We can offer an
-                  unique and consultative perspective to your digital
-                  transformation strategy in general and software engineering in
-                  particular.
-                </p>
-              </div>
+        <div className="row g-0 m-0 p-0 content-bot">
+          <div
+            style={{ marginRight: "auto" }}
+            className="col-lg-4 mb-3 mb-lg-0  px-4 content-part"
+          >
+            <div className="icon-benefit mb-4">
+              <BulbOutlined />
             </div>
-            <div
-              style={{ width: "32%", marginRight: "auto" }}
-              className="col-sm-4 px-sm-4 content-part"
-            >
-              <div className="icon-benefit mb-sm-4">
-                <SelectOutlined />
-              </div>
-              <div className="text-benefit">
-                <span>Quality-Focused Solutions</span>
-                <p className="my-sm-3">
-                  We are using cutting-edge technologies and tools in software
-                  development process to bring the highest software development
-                  quality, for example automation testing, RPA...
-                </p>
-              </div>
+            <div className="text-benefit">
+              <span>Expert Advice</span>
+              <p className="my-sm-3">
+                We are a leading digital strategy consultant. We can offer an
+                unique and consultative perspective to your digital
+                transformation strategy in general and software engineering in
+                particular.
+              </p>
             </div>
-            <div
-              style={{ width: "32%" }}
-              className="col-sm-4 px-sm-4 content-part"
-            >
-              <div className="icon-benefit mb-sm-4">
-                <UserOutlined />
-              </div>
-              <div className="text-benefit">
-                <span>Great Talent Pool</span>
-                <p className="my-sm-3">
-                  Our team has 260+ experienced developers with in-depth skills
-                  & knowledge in software building and powerful technologies
-                  stacks.
-                </p>
-              </div>
+          </div>
+          <div
+            style={{ marginRight: "auto" }}
+            className="col-lg-4 mb-3 mb-lg-0 px-4 content-part"
+          >
+            <div className="icon-benefit mb-4">
+              <SelectOutlined />
+            </div>
+            <div className="text-benefit">
+              <span>Quality-Focused Solutions</span>
+              <p className="my-sm-3">
+                We are using cutting-edge technologies and tools in software
+                development process to bring the highest software development
+                quality, for example automation testing, RPA...
+              </p>
+            </div>
+          </div>
+          <div className="col-lg-4 mb-3 mb-lg-0 px-4 content-part">
+            <div className="icon-benefit mb-4">
+              <UserOutlined />
+            </div>
+            <div className="text-benefit">
+              <span>Great Talent Pool</span>
+              <p className="my-sm-3">
+                Our team has 260+ experienced developers with in-depth skills &
+                knowledge in software building and powerful technologies stacks.
+              </p>
             </div>
           </div>
         </div>
-        <div className="animate-2">
-          <div className="row mx-0 px-0 g-0 mt-sm-4 mb-sm-5 pb-sm-5">
-            <div
-              style={{ width: "32%", marginRight: "auto" }}
-              className="col-sm-4 px-sm-4 g-0 content-part"
-            >
-              <div className="icon-benefit mb-sm-4">
-                <PieChartOutlined />
-              </div>
-              <div className="text-benefit">
-                <span>Experience</span>
-                <p className="my-sm-3">
-                  We are strategic partner of big corporations such as Mitsui
-                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
-                  Hospital...and delivered 1,000+ systems for enterprise.
-                </p>
-              </div>
+        <div className="row mx-0 px-0 g-0 mt-lg-4 mb-sm-5 pb-sm-5 content-bot">
+          <div
+            style={{ marginRight: "auto" }}
+            className="col-lg-4 mb-3 mb-lg-0 px-4 g-0 content-part"
+          >
+            <div className="icon-benefit mb-4">
+              <PieChartOutlined />
             </div>
-            <div
-              style={{ width: "32%", marginRight: "auto" }}
-              className="col-sm-4 px-sm-4 content-part"
-            >
-              <div className="icon-benefit mb-sm-4">
-                <SwitcherOutlined />
-              </div>
-              <div className="text-benefit">
-                <span>All-in-One Provider</span>
-                <p className="my-sm-3">
-                  Our services are comprehensive from consulting, design,
-                  development, integration, deployment to system maintenance and
-                  much mores.
-                </p>
-              </div>
+            <div className="text-benefit">
+              <span>Experience</span>
+              <p className="my-sm-3">
+                We are strategic partner of big corporations such as Mitsui
+                O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
+                Hospital...and delivered 1,000+ systems for enterprise.
+              </p>
             </div>
-            <div
-              style={{ width: "32%" }}
-              className="col-sm-4 px-sm-4 content-part"
-            >
-              <div className="icon-benefit mb-sm-4">
-                <PaperClipOutlined />
-              </div>
-              <div className="text-benefit">
-                <span>Agile Mindset</span>
-                <p className="my-sm-3">
-                  An agile mindset is about creating and responding to change in
-                  uncertain and turbulent environments.
-                </p>
-              </div>
+          </div>
+          <div
+            style={{ marginRight: "auto" }}
+            className="col-lg-4 mb-3 mb-lg-0 px-4 content-part"
+          >
+            <div className="icon-benefit mb-4">
+              <SwitcherOutlined />
+            </div>
+            <div className="text-benefit">
+              <span>All-in-One Provider</span>
+              <p className="my-sm-3">
+                Our services are comprehensive from consulting, design,
+                development, integration, deployment to system maintenance and
+                much mores.
+              </p>
+            </div>
+          </div>
+          <div className="col-lg-4 mb-3 mb-sm-0 px-4 content-part">
+            <div className="icon-benefit mb-4">
+              <PaperClipOutlined />
+            </div>
+            <div className="text-benefit">
+              <span>Agile Mindset</span>
+              <p className="my-sm-3">
+                An agile mindset is about creating and responding to change in
+                uncertain and turbulent environments.
+              </p>
             </div>
           </div>
         </div>
@@ -345,18 +325,18 @@ function Retail() {
 
       <div className="bg-04 m-0 p-0 g-0">
         <div className="container">
-          <div className="row">
-            <div className="col-sm-6 g-0 my-sm-5 cta-11-txt">
+          <div className="row py-5 py-sm-0 for-contac">
+            <div className="col-12 col-sm-6 g-0 my-sm-5 cta-11-txt">
               <h2>Connect with us</h2>
               <p className="my-sm-3">We’re ready to talk opportunity</p>
-              <div className="btn-deha mt-sm-4 py-sm-3">
+              <div className="btn-deha mb-4 mb-sm-0 mt-4 py-3">
                 <a className="" href="">
                   Contact Us
                 </a>
               </div>
             </div>
             <div className="col-sm-2"></div>
-            <div className="col-sm-4 my-sm-5">
+            <div className="col-12 col-sm-4 my-sm-5">
               <img className="img-defaultt" src={defaultt} />
             </div>
           </div>

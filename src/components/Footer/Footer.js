@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className="container-fluid px-4  overflow-hidden footer-container">
       <div className="container">
-        <div className="row pt-sm-5">
+        <div className="row pt-4">
           <div className="col-12 col-sm-4 mt-sm-4">
             <div className="footer-headquarter-col1">
               <img className="footer-logo" src={logo} />

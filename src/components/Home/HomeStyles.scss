@@ -325,7 +325,7 @@
     padding-bottom: 70px;
 
     .contact-content {
-      align-items: center;
+      // align-items: center;
       width      : 100% !important;
       margin     : auto;
 
@@ -462,9 +462,9 @@
   .contact-us-v1 {
     background-position-y   : 168.379px;
     font-size               : 26px;
-    text-align              : center;
+    // text-align              : center;
     width                   : 100%;
-    height                  : 500px;
+    height                  : auto;
     background-attachment   : fixed;
     background-position     : center 0;
     background-size         : cover;
@@ -476,7 +476,7 @@
     .contact-content {
       display        : flex;
       justify-content: space-between;
-      align-items    : center;
+      // align-items    : center;
 
       .contact-text {
         width     : 50%;
@@ -502,18 +502,35 @@
         }
       }
 
-      .conact-img {
-        width: 30%;
+      
+    }
+    .conact-img {
+      // width: 30%;
 
-        // height: 00px;
-        img {
-          width     : 100%;
-          height    : auto;
-          margin-top: 90px;
-        }
+      // height: 00px;
+      img {
+        width     : 100%;
+        // height    : auto;
+        // margin-top: 90px;
+        // border: 1px solid white;
       }
     }
   }
+
+.footer-headquarter-col1{
+    color: white;
+    p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+    
+    
+}
+.footer-logo{
+    width: 96px;
+    height: 50px;
+}
 }
 
 @media only screen and (max-width: 46.1875em) {
@@ -590,7 +607,7 @@
       .contact-content {
         .contact-text {
           width     : 100% !important;
-          text-align: center;
+          // text-align: center;
           margin-top: 50%;
 
           h2 {
@@ -668,12 +685,12 @@
   }
 
   .contact-us-v1 {
-    height: 300px !important;
+    // height: 300px !important;
 
     .contact-content {
       .contact-text {
         width     : 100% !important;
-        text-align: center;
+        // text-align: center;
         margin-top: 50%;
 
         h2 {

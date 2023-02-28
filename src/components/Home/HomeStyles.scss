@@ -201,6 +201,10 @@
       }
     }
 
+    .mt-5 {
+      margin-top: 40px !important;
+    }
+
     .service-content {
 
       .row {
@@ -326,8 +330,8 @@
 
     .contact-content {
       // align-items: center;
-      width      : 100% !important;
-      margin     : auto;
+      width : 100% !important;
+      margin: auto;
 
     }
 
@@ -362,12 +366,13 @@
 
 
   .comment {
-    position   : relative;
-    display    : block;
-    box-sizing : border-box;
-    user-select: none;
-    overflow   : hidden;
-    padding-top: 70px;
+    position         : relative;
+    display          : block;
+    box-sizing       : border-box;
+    user-select      : none;
+    overflow         : hidden;
+    padding-top      : 70px;
+    // padding-bottom: 0px;
 
     .siler-list {
       transform: translate3d(0, 0, 0);
@@ -378,7 +383,7 @@
         background-position: right top;
         display            : flex;
         align-items        : center;
-        background-image   : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-default');
+        background-image   : url('./bannerbackground.jpg');
         height             : 700px !important;
         min-height         : 1px;
         float              : left;
@@ -407,12 +412,13 @@
 
           .comment-content {
             .box-comment {
-              background-color: #fff;
-              padding         : 50px;
-              height          : 400px;
+              background-color   : #fff;
+              padding            : 50px;
+              // height          : 400px;
 
               .comment-content {
-                color: #000;
+                color : #000;
+                height: 150px;
               }
 
               .name-comment {
@@ -460,22 +466,23 @@
   }
 
   .contact-us-v1 {
-    background-position-y   : 168.379px;
-    font-size               : 26px;
+    // padding-top                : 0px;
+    background-position-y      : 168.379px;
+    font-size                  : 26px;
     // text-align              : center;
-    width                   : 100%;
-    height                  : auto;
-    background-attachment   : fixed;
-    background-position     : center 0;
-    background-size         : cover;
-    background-repeat       : no-repeat;
-    position                : relative;
+    width                      : 100%;
+    height                     : auto;
+    background-attachment      : fixed;
+    background-position        : center 0;
+    background-size            : cover;
+    background-repeat          : no-repeat;
+    position                   : relative;
     // overflow             : hidden;
-    background-image        : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-2');
+    background-image           : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-2');
 
     .contact-content {
-      display        : flex;
-      justify-content: space-between;
+      display           : flex;
+      justify-content   : space-between;
       // align-items    : center;
 
       .contact-text {
@@ -502,14 +509,15 @@
         }
       }
 
-      
+
     }
+
     .conact-img {
       // width: 30%;
 
       // height: 00px;
       img {
-        width     : 100%;
+        width        : 100%;
         // height    : auto;
         // margin-top: 90px;
         // border: 1px solid white;
@@ -517,20 +525,22 @@
     }
   }
 
-.footer-headquarter-col1{
+  .footer-headquarter-col1 {
     color: white;
-    p{
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.6;
+
+    p {
+      font-size  : 14px;
+      font-weight: 500;
+      line-height: 1.6;
     }
-    
-    
-}
-.footer-logo{
-    width: 96px;
+
+
+  }
+
+  .footer-logo {
+    width : 96px;
     height: 50px;
-}
+  }
 }
 
 @media only screen and (max-width: 46.1875em) {
@@ -562,6 +572,10 @@
           font-size: 16px !important;
         }
       }
+
+      .mt-5 {
+        margin-top: 0px !important;
+      }
     }
 
     .contact-us {
@@ -588,13 +602,18 @@
     .comment {
       .box-comment {
         margin-left: 20px !important;
+
+        .comment-content {
+          height   : 320px !important;
+          // height: auto !important;
+        }
       }
 
       .slick-arrow {
         display: none !important;
       }
 
-      .col-4 {
+      .col-6 {
         width: 100% !important;
       }
 
@@ -606,9 +625,9 @@
     .contact-us-v1 {
       .contact-content {
         .contact-text {
-          width     : 100% !important;
+          width        : 100% !important;
           // text-align: center;
-          margin-top: 50%;
+          margin-top   : 50%;
 
           h2 {
             font-size: 40px;
@@ -646,6 +665,10 @@
         margin-bottom: 20px;
       }
     }
+
+    .mt-5 {
+      margin-top: 0px !important;
+    }
   }
 
   .contact-us {
@@ -669,13 +692,17 @@
   .comment {
     .box-comment {
       margin-left: 20px !important;
+
+      .comment-content {
+        height: 150px !important;
+      }
     }
 
     .slick-arrow {
       display: none !important;
     }
 
-    .col-4 {
+    .col-6 {
       width: 100% !important;
     }
 
@@ -689,9 +716,9 @@
 
     .contact-content {
       .contact-text {
-        width     : 100% !important;
+        width        : 100% !important;
         // text-align: center;
-        margin-top: 50%;
+        margin-top   : 50%;
 
         h2 {
           font-size: 35px;

@@ -232,7 +232,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="row" style={{ marginTop: "40px" }}>
+          <div className="row mt-5">
             <div className="col-3">
               <div
                 className="our-service-box"
@@ -376,7 +376,7 @@ function Home() {
 
                 <Slider {...settings}>
                   <div className="row comment-content d-flex">
-                    <div className="col-4">
+                    <div className="col-6">
                       <div className="box-comment">
                         <p className="comment-content">
                           AVEO Global is the best technology partner any
@@ -386,25 +386,12 @@ function Home() {
                           any other company, may your success be our success!
                           P.S. AVEO is the best.
                         </p>
-                        <p className="name-comment">Nguyen Hieu</p>
-                        <p className="address-name">Ha Noi, Viet Nam</p>
+                        <p className="name-comment">Mr. Tony Nguyen</p>
+                        <p className="address-name">Blitz Group, Singapore</p>
                         <Rate defaultValue={5} disabled />
                       </div>
                     </div>
-                    <div className="col-4">
-                      <div className="box-comment">
-                        <p className="comment-content">
-                          They spent more time waiting on me than I did them,
-                          and they were patient and courteous every step of the
-                          way. I would definitely recommend hiring them and I
-                          will continue to use them for my future projects
-                        </p>
-                        <p className="name-comment">Nguyen Hieu</p>
-                        <p className="address-name">Ha Noi, VIet Nam</p>
-                        <Rate defaultValue={5} disabled />
-                      </div>
-                    </div>
-                    <div className="col-4">
+                    <div className="col-6">
                       <div className="box-comment">
                         <p className="comment-content">
                           I was very happy with the promises made and, more
@@ -413,14 +400,16 @@ function Home() {
                           ensure I was a happy client. I would be happy to work
                           with them again on my next project.
                         </p>
-                        <p className="name-comment">Nguyen Hieu</p>
-                        <p className="address-name">Ha Noi, Viet Nam</p>
+                        <p className="name-comment">Mr. Dean Han</p>
+                        <p className="address-name">
+                          Military Insurance Corporation - MIC
+                        </p>
                         <Rate defaultValue={5} disabled />
                       </div>
                     </div>
                   </div>
                   <div className="row comment-content d-flex">
-                    <div className="col-4">
+                    <div className="col-6">
                       <div className="box-comment">
                         <p className="comment-content">
                           The project thus far was not complicated and we are
@@ -430,27 +419,15 @@ function Home() {
                           Listens to what I want, makes suggestions where
                           appropriate and delivers very quickly.
                         </p>
-                        <p className="name-comment">Nguyen Minh Hieu</p>
-                        <p className="address-name">Ha Noi, Viet Nam</p>
-                        <Rate defaultValue={5} disabled />
-                      </div>
-                    </div>
-                    <div className="col-4">
-                      <div className="box-comment">
-                        <p className="comment-content">
-                          AVEO Global is the best technology partner any
-                          business could ask for, they go above and beyond to
-                          satisfy my business needs and they will do research
-                          and develop anything you need. I will never switch to
-                          any other company, may your success be our success!
-                          P.S. AVEO is the best.
+                        <p className="name-comment">Mr. Hung Nguyen</p>
+                        <p className="address-name">
+                          Vietnam Electricity Corporation - EVN
                         </p>
-                        <p className="name-comment">Nguyen Minh Hieu</p>
-                        <p className="address-name">Ha Noi, VIet Nam</p>
                         <Rate defaultValue={5} disabled />
                       </div>
                     </div>
-                    <div className="col-4">
+
+                    <div className="col-6">
                       <div className="box-comment">
                         <p className="comment-content">
                           I was very happy with the promises made and, more
@@ -459,8 +436,10 @@ function Home() {
                           ensure I was a happy client. I would be happy to work
                           with them again on my next project.
                         </p>
-                        <p className="name-comment">Nguyen Minh Hieu</p>
-                        <p className="address-name">Ha Noi, Viet Nam</p>
+                        <p className="name-comment">Mr. Mark Henry</p>
+                        <p className="address-name">
+                          Co MATCH Consulting - Australia
+                        </p>
                         <Rate defaultValue={5} disabled />
                       </div>
                     </div>
@@ -473,7 +452,7 @@ function Home() {
       </section>
       <section className="contact-us-v1">
         <div className="container ">
-          <div className="row mb-0 my-5 py-5">
+          <div className="row mb-0 py-5">
             <br />
             <div className="col-12 col-sm-4 footer-headquarter-col1">
               <img className="footer-logo" src={logo} />

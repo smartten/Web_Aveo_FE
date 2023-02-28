@@ -29,22 +29,23 @@ function App() {
       <Headerr />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/web-design-and-development" element={<ServiceWeb />} />
-        <Route path="/mobile-application" element={<WebApplication />} />
+        {/* <Route path="/web-design-and-development" element={<ServiceWeb />} />
+       
         <Route
           path="/engineering-and-maintenance"
           element={<ServiceEngineering />}
-        />
-        <Route path="/integration-services" element={<Integration />} />
-        <Route path="/blockchain-service" element={<Blockchain />} />
-        <Route path="/enterprise-service" element={<Enterprise />} />
+        /> */}
+        {/* <Route path="/integration-services" element={<Integration />} /> */}
+        {/* <Route path="/blockchain-service" element={<Blockchain />} /> */}
+        <Route path="/mobile-application" element={<WebApplication />} />
+        {/* <Route path="/enterprise-service" element={<Enterprise />} /> */}
         <Route path="/testing-service" element={<Testing />} />
-        <Route path="/cms-service" element={<CmcService />} />
+        {/* <Route path="/cms-service" element={<CmcService />} /> */}
         <Route path="/ecommerce" element={<Ecommerce />} />
         <Route path="/contact-us" element={<Contact />} />
-        <Route path="/company" element={<Company />} />
+        {/* <Route path="/company" element={<Company />} /> */}
         <Route path="/cloud-computing" element={<CloudComputing />} />
-        <Route path="/iot-application" element={<Iotapp />} />
+        {/* <Route path="/iot-application" element={<Iotapp />} /> */}
         <Route path="/web-application" element={<WebApplication />} />
         <Route path="/manufacturing" element={<Manufacturing />} />
         <Route path="/financial" element={<Financial />} />

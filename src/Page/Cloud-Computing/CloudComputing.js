@@ -46,7 +46,7 @@ function CloudComputing() {
                 </div>
                 <div className="text">
                   <p className="text-title">
-                    <span>Cloud Computing</span>
+                    <span>Cloud Services</span>
                   </p>
                   <p className="sub-text">
                     An effective cloud strategy ensures that the enterprise
@@ -342,22 +342,6 @@ function CloudComputing() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="contact-us-v1">
-        <div className="container">
-          <div className="contact-content">
-            <div className="contact-text">
-              <h2>Connect with us</h2>
-              <p>We're ready to talk opportunity</p>
-              <a className="btn btn-contact" href="/contact-us">
-                Contact Us
-              </a>
-            </div>
-            <div className="conact-img">
-              <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-img-default" />
             </div>
           </div>
         </div>

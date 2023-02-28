@@ -422,7 +422,7 @@
 
               .comment-content {
                 color : #000;
-                height: 150px;
+                height: 220px;
               }
 
               .name-comment {
@@ -528,112 +528,109 @@
       }
     }
   }
+}
 
+@media only screen and (max-width: 46.1875em) {
+  .home {
+    .slider-item-home {
+      background-position: 50% !important;
+      text-align         : center !important;
+      background-position: 0% !important;
+    }
 
-  @media only screen and (max-width: 46.1875em) {
-    .home {
-      .slider-item-home {
-        background-position: 50% !important;
-        text-align         : center !important;
-        background-position: 0% !important;
-      }
+    .text-title {
+      font-size: 35px !important;
+    }
 
-      .text-title {
-        font-size: 35px !important;
-      }
+    .sub-text {
+      font-size: 18px !important;
+    }
 
-      .sub-text {
-        font-size: 18px !important;
-      }
-
-      .our-services {
-        .service-content {
-          .col-3 {
-            width        : 100% !important;
-            margin-bottom: 20px;
-          }
-        }
-
-        .title-service {
-          p {
-            font-size: 16px !important;
-          }
-        }
-
-        .mt-5 {
-          margin-top: 0px !important;
+    .our-services {
+      .service-content {
+        .col-3 {
+          width        : 100% !important;
+          margin-bottom: 20px;
         }
       }
 
-      .contact-us {
-        .row {
-          text-align: center !important;
-        }
-
-        .h3-xs {
-          font-size: 30px !important;
-        }
-
-        .img-fluid {
-          margin-left: 20px !important;
+      .title-service {
+        p {
+          font-size: 16px !important;
         }
       }
 
-      .big-guys {
-        .col-2 {
-          width     : 30% !important;
-          margin-top: 10px;
-        }
-      }
-
-      .comment {
-        .box-comment {
-          margin-left: 20px !important;
-
-          .comment-content {
-            height   : 320px !important;
-            // height: auto !important;
-          }
-        }
-
-        .slick-arrow {
-          display: none !important;
-        }
-
-        .col-6 {
-          width: 100% !important;
-        }
-
-        .d-flex {
-          flex-wrap: nowrap !important;
-        }
-      }
-
-      .contact-us-v1 {
-        .contact-content {
-          .contact-text {
-            width        : 100% !important;
-            // text-align: center;
-            margin-top   : 50%;
-
-            h2 {
-              font-size: 40px;
-            }
-          }
-
-          .conact-img {
-            display: none !important;
-          }
-        }
+      .mt-5 {
+        margin-top: 0px !important;
       }
     }
 
+    .contact-us {
+      .row {
+        text-align: center !important;
+      }
+
+      .h3-xs {
+        font-size: 30px !important;
+      }
+
+      .img-fluid {
+        margin-left: 20px !important;
+      }
+    }
+
+    .big-guys {
+      .col-2 {
+        width     : 30% !important;
+        margin-top: 10px;
+      }
+
+      .ml {
+        margin-left: 20px !important;
+      }
+    }
+
+    .comment {
+      .box-comment {
+        margin-left: 20px !important;
+
+        .comment-content {
+          height   : 260px !important;
+          // height: auto !important;
+        }
+      }
+
+      .slick-arrow {
+        display: none !important;
+      }
+
+      .col-4 {
+        width: 100% !important;
+      }
+
+      .d-flex {
+        flex-wrap: nowrap !important;
+      }
+    }
+
+    .contact-us-v1 {
+      .contact-content {
+        .contact-text {
+          width        : 100% !important;
+          // text-align: center;
+          margin-top   : 50%;
+
+          h2 {
+            font-size: 40px;
+          }
+        }
+
+        .conact-img {
+          display: none !important;
+        }
+      }
+    }
   }
-
-
-
-
-
 
 }
 
@@ -731,6 +728,10 @@
       width     : 26% !important;
       margin-top: 10px !important;
     }
+
+    .ml {
+      margin-left: 0px !important;
+    }
   }
 
   .comment {
@@ -746,7 +747,7 @@
       display: none !important;
     }
 
-    .col-6 {
+    .col-4 {
       width: 100% !important;
     }
 

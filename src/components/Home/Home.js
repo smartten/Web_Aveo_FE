@@ -376,7 +376,7 @@ function Home() {
 
                 <Slider {...settings}>
                   <div className="row comment-content d-flex">
-                    <div className="col-6">
+                    <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
                           AVEO Global is the best technology partner any
@@ -388,10 +388,10 @@ function Home() {
                         </p>
                         <p className="name-comment">Mr. Tony Nguyen</p>
                         <p className="address-name">Blitz Group, Singapore</p>
-                        <Rate defaultValue={5} disabled />
+                        <Rate defaultValue={5} disabled className="mobile" />
                       </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
                           I was very happy with the promises made and, more
@@ -404,12 +404,10 @@ function Home() {
                         <p className="address-name">
                           Military Insurance Corporation - MIC
                         </p>
-                        <Rate defaultValue={5} disabled />
+                        <Rate defaultValue={5} disabled className="mobile" />
                       </div>
                     </div>
-                  </div>
-                  <div className="row comment-content d-flex">
-                    <div className="col-6">
+                    <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
                           The project thus far was not complicated and we are
@@ -423,11 +421,12 @@ function Home() {
                         <p className="address-name">
                           Vietnam Electricity Corporation - EVN
                         </p>
-                        <Rate defaultValue={5} disabled />
+                        <Rate defaultValue={5} disabled className="mobile" />
                       </div>
                     </div>
-
-                    <div className="col-6">
+                  </div>
+                  <div className="row comment-content d-flex">
+                    <div className="col-4">
                       <div className="box-comment">
                         <p className="comment-content">
                           They spent more time waiting on me than I did them,
@@ -439,7 +438,7 @@ function Home() {
                         <p className="address-name">
                           Co MATCH Consulting - Australia
                         </p>
-                        <Rate defaultValue={5} disabled />
+                        <Rate defaultValue={5} disabled className="mobile" />
                       </div>
                     </div>
                   </div>

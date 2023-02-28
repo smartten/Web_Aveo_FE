@@ -40,29 +40,11 @@ function Contact() {
                 <div className="content-contact">
                   <b className="title-contact">HEADQUARTER</b>
                   <p className="text-contact">
-                    5F, Intracom Building, 82 Dich Vong Hau street, Cau Giay,
-                    Hanoi, Vietnam
+                    4F No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
                   </p>
                   <p className="contact-email">
                     Contact:{" "}
-                    <a href="mailto:brian@deha-soft.com">brian@deha-soft.com</a>
-                  </p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div className="icon-contact">
-                  <MailOutlined />
-                </div>
-                <div className="content-contact">
-                  <b className="title-contact">Thua Thien Hue, Vietnam</b>
-                  <p className="text-contact">
-                    28 Nguyen Tri Phuong, Phu Nhuan, Thua Thien Hue, Vietnam
-                  </p>
-                  <p className="contact-email">
-                    Contact:{" "}
-                    <a href="mailto:phuclt@deha-soft.com">
-                      phuclt@deha-soft.com
-                    </a>
+                    <a href="mailto:sales@aveo.com.vn">sales@aveo.com.vn</a>
                   </p>
                 </div>
               </div>
@@ -73,13 +55,28 @@ function Contact() {
                 <div className="content-contact">
                   <b className="title-contact">Tokyo, JAPAN</b>
                   <p className="text-contact">
-                    104-0045, 4F, CUBE TSUKIJI, 3-7-11 Tsukiji, Chuo-ward, Tokyo
+                    5-21-5 Higashisuna, Koutouku, Tokyo-Japan
                   </p>
                   <p className="contact-email">
                     Contact:{" "}
-                    <a href="mailto:trang@deha-soft.com">trang@deha-soft.com</a>
+                    <a href="mailto:luyennk@aveo.com.vn">luyennk@aveo.com.vn</a>
                   </p>
-                  <a href="https://deha.co.jp">https://deha.co.jp</a>
+                  {/* <a href="https://deha.co.jp">https://deha.co.jp</a> */}
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="icon-contact">
+                  <MailOutlined />
+                </div>
+                <div className="content-contact">
+                  <b className="title-contact">Singapore</b>
+                  <p className="text-contact">Coming Soon</p>
+                  {/* <p className="contact-email">
+                    Contact:{" "}
+                    <a href="mailto:phuclt@deha-soft.com">
+                      phuclt@deha-soft.com
+                    </a>
+                  </p> */}
                 </div>
               </div>
             </div>

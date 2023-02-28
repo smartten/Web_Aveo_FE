@@ -10,15 +10,17 @@ function AboutUs() {
               <div className="slide-content">
                 <div className="text">
                   <p className="text-title">
-                    <span>Vietnam Leading Digital Strategy Consultant</span>
+                    <span>
+                      Vietnam's Top Software Development, Outsourcing Company
+                    </span>
                   </p>
                   <p className="sub-text">
-                    AVEO Vietnam specialized in digital strategy consulting for
-                    business firm varies from industries such as: Manufacturing,
-                    Retail, Ecommerce, Finance, Internet Service,
-                    Transportation, Construction... With a team of experienced
-                    experts, we help you to LEVERAGE YOUR BUSINESS in the age of
-                    Digital Transformation.
+                    AVEO Global is one of the leading Information Technology
+                    companies in Vietnam, specializing in providing digital
+                    transformation consulting services and software solutions in
+                    Finance, Healthcare, Manufacturing, Ecommerce and Retail for
+                    Domestic and International Businesses. we help you to
+                    LEVERAGE YOUR BUSINESS in the age of Digital Transformation.
                   </p>
                 </div>
               </div>
@@ -34,44 +36,33 @@ function AboutUs() {
               <tbody>
                 <tr>
                   <th>Company Name</th>
-                  <td>AVEO VIETNAM JOINT STOCK COMPANY</td>
+                  <td>AVEO GLOBAL TECHNOLOGY COMPANY LIMITED</td>
                 </tr>
                 <tr>
                   <th>Established</th>
-                  <td>Jan 2016</td>
+                  <td>2019</td>
                 </tr>
                 <tr>
                   <th>Headquarter</th>
                   <td>
-                    5F, Intracom Building, 82 Dich Vong Hau street, Cau Giay,
-                    Hanoi, Vietnam
+                    4F No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
                   </td>
                 </tr>
-                <tr>
-                  <th>International Standards</th>
-                  <td>
-                    <ul>
-                      <li>+ ISO 9001:2015</li>
-                      <li>+ ISO/IEC 27001:2013</li>
-                      <li>+ CMMI Level 3 version 2.0</li>
-                    </ul>
-                  </td>
-                </tr>
+
                 <tr>
                   <th>Development Centers</th>
                   <td>
                     <ul>
                       <li>
-                        <strong>HEADQUARTER</strong>: 5F, Intracom Building, 82
-                        Dich Vong Hau street, Cau Giay, Hanoi, Vietnam
+                        <strong>HEADQUARTER</strong>: 4F No 9 Building, 9 Ha
+                        Dinh, Thanh Xuan, Hanoi, Vietnam
                       </li>
                       <li>
-                        <strong>Thua Thien Hue, Vietnam</strong>: 28 Nguyen Tri
-                        Phuong, Phu Nhuan, Thua Thien Hue, Vietnam
+                        <strong>Japan</strong>: 5-21-5 Higashisuna, Koutouku,
+                        Tokyo-Japan
                       </li>
                       <li>
-                        <strong>Tokyo, JAPAN</strong>: 104-0045, 4F, CUBE
-                        TSUKIJI, 3-7-11 Tsukiji, Chuo-ward, Tokyo
+                        <strong>Singapore</strong>: Coming Soon
                       </li>
                     </ul>
                   </td>
@@ -84,7 +75,10 @@ function AboutUs() {
       <section className="out-mission">
         <div className="container">
           <h2 className="mission-title">Our Mission</h2>
-          <p className="mission-content">Delivering Happiness</p>
+          <p className="mission-content">
+            To bring innovative technology into life by leveraging engineering
+            workforce in Vietnam
+          </p>
         </div>
       </section>
       <section className="out-vision">
@@ -106,22 +100,6 @@ function AboutUs() {
             Morality - Companionship - Study - Participation - Sincerity -
             Consistency
           </p>
-        </div>
-      </section>
-      <section className="contact-us-v1">
-        <div className="container">
-          <div className="contact-content">
-            <div className="contact-text">
-              <h2>Connect with us</h2>
-              <p>We're ready to talk opportunity</p>
-              <a className="btn btn-contact" href="/contact-us">
-                Contact Us
-              </a>
-            </div>
-            <div className="conact-img">
-              <img src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-img-default" />
-            </div>
-          </div>
         </div>
       </section>
     </div>

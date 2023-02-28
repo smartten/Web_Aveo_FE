@@ -321,7 +321,7 @@ function Home() {
             This BIG guys are using services and they are more than happier ever
           </p>
           <div className="row justify-content-center flex-wrap">
-            <div className="col-2">
+            <div className="col-2 ml">
               <img
                 src={logo1}
                 style={{ width: "100%", height: "auto", marginTop: "10px" }}
@@ -360,7 +360,7 @@ function Home() {
               />
             </div>
             <div className="col-2">
-              <img src={logo5} style={{ width: "25%", height: "auto" }} />
+              <img src={logo5} style={{ width: "30%", height: "auto" }} />
             </div>
           </div>
         </div>

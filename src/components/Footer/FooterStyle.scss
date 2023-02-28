@@ -39,22 +39,19 @@
     color: white;
     p{
         font-size: 14px;
-        font-weight: 500;
         line-height: 1.6;
     }
 }
 .footer-logo{
-    width: 96px;
+    // width: 96px;
     height: 50px;
 }
 .footer-link{
     text-decoration: none;
     color: white;
     font-family: inherit;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.6;
-    opacity: 0.9;
 }
 .footer-link:hover{
     opacity: 1;
@@ -80,7 +77,31 @@ hr{
     border-style: solid;
   }
 
+  .contact-us-v1 {
+    background-position-y   : 168.379px;
+    font-size               : 26px;
+    // text-align              : center;
+    width                   : 100%;
+    height                  : auto;
+    background-attachment   : fixed;
+    background-position     : center 0;
+    background-size         : cover;
+    background-repeat       : no-repeat;
+    position                : relative;
+    // overflow             : hidden;
+    background-image        : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-2');
+  }
+  .conact-img {
+    // width: 30%;
 
+    // height: 00px;
+    img {
+      width     : 100%;
+      // height    : auto;
+      // margin-top: 90px;
+      // border: 1px solid white;
+    }
+  }
 @media only screen and (max-width: 1024px) {
     /*-- Code cho màn hình vừa (Table) viết ở đây --*/
 }

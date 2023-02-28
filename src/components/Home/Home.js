@@ -1,4 +1,4 @@
-import logo from "./Asset1.svg";
+import logo from "./Asset 1.svg";
 import logo1 from "./COMATCH's_logo.svg";
 import logo2 from "./Group.svg";
 import logo3 from "./logo-tisa-white.svg";
@@ -471,7 +471,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="contact-us-v1">
+      {/* <section className="contact-us-v1">
         <div className="container ">
           <div className="row mb-0 my-5 py-5">
             <br />
@@ -509,12 +509,6 @@ function Home() {
                   sales@aveo.com.vn
                 </p>
               </div>
-              {/* </div> */}
-              {/* <h2>Connect with us</h2>
-              <p>We're ready to talk opportunity</p>
-              <a className="btn btn-contact" href="/contact-us">
-                Contact Us
-              </a> */}
             </div>
             <div className="col-6 col-sm-2 footer-headquarter-col1">
               <b style={{ fontFamily: "revert-layer", fontSize: 20 }}>
@@ -583,8 +577,23 @@ function Home() {
               />
             </div>
           </div>
+          <hr class="divider"></hr>
+          <div className="row mt-sm-5 pb-sm-4">
+            <div className="col-12 ">
+              <p
+                style={{
+                  color: "white",
+                  fontWeight: 600,
+                  fontSize: 18,
+                  fontFamily: "inherit",
+                }}
+              >
+                © 2023 AVEO. All Rights Reserved
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

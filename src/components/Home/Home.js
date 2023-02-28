@@ -430,11 +430,10 @@ function Home() {
                     <div className="col-6">
                       <div className="box-comment">
                         <p className="comment-content">
-                          I was very happy with the promises made and, more
-                          importantly, delivered. Quality code. Neat and
-                          organized. They assisted with the last tweaks to
-                          ensure I was a happy client. I would be happy to work
-                          with them again on my next project.
+                          They spent more time waiting on me than I did them,
+                          and they were patient and courteous every step of the
+                          way. I would definitely recommend hiring them and I
+                          will continue to use them for my future projects
                         </p>
                         <p className="name-comment">Mr. Mark Henry</p>
                         <p className="address-name">

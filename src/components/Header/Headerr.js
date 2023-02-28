@@ -173,10 +173,7 @@ function Headerr() {
           headDrop[i].style.boxShadow = "0 1px 5px  rgba(0, 0, 0, 0.3)";
         }
         for (var i = 0; i < theLink.length; i++) {
-          theLink[i].style.color = "#616161";
-        }
-        for (var i = 0; i < theLink.length; i++) {
-          theLink[i].style.color = "#616161";
+          theLink[i].style.color = "black";
         }
         setLogo(logo2);
         setNav("nav");

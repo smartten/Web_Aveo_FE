@@ -525,39 +525,120 @@
     }
   }
 
-  .footer-headquarter-col1 {
-    color: white;
 
-    p {
-      font-size  : 14px;
-      font-weight: 500;
-      line-height: 1.6;
-      opacity    : 0.9;
+  @media only screen and (max-width: 46.1875em) {
+    .home {
+      .slider-item-home {
+        background-position: 50% !important;
+        text-align         : center !important;
+        background-position: 0% !important;
+      }
+
+      .text-title {
+        font-size: 35px !important;
+      }
+
+      .sub-text {
+        font-size: 18px !important;
+      }
+
+      .our-services {
+        .service-content {
+          .col-3 {
+            width        : 100% !important;
+            margin-bottom: 20px;
+          }
+        }
+
+        .title-service {
+          p {
+            font-size: 16px !important;
+          }
+        }
+
+        .mt-5 {
+          margin-top: 0px !important;
+        }
+      }
+
+      .contact-us {
+        .row {
+          text-align: center !important;
+        }
+
+        .h3-xs {
+          font-size: 30px !important;
+        }
+
+        .img-fluid {
+          margin-left: 20px !important;
+        }
+      }
+
+      .big-guys {
+        .col-2 {
+          width     : 30% !important;
+          margin-top: 10px;
+        }
+      }
+
+      .comment {
+        .box-comment {
+          margin-left: 20px !important;
+
+          .comment-content {
+            height   : 320px !important;
+            // height: auto !important;
+          }
+        }
+
+        .slick-arrow {
+          display: none !important;
+        }
+
+        .col-6 {
+          width: 100% !important;
+        }
+
+        .d-flex {
+          flex-wrap: nowrap !important;
+        }
+      }
+
+      .contact-us-v1 {
+        .contact-content {
+          .contact-text {
+            width        : 100% !important;
+            // text-align: center;
+            margin-top   : 50%;
+
+            h2 {
+              font-size: 40px;
+            }
+          }
+
+          .conact-img {
+            display: none !important;
+          }
+        }
+      }
     }
-
 
   }
 
-  .footer-logo {
-    width : 96px;
-    height: 50px;
-  }
-}
+  @media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .home {
+      .slider-item-home {
+        background-position: 50% !important;
+      }
 
-@media only screen and (max-width: 46.1875em) {
-  .home {
-    .slider-item-home {
-      background-position: 50% !important;
-      text-align         : center !important;
-      background-position: 0% !important;
-    }
+      .text-title {
+        font-size: 35px !important;
+      }
 
-    .text-title {
-      font-size: 35px !important;
-    }
-
-    .sub-text {
-      font-size: 18px !important;
+      .sub-text {
+        font-size: 18px !important;
+      }
     }
 
     .our-services {
@@ -568,35 +649,26 @@
         }
       }
 
-      .title-service {
-        p {
-          font-size: 16px !important;
-        }
-      }
-
       .mt-5 {
         margin-top: 0px !important;
       }
     }
 
     .contact-us {
-      .row {
-        text-align: center !important;
-      }
-
-      .h3-xs {
-        font-size: 30px !important;
+      .col-lg-6 {
+        width     : 100% !important;
+        text-align: center;
       }
 
       .img-fluid {
-        margin-left: 20px !important;
+        margin-left: 30px !important;
       }
     }
 
     .big-guys {
       .col-2 {
-        width     : 30% !important;
-        margin-top: 10px;
+        width     : 26% !important;
+        margin-top: 10px !important;
       }
     }
 
@@ -605,8 +677,7 @@
         margin-left: 20px !important;
 
         .comment-content {
-          height   : 320px !important;
-          // height: auto !important;
+          height: 150px !important;
         }
       }
 
@@ -624,6 +695,8 @@
     }
 
     .contact-us-v1 {
+      // height: 300px !important;
+
       .contact-content {
         .contact-text {
           width        : 100% !important;
@@ -631,154 +704,64 @@
           margin-top   : 50%;
 
           h2 {
-            font-size: 40px;
+            font-size: 35px;
           }
         }
 
         .conact-img {
-          display: none !important;
+          // display: none !important;
         }
       }
     }
   }
 
-}
+  @media (min-width: 64em) and (max-width: 79.5em) {
+    .home {
 
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
-  .home {
-    .slider-item-home {
-      background-position: 50% !important;
-    }
+      .slider {
+        .text-title {
+          font-size: 45px !important;
+        }
 
-    .text-title {
-      font-size: 35px !important;
-    }
-
-    .sub-text {
-      font-size: 18px !important;
-    }
-  }
-
-  .our-services {
-    .service-content {
-      .col-3 {
-        width        : 100% !important;
-        margin-bottom: 20px;
-      }
-    }
-
-    .mt-5 {
-      margin-top: 0px !important;
-    }
-  }
-
-  .contact-us {
-    .col-lg-6 {
-      width     : 100% !important;
-      text-align: center;
-    }
-
-    .img-fluid {
-      margin-left: 30px !important;
-    }
-  }
-
-  .big-guys {
-    .col-2 {
-      width     : 26% !important;
-      margin-top: 10px !important;
-    }
-  }
-
-  .comment {
-    .box-comment {
-      margin-left: 20px !important;
-
-      .comment-content {
-        height: 150px !important;
-      }
-    }
-
-    .slick-arrow {
-      display: none !important;
-    }
-
-    .col-6 {
-      width: 100% !important;
-    }
-
-    .d-flex {
-      flex-wrap: nowrap !important;
-    }
-  }
-
-  .contact-us-v1 {
-    // height: 300px !important;
-
-    .contact-content {
-      .contact-text {
-        width        : 100% !important;
-        // text-align: center;
-        margin-top   : 50%;
-
-        h2 {
-          font-size: 35px;
+        .sub-text {
+          font-size: 18px !important;
         }
       }
 
-      .conact-img {
-        // display: none !important;
-      }
-    }
-  }
-}
+      .contact-us {
+        .h3-xs {
+          margin-bottom: 0px;
+          font-size    : 30px;
+        }
 
-@media (min-width: 64em) and (max-width: 79.5em) {
-  .home {
-
-    .slider {
-      .text-title {
-        font-size: 45px !important;
-      }
-
-      .sub-text {
-        font-size: 18px !important;
-      }
-    }
-
-    .contact-us {
-      .h3-xs {
-        margin-bottom: 0px;
-        font-size    : 30px;
-      }
-
-      .p-lg {
-        font-size: 16px;
-      }
-    }
-
-    .our-services {
-      .service-content {
-        .col-3 {
-          width        : 320px !important;
-          margin-bottom: 20px;
+        .p-lg {
+          font-size: 16px;
         }
       }
 
+      .our-services {
+        .service-content {
+          .col-3 {
+            width        : 320px !important;
+            margin-bottom: 20px;
+          }
+        }
+
+      }
     }
   }
-}
 
-@media (min-width: 79.5em) and (max-width: 89.5em) {
-  .home {
-    .our-services {
-      .service-content {
-        .col-3 {
-          width        : 380px !important;
-          margin-bottom: 20px;
+  @media (min-width: 79.5em) and (max-width: 89.5em) {
+    .home {
+      .our-services {
+        .service-content {
+          .col-3 {
+            width        : 380px !important;
+            margin-bottom: 20px;
+          }
         }
-      }
 
+      }
     }
   }
 }

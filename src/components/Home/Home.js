@@ -459,14 +459,34 @@ function Home() {
               <div className=" pt-sm-0 ">
                 <br />
                 <p>
-                  5F, Intracom building, 82 Dich Vong Hau, Cau Giay, Ha Noi,
-                  Viet Nam
+                  <span
+                    style={{
+                      fontWeight: 700,
+                      fontSize: "14.5px",
+                    }}
+                  >
+                    Headquarter:
+                  </span>{" "}
+                  4F No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
                 </p>
-                <p>28 Nguyen Tri Phuong, Phu Nhuan, Thua Thien Hue, Viet Nam</p>
                 <p>
-                  104-0045, 4F, CUBE TSUKIJI, 3-7-11 Tsukiji, Chuo-ward, Tokyo
+                  <span style={{ fontWeight: 700, fontSize: "14.5px" }}>
+                    Phone:
+                  </span>{" "}
+                  +84 24 6259 3698
                 </p>
-                <p>Email: info@deha-soft.com</p>
+                <p>
+                  <span style={{ fontWeight: 700, fontSize: "14.5px" }}>
+                    Fax:
+                  </span>{" "}
+                  +84 24 6259 3698
+                </p>
+                <p>
+                  <span style={{ fontWeight: 700, fontSize: "14.5px" }}>
+                    Email:
+                  </span>{" "}
+                  sales@aveo.com.vn
+                </p>
               </div>
               {/* </div> */}
               {/* <h2>Connect with us</h2>
@@ -485,12 +505,12 @@ function Home() {
                 </a>
               </p>
               <p>
-                <a className="footer-link" href="/mobile-development">
+                <a className="footer-link" href="/web-application">
                   Web Application Development
                 </a>
               </p>
               <p>
-                <a className="footer-link" href="/engineering-and-maintenance">
+                <a className="footer-link" href="/mobile-application">
                   Mobile Application Development
                 </a>
               </p>
@@ -514,23 +534,23 @@ function Home() {
                 Industries
               </b>
               <p className="mt-2">
-                <a className="footer-link" href="">
+                <a className="footer-link" href="/manufacturing">
                   Manufacturing
                 </a>
                 <br />
-                <a className="footer-link" href="">
+                <a className="footer-link" href="/healthcare">
                   Health Care
                 </a>
                 <br />
-                <a className="footer-link" href="">
+                <a className="footer-link" href="/retail">
                   Retail
                 </a>
                 <br />
-                <a className="footer-link" href="">
+                <a className="footer-link" href="/ecommerce">
                   Ecommerce
                 </a>
                 <br />
-                <a className="footer-link" href="">
+                <a className="footer-link" href="/financial">
                   Financial
                 </a>
               </p>

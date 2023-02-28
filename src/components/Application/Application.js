@@ -90,8 +90,8 @@ function Application() {
       <div className="hero-section g-0 m-0 py-sm-5">
         <div className="container d-flex">
           <div className="row mt-5 pt-5 mt-sm-0 pt-sm-0">
-            <div className="col-12  col-md-5 py-sm-5">
-              <img className="img-fluid py-sm-5" src={image1} />
+            <div className="col-12  col-md-5 pb-0 py-sm-5">
+              <img className="img-fluid pb-0 py-sm-5" src={image1} />
             </div>
             <div className="col-12 col-md-6 px-1 px-sm-4 my-sm-auto hero-text">
               <h1>Application Development</h1>

@@ -215,7 +215,7 @@ function Headerr() {
        
       </div> */}
 
-      <Drawer width="35vh" onClose={onClose} open={open}>
+      <Drawer width="45vh" onClose={onClose} open={open}>
         <Menu
           style={{
             // width: "35vh",
@@ -270,7 +270,7 @@ function Headerr() {
                   </a>
                 </div>
                 <div class="dropdown">
-                  <a href="" class="link">
+                  <a class="link">
                     Services
                     <CaretDownFilled className="CaretDownFilled" />
                   </a>
@@ -304,7 +304,7 @@ function Headerr() {
                 </div>
 
                 <div class="dropdown">
-                  <a href="" class="link">
+                  <a class="link">
                     Industries <CaretDownFilled className="CaretDownFilled" />
                   </a>
                   <div class="dropdown-content">

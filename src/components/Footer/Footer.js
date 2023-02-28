@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const { Header } = Layout;
 function Footer() {
   return (
-    <div className="container-fluid px-4  overflow-hidden footer-container">
+    <div className="container-fluid   overflow-hidden footer-container">
       <div className="container">
         <div className="row pt-4">
           <div className="col-12 col-sm-4 mt-sm-4">
@@ -53,11 +53,11 @@ function Footer() {
                 Whitepapers
               </a>
               <br />
-              <a className="footer-link" href="">
+              <a className="footer-link" href="/about-us">
                 About us
               </a>
               <br />
-              <a className="footer-link" href="">
+              <a className="footer-link" href="/contact-us">
                 Contact us
               </a>
               <br />
@@ -125,23 +125,23 @@ function Footer() {
               </b>
               <br />
               <br />
-              <a className="footer-link" href="">
+              <a className="footer-link" href="/manufacturing">
                 Manufacturing
               </a>
               <br />
-              <a className="footer-link" href="">
+              <a className="footer-link" href="/healthcare">
                 Health Care
               </a>
               <br />
-              <a className="footer-link" href="">
+              <a className="footer-link" href="/retail">
                 Retail
-              </a>{" "}
+              </a>
               <br />
-              <a className="footer-link" href="">
+              <a className="footer-link" href="/ecommerce">
                 Ecommerce
-              </a>{" "}
+              </a>
               <br />
-              <a className="footer-link" href="">
+              <a className="footer-link" href="/financial">
                 Financial
               </a>
             </div>
@@ -178,7 +178,7 @@ function Footer() {
         </div>
         <hr class="divider"></hr>
         <div className="row my-sm-4">
-          <div className="col-12 g-0 p-0 m-0">
+          <div className="col-12 ">
             <p style={{ color: "white", fontWeight: 600, fontSize: 18 }}>
               © 2023 AVEO. All Rights Reserved
             </p>

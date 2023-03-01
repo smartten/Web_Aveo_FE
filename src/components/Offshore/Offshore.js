@@ -95,7 +95,7 @@ function Offshore() {
     <div className="container-fluid overflow-hidden p-0 m-0 g-0">
       <div className="hero-section g-0 m-0 py-sm-5">
         <div className="container d-flex">
-          <div className="row mt-4 pt-5 mt-sm-0 pt-sm-0">
+          <div className="row mt-4 pt-5 mt-sm-5 pt-sm-0">
             <div className="col-12  col-md-5 py-0 py-sm-5">
               <img className="img-fluid py-0 py-sm-5" src={image1} />
             </div>

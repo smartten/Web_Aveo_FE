@@ -386,7 +386,7 @@
 @media only screen and (max-width: 768px) { 
 .content-mob{
      .col-sm-6{
-         width: 100%;
+         width: 47%;
      }
  }
  .mobility ,.mobility-2 ,.mobility-3 {
@@ -452,8 +452,16 @@
     }
 }
 .bg-snow{
+    .col-sm-4{
+        width: 100%;
+    }
     span{
         font-size: 2rem;
+    }
+}
+.content-mob{
+    .col-sm-6{
+        width: 100%;
     }
 }
 }

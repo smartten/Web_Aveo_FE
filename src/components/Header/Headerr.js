@@ -58,9 +58,13 @@ function Headerr() {
       "home"
     ),
     getItem(
-      <a style={{ color: "#616161" }} className="link-for-res" href="/about-us">
+      <NavLink
+        style={{ color: "#616161" }}
+        className="link-for-res"
+        to="about-us"
+      >
         About Us
-      </a>,
+      </NavLink>,
       "about"
     ),
     getItem(
@@ -250,13 +254,13 @@ function Headerr() {
           theme="light"
           items={items}
         />
-        <a
-          href="/contact-us"
+        <NavLink
+          to="contact-us"
           id="header-but"
           className="header-but px-4 px-lg-0 mt-2 m-lg-4"
         >
           Contact
-        </a>
+        </NavLink>
       </Drawer>
 
       <div

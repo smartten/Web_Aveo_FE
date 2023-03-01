@@ -51,6 +51,7 @@ function Application() {
       var txtBlock = document.getElementsByClassName("txt-block");
       var animate = document.getElementsByClassName("animate");
       var animate2 = document.getElementsByClassName("animate-2");
+      var animate3 = document.getElementsByClassName("bg-snow-animate");
 
       if (window.scrollY >= 380) {
         for (var i = 0; i < mobility.length; i++) {
@@ -62,7 +63,7 @@ function Application() {
           mobility2[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 950) {
+      if (window.scrollY >= 750) {
         for (var i = 0; i < mobility3.length; i++) {
           mobility3[i].classList.add("fadeInUp", "cssanimation");
         }
@@ -75,12 +76,17 @@ function Application() {
           txtBlock[i].classList.add("fadeInRight", "cssanimation");
         }
       }
-      if (window.scrollY >= 1100) {
+      if (window.scrollY >= 1650) {
+        for (var i = 0; i < animate3.length; i++) {
+          animate3[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 3000) {
         for (var i = 0; i < animate.length; i++) {
           animate[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 1400) {
+      if (window.scrollY >= 3300) {
         for (var i = 0; i < animate2.length; i++) {
           animate2[i].classList.add("fadeInUp", "cssanimation");
         }
@@ -268,7 +274,7 @@ function Application() {
 
       <div className="my-5 py-sm-5 bg-snow">
         <div className="container">
-          <div className="row px-2 px-sm-0">
+          <div className="row px-2 px-sm-0 bg-snow-animate">
             <div className="col-sm-4 g-0 gx-sm-4">
               <div className="row g-0 p-0 ">
                 <div className="col-4 col-sm-5">

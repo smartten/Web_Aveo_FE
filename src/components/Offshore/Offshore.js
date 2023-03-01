@@ -65,7 +65,7 @@ function Offshore() {
           mobility2[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 950) {
+      if (window.scrollY >= 750) {
         for (var i = 0; i < mobility3.length; i++) {
           mobility3[i].classList.add("fadeInUp", "cssanimation");
         }
@@ -78,12 +78,12 @@ function Offshore() {
           txtBlock[i].classList.add("fadeInRight", "cssanimation");
         }
       }
-      if (window.scrollY >= 1100) {
+      if (window.scrollY >= 1800) {
         for (var i = 0; i < animate.length; i++) {
           animate[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 1400) {
+      if (window.scrollY >= 1900) {
         for (var i = 0; i < animate2.length; i++) {
           animate2[i].classList.add("fadeInUp", "cssanimation");
         }
@@ -297,6 +297,7 @@ function Offshore() {
                 <p>Kick-start your project.</p>
                 <br />
                 <br />
+                <p></p>
               </div>
             </div>
           </div>

@@ -51,7 +51,7 @@ function Footer() {
             </div>
           </div>
           <div className="col-6 col-sm-2 footer-headquarter-col1">
-            <b style={{ fontFamily: "revert-layer", fontSize: 20 }}>Services</b>
+            <b style={{ fontFamily: "inherit", fontSize: 20 }}>Services</b>
             <p className="mt-2">
               <a className="footer-link" href="/offshore-development">
                 Offshore Development Services
@@ -92,7 +92,7 @@ function Footer() {
           <div className="col-6 col-sm-2  footer-headquarter-col1">
             <b
               style={{
-                fontFamily: "revert-layer",
+                fontFamily: "inherit",
                 fontSize: 20,
               }}
             >
@@ -129,7 +129,7 @@ function Footer() {
         </div>
         <hr class="divider"></hr>
         <div className="row mt-sm-5 pb-sm-4">
-          <div className="col-12 ">
+          <div className="col-12 all-right">
             <p
               style={{
                 color: "white",

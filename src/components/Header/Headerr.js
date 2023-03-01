@@ -34,129 +34,87 @@ function getItem(label, key, children) {
 }
 const items = [
   getItem(
-    <a className="link-for-res" style={{ color: "#616161" }} href="/">
+    <a className="link-for-res" href="/">
       Home
     </a>,
     "home"
   ),
   getItem(
-    <a style={{ color: "#616161" }} className="link-for-res" href="/about-us">
+    <a className="link-for-res" href="/about-us">
       About Us
     </a>,
     "about"
   ),
-  getItem(
-    <a style={{ color: "#616161" }} className="link-for-res">
-      Services
-    </a>,
-    "services",
-    [
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/offshore-development"
-        >
-          Offshore Development Services
-        </a>,
-        "1"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/web-application"
-        >
-          Web Application Development
-        </a>,
-        "2"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/mobile-application"
-        >
-          Mobile Application Development
-        </a>,
-        "3"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/testing-service"
-        >
-          Testing Service
-        </a>,
-        "4"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/cloud-service"
-        >
-          Cloud Services
-        </a>,
-        "5"
-      ),
-    ]
-  ),
-  getItem(
-    <a style={{ color: "#616161" }} className="link-for-res">
-      Industries
-    </a>,
-    "industries",
-    [
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/manufacturing"
-        >
-          Manufacturing
-        </a>,
-        "6"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/health-care"
-        >
-          Health Care
-        </a>,
-        "7"
-      ),
-      getItem(
-        <a style={{ color: "#616161" }} className="link-for-res" href="/retail">
-          Retail
-        </a>,
-        "8"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/ecommerce"
-        >
-          Ecommerce
-        </a>,
-        "9"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/financial"
-        >
-          Financial
-        </a>,
-        "10"
-      ),
-    ]
-  ),
+  getItem(<a className="link-for-res">Services</a>, "services", [
+    getItem(
+      <a className="link-for-sub" href="/offshore-development">
+        Offshore Development Services
+      </a>,
+      "1"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/web-application">
+        Web Application Development
+      </a>,
+      "2"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/mobile-application">
+        Mobile Application Development
+      </a>,
+      "3"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/custom-software">
+        Custom Software Development
+      </a>,
+      "11"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/testing-service">
+        Testing Service
+      </a>,
+      "4"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/cloud-service">
+        Cloud Services
+      </a>,
+      "5"
+    ),
+  ]),
+  getItem(<a className="link-for-res">Industries</a>, "industries", [
+    getItem(
+      <a className="link-for-sub" href="/manufacturing">
+        Manufacturing
+      </a>,
+      "6"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/health-care">
+        Health Care
+      </a>,
+      "7"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/retail">
+        Retail
+      </a>,
+      "8"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/ecommerce">
+        Ecommerce
+      </a>,
+      "9"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/financial">
+        Financial
+      </a>,
+      "10"
+    ),
+  ]),
 ];
 function Headerr() {
   const [nav, setNav] = useState("");
@@ -212,19 +170,15 @@ function Headerr() {
       {/* <div id="repon-menu"></div> */}
 
       <Drawer
-        style={{ padding: -24 }}
-        width="45vh"
+        style={{ padding: -24, overflow: "hidden" }}
+        width="80%"
         onClose={onClose}
         open={open}
       >
         <Menu
           style={{
-            width: "125%",
-            marginLeft: -27,
-            // height: "100vh",
-            // paddingRight: 85,
+            width: "100%",
           }}
-          // className="draw-menu"
           mode="inline"
           theme="light"
           items={items}
@@ -232,9 +186,9 @@ function Headerr() {
         <a
           href="/contact-us"
           id="header-but"
-          className="header-but px-4 px-lg-0 mt-2 m-lg-4"
+          className="header-but px-4 px-lg-0 m-lg-4"
         >
-          Contact
+          &nbsp;Contact
         </a>
       </Drawer>
 

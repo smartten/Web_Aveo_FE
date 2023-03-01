@@ -128,8 +128,8 @@
               // transform: translateX(38px);
               .text-title {
                 color               : #fff;
-                font-size           : 55px;
-                line-height         : 60px;
+                font-size           : 50px;
+                line-height         : 70px;
                 font-weight         : 600;
                 // text-transform   : uppercase;
                 margin              : 0px;
@@ -137,15 +137,17 @@
 
               .sub-text {
                 color      : #ffffff;
-                font-size  : 20px;
+                font-size  : 18px;
                 line-height: 45px;
+                width      : 51%;
+                margin-top : 30px;
               }
 
               .btn-detail {
                 color           : #fff !important;
                 background-color: #f15f22;
                 border-color    : #f15f22 !important;
-                font-size       : 19px;
+                font-size       : 16px;
                 padding         : 10px 25px;
               }
             }
@@ -543,7 +545,9 @@
     }
 
     .sub-text {
-      font-size: 18px !important;
+      font-size  : 18px !important;
+      line-height: 30px !important;
+      width      : 100% !important;
     }
 
     .our-services {

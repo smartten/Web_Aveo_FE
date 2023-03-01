@@ -1,17 +1,58 @@
 import "./ContactStyle.scss";
 import { HomeOutlined, MailOutlined } from "@ant-design/icons";
 import { Button, Form, Input, Select } from "antd";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const onFinish = (values) => {
+  const email = ["aveoglb@gmail.com", "luongtiendung1508@gmail.com"];
+  const config = {
+    // Username: "nguuyenminhhieu28801@gmail.com",
+    // Password: "38DF21CEE95626703020DCE7BAED39DB2B2D",
+    // Host: "smtp.elasticemail.com",
+    SecureToken: "6e45cd3b-27cc-48fb-b0bc-82dda3b0e40f",
+    Port: 2525,
+    To: email,
+    From: "technology.aveo@gmail.com",
+    Subject: "Contact to You",
+    Body: `Câu hỏi : ${values.question} , Tên : ${values.name} , Email: ${values.email} , Công ty: ${values.Company}, Chi Tiết Nhu Cầu: ${values.explain}`,
+  };
   console.log("Success:", values);
+  if (window.Email) {
+    window.Email.send(config).then(() => alert("Send Email Success"));
+  }
+  console.log(values);
 };
 const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
 };
+
 function Contact() {
+  const form = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+    // console.log(e);
+    emailjs
+      .sendForm(
+        "service_vi51xno",
+        "template_m4ckfww",
+        form.current,
+        "YZ8xiTtd6QFPRd9qAw"
+      )
+      .then(
+        (result) => {
+          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   const { TextArea } = Input;
   useEffect(() => {
-    document.title = "AVEO Global";
+    document.title =
+      "AVEO Global - Leading Software Development Company in Vietnam";
   }, []);
   return (
     <div className="contact">
@@ -100,6 +141,7 @@ function Contact() {
                   onFinish={onFinish}
                   onFinishFailed={onFinishFailed}
                   autoComplete="off"
+                  ref={form}
                 >
                   <Form.Item
                     label="This question is about:"
@@ -112,20 +154,22 @@ function Contact() {
                     ]}
                   >
                     <Select>
-                      <Select.Option value="1">Bugs/Issues</Select.Option>
-                      <Select.Option value="2">
+                      <Select.Option value="Bugs/Issues">
+                        Bugs/Issues
+                      </Select.Option>
+                      <Select.Option value="Request a quotation">
                         Request a quotation
                       </Select.Option>
-                      <Select.Option value="3">
+                      <Select.Option value=" Pather/Agency reqistration request">
                         Pather/Agency reqistration request
                       </Select.Option>
-                      <Select.Option value="4">
+                      <Select.Option value=" Online meeting request">
                         Online meeting request
                       </Select.Option>
-                      <Select.Option value="5">
+                      <Select.Option value="Offline meeting request">
                         Offline meeting request
                       </Select.Option>
-                      <Select.Option value="6">Others</Select.Option>
+                      <Select.Option value="Others">Others</Select.Option>
                     </Select>
                   </Form.Item>
                   <Form.Item
@@ -164,7 +208,10 @@ function Contact() {
                   >
                     <Input />
                   </Form.Item>
-                  <Form.Item label="Explain your needs in details">
+                  <Form.Item
+                    label="Explain your needs in details"
+                    name="explain"
+                  >
                     <TextArea rows={6} />
                   </Form.Item>
 

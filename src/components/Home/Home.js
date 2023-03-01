@@ -28,7 +28,8 @@ function Home() {
   }, 500);
 
   useEffect(() => {
-    document.title = "AVEO Global";
+    document.title =
+      "AVEO Global - Leading Software Development Company in Vietnam";
   }, []);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -72,16 +73,22 @@ function Home() {
               <div className="slide-content">
                 <div className="text-slider">
                   <p className="text-title">
-                    <span>SME Warehouse</span>
+                    <span>Leading Software</span>
                   </p>
-                  <p className="text-title">Management Systems</p>
-                  <p className="text-title">Vision 2030</p>
+                  <p className="text-title">Development Company</p>
+                  <p className="text-title">in Vietnam</p>
                   <p className="sub-text">
-                    The concept of on-demand warehousing is fast emerging to
-                    meet <br></br>the intermittent demands for more storage
-                    space.
+                    With dedicated and experienced software engineers, we
+                    accompany clients to create lasting value throughout the
+                    digital transformation process.
                   </p>
-                  <a className="btn btn-detail">Get The Detail</a>
+                  <a
+                    href="/contact-us"
+                    target="_blank"
+                    className="btn btn-detail"
+                  >
+                    Get In Touch
+                  </a>
                 </div>
               </div>
             </div>
@@ -440,6 +447,37 @@ function Home() {
                         <p className="name-comment">Mr. Mark Henry</p>
                         <p className="address-name">
                           Co MATCH Consulting - Australia
+                        </p>
+                        <Rate defaultValue={5} disabled className="mobile" />
+                      </div>
+                    </div>
+                    <div className="col-4">
+                      <div className="box-comment">
+                        <p className="comment-content">
+                          AVEO Global is the best technology partner any
+                          business could ask for, they go above and beyond to
+                          satisfy my business needs and they will do research
+                          and develop anything you need. I will never switch to
+                          any other company, may your success be our success!
+                          P.S. AVEO is the best.
+                        </p>
+                        <p className="name-comment">Mr. Tony Nguyen</p>
+                        <p className="address-name">Blitz Group, Singapore</p>
+                        <Rate defaultValue={5} disabled className="mobile" />
+                      </div>
+                    </div>
+                    <div className="col-4">
+                      <div className="box-comment">
+                        <p className="comment-content">
+                          I was very happy with the promises made and, more
+                          importantly, delivered. Quality code. Neat and
+                          organized. They assisted with the last tweaks to
+                          ensure I was a happy client. I would be happy to work
+                          with them again on my next project.
+                        </p>
+                        <p className="name-comment">Mr. Dean Han</p>
+                        <p className="address-name">
+                          Military Insurance Corporation - MIC
                         </p>
                         <Rate defaultValue={5} disabled className="mobile" />
                       </div>

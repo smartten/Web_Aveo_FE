@@ -2,7 +2,8 @@ import "./AboutStyle.scss";
 import React, { useEffect } from "react";
 function AboutUs() {
   useEffect(() => {
-    document.title = "AVEO Global";
+    document.title =
+      "AVEO Global - Leading Software Development Company in Vietnam";
   }, []);
   return (
     <div className="about-us">

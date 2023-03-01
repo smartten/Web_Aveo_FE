@@ -51,6 +51,7 @@ function Application() {
       var txtBlock = document.getElementsByClassName("txt-block");
       var animate = document.getElementsByClassName("animate");
       var animate2 = document.getElementsByClassName("animate-2");
+      var animate3 = document.getElementsByClassName("bg-snow-animate");
 
       if (window.scrollY >= 380) {
         for (var i = 0; i < mobility.length; i++) {
@@ -62,7 +63,7 @@ function Application() {
           mobility2[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 950) {
+      if (window.scrollY >= 750) {
         for (var i = 0; i < mobility3.length; i++) {
           mobility3[i].classList.add("fadeInUp", "cssanimation");
         }
@@ -75,12 +76,17 @@ function Application() {
           txtBlock[i].classList.add("fadeInRight", "cssanimation");
         }
       }
-      if (window.scrollY >= 1100) {
+      if (window.scrollY >= 1650) {
+        for (var i = 0; i < animate3.length; i++) {
+          animate3[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 3000) {
         for (var i = 0; i < animate.length; i++) {
           animate[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 1400) {
+      if (window.scrollY >= 3300) {
         for (var i = 0; i < animate2.length; i++) {
           animate2[i].classList.add("fadeInUp", "cssanimation");
         }
@@ -268,13 +274,13 @@ function Application() {
 
       <div className="my-5 py-sm-5 bg-snow">
         <div className="container">
-          <div className="row px-2 px-sm-0">
+          <div className="row px-2 px-sm-0 bg-snow-animate">
             <div className="col-sm-4 g-0 gx-sm-4">
               <div className="row g-0 p-0 ">
                 <div className="col-4 col-sm-5">
                   <span>600+</span>
                 </div>
-                <div className="col-8 col-sm-7 my-sm-auto pt-3 pt-sm-0 pt-lg-3 gx-sm-5">
+                <div className="col-8 col-sm-7 my-sm-auto pt-2 pt-sm-1 pt-lg-3 gx-sm-5">
                   <p>Businesses Are Digitized</p>
                 </div>
               </div>
@@ -289,7 +295,7 @@ function Application() {
                 <div className="col-4 col-sm-5 col-xl-4 g-0">
                   <span>80%</span>
                 </div>
-                <div className="col-8 col-sm-7  col-xl-6 my-sm-auto pt-3 pt-sm-0 pt-lg-3 g-0">
+                <div className="col-8 col-sm-7  col-xl-6 my-sm-auto pt-2 pt-sm-0 pt-lg-3 g-0">
                   <p>Increase 4X Revenue</p>
                 </div>
               </div>
@@ -302,7 +308,7 @@ function Application() {
                 </div>
                 <div
                   // style={{ float: "right" }}
-                  className="col-8 col-sm-7 col-xl-4 my-sm-auto pt-3  g-0"
+                  className="col-8 col-sm-7 col-xl-4 my-sm-auto pt-2 pt-sm-2 pt-lg-3  g-0"
                 >
                   <p>Cost Saving</p>
                 </div>

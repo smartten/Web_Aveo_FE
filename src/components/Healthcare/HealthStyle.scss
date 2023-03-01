@@ -253,19 +253,11 @@
 @media only screen and (max-width: 767.98px) { 
     .content-mob{
          .col-sm-6{
-             width: 100%;
+             width: 47%;
          }
      }
      .mobility ,.mobility-2 ,.mobility-3 {
         margin-bottom: 15px;
-    }
-    .bg-snow{
-        .col-sm-4{
-            width: 100%;
-        }
-        span{
-            // float: right;
-        }
     }
      }
     
@@ -294,6 +286,11 @@
             font-size: 50px;
         }
     }
+    .content-mob{
+        .col-sm-6{
+            width: 47%;
+        }
+    }
     }
     @media only screen and (max-width: 1000px) {
         .content-bot{
@@ -304,11 +301,6 @@
         .mobility ,.mobility-2 ,.mobility-3 {
             .col-12{
                 text-align: center;
-            }
-        }
-        .bg-snow{
-            span{
-                font-size: 2.5rem;
             }
         }
         }

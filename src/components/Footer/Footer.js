@@ -56,24 +56,36 @@ function Footer() {
               <a className="footer-link" href="/offshore-development">
                 Offshore Development Services
               </a>
-            </p>
-            <p>
+              <br />
+              <p style={{ margin: 6 }}></p>
+              {/* </p>
+            <p> */}
               <a className="footer-link" href="/web-application">
                 Web Application Development
               </a>
-            </p>
-            <p>
+              <br />
+              <p style={{ margin: 6 }}></p>
+              {/* </p>
+            <p> */}
               <a className="footer-link" href="/mobile-application">
                 Mobile Application Development
               </a>
-            </p>
-            <p>
+              <br />
+              <p style={{ margin: 6 }}></p>
+              {/* </p>
+            <p> */}
               <a className="footer-link" href="/testing-service">
                 Testing services
               </a>
               <br />
+              <p style={{ margin: 6 }}></p>
               <a className="footer-link" href="/integration-services">
                 Cloud Services
+              </a>
+              <br />
+              <p style={{ margin: 6 }}></p>
+              <a className="footer-link" href="/custom-software">
+                Custom Software Development
               </a>
             </p>
           </div>

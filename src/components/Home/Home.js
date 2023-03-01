@@ -315,7 +315,7 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <a href="#">
+                    <a href="/custom-software">
                       <ArrowRightOutlined />
                     </a>
                   </div>

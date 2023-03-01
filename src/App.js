@@ -54,6 +54,7 @@ function App() {
         <Route path="/health-care" element={<Healthcare />} />
         <Route path="/whitepapers" element={<Whitepapers />} />
         <Route path="/offshore-development" element={<Offshore />} />
+        <Route path="/custom-software" element={<WebApplication />} />
       </Routes>
       <Footer />
     </div>

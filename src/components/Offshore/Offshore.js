@@ -249,7 +249,7 @@ function Offshore() {
           </div>
         </div>
 
-        <div className="row g-0 mb-sm-5 step-for-col">
+        <div className="row g-0 mb-sm-3 step-for-col">
           <div
             style={{ marginRight: "auto" }}
             className="col-12 col-sm-6  px-sm-4 step"
@@ -295,6 +295,8 @@ function Offshore() {
               <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Take-off</h5>
                 <p>Kick-start your project.</p>
+                <br />
+                <br />
               </div>
             </div>
           </div>

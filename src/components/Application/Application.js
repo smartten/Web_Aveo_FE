@@ -277,8 +277,7 @@ function Application() {
         </div>
       </div>
       <br />
-
-      <div className="my-5 py-sm-5 bg-snow">
+      <div className="m-5 py-sm-5 bg-snow">
         <div className="container">
           <div className="row px-2 px-sm-0 bg-snow-animate">
             <div className="col-sm-4 g-0 gx-sm-4">

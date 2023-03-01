@@ -31,39 +31,61 @@
     }
 
     .cssanimation {
-        animation-duration : 1s;
+        animation-duration : 2s;
         animation-fill-mode: both;
     }
 
+    .fadeInRight {
+        -webkit-animation-name: fadeInRight;
+        animation-name        : fadeInRight;
+        display               : block !important;
+    }
+
     .fadeInLeft {
-        animation-name: fadeInLeft;
-        display       : block
+        -webkit-animation-name: fadeInLeft;
+        animation-name        : fadeInLeft;
+        display               : block !important;
+    }
+
+    .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name        : fadeInUp;
+        display               : block !important;
     }
 
     @keyframes fadeInLeft {
-        from {
+        0% {
             opacity  : 0;
-            transform: translateX(-100px);
+            transform: translate3d(-20%, 0, 0);
         }
 
-        to {
-            opacity: 1
+        100% {
+            opacity  : 1;
+            transform: none
         }
-    }
-
-    .fadeRight {
-        animation-name: fadeInRight;
-        display       : block
     }
 
     @keyframes fadeInRight {
-        from {
+        0% {
             opacity  : 0;
-            transform: translateX(-100px);
+            transform: translate3d(20%, 0, 0);
         }
 
-        to {
-            opacity: 1
+        100% {
+            opacity  : 1;
+            transform: none;
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity  : 0;
+            transform: translate3d(0, 30%, 0);
+        }
+
+        100% {
+            opacity  : 1;
+            transform: none;
         }
     }
 

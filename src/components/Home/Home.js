@@ -94,7 +94,7 @@ function Home() {
             <div className="row d-flex align-items-center">
               <div className="col-md-5 col-lg-6 order-first order-md-2">
                 <div
-                  className="img-block left-column wow fadeInLeft"
+                  className="img-block left-column wow"
                   style={{ visibility: "visible" }}
                 >
                   <img
@@ -107,7 +107,7 @@ function Home() {
               </div>
               <div className="col-md-7 col-lg-6 order-last order-lg-2">
                 <div
-                  className="txt-block left-column wow fadeInRight"
+                  className="txt-block left-column wow"
                   style={{ visibility: "visible" }}
                 >
                   <h3 className="h3-xs">
@@ -124,7 +124,7 @@ function Home() {
                     Digital Transformation process.
                   </p>
                   <div
-                    className="btns-group mb-30 wow fadeInUp"
+                    className="btns-group mb-30 wow "
                     style={{ visibility: "visible" }}
                   >
                     <a className="btn btn-contact" href="/contact-us">

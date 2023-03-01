@@ -29,13 +29,57 @@ function Ecommerce() {
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
-      text[i].classList.add("fadeRight", "cssanimation");
+      text[i].classList.add("fadeInRight", "cssanimation");
     }
     var image = document.getElementsByClassName("image");
     for (var i = 0; i < image.length; i++) {
       image[i].classList.add("fadeInLeft", "cssanimation");
     }
   }, 1000);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      var up1 = document.getElementsByClassName("up1");
+      var up2 = document.getElementsByClassName("up2");
+      var up3 = document.getElementsByClassName("up3");
+      var up4 = document.getElementsByClassName("up4");
+      var up5 = document.getElementsByClassName("up5");
+      var bigGuy = document.getElementsByClassName("big-guys");
+      if (window.scrollY >= 250) {
+        for (var i = 0; i < up1.length; i++) {
+          up1[i].classList.add("fadeInUp", "cssanimation");
+        }
+        // for (var i = 0; i < txtblock.length; i++) {
+        //   txtblock[i].classList.add("fadeInRight", "cssanimation");
+        // }
+      }
+      if (window.scrollY >= 330) {
+        for (var i = 0; i < up2.length; i++) {
+          up2[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 450) {
+        for (var i = 0; i < up5.length; i++) {
+          up5[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 800) {
+        for (var i = 0; i < bigGuy.length; i++) {
+          bigGuy[i].classList.add("fadeInLeft", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1100) {
+        for (var i = 0; i < up3.length; i++) {
+          up3[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1300) {
+        for (var i = 0; i < up4.length; i++) {
+          up4[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+    });
+  }, []);
   return (
     <div className="ecommerce">
       <section className="slider">
@@ -79,7 +123,7 @@ function Ecommerce() {
                   <div className="icon-service col-2">
                     <AppstoreOutlined />
                   </div>
-                  <div className="text-service col">
+                  <div className="text-service col up1">
                     <b className="text-title">
                       Cart to Cart Migration Made Easy
                     </b>
@@ -92,7 +136,7 @@ function Ecommerce() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col up1">
                 <div className="content-text row">
                   <div className="icon-service col-2">
                     <FundOutlined />
@@ -109,7 +153,7 @@ function Ecommerce() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col up1">
                 <div className="content-text row">
                   <div className="icon-service col-2">
                     <FolderAddOutlined />
@@ -125,7 +169,7 @@ function Ecommerce() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col up2">
                 <div className="content-text row">
                   <div className="icon-service col-2">
                     <BarChartOutlined />
@@ -142,7 +186,7 @@ function Ecommerce() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col up2">
                 <div className="content-text row">
                   <div className="icon-service col-2">
                     <RetweetOutlined />
@@ -157,7 +201,7 @@ function Ecommerce() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col up2">
                 <div className="content-text row">
                   <div className="icon-service col-2">
                     <ControlOutlined />
@@ -233,7 +277,7 @@ function Ecommerce() {
           <p className="title-benefit">Benefits of Partnering with AVEO</p>
           <div className="container benefit ">
             <div className="row">
-              <div className="col-4 content-part">
+              <div className="col-4 content-part up3">
                 <div className="icon-benefit">
                   <BulbOutlined />
                 </div>
@@ -247,7 +291,7 @@ function Ecommerce() {
                   </p>
                 </div>
               </div>
-              <div className="col-4 content-part">
+              <div className="col-4 content-part up3">
                 <div className="icon-benefit">
                   <SelectOutlined />
                 </div>
@@ -260,7 +304,7 @@ function Ecommerce() {
                   </p>
                 </div>
               </div>
-              <div className="col-4 content-part">
+              <div className="col-4 content-part up3">
                 <div className="icon-benefit">
                   <UserOutlined />
                 </div>
@@ -275,7 +319,7 @@ function Ecommerce() {
               </div>
             </div>
             <div className="row">
-              <div className="col-4 content-part">
+              <div className="col-4 content-part up4">
                 <div className="icon-benefit">
                   <PieChartOutlined />
                 </div>
@@ -289,7 +333,7 @@ function Ecommerce() {
                   </p>
                 </div>
               </div>
-              <div className="col-4 content-part">
+              <div className="col-4 content-part up4">
                 <div className="icon-benefit">
                   <SwitcherOutlined />
                 </div>
@@ -302,7 +346,7 @@ function Ecommerce() {
                   </p>
                 </div>
               </div>
-              <div className="col-4 content-part">
+              <div className="col-4 content-part up4">
                 <div className="icon-benefit">
                   <PaperClipOutlined />
                 </div>

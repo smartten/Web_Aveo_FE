@@ -33,13 +33,47 @@ function Testing() {
   setTimeout(function () {
     var text = document.getElementsByClassName("text");
     for (var i = 0; i < text.length; i++) {
-      text[i].classList.add("fadeRight", "cssanimation");
+      text[i].classList.add("fadeInRight", "cssanimation");
     }
     var image = document.getElementsByClassName("image");
     for (var i = 0; i < image.length; i++) {
       image[i].classList.add("fadeInLeft", "cssanimation");
     }
   }, 1000);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      var up1 = document.getElementsByClassName("up1");
+      var up2 = document.getElementsByClassName("up2");
+      var up3 = document.getElementsByClassName("up3");
+      var up4 = document.getElementsByClassName("up4");
+      var bigGuy = document.getElementsByClassName("big-guys");
+      if (window.scrollY >= 320) {
+        for (var i = 0; i < up1.length; i++) {
+          up1[i].classList.add("fadeInUp", "cssanimation");
+        }
+        // for (var i = 0; i < txtblock.length; i++) {
+        //   txtblock[i].classList.add("fadeInRight", "cssanimation");
+        // }
+      }
+      if (window.scrollY >= 330) {
+        for (var i = 0; i < up2.length; i++) {
+          up2[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1560) {
+        for (var i = 0; i < bigGuy.length; i++) {
+          bigGuy[i].classList.add("fadeInLeft", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1650) {
+        for (var i = 0; i < up3.length; i++) {
+          up3[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+    });
+  }, []);
+
   return (
     <div className="testing">
       <section className="slider">
@@ -84,7 +118,7 @@ function Testing() {
           </div>
           <div className="content-service">
             <div className="row row-cols-1 row-cols-md-2">
-              <div className="col">
+              <div className="col up1">
                 <div className="content-text row">
                   <div className="icon-service col-2">
                     <img src={icon1} />
@@ -100,7 +134,7 @@ function Testing() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col up1">
                 <div className="content-text row">
                   <div className="icon-service col-2 left w-mobi">
                     <img src={icon2} />
@@ -115,7 +149,7 @@ function Testing() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col up2">
                 <div className="content-text row">
                   <div className="icon-service col-2">
                     <img src={icon3} />
@@ -130,7 +164,7 @@ function Testing() {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col up2">
                 <div className="content-text row">
                   <div className="icon-service col-2">
                     <img src={icon4} />
@@ -264,7 +298,7 @@ function Testing() {
       <section className="benefits-of-partnering">
         <div className="container">
           <p className="title-benefit">Benefits of Partnering with AVEO</p>
-          <div className="container benefit ">
+          <div className="container benefit up3 ">
             <div className="row">
               <div className="col-4 content-part">
                 <div className="icon-benefit">
@@ -307,7 +341,7 @@ function Testing() {
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row up4">
               <div className="col-4 content-part">
                 <div className="icon-benefit">
                   <PieChartOutlined />

@@ -44,6 +44,15 @@ function Offshore() {
       heroText[i].classList.add("fadeInRight", "cssanimation");
     }
   }, 2500);
+  useEffect(() => {
+    document.title = "AVEO Global - Offshore Development Service";
+    topFunction();
+  }, []);
+
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

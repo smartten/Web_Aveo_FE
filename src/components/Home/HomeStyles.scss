@@ -34,7 +34,7 @@
   }
 
   .cssanimation {
-    animation-duration : 2s;
+    animation-duration : 3s;
     animation-fill-mode: both;
   }
 
@@ -390,7 +390,7 @@
         display            : flex;
         align-items        : center;
         background-image   : url('./bannerbackground.jpg');
-        height             : 700px !important;
+        height             : 700px;
         min-height         : 1px;
         float              : left;
         width              : 100% !important;
@@ -418,10 +418,10 @@
 
           .comment-content {
             .box-comment {
-              background-color   : #fff;
-              padding            : 50px;
-              // height          : 400px;
+              background-color: #fff;
+              padding         : 50px;
 
+              // height          : 400px;
               .comment-content {
                 color : #000;
                 height: 220px;
@@ -459,7 +459,7 @@
                 &::before {
                   color     : white !important;
                   font-size : 10px !important;
-                  margin-top: 20px !important;
+                  margin-top: 20px;
                 }
               }
             }
@@ -534,6 +534,33 @@
 
 @media only screen and (max-width: 46.1875em) {
   .home {
+
+    .contact-us {
+      padding-top: 50px;
+    }
+
+    .slick-dots {
+      .slick-active {
+        button {
+          &::before {
+            opacity: 1 !important;
+            color  : white !important;
+          }
+        }
+      }
+
+      li {
+        button {
+          &::before {
+            color           : white !important;
+            font-size       : 10px !important;
+            margin-top      : 5px !important;
+            // margin-bottom: 10px !important;
+          }
+        }
+      }
+    }
+
     .slider-item-home {
       background-position: 50% !important;
       text-align         : center !important;
@@ -541,7 +568,8 @@
     }
 
     .text-title {
-      font-size: 35px !important;
+      font-size  : 30px !important;
+      line-height: 50px !important;
     }
 
     .sub-text {
@@ -553,7 +581,7 @@
     .our-services {
       .service-content {
         .col-3 {
-          width        : 100% !important;
+          width        : 90% !important;
           margin-bottom: 20px;
         }
       }
@@ -612,11 +640,19 @@
     }
 
     .comment {
+      // height: 1500px !important;
+
+      .text {
+        margin: 0px !important;
+      }
+
       .box-comment {
         margin-left: 20px !important;
+        height     : 500px !important;
 
         .comment-content {
-          height   : 260px !important;
+          height: 280px !important;
+
           // height: auto !important;
         }
       }

@@ -2,6 +2,7 @@ import "./HeadStyle.scss";
 import logo from "./Asset 1.svg";
 import logo2 from "./Logo.svg";
 import React, { useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import {
   CaretDownOutlined,
   AlignRightOutlined,
@@ -9,7 +10,25 @@ import {
 } from "@ant-design/icons";
 import { Menu, Drawer } from "antd";
 
-window.onload = function () {
+// window.onload = function () {
+//   setTimeout(function () {
+//     document.getElementById("logo").classList.add("logo");
+//   }, 1000);
+
+//   setTimeout(function () {
+//     var testarray = document.getElementsByClassName("link");
+//     for (var i = 0; i < testarray.length; i++) {
+//       testarray[i].classList.add("fadeInBottom", "cssanimation");
+//     }
+//     document
+//       .getElementById("header-but")
+//       .classList.add("fadeInBottom", "cssanimation");
+//   }, 1500);
+// };
+
+function Headerr() {
+  // const navigate = useNavigate();
+
   setTimeout(function () {
     document.getElementById("logo").classList.add("logo");
   }, 1000);
@@ -23,142 +42,144 @@ window.onload = function () {
       .getElementById("header-but")
       .classList.add("fadeInBottom", "cssanimation");
   }, 1500);
-};
 
-function getItem(label, key, children) {
-  return {
-    key,
-    label,
-    children,
-  };
-}
-const items = [
-  getItem(
-    <a className="link-for-res" style={{ color: "#616161" }} href="/">
-      Home
-    </a>,
-    "home"
-  ),
-  getItem(
-    <a style={{ color: "#616161" }} className="link-for-res" href="/about-us">
-      About Us
-    </a>,
-    "about"
-  ),
-  getItem(
-    <a style={{ color: "#616161" }} className="link-for-res">
-      Services
-    </a>,
-    "services",
-    [
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/offshore-development"
-        >
-          Offshore Development Services
-        </a>,
-        "1"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/web-application"
-        >
-          Web Application Development
-        </a>,
-        "2"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/mobile-application"
-        >
-          Mobile Application Development
-        </a>,
-        "3"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/testing-service"
-        >
-          Testing Service
-        </a>,
-        "4"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/cloud-service"
-        >
-          Cloud Services
-        </a>,
-        "5"
-      ),
-    ]
-  ),
-  getItem(
-    <a style={{ color: "#616161" }} className="link-for-res">
-      Industries
-    </a>,
-    "industries",
-    [
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/manufacturing"
-        >
-          Manufacturing
-        </a>,
-        "6"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/health-care"
-        >
-          Health Care
-        </a>,
-        "7"
-      ),
-      getItem(
-        <a style={{ color: "#616161" }} className="link-for-res" href="/retail">
-          Retail
-        </a>,
-        "8"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/ecommerce"
-        >
-          Ecommerce
-        </a>,
-        "9"
-      ),
-      getItem(
-        <a
-          style={{ color: "#616161" }}
-          className="link-for-res"
-          href="/financial"
-        >
-          Financial
-        </a>,
-        "10"
-      ),
-    ]
-  ),
-];
-function Headerr() {
+  function getItem(label, key, children) {
+    return {
+      key,
+      label,
+      children,
+    };
+  }
+  const items = [
+    getItem(
+      <a className="link-for-res" style={{ color: "#616161" }} href="/">
+        Home
+      </a>,
+      "home"
+    ),
+    getItem(
+      <a style={{ color: "#616161" }} className="link-for-res" href="/about-us">
+        About Us
+      </a>,
+      "about"
+    ),
+    getItem(
+      <a style={{ color: "#616161" }} className="link-for-res">
+        Services
+      </a>,
+      "services",
+      [
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/offshore-development"
+          >
+            Offshore Development Services
+          </a>,
+          "1"
+        ),
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/web-application"
+          >
+            Web Application Development
+          </a>,
+          "2"
+        ),
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/mobile-application"
+          >
+            Mobile Application Development
+          </a>,
+          "3"
+        ),
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/testing-service"
+          >
+            Testing Service
+          </a>,
+          "4"
+        ),
+        getItem(
+          <NavLink
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            to="cloud-service"
+          >
+            Cloud Services
+          </NavLink>,
+          "5"
+        ),
+      ]
+    ),
+    getItem(
+      <a style={{ color: "#616161" }} className="link-for-res">
+        Industries
+      </a>,
+      "industries",
+      [
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/manufacturing"
+          >
+            Manufacturing
+          </a>,
+          "6"
+        ),
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/health-care"
+          >
+            Health Care
+          </a>,
+          "7"
+        ),
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/retail"
+          >
+            Retail
+          </a>,
+          "8"
+        ),
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/ecommerce"
+          >
+            Ecommerce
+          </a>,
+          "9"
+        ),
+        getItem(
+          <a
+            style={{ color: "#616161" }}
+            className="link-for-res"
+            href="/financial"
+          >
+            Financial
+          </a>,
+          "10"
+        ),
+      ]
+    ),
+  ];
   const [nav, setNav] = useState("");
   const [anhLogo, setLogo] = useState(logo);
   const [click, setClick] = useState(true);

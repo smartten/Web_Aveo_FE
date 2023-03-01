@@ -14,10 +14,11 @@ import img5 from "./imgoffshore.jpg";
 import img6 from "./TestingIng1.png";
 import img7 from "./CloudImg1.png";
 import "./HomeStyles.scss";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { Rate, Carousel } from "antd";
 import { RightCircleOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Home() {
   setTimeout(function () {
@@ -27,9 +28,12 @@ function Home() {
     }
   }, 500);
 
+  const [width, setWidth] = useState(0);
+
   useEffect(() => {
     document.title =
       "AVEO Global - Leading Software Development Company in Vietnam";
+    setWidth(window.screen.width);
   }, []);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -57,6 +61,8 @@ function Home() {
       }
     });
   }, []);
+
+  // const navigate = useNavigate();
   var settings = {
     dots: true,
     infinite: true,
@@ -134,9 +140,9 @@ function Home() {
                     className="btns-group mb-30 wow "
                     style={{ visibility: "visible" }}
                   >
-                    <a className="btn btn-contact" href="/contact-us">
+                    <NavLink className="btn btn-contact" to="contact-us">
                       Contact Us
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -181,9 +187,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <a href="/">
+                    <NavLink to="offshore-development">
                       <ArrowRightOutlined />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -208,9 +214,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <a href="/web-application">
+                    <NavLink to="web-application">
                       <ArrowRightOutlined />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -234,9 +240,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <a href="/web-application">
+                    <NavLink to="web-application">
                       <ArrowRightOutlined />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -261,9 +267,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <a href="/testing-service">
+                    <NavLink to="testing-service">
                       <ArrowRightOutlined />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -288,9 +294,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <a href="/cloud-service">
+                    <NavLink to="cloud-service">
                       <ArrowRightOutlined />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -315,9 +321,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <a href="/custom-software">
+                    <NavLink to="custom-software">
                       <ArrowRightOutlined />
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -383,235 +389,184 @@ function Home() {
                 <div className="text mb-5">
                   <p className="text-title">What our clients say about us?</p>
                 </div>
-
-                <Slider {...settings}>
-                  <div className="row comment-content d-flex">
-                    <div className="col-4">
-                      <div className="box-comment">
-                        <p className="comment-content">
-                          AVEO Global is the best technology partner any
-                          business could ask for, they go above and beyond to
-                          satisfy my business needs and they will do research
-                          and develop anything you need. I will never switch to
-                          any other company, may your success be our success!
-                          P.S. AVEO is the best.
-                        </p>
-                        <p className="name-comment">Mr. Tony Nguyen</p>
-                        <p className="address-name">Blitz Group, Singapore</p>
-                        <Rate defaultValue={5} disabled className="mobile" />
+                {width > 1024 ? (
+                  <Slider {...settings}>
+                    <div className="row comment-content d-flex">
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            AVEO Global is the best technology partner any
+                            business could ask for, they go above and beyond to
+                            satisfy my business needs and they will do research
+                            and develop anything you need. I will never switch
+                            to any other company, may your success be our
+                            success! P.S. AVEO is the best.
+                          </p>
+                          <p className="name-comment">Mr. Tony Nguyen</p>
+                          <p className="address-name">Blitz Group, Singapore</p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
+                      </div>
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            I was very happy with the promises made and, more
+                            importantly, delivered. Quality code. Neat and
+                            organized. They assisted with the last tweaks to
+                            ensure I was a happy client. I would be happy to
+                            work with them again on my next project.
+                          </p>
+                          <p className="name-comment">Mr. Dean Han</p>
+                          <p className="address-name">
+                            Military Insurance Corporation - MIC
+                          </p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
+                      </div>
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            The project thus far was not complicated and we are
+                            continuing to the next phase. My experience with
+                            AVEO to date: Very good service - friendly and
+                            helpful with high level of technical understanding
+                            and competence . Listens to what I want, makes
+                            suggestions where appropriate and delivers very
+                            quickly.
+                          </p>
+                          <p className="name-comment">Mr. Hung Nguyen</p>
+                          <p className="address-name">
+                            Vietnam Electricity Corporation - EVN
+                          </p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
                       </div>
                     </div>
-                    <div className="col-4">
-                      <div className="box-comment">
-                        <p className="comment-content">
-                          I was very happy with the promises made and, more
-                          importantly, delivered. Quality code. Neat and
-                          organized. They assisted with the last tweaks to
-                          ensure I was a happy client. I would be happy to work
-                          with them again on my next project.
-                        </p>
-                        <p className="name-comment">Mr. Dean Han</p>
-                        <p className="address-name">
-                          Military Insurance Corporation - MIC
-                        </p>
-                        <Rate defaultValue={5} disabled className="mobile" />
+                    <div className="row comment-content d-flex">
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            They spent more time waiting on me than I did them,
+                            and they were patient and courteous every step of
+                            the way. I would definitely recommend hiring them
+                            and I will continue to use them for my future
+                            projects
+                          </p>
+                          <p className="name-comment">Mr. Mark Henry</p>
+                          <p className="address-name">
+                            Co MATCH Consulting - Australia
+                          </p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
+                      </div>
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            AVEO Global is the best technology partner any
+                            business could ask for, they go above and beyond to
+                            satisfy my business needs and they will do research
+                            and develop anything you need. I will never switch
+                            to any other company, may your success be our
+                            success! P.S. AVEO is the best.
+                          </p>
+                          <p className="name-comment">Mr. Tony Nguyen</p>
+                          <p className="address-name">Blitz Group, Singapore</p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
+                      </div>
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            I was very happy with the promises made and, more
+                            importantly, delivered. Quality code. Neat and
+                            organized. They assisted with the last tweaks to
+                            ensure I was a happy client. I would be happy to
+                            work with them again on my next project.
+                          </p>
+                          <p className="name-comment">Mr. Dean Han</p>
+                          <p className="address-name">
+                            Military Insurance Corporation - MIC
+                          </p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
                       </div>
                     </div>
-                    <div className="col-4">
-                      <div className="box-comment">
-                        <p className="comment-content">
-                          The project thus far was not complicated and we are
-                          continuing to the next phase. My experience with AVEO
-                          to date: Very good service - friendly and helpful with
-                          high level of technical understanding and competence .
-                          Listens to what I want, makes suggestions where
-                          appropriate and delivers very quickly.
-                        </p>
-                        <p className="name-comment">Mr. Hung Nguyen</p>
-                        <p className="address-name">
-                          Vietnam Electricity Corporation - EVN
-                        </p>
-                        <Rate defaultValue={5} disabled className="mobile" />
+                  </Slider>
+                ) : (
+                  <Slider {...settings}>
+                    <div className="row comment-content d-flex">
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            AVEO Global is the best technology partner any
+                            business could ask for, they go above and beyond to
+                            satisfy my business needs and they will do research
+                            and develop anything you need....
+                          </p>
+                          <p className="name-comment">Mr. Tony Nguyen</p>
+                          <p className="address-name">Blitz Group, Singapore</p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="row comment-content d-flex">
-                    <div className="col-4">
-                      <div className="box-comment">
-                        <p className="comment-content">
-                          They spent more time waiting on me than I did them,
-                          and they were patient and courteous every step of the
-                          way. I would definitely recommend hiring them and I
-                          will continue to use them for my future projects
-                        </p>
-                        <p className="name-comment">Mr. Mark Henry</p>
-                        <p className="address-name">
-                          Co MATCH Consulting - Australia
-                        </p>
-                        <Rate defaultValue={5} disabled className="mobile" />
+                    <div className="row comment-content d-flex">
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            I was very happy with the promises made and, more
+                            importantly, delivered. Quality code. Neat and
+                            organized. They assisted with the last tweaks to
+                            ensure I was a happy client....
+                          </p>
+                          <p className="name-comment">Mr. Dean Han</p>
+                          <p className="address-name">
+                            Military Insurance Corporation - MIC
+                          </p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
                       </div>
                     </div>
-                    <div className="col-4">
-                      <div className="box-comment">
-                        <p className="comment-content">
-                          AVEO Global is the best technology partner any
-                          business could ask for, they go above and beyond to
-                          satisfy my business needs and they will do research
-                          and develop anything you need. I will never switch to
-                          any other company, may your success be our success!
-                          P.S. AVEO is the best.
-                        </p>
-                        <p className="name-comment">Mr. Tony Nguyen</p>
-                        <p className="address-name">Blitz Group, Singapore</p>
-                        <Rate defaultValue={5} disabled className="mobile" />
+                    <div className="row comment-content d-flex">
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            The project thus far was not complicated and we are
+                            continuing to the next phase. My experience with
+                            AVEO to date: Very good service - friendly and
+                            helpful with high level....
+                          </p>
+                          <p className="name-comment">Mr. Hung Nguyen</p>
+                          <p className="address-name">
+                            Vietnam Electricity Corporation - EVN
+                          </p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
                       </div>
                     </div>
-                    <div className="col-4">
-                      <div className="box-comment">
-                        <p className="comment-content">
-                          I was very happy with the promises made and, more
-                          importantly, delivered. Quality code. Neat and
-                          organized. They assisted with the last tweaks to
-                          ensure I was a happy client. I would be happy to work
-                          with them again on my next project.
-                        </p>
-                        <p className="name-comment">Mr. Dean Han</p>
-                        <p className="address-name">
-                          Military Insurance Corporation - MIC
-                        </p>
-                        <Rate defaultValue={5} disabled className="mobile" />
+                    <div className="row comment-content d-flex">
+                      <div className="col-4">
+                        <div className="box-comment">
+                          <p className="comment-content">
+                            They spent more time waiting on me than I did them,
+                            and they were patient and courteous every step of
+                            the way. I would definitely recommend hiring them
+                            and I will continue to use them for my future....
+                          </p>
+                          <p className="name-comment">Mr. Mark Henry</p>
+                          <p className="address-name">
+                            Co MATCH Consulting - Australia
+                          </p>
+                          <Rate defaultValue={5} disabled className="mobile" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Slider>
+                  </Slider>
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <section className="contact-us-v1">
-        <div className="container ">
-          <div className="row mb-0 py-5">
-            <br />
-            <div className="col-12 col-sm-4 footer-headquarter-col1">
-              <img className="footer-logo" src={logo} />
-              <div className=" pt-sm-0 ">
-                <br />
-                <p>
-                  <span
-                    style={{
-                      fontWeight: 700,
-                      fontSize: "14.5px",
-                    }}
-                  >
-                    Headquarter:
-                  </span>{" "}
-                  4F No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
-                </p>
-                <p>
-                  <span style={{ fontWeight: 700, fontSize: "14.5px" }}>
-                    Phone:
-                  </span>{" "}
-                  +84 24 6259 3698
-                </p>
-                <p>
-                  <span style={{ fontWeight: 700, fontSize: "14.5px" }}>
-                    Fax:
-                  </span>{" "}
-                  +84 24 6259 3698
-                </p>
-                <p>
-                  <span style={{ fontWeight: 700, fontSize: "14.5px" }}>
-                    Email:
-                  </span>{" "}
-                  sales@aveo.com.vn
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-sm-2 footer-headquarter-col1">
-              <b style={{ fontFamily: "revert-layer", fontSize: 20 }}>
-                Services
-              </b>
-              <p className="mt-2">
-                <a className="footer-link" href="/web-design-and-development">
-                  Offshore Development Services
-                </a>
-              </p>
-              <p>
-                <a className="footer-link" href="/web-application">
-                  Web Application Development
-                </a>
-              </p>
-              <p>
-                <a className="footer-link" href="/mobile-application">
-                  Mobile Application Development
-                </a>
-              </p>
-              <p>
-                <a className="footer-link" href="/testing-service">
-                  Testing services
-                </a>
-                <br />
-                <a className="footer-link" href="/integration-services">
-                  Cloud Services
-                </a>
-              </p>
-            </div>
-            <div className="col-6 col-sm-2  footer-headquarter-col1">
-              <b
-                style={{
-                  fontFamily: "revert-layer",
-                  fontSize: 20,
-                }}
-              >
-                Industries
-              </b>
-              <p className="mt-2">
-                <a className="footer-link" href="/manufacturing">
-                  Manufacturing
-                </a>
-                <br />
-                <a className="footer-link" href="/healthcare">
-                  Health Care
-                </a>
-                <br />
-                <a className="footer-link" href="/retail">
-                  Retail
-                </a>
-                <br />
-                <a className="footer-link" href="/ecommerce">
-                  Ecommerce
-                </a>
-                <br />
-                <a className="footer-link" href="/financial">
-                  Financial
-                </a>
-              </p>
-            </div>
-            <div className="col-12 col-sm-4 g-0 mt-3 mt-sm-0 conact-img">
-              <img
-                className="px-4"
-                src="https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-img-default"
-              />
-            </div>
-          </div>
-          <hr class="divider"></hr>
-          <div className="row mt-sm-5 pb-sm-4">
-            <div className="col-12 ">
-              <p
-                style={{
-                  color: "white",
-                  fontWeight: 600,
-                  fontSize: 18,
-                  fontFamily: "inherit",
-                }}
-              >
-                © 2023 AVEO. All Rights Reserved
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }

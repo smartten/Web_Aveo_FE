@@ -27,6 +27,7 @@ import {
 function CloudComputing() {
   useEffect(() => {
     document.title = "AVEO Global - Cloud Service";
+    topFunction();
   }, []);
 
   setTimeout(function () {
@@ -77,6 +78,11 @@ function CloudComputing() {
       }
     });
   }, []);
+
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 
   return (
     <div className="cloud-computing">

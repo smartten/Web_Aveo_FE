@@ -401,6 +401,11 @@
     }
     .header-but {
         display: block;
+        width              : 130%;
+        height             : 50px;
+        margin-left: -24px;
+        border-radius: 0;
+        padding-left: 0;
     }
     
     .header-but:hover {

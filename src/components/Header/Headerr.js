@@ -211,21 +211,29 @@ function Headerr() {
 
       {/* <div id="repon-menu"></div> */}
 
-      <Drawer width="45vh" onClose={onClose} open={open}>
+      <Drawer
+        style={{ padding: -24 }}
+        width="45vh"
+        onClose={onClose}
+        open={open}
+      >
         <Menu
-          style={
-            {
-              // width: "35vh",
-              // height: "100vh",
-              // paddingRight: 85,
-            }
-          }
+          style={{
+            width: "125%",
+            marginLeft: -27,
+            // height: "100vh",
+            // paddingRight: 85,
+          }}
           // className="draw-menu"
           mode="inline"
           theme="light"
           items={items}
         />
-        <a href="/contact-us" id="header-but" className="header-but m-4 ">
+        <a
+          href="/contact-us"
+          id="header-but"
+          className="header-but px-4 px-lg-0 mt-2 m-lg-4"
+        >
           Contact
         </a>
       </Drawer>

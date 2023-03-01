@@ -4,31 +4,31 @@ import { Button, Form, Input, Select } from "antd";
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const onFinish = (values) => {
-  const email = ["aveoglb@gmail.com", "luongtiendung1508@gmail.com"];
-  const config = {
-    // Username: "nguuyenminhhieu28801@gmail.com",
-    // Password: "38DF21CEE95626703020DCE7BAED39DB2B2D",
-    // Host: "smtp.elasticemail.com",
-    SecureToken: "6e45cd3b-27cc-48fb-b0bc-82dda3b0e40f",
-    Port: 2525,
-    To: email,
-    From: "technology.aveo@gmail.com",
-    Subject: "Contact to You",
-    Body: `Câu hỏi : ${values.question} , Tên : ${values.name} , Email: ${values.email} , Công ty: ${values.Company}, Chi Tiết Nhu Cầu: ${values.explain}`,
-  };
-  console.log("Success:", values);
-  if (window.Email) {
-    window.Email.send(config).then(() => alert("Send Email Success"));
-  }
-};
 const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
 };
 
 function Contact() {
   const form = useRef();
-
+  const onFinish = (values) => {
+    const email = ["aveoglb@gmail.com", "luongtiendung1508@gmail.com"];
+    const config = {
+      // Username: "nguuyenminhhieu28801@gmail.com",
+      // Password: "38DF21CEE95626703020DCE7BAED39DB2B2D",
+      // Host: "smtp.elasticemail.com",
+      SecureToken: "6e45cd3b-27cc-48fb-b0bc-82dda3b0e40f",
+      Port: 2525,
+      To: email,
+      From: "technology.aveo@gmail.com",
+      Subject: "Contact to You",
+      Body: `Câu hỏi : ${values.question} , Tên : ${values.name} , Email: ${values.email} , Công ty: ${values.Company}, Chi Tiết Nhu Cầu: ${values.explain}`,
+    };
+    console.log("Success:", values);
+    if (window.Email) {
+      window.Email.send(config).then(() => alert("Send Email Success"));
+    }
+    form.current?.resetFields();
+  };
   function sendEmail(e) {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
     // console.log(e);

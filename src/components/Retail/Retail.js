@@ -222,9 +222,6 @@ function Retail() {
           </div>
         </div>
       </div>
-      <div className="row my-sm-5 g-0  bg-01">
-        <div className="col-12"></div>
-      </div>
 
       <div className="container">
         <div className="row my-5 py-sm-5 g-0">
@@ -323,26 +320,6 @@ function Retail() {
                 An agile mindset is about creating and responding to change in
                 uncertain and turbulent environments.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-04 m-0 p-0 g-0">
-        <div className="container">
-          <div className="row py-5 py-sm-0 for-contac">
-            <div className="col-12 col-sm-6 g-0 my-sm-5 cta-11-txt">
-              <h2>Connect with us</h2>
-              <p className="my-sm-3">We’re ready to talk opportunity</p>
-              <div className="btn-deha mb-4 mb-sm-0 mt-4 py-3">
-                <a className="" href="">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-            <div className="col-sm-2"></div>
-            <div className="col-12 col-sm-4 my-sm-5">
-              <img className="img-defaultt" src={defaultt} />
             </div>
           </div>
         </div>

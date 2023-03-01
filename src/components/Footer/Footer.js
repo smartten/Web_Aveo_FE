@@ -10,9 +10,12 @@ function Footer() {
   return (
     <section className="contact-us-v1">
       <div className="container ">
-        <div className="row mb-0 mb-5 pt-5 pb-4">
+        <div className="row mb-0 mb-5 pt-5 pb-4 hanoi">
           <br />
-          <div className="col-12 col-sm-4 footer-headquarter-col1">
+          <div
+            style={{ marginRight: "auto" }}
+            className="col-12 col-sm-4 footer-headquarter-col1"
+          >
             <img className="footer-logo" src={logo} />
             <div className=" pt-sm-0 ">
               <br />
@@ -50,7 +53,7 @@ function Footer() {
           <div className="col-6 col-sm-2 footer-headquarter-col1">
             <b style={{ fontFamily: "revert-layer", fontSize: 20 }}>Services</b>
             <p className="mt-2">
-              <a className="footer-link" href="/web-design-and-development">
+              <a className="footer-link" href="/offshore-development">
                 Offshore Development Services
               </a>
             </p>
@@ -88,7 +91,7 @@ function Footer() {
                 Manufacturing
               </a>
               <br />
-              <a className="footer-link" href="/healthcare">
+              <a className="footer-link" href="/health-care">
                 Health Care
               </a>
               <br />

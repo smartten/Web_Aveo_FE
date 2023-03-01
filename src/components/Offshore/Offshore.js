@@ -1,13 +1,19 @@
-import image1 from "./Application dev.png";
-import smartphone from "./icon/Mobile-Development.svg";
-import web from "./icon/Front-End-Development.svg";
-import webDe from "./icon/UI-UX-Design-1.svg";
-import didwnm from "./img_didwnm.webp";
-import graph from "./icon/Automation-Service.svg";
-import test from "./icon/Icon-4-2.svg";
-import support from "./icon/24hours.svg";
+import image1 from "./Off-Shore-Banner-1.png";
 import defaultt from "./Hero-img-default.webp";
-import "./applicationStyle.scss";
+import icon1 from "./icon/Mobile-Development.svg";
+import icon2 from "./icon/Web-Development-1.svg";
+import icon3 from "./Automation-Service.svg";
+import icon4 from "./icon/Product-Development.svg";
+import icon5 from "./icon/Maintain.svg";
+import icon6 from "./icon/UI-UX-Design-1.svg";
+import logo1 from "./COMATCH's_logo.svg";
+import logo2 from "./Group.svg";
+import logo3 from "./logo-tisa-white.svg";
+import logo4 from "./Logo-white_340x156-px-01.svg";
+import logo5 from "./layer1.svg";
+import logo6 from "./g16.svg";
+import logo7 from "./imageLogo1.svg";
+import "./offStyle.scss";
 import React, { useEffect } from "react";
 import {
   ArrowRightOutlined,
@@ -21,7 +27,7 @@ import {
   PaperClipOutlined,
 } from "@ant-design/icons";
 
-function Application() {
+function Offshore() {
   setTimeout(function () {
     var testarray = document.getElementsByClassName("img-fluid");
     for (var i = 0; i < testarray.length; i++) {
@@ -38,9 +44,6 @@ function Application() {
       heroText[i].classList.add("fadeInRight", "cssanimation");
     }
   }, 2500);
-  useEffect(() => {
-    document.title = "AVEO Global - Application Development";
-  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -97,11 +100,12 @@ function Application() {
               <img className="img-fluid py-0 py-sm-5" src={image1} />
             </div>
             <div className="col-12 col-md-6 px-1 pb-3 px-sm-4 my-sm-auto hero-text">
-              <h1>Application Development</h1>
+              <h1>Offshore Development</h1>
               <p className="px-3 px-sm-0">
-                Automate your business processes, cost saving, stay connected
-                with your clients and get more revenue. The market is now in
-                your hand.
+                An offshore development center is your own software development
+                services team but is located in another country. It is kind of
+                like building your own team at a remote location that works
+                directly with you and your team.
               </p>
             </div>
           </div>
@@ -113,9 +117,13 @@ function Application() {
           <div className="col-12 my-5 section-title">
             <h3>Our Services</h3>
             <p>
-              We offer a complete solution from consulting, design, development,
-              <br />
-              integration, deployment and system maintenance for businesses.
+              Our Offshore Development Services enables businesses to create an
+              operation team of experts in an offshore location, enabling
+              businesses to take advantage of different time zones, talent, and
+              infrastructure costs. It also helps businesses to tap into a
+              talent pool that would otherwise be unavailable, thus ensuring
+              diversity. Best suited for medium to large-scale businesses
+              looking to take advantage of remote/offshore talent.
             </p>
           </div>
         </div>
@@ -127,30 +135,20 @@ function Application() {
           >
             <div className="row m-0 p-0 g-0">
               <div className="col-12 col-lg-2">
-                <img src={smartphone} />
+                <img src={icon1} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
-                <h5>Mobility Transformation</h5>
-                <p>
-                  We help global brands design and build superior digital
-                  products, enabling seamless user experiences across all modern
-                  platforms and devices.
-                </p>
+                <h5> Offshore Mobile App Development</h5>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6  mobility">
             <div className="row m-0 p-0 g-0">
               <div className="col-12 col-lg-2">
-                <img src={web} />
+                <img src={icon2} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
-                <h5>Enterprise Web Application</h5>
-                <p>
-                  Keep your business running in terms of sales, marketing,
-                  customer relationships, analytics, financial, security – any
-                  area where your concerns need to be covered.
-                </p>
+                <h5>Offshore Web Development</h5>
               </div>
             </div>
           </div>
@@ -163,25 +161,20 @@ function Application() {
           >
             <div className="row m-0 p-0 g-0">
               <div className="col-12  col-lg-2">
-                <img src={webDe} />
+                <img src={icon4} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
-                <h5>Experience & Creative Design</h5>
-                <p>
-                  We create an UI/UX that will make your users feel familiar and
-                  friendly. We know what core features your users will admire.
-                </p>
+                <h5>Offshore Product Development</h5>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6  mobility-2">
             <div className="row m-0 p-0 g-0">
               <div className="col-12  col-lg-2">
-                <img src={graph} />
+                <img src={icon3} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
-                <h5>Testing, Automation Testing</h5>
-                <p>Test automation and manual testing (Agile Testing).</p>
+                <h5>Offshore Testing</h5>
               </div>
             </div>
           </div>
@@ -194,28 +187,20 @@ function Application() {
           >
             <div className="row m-0 p-0 g-0">
               <div className="col-12  col-lg-2">
-                <img src={test} />
+                <img src={icon5} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
-                <h5>Penetration Testing</h5>
-                <p>
-                  Detect Security Vulnerabilities and Security Hotspots during
-                  code review.
-                </p>
+                <h5>Offshore Maintenance</h5>
               </div>
             </div>
           </div>
           <div className="col-12 col-sm-6  mobility-3">
             <div className="row m-0 p-0 g-0">
               <div className="col-12 col-lg-2">
-                <img src={support} />
+                <img src={icon6} />
               </div>
               <div className="col-12 col-lg-10 fbox-txt">
-                <h5>Maintenance And Support</h5>
-                <p>
-                  We help you keep your business run smoothly, stay secure and
-                  up-to-date with nextgen technologies.
-                </p>
+                <h5>Offshore UI/UX Design</h5>
               </div>
             </div>
           </div>
@@ -223,112 +208,9 @@ function Application() {
       </div>
       {/* div end container */}
 
-      <br />
-      <div className="container">
-        <div className="row g-0 mt-5">
-          <div className="col-12 col-sm-6 col-lg-6">
-            <img className="img-digi" src={didwnm} />
-          </div>
-          <div
-            style={{}}
-            className="col-12 col-sm-6 col-lg-6 py-lg-5 px-lg-2 my-lg-auto txt-block"
-          >
-            <h3 className="p-1 pt-4 pt-sm-0">
-              Digitalize your business, increase your customer experience and
-              revenue
-            </h3>
-            <div>
-              <ul>
-                <li class="list-item">
-                  <p class="p-lg mt-sm-1">
-                    Tapping your digital full potential clients. With 90% of
-                    people use smartphones, you can reach your audience
-                    everytime, everywhere.
-                  </p>
-                </li>
-                <li class="list-item">
-                  <p class="p-lg">
-                    It's not only helps clients to stay connect with your brand,
-                    but also be used to deliver deals, offers, and coupons to
-                    the clients effectively.
-                  </p>
-                </li>
-                <li class="list-item">
-                  <p class="p-lg">
-                    Applying digital technologies, you can save 60% operation
-                    costs with Business Process Automation.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-
-      <div className="my-5 py-sm-5 bg-snow">
-        <div className="container">
-          <div className="row px-2 px-sm-0">
-            <div className="col-sm-4 g-0 gx-sm-4">
-              <div className="row g-0 p-0 ">
-                <div className="col-4 col-sm-5">
-                  <span>600+</span>
-                </div>
-                <div className="col-8 col-sm-7 my-sm-auto pt-3 pt-sm-0 pt-lg-3 gx-sm-5">
-                  <p>Businesses Are Digitized</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              style={{ marginRight: "auto", marginLeft: "auto" }}
-              className="col-sm-4 g-0 p-0"
-            >
-              <div className="row g-0 p-0 m-0">
-                <div className="col-xl-2"></div>
-                <div className="col-4 col-sm-5 col-xl-4 g-0">
-                  <span>80%</span>
-                </div>
-                <div className="col-8 col-sm-7  col-xl-6 my-sm-auto pt-3 pt-sm-0 pt-lg-3 g-0">
-                  <p>Increase 4X Revenue</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="row">
-                <div className="col-xl-4"></div>
-                <div className="col-4 col-sm-5 col-xl-4 g-0">
-                  <span>96%</span>
-                </div>
-                <div
-                  // style={{ float: "right" }}
-                  className="col-8 col-sm-7 col-xl-4 my-sm-auto pt-3  g-0"
-                >
-                  <p>Cost Saving</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="row g-0 m-0">
         <div className="col-12 my-5 section-title">
-          <h3 className="mb-sm-4">
-            Our Approach to Application
-            <br /> Development
-          </h3>
-          <p>
-            For new software product creation, our dedicated development teams
-            use
-            <br />
-            agile and continuous delivery practices to accelerate development.
-            We <br />
-            focus on cost-effective and metrics-driven execution to maximize
-            value
-            <br />
-            for our customers.
-          </p>
+          <h3 className="mb-sm-4">How To Collaborate With Us</h3>
         </div>
       </div>
 
@@ -343,10 +225,10 @@ function Application() {
                 <span className="nr">1</span>
               </div>
               <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
-                <h5>Discover</h5>
+                <h5>Requirement gathering</h5>
                 <p>
-                  We work with you to gain clarity on your needs, defining clear
-                  business outcomes to set up a successful engagement.
+                  TECHVIFY gathers the client's requirements regarding resources
+                  and tech stacks.
                 </p>
               </div>
             </div>
@@ -357,11 +239,10 @@ function Application() {
                 <span className="nr">2</span>
               </div>
               <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
-                <h5>Research</h5>
+                <h5>CV preparation</h5>
                 <p>
-                  We determine the best solution for your software and develop a
-                  plan of action, including design, staffing, and delivery
-                  approach.
+                  TECHVIFY screens internal resources to help you connect with
+                  the right talents to match the requirements.
                 </p>
               </div>
             </div>
@@ -378,11 +259,10 @@ function Application() {
                 <span className="nr">3</span>
               </div>
               <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
-                <h5>Develop</h5>
+                <h5>Client interview</h5>
                 <p>
-                  Our skilled engineers efficiently execute the plan and
-                  validate the solution, providing iterative delivery and
-                  constant communication.
+                  You will interview and evaluate the team members directly via
+                  video call, then decide whom to hire and how much to pay.
                 </p>
               </div>
             </div>
@@ -393,15 +273,85 @@ function Application() {
                 <span className="nr">4</span>
               </div>
               <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
-                <h5>Operate</h5>
+                <h5>Contract sign-off & onboarding</h5>
                 <p>
-                  We implement and support the final product, delivering defined
-                  metrics, optimal results, and continuous improvement.
+                  TECHVIFY is in charge of infrastructure and environmental
+                  setup, as well as the preparation of other resources.
                 </p>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="row g-0 mb-sm-5 step-for-col">
+          <div
+            style={{ marginRight: "auto" }}
+            className="col-12 col-sm-6  px-sm-4 step"
+          >
+            <div className="row m-0 p-3 py-sm-4 g-0">
+              <div className="col-2 col-sm-1">
+                <span className="nr">5</span>
+              </div>
+              <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
+                <h5>Take-off</h5>
+                <p>Kick-start your project.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-sm-6"></div>
+        </div>
+
+        <section className="big-guys">
+          <div className="container">
+            <p className="text-center title-big-guy">
+              This BIG guys are using services and they are more than happier
+              ever
+            </p>
+            <div className="row justify-content-center flex-wrap">
+              <div className="col-2">
+                <img
+                  src={logo1}
+                  style={{ width: "100%", height: "auto", marginTop: "10px" }}
+                />
+              </div>
+              {/* <div className="col">
+              <img
+                src={logo2}
+                style={{ width: "110%", height: "auto", marginTop: "20px" }}
+              />
+            </div> */}
+              <div className="col-2">
+                <img
+                  src={logo3}
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                    marginLeft: "20px",
+                    marginTop: "10px",
+                  }}
+                />
+              </div>
+              {/* <div className="col">
+              <img src={logo4} style={{ width: "80%", height: "auto" }} />
+            </div> */}
+              <div className="col-2">
+                <img
+                  src={logo6}
+                  style={{ width: "70%", height: "auto", marginTop: "10px" }}
+                />
+              </div>
+              <div className="col-2">
+                <img
+                  src={logo7}
+                  style={{ width: "70%", height: "auto", marginTop: "0px" }}
+                />
+              </div>
+              <div className="col-2">
+                <img src={logo5} style={{ width: "25%", height: "auto" }} />
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div className="row my-sm-5 py-5 g-0">
           <div className="col-12 g-0">
@@ -513,4 +463,4 @@ function Application() {
     </div>
   );
 }
-export default Application;
+export default Offshore;

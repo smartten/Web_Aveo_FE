@@ -22,6 +22,7 @@ import AboutUs from "./Page/About-Us/AboutUs.js";
 import Retail from "./components/Retail/Retail";
 import Healthcare from "./components/Healthcare/Healthcare";
 import Whitepapers from "./components/Whitepapers/Whitepapers.js";
+import Offshore from "./components/Offshore/Offshore.js";
 function App() {
   return (
     <div className="App">
@@ -50,8 +51,9 @@ function App() {
         <Route path="/financial" element={<Financial />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/retail" element={<Retail />} />
-        <Route path="/healthcare" element={<Healthcare />} />
+        <Route path="/health-care" element={<Healthcare />} />
         <Route path="/whitepapers" element={<Whitepapers />} />
+        <Route path="/offshore-development" element={<Offshore />} />
       </Routes>
       <Footer />
     </div>

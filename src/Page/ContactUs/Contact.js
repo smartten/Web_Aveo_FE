@@ -21,7 +21,6 @@ const onFinish = (values) => {
   if (window.Email) {
     window.Email.send(config).then(() => alert("Send Email Success"));
   }
-  console.log(values);
 };
 const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);

@@ -3,11 +3,14 @@ import logo from "./Asset 1.svg";
 import logo2 from "./Logo.svg";
 import React, { useEffect, useState } from "react";
 import {
-  CaretDownOutlined,
+  RightOutlined,
   AlignRightOutlined,
   CaretDownFilled,
+  CloseOutlined,
+  PlusOutlined,
 } from "@ant-design/icons";
 import { Menu, Drawer } from "antd";
+import { PageHeader } from "@ant-design/pro-layout";
 
 window.onload = function () {
   setTimeout(function () {
@@ -65,12 +68,6 @@ const items = [
       "3"
     ),
     getItem(
-      <a className="link-for-sub" href="/custom-software">
-        Custom Software Development
-      </a>,
-      "11"
-    ),
-    getItem(
       <a className="link-for-sub" href="/testing-service">
         Testing Service
       </a>,
@@ -81,6 +78,12 @@ const items = [
         Cloud Services
       </a>,
       "5"
+    ),
+    getItem(
+      <a className="link-for-sub" href="/custom-software">
+        Custom Software Development
+      </a>,
+      "11"
     ),
   ]),
   getItem(<a className="link-for-res">Industries</a>, "industries", [
@@ -119,8 +122,9 @@ const items = [
 function Headerr() {
   const [nav, setNav] = useState("");
   const [anhLogo, setLogo] = useState(logo);
-  const [click, setClick] = useState(true);
   const [open, setOpen] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -158,6 +162,14 @@ function Headerr() {
   };
   const onClose = () => {
     setOpen(false);
+    setOpen2(false);
+    setOpen3(false);
+  };
+  const onClicked = (e) => {
+    setOpen2(true);
+  };
+  const onClicked2 = (e) => {
+    setOpen3(true);
   };
   return (
     <>
@@ -171,7 +183,7 @@ function Headerr() {
 
       <Drawer
         style={{ padding: -24, overflow: "hidden" }}
-        width="80%"
+        width="100%"
         onClose={onClose}
         open={open}
       >
@@ -179,19 +191,104 @@ function Headerr() {
           style={{
             width: "100%",
           }}
-          mode="inline"
+          mode="vertical"
           theme="light"
-          items={items}
-        />
+          // items={items}
+        >
+          <Menu.Item>
+            <a className="link-for-res" href="/">
+              Home
+            </a>
+          </Menu.Item>
+          <Menu.Item>
+            <a className="link-for-res" href="/about-us">
+              About Us
+            </a>
+          </Menu.Item>
+          <Menu.Item onClick={onClicked}>
+            <div className="d-flex justify-content-between">
+              <a className="link-for-res">Services</a>
+              <RightOutlined className="my-auto" />
+            </div>
+          </Menu.Item>
+          <Menu.Item onClick={onClicked2}>
+            <div className="d-flex justify-content-between">
+              <a className="link-for-res">Industries</a>
+              <RightOutlined className="my-auto" style={{}} />
+            </div>
+          </Menu.Item>
+        </Menu>
         <a
           href="/contact-us"
           id="header-but"
-          className="header-but px-4 px-lg-0 m-lg-4"
+          className="header-but px-3 px-lg-0 m-lg-4"
         >
-          &nbsp;Contact
+          Contact
         </a>
       </Drawer>
 
+      <Drawer
+        style={{ overflow: "hidden" }}
+        width="100%"
+        onClose={onClose}
+        open={open2}
+      >
+        <PageHeader onBack={() => setOpen2(false)} title="Services" />
+        <div style={{ paddingLeft: 16, lineHeight: 2.9, opacity: 0.95 }}>
+          <a className="link-for-sub" href="/offshore-development">
+            Offshore Development Services
+          </a>
+          <br />
+          <a className="link-for-sub" href="/web-application">
+            Web Application Development
+          </a>
+          <br />
+          <a className="link-for-sub" href="/mobile-application">
+            Mobile Application Development
+          </a>
+          <br />
+          <a className="link-for-sub" href="/testing-service">
+            Testing Service
+          </a>
+          <br />
+          <a className="link-for-sub" href="/cloud-service">
+            Cloud Services
+          </a>
+          <br />
+          <a className="link-for-sub" href="/custom-software">
+            Custom Software Development
+          </a>
+        </div>
+      </Drawer>
+      <Drawer
+        style={{ overflow: "hidden" }}
+        width="100%"
+        onClose={onClose}
+        open={open3}
+      >
+        <PageHeader onBack={() => setOpen3(false)} title="Industries" />
+        <div style={{ paddingLeft: 16, lineHeight: 2.9, opacity: 0.95 }}>
+          <a className="link-for-sub" href="/manufacturing">
+            Manufacturing
+          </a>
+          <br />
+          <a className="link-for-sub" href="/health-care">
+            Health Care
+          </a>
+          <br />
+          <a className="link-for-sub" href="/retail">
+            Retail
+          </a>
+          <br />
+          <a className="link-for-sub" href="/ecommerce">
+            Ecommerce
+          </a>
+          <br />
+          <a className="link-for-sub" href="/financial">
+            Financial
+          </a>
+        </div>
+      </Drawer>
       <div
         id="navbar"
         style={{
@@ -225,7 +322,11 @@ function Headerr() {
                 </a>
               </div>
               <div id="alignRightOutlined">
-                <AlignRightOutlined onClick={handleColMenu} />
+                {open ? (
+                  <PlusOutlined rotate={45} onClick={onClose} />
+                ) : (
+                  <AlignRightOutlined onClick={handleColMenu} />
+                )}
               </div>
               <div id="head-menu" className="head-menu">
                 <div>

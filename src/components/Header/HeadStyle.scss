@@ -149,6 +149,16 @@
     .ant-drawer-body{
         padding: 0;
 }
+.ant-drawer-mask{
+    display: none;
+}
+ .ant-drawer-content-wrapper{
+    margin-top: 100px;
+    box-shadow: none;
+    }
+.ant-drawer-header{
+    display: none;
+}
 }
 
 .ant-menu{
@@ -183,6 +193,14 @@ border: none;
     .ant-menu-submenu-title{
         margin-inline: 0;
         width: calc(100% - 0px);
+    }
+}
+.ant-menu-vertical{
+    .ant-menu-item{
+        margin-inline: 0;
+        width: calc(100% - 0px);
+        margin-block: 0;
+        height: 46px;
     }
 }
 .link-drop {
@@ -435,9 +453,12 @@ border: none;
     #alignRightOutlined {
         display: block;
         color: #1D2055;
-        font-size: 36px;
+        font-size: 27px;
         cursor   : pointer;
-        margin-top: 22px;
+        margin-top: 34px;
+        font-weight: 300;
+        transition-duration: 2s;
+
     }
     .header-but {
         display: block;
@@ -462,10 +483,7 @@ border: none;
 
 @media only screen and (max-width: 648px) {
 
-    #alignRightOutlined {
-        display: block;
-        color: #1D2055;
-    }
+    
     /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
     // .head-menu {
     //     display: none;

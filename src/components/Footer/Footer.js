@@ -79,7 +79,7 @@ function Footer() {
               </a>
               <br />
               <p style={{ margin: 6 }}></p>
-              <a className="footer-link" href="/integration-services">
+              <a className="footer-link" href="/cloud-service">
                 Cloud Services
               </a>
               <br />

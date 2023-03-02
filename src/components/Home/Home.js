@@ -140,9 +140,9 @@ function Home() {
                     className="btns-group mb-30 wow "
                     style={{ visibility: "visible" }}
                   >
-                    <NavLink className="btn btn-contact" to="contact-us">
+                    <a className="btn btn-contact" href="/contact-us">
                       Contact Us
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -187,9 +187,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <NavLink to="offshore-development">
+                    <a href="/offshore-development">
                       <ArrowRightOutlined />
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -214,9 +214,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <NavLink to="web-application">
+                    <a href="/web-application">
                       <ArrowRightOutlined />
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -240,9 +240,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <NavLink to="web-application">
+                    <a href="/web-application">
                       <ArrowRightOutlined />
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -267,9 +267,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <NavLink to="testing-service">
+                    <a href="testing-service">
                       <ArrowRightOutlined />
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -294,9 +294,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <NavLink to="cloud-service">
+                    <a href="cloud-service">
                       <ArrowRightOutlined />
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -321,9 +321,9 @@ function Home() {
                   </p>
                   <br />
                   <div className="icon-box">
-                    <NavLink to="custom-software">
+                    <a href="custom-software">
                       <ArrowRightOutlined />
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>

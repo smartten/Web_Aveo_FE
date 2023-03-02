@@ -93,7 +93,9 @@ function Manufacturing() {
                   <p className="sub-text">
                     Maintenance + Product Lifecycle Management + Quality
                   </p>
-                  <a className="btn btn-contact">Contact Us</a>
+                  <a href="/contact-us" className="btn btn-contact">
+                    Contact Us
+                  </a>
                 </div>
               </div>
             </div>

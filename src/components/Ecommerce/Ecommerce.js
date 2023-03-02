@@ -95,7 +95,9 @@ function Ecommerce() {
                     We'll help you build a scalable, secure platform that will
                     guide your buyer through a seamless purchasing process
                   </p>
-                  <a className="btn btn-contact">Contact Us</a>
+                  <a href="/contact-us" className="btn btn-contact">
+                    Contact Us
+                  </a>
                 </div>
               </div>
             </div>

@@ -51,7 +51,9 @@ function Financial() {
                     visualizing data and revolutionize the financial services
                     market
                   </p>
-                  <a className="btn btn-contact">Contact Us</a>
+                  <a href="/contact-us" className="btn btn-contact">
+                    Contact Us
+                  </a>
                 </div>
               </div>
             </div>

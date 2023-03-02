@@ -86,7 +86,7 @@ function Retail() {
                 enterprise omnichannel platforms for your business demands
               </p>
               <div className="btn-deha mt-4 py-3">
-                <a className="" href="">
+                <a className="" href="/contact-us">
                   Contact Us
                 </a>
               </div>

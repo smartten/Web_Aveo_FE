@@ -4,7 +4,12 @@ import Testing from "./components/Testing/Testing";
 import ServiceWeb from "./Page/Service-Web/ServiceWeb";
 import Ecommerce from "./components/Ecommerce/Ecommerce";
 import ServiceMobile from "./Page/Service-Mobile/ServiceMobile";
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  BrowserRouter as Router,
+  useParams,
+} from "react-router-dom";
 import ServiceEngineering from "./Page/Service-Engineering/ServiceEngineering";
 import Integration from "./Page/Service-Integration/Integration";
 import Blockchain from "./Page/Blockchain/Blockchain";
@@ -23,29 +28,18 @@ import Retail from "./components/Retail/Retail";
 import Healthcare from "./components/Healthcare/Healthcare";
 import Whitepapers from "./components/Whitepapers/Whitepapers.js";
 import Offshore from "./components/Offshore/Offshore.js";
+import Page404 from "./Page/404/Page404.js";
 function App() {
   return (
     <div className="App">
       <Headerr />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/web-design-and-development" element={<ServiceWeb />} />
-       
-        <Route
-          path="/engineering-and-maintenance"
-          element={<ServiceEngineering />}
-        /> */}
-        {/* <Route path="/integration-services" element={<Integration />} /> */}
-        {/* <Route path="/blockchain-service" element={<Blockchain />} /> */}
         <Route path="/mobile-application" element={<WebApplication />} />
-        {/* <Route path="/enterprise-service" element={<Enterprise />} /> */}
         <Route path="/testing-service" element={<Testing />} />
-        {/* <Route path="/cms-service" element={<CmcService />} /> */}
         <Route path="/ecommerce" element={<Ecommerce />} />
         <Route path="/contact-us" element={<Contact />} />
-        {/* <Route path="/company" element={<Company />} /> */}
         <Route path="/cloud-service" element={<CloudComputing />} />
-        {/* <Route path="/iot-application" element={<Iotapp />} /> */}
         <Route path="/web-application" element={<WebApplication />} />
         <Route path="/manufacturing" element={<Manufacturing />} />
         <Route path="/financial" element={<Financial />} />
@@ -55,6 +49,7 @@ function App() {
         <Route path="/whitepapers" element={<Whitepapers />} />
         <Route path="/offshore-development" element={<Offshore />} />
         <Route path="/custom-software" element={<WebApplication />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />
     </div>

@@ -87,6 +87,10 @@
         padding-top   : 70px;
         padding-bottom: 70px;
 
+        .ant-form-item-control {
+            margin-left: 15px !important;
+        }
+
         .container {
             .row {
                 .col-6 {

@@ -15,7 +15,7 @@ import Integration from "./Page/Service-Integration/Integration";
 import Blockchain from "./Page/Blockchain/Blockchain";
 import Enterprise from "./Page/Enterprise/Enterprise";
 import Home from "./components/Home/Home.js";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Headerr from "./components/Header/Headerr.js";
 import Contact from "./Page/ContactUs/Contact.js";
 import CloudComputing from "./Page/Cloud-Computing/CloudComputing";
@@ -30,28 +30,170 @@ import Whitepapers from "./components/Whitepapers/Whitepapers.js";
 import Offshore from "./components/Offshore/Offshore.js";
 import Page404 from "./Page/404/Page404.js";
 function App() {
+  const [erorr, setErorr] = useState(false);
   return (
     <div className="App">
-      <Headerr />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/mobile-application" element={<WebApplication />} />
-        <Route path="/testing-service" element={<Testing />} />
-        <Route path="/ecommerce" element={<Ecommerce />} />
-        <Route path="/contact-us" element={<Contact />} />
-        <Route path="/cloud-service" element={<CloudComputing />} />
-        <Route path="/web-application" element={<WebApplication />} />
-        <Route path="/manufacturing" element={<Manufacturing />} />
-        <Route path="/financial" element={<Financial />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/retail" element={<Retail />} />
-        <Route path="/health-care" element={<Healthcare />} />
-        <Route path="/whitepapers" element={<Whitepapers />} />
-        <Route path="/offshore-development" element={<Offshore />} />
-        <Route path="/custom-software" element={<WebApplication />} />
-        <Route path="*" element={<Page404 />} />
-      </Routes>
-      <Footer />
+      {erorr === false ? (
+        <div>
+          {/* <Headerr /> */}
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Headerr />
+                  <Home />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/mobile-application"
+              element={
+                <>
+                  <Headerr />
+                  <WebApplication />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/testing-service"
+              element={
+                <>
+                  <Headerr />
+                  <Testing />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/ecommerce"
+              element={
+                <>
+                  <Headerr />
+                  <Ecommerce />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/contact-us"
+              element={
+                <>
+                  <Headerr />
+                  <Contact />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/cloud-service"
+              element={
+                <>
+                  <Headerr />
+                  <CloudComputing />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/web-application"
+              element={
+                <>
+                  <Headerr />
+                  <WebApplication />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/manufacturing"
+              element={
+                <>
+                  <Headerr />
+                  <Manufacturing />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/financial"
+              element={
+                <>
+                  <Headerr />
+                  <Financial />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/about-us"
+              element={
+                <>
+                  <Headerr />
+                  <AboutUs />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/retail"
+              element={
+                <>
+                  <Headerr />
+                  <Retail />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/health-care"
+              element={
+                <>
+                  <Headerr />
+                  <Healthcare />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/whitepapers"
+              element={
+                <>
+                  <Headerr />
+                  <Whitepapers />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/offshore-development"
+              element={
+                <>
+                  <Headerr />
+                  <Offshore />
+                  <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/custom-software"
+              element={
+                <>
+                  <Headerr />
+                  <WebApplication />
+                  <Footer />
+                </>
+              }
+            />
+            <Route path="*" element={<Page404 />} />
+          </Routes>
+          {/* <Footer /> */}
+        </div>
+      ) : (
+        <Page404 />
+      )}
     </div>
   );
 }

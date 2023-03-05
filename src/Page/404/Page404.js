@@ -1,6 +1,9 @@
 import "./404.scss";
+import React, { useEffect, useState } from "react";
 
-function page404() {
+function page404(props) {
+  const { erorr } = props;
+  console.log(erorr);
   return (
     <div className="error">
       <div class="flex-container">

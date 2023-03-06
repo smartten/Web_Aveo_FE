@@ -240,11 +240,11 @@ function Headerr() {
           </a>
           <br />
           <a className="link-for-sub" href="/web-application">
-            Web Application Development
+            Web App Development
           </a>
           <br />
           <a className="link-for-sub" href="/mobile-application">
-            Mobile Application Development
+            Mobile App Development
           </a>
           <br />
           <a className="link-for-sub" href="/testing-services">
@@ -352,12 +352,12 @@ function Headerr() {
                     </div>
                     <div className="div-for-a">
                       <a href="/web-application" class="link-drop">
-                        Web Application Development
+                        Web App Development
                       </a>
                     </div>
                     <div className="div-for-a">
                       <a href="/mobile-application" class="link-drop">
-                        Mobile Application Development
+                        Mobile App Development
                       </a>
                     </div>
                     <div className="div-for-a">

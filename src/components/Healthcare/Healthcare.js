@@ -230,8 +230,8 @@ function Healthcare() {
               <div className="text-benefit">
                 <span>Great Talent Pool</span>
                 <p className="my-sm-3">
-                  Our team has 260+ experienced developers with in-depth skills
-                  & knowledge in software building and powerful technologies
+                  Our team has 70+ experienced developers with in-depth skills &
+                  knowledge in software building and powerful technologies
                   stacks.
                 </p>
               </div>
@@ -250,9 +250,9 @@ function Healthcare() {
               <div className="text-benefit">
                 <span>Experience</span>
                 <p className="my-sm-3">
-                  We are strategic partner of big corporations such as Mitsui
-                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
-                  Hospital...and delivered 1,000+ systems for enterprise.
+                  We are strategic partner of big corporations such as Blitz
+                  Group, Co MARTCH, MIC ..and delivered 200+ systems for
+                  enterprise..
                 </p>
               </div>
             </div>

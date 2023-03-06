@@ -370,9 +370,9 @@ function Blockchain() {
                 <div className="text-benefit">
                   <b>Great Talent Pool</b>
                   <p>
-                    Our team has 260+ experienced developers with in-depth
-                    skills & knowledge in software building and powerful
-                    technologies stacks.
+                    Our team has 70+ experienced developers with in-depth skills
+                    & knowledge in software building and powerful technologies
+                    stacks.
                   </p>
                 </div>
               </div>

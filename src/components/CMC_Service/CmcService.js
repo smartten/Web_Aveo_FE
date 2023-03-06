@@ -270,7 +270,7 @@ function CmcService() {
             <div className="text-benefit">
               <b>Great Talent Pool</b>
               <p>
-                Our team has 260+ experienced developers with in-depth skills &
+                Our team has 70+ experienced developers with in-depth skills &
                 knowledge in software building and powerful technologies stacks.
               </p>
             </div>
@@ -284,9 +284,9 @@ function CmcService() {
             <div className="text-benefit">
               <b>Experience</b>
               <p>
-                We are strategic partner of big corporations such as Mitsui
-                O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
-                Hospital...and delivered 1,000+ systems for enterprise.
+                We are strategic partner of big corporations such as Blitz
+                Group, Co MARTCH, MIC ..and delivered 200+ systems for
+                enterprise.
               </p>
             </div>
           </div>

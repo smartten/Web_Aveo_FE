@@ -47,7 +47,7 @@ function AboutUs() {
                 <tr>
                   <th>Headquarter</th>
                   <td>
-                    4F No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
+                    4F - No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
                   </td>
                 </tr>
 
@@ -56,7 +56,7 @@ function AboutUs() {
                   <td>
                     <ul>
                       <li>
-                        <strong>HEADQUARTER</strong>: 4F No 9 Building, 9 Ha
+                        <strong>HEADQUARTER</strong>: 4F - No 9 Building, 9 Ha
                         Dinh, Thanh Xuan, Hanoi, Vietnam
                       </li>
                       <li>

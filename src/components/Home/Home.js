@@ -24,7 +24,7 @@ function Home() {
   setTimeout(function () {
     var text = document.getElementsByClassName("text-slider");
     for (var i = 0; i < text.length; i++) {
-      text[i].classList.add("fadeInLeft", "cssanimation");
+      text[i].classList.add("fadeInRight", "cssanimation1");
     }
   }, 500);
 
@@ -180,10 +180,10 @@ function Home() {
                     <p>Offshore Development Services</p>
                   </div>
                   <p className="text-content">
-                    Our Cloud services are wide-ranging and innovative. So no
-                    matter where you are on your Cloud journey, Smartten will
-                    help build a practical solution and fulfill your business
-                    requirements.
+                    An offshore development center is your own software
+                    development services team but is located in another country.
+                    It is kind of like building your own team at a remote
+                    location that works directly with you and your team.
                   </p>
                   <br />
                   <div className="icon-box">
@@ -234,9 +234,10 @@ function Home() {
                     <p>Mobile App Development Services</p>
                   </div>
                   <p className="text-content">
-                    Being the top 30 Global App Developers, Savvycom has immense
-                    experience creating feature-rich & high-performing Mobile
-                    Apps for iOS and Android platforms.
+                    We build solutions that are driven by user experience,
+                    engagement, and ease of use. The mobile app development
+                    service provided by AVEO are driven by the principle of
+                    predictability and reliability.
                   </p>
                   <br />
                   <div className="icon-box">
@@ -263,7 +264,7 @@ function Home() {
                   </div>
                   <p className="text-content">
                     Rigorous testing and stringent quality assurance at every
-                    stage ensure zero defects after releaseIN.
+                    stage ensure zero defects after release.
                   </p>
                   <br />
                   <div className="icon-box">
@@ -288,9 +289,10 @@ function Home() {
                     <br />
                   </div>
                   <p className="text-content">
-                    We quickly allocate independent software developers for your
-                    internal projects with a focus on communication processes &
-                    detailed development phases.
+                    Our Cloud services are wide-ranging and innovative. So no
+                    matter where you are on your Cloud journey, AVEO will help
+                    build a practical solution and fulfill your business
+                    requirements.
                   </p>
                   <br />
                   <div className="icon-box">

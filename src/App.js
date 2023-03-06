@@ -56,7 +56,7 @@ function App() {
             }
           />
           <Route
-            path="/testing-service"
+            path="/testing-services"
             element={
               <>
                 <Headerr />
@@ -86,7 +86,7 @@ function App() {
             }
           />
           <Route
-            path="/cloud-service"
+            path="/cloud-services"
             element={
               <>
                 <Headerr />

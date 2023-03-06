@@ -236,8 +236,8 @@ function Offshore() {
               <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Requirement gathering</h5>
                 <p>
-                  TECHVIFY gathers the client's requirements regarding resources
-                  and tech stacks.
+                  AVEO gathers the client's requirements regarding resources and
+                  tech stacks.
                 </p>
               </div>
             </div>
@@ -250,8 +250,8 @@ function Offshore() {
               <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>CV preparation</h5>
                 <p>
-                  TECHVIFY screens internal resources to help you connect with
-                  the right talents to match the requirements.
+                  AVEO screens internal resources to help you connect with the
+                  right talents to match the requirements.
                 </p>
               </div>
             </div>
@@ -284,8 +284,8 @@ function Offshore() {
               <div className="col-10 col-sm-11 px-sm-3  p-lg-2 fbox-txt">
                 <h5>Contract sign-off & onboarding</h5>
                 <p>
-                  TECHVIFY is in charge of infrastructure and environmental
-                  setup, as well as the preparation of other resources.
+                  AVEO is in charge of infrastructure and environmental setup,
+                  as well as the preparation of other resources.
                 </p>
               </div>
             </div>
@@ -413,8 +413,8 @@ function Offshore() {
               <div className="text-benefit">
                 <span>Great Talent Pool</span>
                 <p className="my-sm-3">
-                  Our team has 260+ experienced developers with in-depth skills
-                  & knowledge in software building and powerful technologies
+                  Our team has 70+ experienced developers with in-depth skills &
+                  knowledge in software building and powerful technologies
                   stacks.
                 </p>
               </div>
@@ -434,9 +434,9 @@ function Offshore() {
               <div className="text-benefit">
                 <span>Experience</span>
                 <p className="my-sm-3">
-                  We are strategic partner of big corporations such as Mitsui
-                  O.S.K.Line, Marubeni, Mitani, Hino Motor, Vinmec International
-                  Hospital...and delivered 1,000+ systems for enterprise.
+                  We are strategic partner of big corporations such as Blitz
+                  Group, Co MARTCH, MIC ..and delivered 200+ systems for
+                  enterprise.
                 </p>
               </div>
             </div>

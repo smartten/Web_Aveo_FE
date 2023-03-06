@@ -68,13 +68,13 @@ const items = [
       "3"
     ),
     getItem(
-      <a className="link-for-sub" href="/testing-service">
+      <a className="link-for-sub" href="/testing-services">
         Testing Service
       </a>,
       "4"
     ),
     getItem(
-      <a className="link-for-sub" href="/cloud-service">
+      <a className="link-for-sub" href="/cloud-services">
         Cloud Services
       </a>,
       "5"
@@ -247,11 +247,11 @@ function Headerr() {
             Mobile Application Development
           </a>
           <br />
-          <a className="link-for-sub" href="/testing-service">
+          <a className="link-for-sub" href="/testing-services">
             Testing Service
           </a>
           <br />
-          <a className="link-for-sub" href="/cloud-service">
+          <a className="link-for-sub" href="/cloud-services">
             Cloud Services
           </a>
           <br />
@@ -361,12 +361,12 @@ function Headerr() {
                       </a>
                     </div>
                     <div className="div-for-a">
-                      <a href="/testing-service" class="link-drop">
+                      <a href="/testing-services" class="link-drop">
                         Testing Services
                       </a>
                     </div>
                     <div className="div-for-a">
-                      <a href="/cloud-service" class="link-drop">
+                      <a href="/cloud-services" class="link-drop">
                         Cloud Services
                       </a>
                     </div>

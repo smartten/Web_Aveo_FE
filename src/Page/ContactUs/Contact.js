@@ -84,7 +84,7 @@ function Contact() {
                 <div className="content-contact">
                   <b className="title-contact">HEADQUARTER</b>
                   <p className="text-contact">
-                    4F No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
+                    4F - No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
                   </p>
                   <p className="contact-email">
                     Contact:{" "}

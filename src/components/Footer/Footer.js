@@ -28,7 +28,7 @@ function Footer() {
                 >
                   Headquarter:
                 </span>{" "}
-                4F No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
+                4F - No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
               </p>
               <p>
                 <span style={{ fontWeight: 700, fontSize: "14.5px" }}>
@@ -61,25 +61,25 @@ function Footer() {
               {/* </p>
             <p> */}
               <a className="footer-link" href="/web-application">
-                Web Application Development
+                Web App Development
               </a>
               <br />
               <p style={{ margin: 6 }}></p>
               {/* </p>
             <p> */}
               <a className="footer-link" href="/mobile-application">
-                Mobile Application Development
+                Mobile App Development
               </a>
               <br />
               <p style={{ margin: 6 }}></p>
               {/* </p>
             <p> */}
-              <a className="footer-link" href="/testing-service">
-                Testing services
+              <a className="footer-link" href="/testing-services">
+                Testing Services
               </a>
               <br />
               <p style={{ margin: 6 }}></p>
-              <a className="footer-link" href="/cloud-service">
+              <a className="footer-link" href="/cloud-services">
                 Cloud Services
               </a>
               <br />

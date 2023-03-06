@@ -167,8 +167,8 @@
     }
 
     .out-values {
-        text-align    : center;
-        padding-bottom: 70px;
+        text-align       : center;
+        // padding-bottom: 70px;
 
         .mission-title {
             color      : #000;
@@ -181,10 +181,87 @@
 
         }
     }
+
+    .benefits-of-partnering {
+        // padding-top   : 70px;
+        padding-bottom: 70px;
+
+        .title-benefit {
+            text-align   : center;
+            color        : #000;
+            font-weight  : 600;
+            font-size    : 40px;
+            margin-bottom: 50px;
+        }
+
+        .benefit {
+            .row {
+                margin-bottom: 20px;
+
+                .content-part {
+                    background-color: #f4f4f9;
+                    width           : 31.33333%;
+                    padding         : 30px 60px;
+                    margin          : 0px 10px;
+
+                    .icon-benefit {
+                        font-size: 60px;
+                    }
+
+                    .text-benefit {
+                        b {
+                            font-size          : 23px;
+                            color              : #000;
+                            // padding-bottom  : 20px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .big-guys {
+        padding-top   : 70px;
+        padding-bottom: 70px;
+        background    : #fff;
+
+        .title-big-guy {
+            font-size: 22px;
+            color    : #000;
+        }
+    }
 }
 
 @media only screen and (max-width: 46.1875em) {
     .about-us {
+
+        .big-guys {
+            padding-top   : 0px !important;
+            padding-bottom: 0px !important;
+
+            .col-2 {
+                width     : 45% !important;
+                margin-top: 10px;
+            }
+
+            .left {
+                margin-left: 20px;
+            }
+
+            .justify-content-center {
+                justify-content: start !important;
+            }
+
+            .ml {
+                margin-left: 0px !important;
+            }
+        }
+
         .container {
             position: relative;
 
@@ -282,6 +359,27 @@
             }
         }
     }
+
+    .benefits-of-partnering {
+        .title-benefit {
+            font-size: 30px !important;
+        }
+    }
+
+    .benefit {
+        .row {
+            margin-bottom: 0px !important;
+        }
+
+        .col-4 {
+            width: 90% !important;
+        }
+
+        .content-part {
+            margin: 10px 0px !important;
+        }
+    }
+
 }
 
 
@@ -315,6 +413,22 @@
 
 @media (min-width: 64em) and (max-width: 79.5em) {
     .about-us {
+
+        .big-guys {
+            .col-2 {
+                width     : 50% !important;
+                margin-top: 10px;
+            }
+
+            .justify-content-center {
+                justify-content: start !important;
+            }
+
+            .ml {
+                margin-left: 0px !important;
+            }
+        }
+
         .slider {
             .text-title {
                 // font-size: 45px !important;
@@ -323,6 +437,29 @@
             .sub-text {
                 font-size  : 18px !important;
                 line-height: 35px !important;
+            }
+        }
+
+        .benefits-of-partnering {
+            .benefit {
+                .content-part {
+                    width : 30% !important;
+                    height: 600px !important;
+                }
+            }
+        }
+
+        .benefit {
+            .row {
+                margin-bottom: 0px !important;
+            }
+
+            .col-4 {
+                width: 90% !important;
+            }
+
+            .content-part {
+                margin: 10px 0px !important;
             }
         }
     }

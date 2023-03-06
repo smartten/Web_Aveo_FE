@@ -1,5 +1,24 @@
 import "./AboutStyle.scss";
 import React, { useEffect } from "react";
+import {
+  CloudServerOutlined,
+  DashboardOutlined,
+  FieldTimeOutlined,
+  CodeOutlined,
+  BulbOutlined,
+  SelectOutlined,
+  UserOutlined,
+  PieChartOutlined,
+  SwitcherOutlined,
+  PaperClipOutlined,
+} from "@ant-design/icons";
+import logo1 from "./COMATCH's_logo.svg";
+import logo2 from "./Group.svg";
+import logo3 from "./logo-tisa-white.svg";
+import logo4 from "./Logo-white_340x156-px-01.svg";
+import logo5 from "./layer1.svg";
+import logo6 from "./g16.svg";
+import logo7 from "./imageLogo1.svg";
 function AboutUs() {
   useEffect(() => {
     document.title =
@@ -102,6 +121,145 @@ function AboutUs() {
             Morality - Companionship - Study - Participation - Sincerity -
             Consistency
           </p>
+        </div>
+      </section>
+      <section className="big-guys">
+        <div className="container">
+          <p className="text-center title-big-guy">
+            This BIG guys are using services and they are more than happier ever
+          </p>
+          <div className="row justify-content-center flex-wrap">
+            <div className="col-2 ml">
+              <img
+                src={logo1}
+                style={{ width: "100%", height: "auto", marginTop: "10px" }}
+              />
+            </div>
+            {/* <div className="col">
+              <img
+                src={logo2}
+                style={{ width: "110%", height: "auto", marginTop: "20px" }}
+              />
+            </div> */}
+            <div className="col-2 left">
+              <img
+                src={logo3}
+                style={{
+                  width: "80%",
+                  height: "auto",
+                  // marginLeft: "20px",
+                  marginTop: "10px",
+                }}
+              />
+            </div>
+            {/* <div className="col">
+              <img src={logo4} style={{ width: "80%", height: "auto" }} />
+            </div> */}
+            <div className="col-2 left">
+              <img
+                src={logo6}
+                style={{ width: "70%", height: "auto", marginTop: "10px" }}
+              />
+            </div>
+            <div className="col-2">
+              <img
+                src={logo7}
+                style={{ width: "70%", height: "auto", marginTop: "0px" }}
+              />
+            </div>
+            <div className="col-2 left">
+              <img src={logo5} style={{ width: "30%", height: "auto" }} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="benefits-of-partnering">
+        <div className="container">
+          <p className="title-benefit">Benefits of Partnering with AVEO</p>
+          <div className="container benefit ">
+            <div className="row">
+              <div className="col-4 content-part up3">
+                <div className="icon-benefit">
+                  <BulbOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Expert Advice</b>
+                  <p>
+                    We are a leading digital strategy consultant. We can offer
+                    an unique and consultative perspective to your digital
+                    transformation strategy in general and software engineering
+                    in particular.
+                  </p>
+                </div>
+              </div>
+              <div className="col-4 content-part up3">
+                <div className="icon-benefit">
+                  <SelectOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Quality-Focused Solutions</b>
+                  <p>
+                    We are using cutting-edge technologies and tools in software
+                    development process to bring the highest software
+                    development quality, for example automation testing, RPA...
+                  </p>
+                </div>
+              </div>
+              <div className="col-4 content-part up3">
+                <div className="icon-benefit">
+                  <UserOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Great Talent Pool</b>
+                  <p>
+                    Our team has 70+ experienced developers with in-depth skills
+                    & knowledge in software building and powerful technologies
+                    stacks.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-4 content-part up4">
+                <div className="icon-benefit">
+                  <PieChartOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Experience</b>
+                  <p>
+                    We are strategic partner of big corporations such as Blitz
+                    Group, Co MARTCH, MIC ..and delivered 200+ systems for
+                    enterprise.
+                  </p>
+                </div>
+              </div>
+              <div className="col-4 content-part up4">
+                <div className="icon-benefit">
+                  <SwitcherOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>All-in-One Provider</b>
+                  <p>
+                    Our services are comprehensive from consulting, design,
+                    development, integration, deployment to system maintenance
+                    and much mores.
+                  </p>
+                </div>
+              </div>
+              <div className="col-4 content-part up4">
+                <div className="icon-benefit">
+                  <PaperClipOutlined />
+                </div>
+                <div className="text-benefit">
+                  <b>Agile Mindset</b>
+                  <p>
+                    An agile mindset is about creating and responding to change
+                    in uncertain and turbulent environments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

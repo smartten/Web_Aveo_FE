@@ -4,20 +4,22 @@
     background-image     : url('./Hero-bg-default.webp');
     background-repeat    : no-repeat;
     background-position-x: right;
-    background-position-y:right;
+    background-position-y: right;
     background-size      : cover;
     position             : relative;
     height               : 100vh;
     width                : 100%;
-    img{
+
+    img {
         width: 100%;
     }
 }
 
 .hero-text {
-    display: none;
+    display    : none;
     font-family: inherit;
-    font-style: inherit;
+    font-style : inherit;
+
     h1 {
         font-size     : 62px;
         color         : white;
@@ -26,11 +28,11 @@
     }
 
     p {
-        font-size  : 1.175rem;
-        color      : white;
+        font-size     : 1.175rem;
+        color         : white;
         // font-weight: 500;
-        line-height: 1.5;
-        
+        line-height   : 1.5;
+
     }
 }
 
@@ -105,22 +107,23 @@
 }
 
 .section-title {
-    text-align: center;
+    text-align : center;
     font-family: inherit;
-    font-style: inherit;
+    font-style : inherit;
+
     h3 {
         color         : black;
         font-size     : 2.3rem;
         font-weight   : 700;
         line-height   : 1.5;
-        font-family: inherit;
+        font-family   : inherit;
         letter-spacing: -1.6px;
-        font-style: inherit;
+        font-style    : inherit;
     }
 
     p {
         font-size  : 1.1rem;
-        color: black;
+        color      : black;
         line-height: 1.6666;
     }
 }
@@ -132,7 +135,8 @@
 
 .fbox-txt {
     font-family: inherit;
-    font-style: inherit;
+    font-style : inherit;
+
     h5 {
         color         : black;
         letter-spacing: -.75px;
@@ -142,7 +146,7 @@
 
     p {
         font-size  : 1.1rem;
-        color: black;
+        color      : black;
         line-height: 1.6666;
     }
 }
@@ -163,9 +167,10 @@
 
 
 .txt-block {
-    font-family   : inherit;
+    font-family: inherit;
     font-weight: inherit;
-    font-style: inherit;
+    font-style : inherit;
+
     // display: none;
     h3 {
         color         : black;
@@ -187,7 +192,7 @@
 
             p {
                 font-size  : 1.1rem;
-                color: black;
+                color      : black;
                 line-height: 1.6666;
             }
         }
@@ -308,131 +313,157 @@
         cursor: pointer;
     }
 }
+
 .img-defaultt {
     width    : 100%;
     float    : right;
     // height: auto;
 
 }
-.content-bot{
-    .col-lg-4{
+
+.content-bot {
+    .col-lg-4 {
         width: 32%;
     }
 }
-.content-mob{
-    img{
-        width: 60px;
-        height: 60px;
-        margin: 7px 0px 0;
+
+.content-mob {
+    img {
+        width      : 60px;
+        height     : 60px;
+        margin     : 7px 0px 0;
         // float: right;
-        text-align: center;
+        text-align : center;
         align-items: center;
     }
-    .col-sm-6{
+
+    .col-sm-6 {
         width: 47%;
     }
 }
-.step-for-col{
-    .col-sm-6{
+
+.step-for-col {
+    .col-sm-6 {
         width: 48.5%;
     }
 }
+
 .big-guys {
     padding-top   : 70px;
     padding-bottom: 70px;
     background    : #fff;
 
     .title-big-guy {
-        font-size: 20px;
+        font-size: 22px;
+        color    : #000;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-.content-bot{
-    .col-lg-4{
-        width: 100%;
+    .content-bot {
+        .col-lg-4 {
+            width: 100%;
+        }
     }
-}
-.mobility ,.mobility-2 ,.mobility-3 {
-    .col-12{
-        text-align: center;
+
+    .mobility,
+    .mobility-2,
+    .mobility-3 {
+        .col-12 {
+            text-align: center;
+        }
     }
-}
 }
 
-@media only screen and (max-width: 768px) { 
-.content-mob{
-     .col-sm-6{
-         width: 47%;
-     }
- }
- .mobility ,.mobility-2 ,.mobility-3 {
-    margin-bottom: 15px;
-}
-.txt-block{
-    h3{
-        font-size: 1.9rem;
+@media only screen and (max-width: 768px) {
+    .content-mob {
+        .col-sm-6 {
+            width: 47%;
+        }
     }
-    ul li p {
-        font-size: 1.05rem;
- }
-}
+
+    .mobility,
+    .mobility-2,
+    .mobility-3 {
+        margin-bottom: 15px;
+    }
+
+    .txt-block {
+        h3 {
+            font-size: 1.9rem;
+        }
+
+        ul li p {
+            font-size: 1.05rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 648px) {
+
     /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
-.for-contac{
-    .col-12{
-        text-align: center;
-    }
-    .btn-deha{
-        margin: auto;
-        text-align: center;
-        align-items: center;
-    }
-    .img-defaultt{
-        float: none;
-    }
-}
-.step-for-col{
-    .col-sm-6{
-        width: 100%;
-    }
-}
-.hero-text {
-    text-align: center;
-    h1 {
-        font-size     : 40px;
+    .for-contac {
+        .col-12 {
+            text-align: center;
+        }
+
+        .btn-deha {
+            margin     : auto;
+            text-align : center;
+            align-items: center;
+        }
+
+        .img-defaultt {
+            float: none;
+        }
     }
 
-    p {
-        font-size  : 1rem;
-    }
-}
-.hero-section{
-    height: auto;
-    .col-12{
-        // height: 58%;
-    }
-}
-.txt-block{
-    h3{
-        font-size: 1.5rem;
-    }
-}
-.content-mob{
-    .col-sm-6{
-        width: 100%;
-    }
-}
-}
-@media only screen and (max-width: 46.1875em) {
-        
-        .big-guys {
-            .col-2 {
-                width     : 30% !important;
-                margin-top: 10px;
-            }
+    .step-for-col {
+        .col-sm-6 {
+            width: 100%;
         }
-       
+    }
+
+    .hero-text {
+        text-align: center;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .hero-section {
+        height: auto;
+
+        .col-12 {
+            // height: 58%;
+        }
+    }
+
+    .txt-block {
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .content-mob {
+        .col-sm-6 {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 46.1875em) {
+
+    .big-guys {
+        .col-2 {
+            width     : 30% !important;
+            margin-top: 10px;
+        }
+    }
+
 }

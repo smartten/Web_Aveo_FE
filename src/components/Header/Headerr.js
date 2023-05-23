@@ -1,6 +1,6 @@
 import "./HeadStyle.scss";
-import logo from "./Asset 1.svg";
-import logo2 from "./Logo.svg";
+import logo from "./New_w_logo_may23.svg";
+import logo2 from "./New_logo_may23.svg";
 import React, { useEffect, useState } from "react";
 import {
   RightOutlined,

@@ -1,8 +1,5 @@
-import logo from "./Asset 1.svg";
 import logo1 from "./COMATCH's_logo.svg";
-import logo2 from "./Group.svg";
 import logo3 from "./logo-tisa-white.svg";
-import logo4 from "./Logo-white_340x156-px-01.svg";
 import logo5 from "./layer1.svg";
 import logo6 from "./g16.svg";
 import logo7 from "./imageLogo1.svg";

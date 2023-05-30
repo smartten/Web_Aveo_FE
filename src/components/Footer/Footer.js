@@ -1,4 +1,4 @@
-import logo from "./New_w_logo_may23.svg";
+import logo from "./New_logo_May30-white.svg";
 import "./FooterStyle.scss";
 import React from "react";
 import { Button } from "antd";

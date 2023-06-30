@@ -88,7 +88,7 @@ function Contact() {
                   </p>
                   <p className="contact-email">
                     Contact:{" "}
-                    <a href="mailto:sales@aveo.com.vn">sales@aveo.com.vn</a>
+                    <a href="mailto:sales@aveo-global.com">sales@aveo-global.com</a>
                   </p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ function Contact() {
                   </p>
                   <p className="contact-email">
                     Contact:{" "}
-                    <a href="mailto:luyennk@aveo.com.vn">luyennk@aveo.com.vn</a>
+                    <a href="mailto:luyennk@aveo-global.com">luyennk@aveo-global.com</a>
                   </p>
                   {/* <a href="https://deha.co.jp">https://deha.co.jp</a> */}
                 </div>

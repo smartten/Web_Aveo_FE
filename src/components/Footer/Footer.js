@@ -46,7 +46,7 @@ function Footer() {
                 <span style={{ fontWeight: 700, fontSize: "14.5px" }}>
                   Email:
                 </span>{" "}
-                sales@aveo.com.vn
+                sales@aveo-global.com
               </p>
             </div>
           </div>

@@ -64,9 +64,15 @@ function AboutUs() {
                   <td>2019</td>
                 </tr>
                 <tr>
-                  <th>Headquarter</th>
+                  <th>Head office</th>
                   <td>
                     4F - No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
+                  </td>
+                </tr>
+                <tr>
+                  <th>Office</th>
+                  <td>
+                    4F - Ocean Park Building, No 1 Dao Duy Anh, Dong Da, Hanoi, Vietnam
                   </td>
                 </tr>
 
@@ -75,8 +81,7 @@ function AboutUs() {
                   <td>
                     <ul>
                       <li>
-                        <strong>HEADQUARTER</strong>: 4F - No 9 Building, 9 Ha
-                        Dinh, Thanh Xuan, Hanoi, Vietnam
+                      <strong>OFFICE</strong>: 4F - Ocean Park Building, No 1 Dao Duy Anh, Dong Da, Hanoi, Vietnam
                       </li>
                       <li>
                         <strong>Japan</strong>: 5-21-5 Higashisuna, Koutouku,

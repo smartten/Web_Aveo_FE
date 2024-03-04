@@ -82,9 +82,13 @@ function Contact() {
                   <HomeOutlined />
                 </div>
                 <div className="content-contact">
-                  <b className="title-contact">HEADQUARTER</b>
+                  <b className="title-contact">HEAD OFFICE</b>
                   <p className="text-contact">
                     4F - No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
+                  </p>
+                  <b className="title-contact">OFFICE</b>
+                  <p className="text-contact">
+                    4F - Ocean Park Building, No 1 Dao Duy Anh, Dong Da, Hanoi, Vietnam
                   </p>
                   <p className="contact-email">
                     Contact:{" "}
@@ -94,7 +98,7 @@ function Contact() {
               </div>
               <div className="d-flex">
                 <div className="icon-contact">
-                  <MailOutlined />
+                  <MailOutlined/>
                 </div>
                 <div className="content-contact">
                   <b className="title-contact">Tokyo, JAPAN</b>

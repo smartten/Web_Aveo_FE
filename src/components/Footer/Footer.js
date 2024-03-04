@@ -26,9 +26,20 @@ function Footer() {
                     fontSize: "14.5px",
                   }}
                 >
-                  Headquarter:
+                    Head office:
                 </span>{" "}
                 4F - No 9 Building, 9 Ha Dinh, Thanh Xuan, Hanoi, Vietnam
+              </p>
+              <p>
+                <span
+                  style={{
+                    fontWeight: 700,
+                    fontSize: "14.5px",
+                  }}
+                >
+                    Office:
+                </span>{" "}
+                4F - Ocean Park Building, No 1 Dao Duy Anh, Dong Da, Hanoi, Vietnam	
               </p>
               <p>
                 <span style={{ fontWeight: 700, fontSize: "14.5px" }}>

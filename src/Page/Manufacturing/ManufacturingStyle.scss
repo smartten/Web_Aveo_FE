@@ -1,0 +1,708 @@
+.manufacturing {
+    background              : #fff;
+    position                : relative;
+    font-size               : 16px;
+    overflow                : hidden;
+    margin                  : 0 auto;
+    color                   : #60697B;
+    line-height             : 1.7;
+    -webkit-text-size-adjust: 100%;
+    font-family             : 'Open Sans', sans-serif;
+    -webkit-font-smoothing  : antialiased;
+
+    article,
+    aside,
+    br,
+    dialog,
+    figure,
+    footer,
+    header,
+    hr,
+    main,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    img,
+    svg {
+        vertical-align: middle;
+    }
+
+    .cssanimation {
+        animation-duration : 2s;
+        animation-fill-mode: both;
+    }
+
+    .fadeInRight {
+        -webkit-animation-name: fadeInRight;
+        animation-name        : fadeInRight;
+        display               : block !important;
+    }
+
+    .fadeInLeft {
+        -webkit-animation-name: fadeInLeft;
+        animation-name        : fadeInLeft;
+        display               : block !important;
+    }
+
+    .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name        : fadeInUp;
+        display               : block !important;
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity  : 0;
+            transform: translate3d(-20%, 0, 0);
+        }
+
+        100% {
+            opacity  : 1;
+            transform: none
+        }
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity  : 0;
+            transform: translate3d(20%, 0, 0);
+        }
+
+        100% {
+            opacity  : 1;
+            transform: none;
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity  : 0;
+            transform: translate3d(0, 30%, 0);
+        }
+
+        100% {
+            opacity  : 1;
+            transform: none;
+        }
+    }
+
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+            transform: translate3d(0, 0, 0);
+
+            .slider-item {
+                background-size    : cover;
+                background-repeat  : no-repeat;
+                background-position: right top;
+                display            : flex;
+                align-items        : center;
+                background-image   : url('./Hero-bg-abstract.png');
+                height             : 100vh !important;
+                min-height         : 1px;
+                float              : left;
+                width              : 100% !important;
+                background-color   : #f1f1f1;
+
+                .container {
+                    position: relative;
+
+                    .slide-content {
+                        align-items       : center;
+                        // justify-content: space-between;
+
+                        .text {
+                            overflow      : hidden;
+                            width         : 60%;
+                            // margin-left: 35px;
+
+                            .text-title {
+                                color      : #ffffff;
+                                font-size  : 55px;
+                                line-height: 45px;
+                                font-weight: 600;
+
+                            }
+
+                            .sub-text {
+                                color      : #ffffff;
+                                font-size  : 23px;
+                                line-height: 45px;
+                                width      : 80%;
+                            }
+
+                            .btn-contact {
+                                color           : #fff !important;
+                                background-color: #f15f22;
+                                border-color    : #f15f22 !important;
+                                font-size       : 19px;
+                                padding         : 10px 25px;
+                            }
+                        }
+
+                        .image {
+                            width: 40%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .developer-service {
+        padding-top   : 70px;
+        padding-bottom: 70px;
+
+        .title-service {
+            text-align: center;
+
+            .title {
+                color      : #000;
+                font-size  : 40px;
+                font-weight: 600;
+            }
+
+            .sub-title {
+                font-size: 20px;
+            }
+        }
+
+        .content-service {
+            .row {
+                justify-content: space-between;
+
+                .col-6 {
+                    width: 48%;
+                }
+            }
+
+            .content-text {
+                display   : flex;
+                margin-top: 50px;
+
+                .icon-service {
+                    width: 15%;
+
+                    svg {
+                        font-size: 50px;
+                        color    : #1890ff;
+                    }
+                }
+
+                .text-service {
+                    width: 85%;
+
+                    .text-title {
+                        font-size: 25px;
+                        color    : #000;
+                        margin   : 0;
+                    }
+
+                    .text-sub {
+                        font-size: 16px;
+                        margin   : 0;
+                        width    : 95%;
+                    }
+                }
+            }
+        }
+    }
+
+    .certificates {
+        background-size    : cover;
+        background-repeat  : no-repeat;
+        background-position: 50%;
+        display            : flex;
+        align-items        : center;
+        background-image   : url('./Hero-bg-abstract.png');
+        height             : 300px !important;
+        min-height         : 1px;
+        float              : left;
+        width              : 100% !important;
+        background-color   : #f1f1f1;
+
+        .content-certificates {
+            .title-certificates {
+                color      : #fff;
+                text-align : center;
+                font-size  : 40px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .our-typical {
+        padding-top   : 370px;
+        padding-bottom: 70px;
+
+        .content-typical {
+            display        : flex;
+            justify-content: center;
+
+            .title-typical {
+                width      : 60%;
+                text-align : center;
+                font-size  : 35px;
+                color      : #000;
+                font-weight: 600;
+            }
+        }
+
+        .box-content-typical {
+            .box {
+                // position: relative;
+                height               : 15rem;
+                display              : block;
+                background-color     : #fff;
+                border               : 1px solid #efefef;
+                padding              : 30px 30px 30px 70px;
+                margin               : 1rem 0;
+                -webkit-border-radius: 0;
+                border-radius        : 0;
+                -webkit-box-shadow   : 0 10px 15px 0 rgb(5 5 5/5%);
+                box-shadow           : 0 10px 15px 0 rgb(5 5 5 / 5%);
+                display              : flex;
+
+                .nummber {
+                    top        : 26px;
+                    left       : 21px;
+                    font-style : normal;
+                    font-weight: 700;
+                    font-size  : 50px;
+                    line-height: 60px;
+                    color      : #c6e7f8;
+                }
+
+                .content-number {
+                    margin-top : 15px;
+                    margin-left: 15px;
+
+                    .title-box {
+                        color      : #000;
+                        font-weight: 600;
+                        font-size  : 25px;
+                    }
+
+                    .content-title-box {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .big-guys {
+        padding-top   : 70px;
+        padding-bottom: 70px;
+
+        .title-big-guy {
+            font-size: 22px;
+            color    : #000;
+        }
+    }
+
+    .benefits-of-partnering {
+        padding-top   : 70px;
+        padding-bottom: 70px;
+
+        .title-benefit {
+            text-align   : center;
+            color        : #000;
+            font-weight  : 600;
+            font-size    : 40px;
+            margin-bottom: 50px;
+        }
+
+        .benefit {
+            .row {
+                margin-bottom: 20px;
+
+                .content-part {
+                    background-color: #f4f4f9;
+                    width           : 31.33333%;
+                    padding         : 30px 60px;
+                    margin          : 0px 10px;
+
+                    .icon-benefit {
+                        font-size: 60px;
+                    }
+
+                    .text-benefit {
+                        b {
+                            font-size          : 23px;
+                            color              : #000;
+                            // padding-bottom  : 20px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .contact-us-v1 {
+        background-position-y   : 168.379px;
+        font-size               : 26px;
+        text-align              : center;
+        width                   : 100%;
+        height                  : 500px;
+        background-attachment   : fixed;
+        background-position     : center 0;
+        background-size         : cover;
+        background-repeat       : no-repeat;
+        position                : relative;
+        // overflow             : hidden;
+        background-image        : url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-2');
+
+        .contact-content {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+
+            .contact-text {
+                width     : 50%;
+                color     : white;
+                text-align: left;
+                margin-top: 50px;
+
+                h2 {
+                    font-size  : 50px;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 23px;
+                }
+
+                .btn-contact {
+                    color           : #fff !important;
+                    background-color: #f15f22;
+                    border-color    : #f15f22 !important;
+                    font-size       : 19px;
+                    padding         : 10px 25px;
+                }
+            }
+
+            .conact-img {
+                width: 30%;
+
+                // height: 00px;
+                img {
+                    width     : 100%;
+                    height    : auto;
+                    margin-top: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 46.1875em) {
+    .manufacturing {
+        .slider-item {
+            text-align: center !important;
+
+            .slide-content {
+                flex-wrap      : wrap;
+                justify-content: center;
+
+                .image {
+                    width     : 70% !important;
+                    margin-top: 50px;
+                }
+
+                .text {
+                    width      : 100% !important;
+                    margin-left: 0px !important;
+                }
+
+                .text-title {
+                    font-size: 35px !important;
+                }
+
+                .sub-text {
+                    width    : 100% !important;
+                    font-size: 18px !important;
+                }
+            }
+        }
+
+        .developer-service {
+            .col-2 {
+                width: 100% !important;
+            }
+
+            img {
+                width      : 25%;
+                margin-left: 140px;
+            }
+
+            .text-title {
+                font-size: 28px !important;
+            }
+
+            .icon-service {
+                margin-right: 0px !important;
+                padding     : 0px;
+                margin-left : 330px !important;
+            }
+
+            .text-service {
+                text-align: center;
+            }
+
+            .col {
+                .row {
+                    justify-content: center;
+                }
+            }
+        }
+
+        .certificates {
+            .title-certificates {
+                font-size: 30px !important;
+            }
+
+            .col-2 {
+                width: 25% !important;
+            }
+        }
+
+        .our-typical {
+            .title-typical {
+                font-size: 25px !important;
+                width    : 100% !important;
+            }
+
+            .box {
+                height: 17rem !important;
+            }
+
+            .content-number {
+                .title-box {
+                    font-size: 20px !important;
+                }
+
+                .content-title-box {
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+        .benefit {
+            .row {
+                margin-bottom: 0px !important;
+            }
+
+            .col-4 {
+                width: 100% !important;
+            }
+
+            .content-part {
+                margin: 10px 0px !important;
+            }
+        }
+
+        .benefits-of-partnering {
+            .title-benefit {
+                font-size: 30px !important;
+            }
+        }
+
+        .big-guys {
+            padding-top   : 0px !important;
+            padding-bottom: 0px !important;
+
+            .col-2 {
+                width     : 45% !important;
+                margin-top: 10px;
+            }
+
+            .left {
+                margin-left: 20px;
+            }
+
+            .justify-content-center {
+                justify-content: start !important;
+            }
+
+            .ml {
+                margin-left: 0px !important;
+            }
+        }
+
+        .contact-us-v1 {
+            .contact-content {
+                .contact-text {
+                    width     : 100% !important;
+                    text-align: center;
+                    margin-top: 50%;
+
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+
+                .conact-img {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .manufacturing {
+        .slider-item {
+            text-align: center !important;
+
+            .slide-content {
+                flex-wrap      : wrap;
+                justify-content: center;
+
+                .image {
+                    width     : 70% !important;
+                    margin-top: 50px;
+                }
+
+                .text {
+                    width      : 100% !important;
+                    margin-left: 0px !important;
+
+                    .sub-text {
+                        margin-left: 80px !important;
+                        text-align : center !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .benefit {
+        .row {
+            margin-bottom: 0px !important;
+        }
+
+        .col-4 {
+            width: 100% !important;
+        }
+
+        .content-part {
+            margin: 10px 0px !important;
+        }
+    }
+
+
+    .developer-service {
+        .icon-service {
+            width: 20% !important;
+        }
+    }
+
+    .our-typical {
+        .title-typical {
+            font-size: 25px !important;
+        }
+
+        .box {
+            height: 19rem !important;
+        }
+
+        .content-number {
+            .title-box {
+                font-size: 20px !important;
+            }
+
+            .content-title-box {
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 64em) and (max-width: 79.5em) {
+    .manufacturing {
+        .slider {
+            .text-title {
+                font-size: 45px !important;
+            }
+
+            .sub-text {
+                font-size  : 18px !important;
+                line-height: 35px !important;
+            }
+        }
+
+        .big-guys {
+            .col-2 {
+                width     : 50% !important;
+                margin-top: 10px;
+            }
+
+            .justify-content-center {
+                justify-content: start !important;
+            }
+
+            .ml {
+                margin-left: 0px !important;
+            }
+        }
+
+        .our-typical {
+            .title-typical {
+                font-size: 26px !important;
+            }
+
+            .box {
+                height: 19rem !important;
+            }
+
+            .content-number {
+                .title-box {
+                    font-size: 25px !important;
+                }
+
+                .content-title-box {
+                    font-size: 16px !important;
+                }
+            }
+        }
+
+
+        // .developer-service {
+        //     .text-service {
+        //         .text-title {
+        //             font-size: 28px !important;
+        //         }
+        //     }
+        // }
+
+        .benefits-of-partnering {
+            .benefit {
+                .content-part {
+                    width : 30% !important;
+                    height: 600px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.footer-container {
+  width: 100%;
+  height: auto;
+  background-color: #081547;
+}
+
+.h1 {
+  color: white;
+  font-size: 36px;
+  opacity: 0.95;
+}
+.footer-button {
+  margin-top: 30px;
+  height: 60px;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0060ad;
+  font-size: 20px;
+  font-weight: 800px;
+  border: none;
+  transition-duration: 0.1s;
+  float: right;
+}
+.footer-button:hover {
+  border: 6px solid #0060ad;
+  background-color: #d9e7f3;
+}
+
+.footer-headquarter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7px 110px 35px 100px;
+}
+.footer-headquarter-col1 {
+  color: white;
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+.footer-logo {
+  // width: 96px;
+  // margin-left: -92px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-link:hover {
+  opacity: 1;
+  color: white;
+}
+
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.divider {
+  border-width: 0 0 1px;
+  $color: skyblue;
+  color: $color;
+  border-image: linear-gradient(90deg, rgba($color, 0), rgba($color, 1) 50%, rgba($color, 0) 100%) 0 0 100%;
+  border-style: solid;
+}
+
+.contact-us-v1 {
+  background-position-y: 168.379px;
+  font-size: 26px;
+  // text-align              : center;
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  // overflow             : hidden;
+  background-image: url('https://res.cloudinary.com/deha-vietnam/image/upload/f_webp/images/hero/Hero-bg-2');
+}
+.conact-img {
+  // width: 30%;
+
+  // height: 00px;
+  img {
+    width: 100%;
+    // height    : auto;
+    // margin-top: 90px;
+    // border: 1px solid white;
+  }
+}
+
+.hanoi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .col-sm-4 {
+    width: 25%;
+    flex: 'wrap';
+  }
+}
+
+.content-footer {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  /*-- Code cho màn hình vừa (Table) viết ở đây --*/
+}
+@media only screen and (max-width: 768px) {
+  .hanoi {
+    .col-sm-4 {
+      width: 32%;
+    }
+  }
+  .footer-logo {
+    margin-left: -50px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
+  .footer-button {
+    float: none;
+    /* margin-left: 20%; */
+  }
+  .item {
+    text-align: center;
+  }
+  .h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .hanoi {
+    .col-sm-4 {
+      width: 100%;
+    }
+  }
+  .all-right {
+    text-align: center;
+  }
+}

@@ -1,0 +1,181 @@
+.home {
+  .slider-detail-blog {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    overflow: hidden;
+
+    .siler-list {
+      transform: translate3d(0, 0, 0);
+
+      .slider-item-home {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: flex;
+        align-items: center;
+        background-image: url('./joshua-sortino-XMcoTHgNcQA-unsplash.jpg');
+        height: 100vh !important;
+        min-height: 1px;
+        float: left;
+        width: 100% !important;
+        background-color: #f1f1f1;
+
+        .container {
+          position: relative;
+
+          // margin-left: 200px;
+          .slide-content {
+            padding: 0;
+
+            .text-slider {
+              overflow: hidden;
+
+              // transform: translateX(38px);
+              .text-title {
+                color: #fff;
+                font-size: 50px;
+                line-height: 70px;
+                font-weight: 600;
+                // text-transform   : uppercase;
+                margin: 0px;
+              }
+
+              .sub-text {
+                color: #ffffff;
+                font-size: 20px;
+                line-height: 45px;
+                width: 51%;
+                margin-top: 30px;
+              }
+
+              .btn-detail {
+                color: #fff !important;
+                background-color: #f15f22;
+                border-color: #f15f22 !important;
+                font-size: 16px;
+                padding: 10px 25px;
+              }
+            }
+
+            .form-dowload {
+              position: relative;
+              z-index: 999;
+              background-color: #fff;
+              border: 1px solid #f8f8f8;
+              padding: 45px 35px;
+              margin-top: 0;
+              margin-right: 0;
+              margin-bottom: 30px;
+              border-radius: 20px;
+              box-shadow: 0 15px 20px 0 rgb(5 5 5 / 10%);
+
+              // text-align      : center;
+              .title-dowload {
+                color: #000;
+                font-size: 30px;
+              }
+
+              .form-sub {
+                .btn-submit {
+                  width: 100% !important;
+                  // margin-left: 85px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .detail-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    min-height: 100vh;
+    gap: 20px;
+
+    .highlight {
+      display: flex;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      justify-content: space-between;
+      align-items: center;
+      border: #a3a0a0 1px solid;
+
+      span {
+        font-weight: bold;
+      }
+    }
+    .highlight-content {
+      // Corrected class name
+      display: flex;
+      align-items: center;
+      border-bottom: #a3a0a0 1px solid;
+      border-left: #a3a0a0 1px solid;
+      border-right: #a3a0a0 1px solid;
+
+      .highlighted-paragraphs {
+        .highlighted-paragraph {
+          width: 900px;
+        }
+
+        .text-highlight {
+          cursor: pointer;
+          ul {
+            li:hover {
+              text-decoration: underline;
+              color: blue;
+            }
+          }
+        }
+
+        .text-highlight:hover {
+        }
+      }
+    }
+    .detail-blog {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 1000px;
+      width: 100%;
+      text-align: left;
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .blog-date {
+        font-size: 0.9em;
+        color: #888;
+        margin-bottom: 20px;
+      }
+
+      .blog-content {
+        font-size: 1em;
+        line-height: 1.6;
+        color: #333;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

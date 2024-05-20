@@ -1,0 +1,305 @@
+.health-section {
+    background-image     : url('./Hero-bg-7.webp');
+    background-repeat    : no-repeat;
+    background-position-x: top;
+    background-position-y: top;
+    background-size      : cover;
+    position             : relative;
+    width                : 100%;
+    height               : 100vh;
+
+}
+
+.heath-text {
+    position: absolute;
+    display : none;
+
+    h1 {
+        font-size     : 62px;
+        color         : white;
+        font-weight   : 700;
+        letter-spacing: -1.6px;
+    }
+
+    p {
+        font-size  : 1.175rem;
+        color      : white;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+
+    .btn-deha {
+        background-color: #F05F22;
+        font-weight     : 500;
+        font-size       : 1.1rem;
+        line-height     : 1;
+        width           : 160px;
+        height          : 50px;
+        text-align      : center;
+
+        a {
+            text-decoration: none;
+            color          : #fff !important;
+        }
+    }
+
+    .btn-deha:hover {
+        cursor: pointer;
+    }
+}
+
+.mobility {
+    display: none;
+}
+
+.mobility-2 {
+    display: none;
+}
+
+.animate {
+    display: none;
+}
+
+.cssanimation {
+    animation-duration : 2s;
+    animation-fill-mode: both;
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name        : fadeInRight;
+    display               : block;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name        : fadeInLeft;
+    display               : block;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name        : fadeInUp;
+    display               : block;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity  : 0;
+        transform: translate3d(-20%, 0, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity  : 0;
+        transform: translate3d(20%, 0, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity  : 0;
+        transform: translate3d(0, 30%, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+.section-title {
+    text-align: center;
+
+    h3 {
+        color         : #2f353e;
+        font-size     : 2.3rem;
+        line-height   : 1.5;
+    }
+
+    p {
+        font-size  : 1.1rem;
+        color: #616161;
+        line-height: 1.6666;
+    }
+}
+
+.img {
+    width : 60px;
+    height: 60px;
+}
+
+.fbox-txt {
+    h5 {
+        color         : black;
+        letter-spacing: -.75px;
+        font-size     : 1.6rem;
+        font-weight   : 600;
+    }
+
+    p {
+        font-size  : 1.1rem;
+        color: black;
+        line-height: 1.6666;
+    }
+}
+
+.bg-01 {
+    background-image     : url("./Hero-bg-default.webp");
+    background-repeat    : no-repeat;
+    background-position  : 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size      : cover;
+    background-attachment: fixed !important;
+    width                : 100%;
+    height               : 300px;
+}
+
+.img-digi {
+    width     : 95%;
+    float     : right;
+    // display: none;
+}
+
+.h3-md {
+    font-size     : 2.6rem;
+    color         : black;
+    letter-spacing: -.75px;
+    font-weight   : 700;
+    line-height   : 1.2;
+    text-align    : center;
+    opacity       : 0.9;
+}
+
+.content-part {
+    background-color: #f4f4f9;
+    height          : 427px;
+
+    .icon-benefit {
+        color    : #6C757D;
+        font-size: 60px;
+    }
+
+    .text-benefit {
+        span {
+            color         : black;
+            letter-spacing: -.75px;
+            line-height   : 1.3;
+            font-size     : 1.25rem;
+            font-weight   : 700;
+        }
+
+        p {
+            font-size  : 1.075rem;
+            color      : black;
+            line-height: 1.8;
+        }
+    }
+}
+
+.bg-04 {
+    // background-image: url('./Hero-bg-2.webp');
+    background-repeat    : no-repeat;
+    background-position  : 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size      : cover;
+    background-attachment: fixed !important;
+}
+
+.cta-11-txt {
+    h2 {
+        font-size        : 3rem;
+        color            : white;
+        // letter-spacing: -.75px;
+        font-weight      : 700;
+    }
+
+    p {
+        font-size  : 1.075rem;
+        color      : white;
+        font-weight: 500;
+    }
+
+}
+
+.img-defaultt {
+    width : 80%;
+    height: auto;
+}
+.content-bot{
+    .col-lg-4{
+        width: 32%;
+    }
+}
+.content-mob{
+    .col-sm-6{
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 767.98px) { 
+    .content-mob{
+         .col-sm-6{
+             width: 47%;
+         }
+     }
+     .mobility ,.mobility-2 ,.mobility-3 {
+        margin-bottom: 15px;
+    }
+     }
+    
+    @media only screen and (max-width: 648px) {
+        /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
+    .for-contac{
+        .col-12{
+            text-align: center;
+        }
+        .btn-deha{
+            margin: auto;
+            text-align: center;
+            align-items: center;
+        }
+        .img-defaultt{
+            float: none;
+        }
+    }
+    .step-for-col{
+        .col-sm-6{
+            width: 100%;
+        }
+    }
+    .heath-text{
+        h1{
+            font-size: 50px;
+        }
+    }
+    .content-mob{
+        .col-sm-6{
+            width: 47%;
+        }
+    }
+    }
+    @media only screen and (max-width: 1000px) {
+        .content-bot{
+            .col-lg-4{
+                width: 100%;
+            }
+        }
+        .mobility ,.mobility-2 ,.mobility-3 {
+            .col-12{
+                text-align: center;
+            }
+        }
+        }

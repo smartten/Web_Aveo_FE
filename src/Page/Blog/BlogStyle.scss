@@ -1,0 +1,196 @@
+.home {
+  .slider-blog {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    overflow: hidden;
+
+    .siler-list {
+      transform: translate3d(0, 0, 0);
+
+      .slider-item-home {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: flex;
+        align-items: center;
+        background-image: url('./joshua-sortino-XMcoTHgNcQA-unsplash.jpg');
+        height: 100vh !important;
+        min-height: 1px;
+        float: left;
+        width: 100% !important;
+        background-color: #f1f1f1;
+
+        .container {
+          position: relative;
+
+          // margin-left: 200px;
+          .slide-content {
+            padding: 0;
+
+            .text-slider {
+              overflow: hidden;
+
+              // transform: translateX(38px);
+              .text-title {
+                color: #fff;
+                font-size: 50px;
+                line-height: 70px;
+                font-weight: 600;
+                // text-transform   : uppercase;
+                margin: 0px;
+              }
+
+              .sub-text {
+                color: #ffffff;
+                font-size: 20px;
+                line-height: 45px;
+                width: 51%;
+                margin-top: 30px;
+              }
+
+              .btn-detail {
+                color: #fff !important;
+                background-color: #f15f22;
+                border-color: #f15f22 !important;
+                font-size: 16px;
+                padding: 10px 25px;
+              }
+            }
+
+            .form-dowload {
+              position: relative;
+              z-index: 999;
+              background-color: #fff;
+              border: 1px solid #f8f8f8;
+              padding: 45px 35px;
+              margin-top: 0;
+              margin-right: 0;
+              margin-bottom: 30px;
+              border-radius: 20px;
+              box-shadow: 0 15px 20px 0 rgb(5 5 5 / 10%);
+
+              // text-align      : center;
+              .title-dowload {
+                color: #000;
+                font-size: 30px;
+              }
+
+              .form-sub {
+                .btn-submit {
+                  width: 100% !important;
+                  // margin-left: 85px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blog-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .blog-layout {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #fff;
+
+    .blog-list {
+      flex: 3;
+      padding-right: 0px;
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .filter-sort {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        input,
+        select {
+          flex: 1;
+          margin: 0 10px;
+          padding: 10px;
+          font-size: 1em;
+        }
+      }
+
+      .blog-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .blog-item {
+          background: white;
+          // border: 1px solid #ddd;
+          border-radius: 8px;
+          // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin: 10px;
+          width: calc(31%); /* Adjusted for 2 blogs per row */
+          // padding: 15px;
+          text-align: left;
+          text-decoration: none;
+          color: black;
+
+          img {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            object-fit: cover;
+          }
+
+          h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+          }
+
+          .blog-date {
+            font-size: 0.9em;
+            color: #999;
+          }
+        }
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        button {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          margin: 0 5px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+          }
+
+          &:hover:not(:disabled) {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+}

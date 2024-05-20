@@ -1,0 +1,509 @@
+#top {
+  width: 100%;
+  padding: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-top {
+  width: 100%;
+  /* border      : 1px solid #000000; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 10;
+  align-items: center;
+  height: 50px;
+  display: none;
+
+  .topcenter {
+    width: 66%;
+  }
+}
+
+.head-totall {
+  height: 100px;
+  width: 100%;
+  /* border          : 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  // box-shadow: 0 1px 5px  rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0);
+  /* box-shadow      : 0px 12px 10px -15px #111;  */
+  transition-duration: 0.5s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+#repon-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  background-color: white;
+  width: 100%;
+  z-index: -2;
+}
+
+.sizeLogo {
+  img {
+    width: 110px;
+    height: 110px;
+    // margin:-5px 0px 0px 160px;
+  }
+}
+
+.sizeLogo2 {
+  display: none;
+
+  img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.logoNone {
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+  // padding: 10px;
+  display: block;
+  animation: fadeIn 2s;
+  justify-content: flex-start;
+}
+
+#id {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.head-menu-icon {
+  padding: 0.15% 0px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.top-link {
+  color: #0161ad;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.icon {
+  font-size: 23px;
+  color: #c5c5c5;
+  opacity: 0.9;
+}
+
+.head-menu {
+  padding: 40px 0px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  margin-right: 50px;
+  font-weight: 500;
+  display: none;
+  font-family: inherit;
+}
+
+.link-for-res {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 50px;
+  font-weight: 500;
+}
+
+.link-for-sub {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 50px;
+}
+
+.link-drop:hover {
+  color: #1c71b5;
+  background: #fff;
+  padding: 0px 0px 0px 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.link-for-res:hover {
+  cursor: pointer;
+}
+
+.ant-drawer {
+  .ant-drawer-body {
+    padding: 0;
+  }
+
+  .ant-drawer-mask {
+    display: none;
+  }
+
+  .ant-drawer-content-wrapper {
+    margin-top: 100px;
+    box-shadow: none;
+  }
+
+  .ant-drawer-header {
+    display: none;
+  }
+}
+
+.ant-menu {
+  .ant-menu-item {
+    border-radius: 0;
+  }
+
+  .ant-menu-submenu {
+    border-radius: 0;
+  }
+}
+
+.ant-menu-item {
+  border-radius: 0;
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.ant-menu-submenu {
+  .ant-menu-item {
+    border: none;
+  }
+}
+
+.ant-menu-submenu {
+  border-radius: 0;
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.ant-menu-inline {
+  .ant-menu-item {
+    margin-inline: 0;
+    width: calc(100% - 0px);
+  }
+
+  .ant-menu-submenu-title {
+    margin-inline: 0;
+    width: calc(100% - 0px);
+  }
+}
+
+.ant-menu-vertical {
+  .ant-menu-item {
+    margin-inline: 0;
+    width: calc(100% - 0px);
+    margin-block: 0;
+    height: 46px;
+  }
+}
+
+.link-drop {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.link-drop:hover {
+  color: #1c71b5;
+}
+
+.link:hover {
+  color: white;
+}
+
+.header-but {
+  background-color: #f15f22;
+  border: none;
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -10px;
+  transition-duration: 0.1s;
+  text-decoration: none;
+  padding: 10px 40px;
+  display: none;
+  border-radius: 10px;
+}
+
+.header-but:hover {
+  background-color: white;
+  border: 2px solid #f15f22;
+  color: #f15f22;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  margin-top: 15px;
+  margin-left: -18px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  // background-color: rgb(255, 255, 255,0.7);
+  min-width: 257px;
+  // width: auto;
+  min-height: 60px;
+  align-items: center;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeInRight 0.5s ease;
+  -webkit-animation: fadeInRight 0.5s ease;
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  display: block;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.div-for-a {
+  background-color: rgb(255, 255, 255, 0);
+  height: 38px;
+  padding-top: 5px;
+  margin: 14px 10px 14px 10px;
+  border-radius: 5px;
+}
+
+// .div-for-a:hover {
+//     // background-color: rgb(255, 255, 255,1);
+//     background-color: rgb(237, 243, 250);
+// }
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-content-submenu {
+  margin-top: -35px;
+  margin-left: 200px;
+  display: none;
+  position: absolute;
+  // background-color: rgb(255, 255, 255,0.9);
+  background-color: white;
+  min-width: 250px;
+  min-height: 60px;
+  align-items: center;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-submenu:hover .dropdown-content-submenu {
+  display: block;
+  animation: fadeInRight 0.5s ease;
+  -webkit-animation: fadeInRight 0.5s ease;
+}
+
+.triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 16px solid #8aba2b;
+  border-left: 16px solid transparent;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  /* position  : fixed; */
+}
+
+.overlay {
+  background: #1d2055;
+  z-index: 2;
+  position: fixed;
+  top: 0%;
+  left: -25%;
+  width: 1000%;
+  height: 1000%;
+  transform: scaleY(0);
+  transform-origin: both;
+}
+
+.transition {
+  -webkit-animation: scaletoright 3000ms both cubic-bezier(0.77, 0, 0.175, 1);
+  animation: scaletoright 3000ms both cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes scaletoright {
+  0% {
+    transform: scaleY(1) skewY(0deg);
+    transform-origin: top;
+  }
+
+  50% {
+    transform: scaleY(0) skewY(0deg);
+    transform-origin: top;
+  }
+
+  51% {
+    transform: scaleY(0) skewY(0deg);
+    transform-origin: bottom;
+  }
+
+  100% {
+    transform: scaleY(0) skewY(0deg);
+    transform-origin: bottom;
+  }
+}
+
+.cssanimation {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+  display: block;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.dislay {
+  display: flex;
+}
+
+.fadeInTop {
+  animation-name: fadeInTop;
+  display: block;
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.dislay {
+  display: flex;
+}
+
+#alignRightOutlined {
+  display: none;
+  color: #1d2055;
+}
+
+.dislayBlock {
+  display: block;
+}
+
+.CaretDownFilled {
+  font-size: 12px;
+  // color: white;
+  position: fixed;
+  margin: 9px 7px 7px 4px;
+}
+
+@media only screen and (max-width: 1000px) {
+  /*-- Code cho màn hình vừa (Table) viết ở đây --*/
+  .sizeLogo2 {
+    display: block;
+  }
+
+  .sizeLogo {
+    display: none;
+  }
+
+  .head-menu {
+    display: none;
+  }
+
+  #repon-menu {
+    display: block;
+  }
+
+  #alignRightOutlined {
+    display: block;
+    color: #1d2055;
+    font-size: 27px;
+    cursor: pointer;
+    margin-top: 34px;
+    font-weight: 300;
+    transition-duration: 2s;
+  }
+
+  .header-but {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .header-but:hover {
+    cursor: pointer;
+  }
+}
+
+// @media only screen and (max-width: 767.98px) {
+//     .head-menu {
+//         display: none;
+// }
+// }
+
+@media only screen and (max-width: 648px) {
+  /*-- Code cho màn hình nhỏ (Mobile) viết ở đây --*/
+  // .head-menu {
+  //     display: none;
+  // }
+}

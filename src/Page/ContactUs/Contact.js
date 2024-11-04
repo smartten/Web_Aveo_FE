@@ -51,7 +51,7 @@ function Contact() {
   const { TextArea } = Input;
   useEffect(() => {
     document.title =
-      "AVEO Global - Leading Software Development Company in Vietnam";
+      "Aveo Global: Global AI and Software Consulting & Development";
   }, []);
   return (
     <div className="contact">

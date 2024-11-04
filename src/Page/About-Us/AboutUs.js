@@ -22,7 +22,7 @@ import logo7 from "./imageLogo1.svg";
 function AboutUs() {
   useEffect(() => {
     document.title =
-      "AVEO Global - Leading Software Development Company in Vietnam";
+      "Aveo Global: Global AI and Software Consulting & Development";
   }, []);
   return (
     <div className="about-us">

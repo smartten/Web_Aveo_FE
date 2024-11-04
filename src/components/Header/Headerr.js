@@ -1,5 +1,5 @@
 import "./HeadStyle.scss";
-import logo from "./New_logo_May30-white.svg";
+import logo from "../Footer/New_logo_May30-white.svg";
 import logo2 from "./New-logo-30May.svg";
 import React, { useEffect, useState } from "react";
 import {
